@@ -1,0 +1,26 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Data/model artifacts
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.zip
+
+# Large/generated folders
+outputs/
+checkpoints/
+artifacts/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

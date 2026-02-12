@@ -13,6 +13,10 @@ tags:
 
 Community-led open-source project to make Pashto a first-class language in AI speech and language tooling.
 
+## 🔗 Project Links
+- GitHub: `https://github.com/Musawer1214/Pukhto_Pashto`
+- Hugging Face: `https://huggingface.co/Musawer14/Pukhto_Pashto`
+
 ## 🎯 Core Goal
 - Build open datasets, benchmarks, and models for Pashto ASR, TTS, and NLP.
 - Keep work reproducible, transparent, and contribution-friendly.

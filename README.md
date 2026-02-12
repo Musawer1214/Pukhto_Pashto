@@ -1,3 +1,14 @@
+---
+license: apache-2.0
+language:
+- ps
+tags:
+- pashto
+- asr
+- tts
+- nlp
+---
+
 # 🌍 Pukhto/Pashto Open Language Project
 
 Community-led open-source project to make Pashto a first-class language in AI speech and language tooling.

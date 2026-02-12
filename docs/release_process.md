@@ -1,14 +1,14 @@
-# Release Process
+# 🚀 Release Process
 
-## Cadence
+## ⏱️ Cadence
 - Monthly milestone release
 - Hotfix releases as needed
 
-## Required for release
+## ✅ Required for release
 - Changelog summary
 - Benchmark snapshot
 - Known limitations
 - Reproducible commands/scripts
 
-## Versioning
+## 🔖 Versioning
 - Use semantic-style tags for major milestones (e.g., `v0.1`, `v0.2`)

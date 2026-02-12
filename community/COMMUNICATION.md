@@ -1,14 +1,14 @@
-# Community Communication
+# 💬 Community Communication
 
-## Channels
+## 📡 Channels
 - GitHub Issues/Discussions for technical decisions
 - Community chat for coordination and quick support
 
-## Meeting rhythm
+## 🗓️ Meeting rhythm
 - Weekly async update thread
 - Monthly community review call
 
-## Rules
+## 📏 Rules
 - Keep technical decisions in public threads
 - Summarize outcomes after meetings
 - Tag maintainers only when blocked

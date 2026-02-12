@@ -1,16 +1,16 @@
-# Workstreams
+# 🧩 Workstreams
 
-## Data
+## 🗂️ Data
 - Collection guides, consent, validation, and metadata policy.
 
-## ASR
+## 🎙️ ASR
 - Baselines, fine-tuning recipes, and evaluation scripts.
 
-## TTS
+## 🔊 TTS
 - Baselines, speaker/style control, and quality assessment.
 
-## Benchmarks
+## 🧪 Benchmarks
 - Fixed test set, metric definitions, and leaderboard process.
 
-## Applications
+## 🖥️ Applications
 - Desktop and API integrations for real-user testing.

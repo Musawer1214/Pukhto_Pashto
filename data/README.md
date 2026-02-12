@@ -1,4 +1,4 @@
-# Data Workspace
+# 🗂️ Data Workspace
 
 - `raw/` incoming source files
 - `processed/` cleaned/aligned artifacts

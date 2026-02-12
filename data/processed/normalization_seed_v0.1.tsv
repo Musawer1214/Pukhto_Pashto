@@ -1,0 +1,21 @@
+﻿id	raw_text	normalized_text	note
+n001	  زه  کور ته ځم. 	زه کور ته ځم.	Trim leading/trailing and repeated spaces
+n002	سلام   نړۍ	سلام نړۍ	Collapse multiple spaces
+n003	دا يو  ازموينيز  متن دی.	دا يو ازموينيز متن دی.	Whitespace normalization
+n004	ته څنګه يې ؟	ته څنګه يې؟	Fix spacing before question mark
+n005	موږ،افغانان يو.	موږ، افغانان يو.	Add space after comma
+n006	دا ښه ده !!	دا ښه ده!	Reduce repeated exclamation
+n007	ولې نه؟؟	ولې نه؟	Reduce repeated question mark
+n008	دا ـــ اوږد ټکي دي.	دا اوږد ټکي دي.	Remove tatweel
+n009	 نن  باران  دی 	نن باران دی	Trim and collapse spaces
+n010	د کابل،ښکلی ښار	د کابل، ښکلی ښار	Add space after comma
+n011	ایا  ته  راځې؟	ایا ته راځې؟	Collapse spaces
+n012	  دا   يو  مثال   دی  	دا يو مثال دی	Aggressive whitespace cleanup
+n013	مونږ؛خو  چمتو يو.	مونږ؛ خو چمتو يو.	Add space after semicolon
+n014	ستړی مشې !	ستړی مشې!	Remove space before punctuation
+n015	زما  نوم   احمد دی.	زما نوم احمد دی.	Collapse spaces
+n016	دلته،هلته،هرځای	دلته، هلته، هرځای	Comma spacing consistency
+n017	ژبه  مو  ژوندۍ  ده.	ژبه مو ژوندۍ ده.	Collapse spaces
+n018	دا, يو مخلوط نښه ده.	دا، يو مخلوط نښه ده.	Normalize comma symbol
+n019	"سلام"   وويل.	"سلام" وويل.	Collapse spaces after quote
+n020	يوه  بله   کرښه.	يوه بله کرښه.	Whitespace normalization

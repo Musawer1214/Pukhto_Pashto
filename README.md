@@ -34,6 +34,11 @@ Community-led open-source project to make Pashto a first-class language in AI sp
 - Listen: `https://commonvoice.mozilla.org/ps/listen`
 - Review: `https://commonvoice.mozilla.org/ps/review`
 
+## 🌐 Community Resource Profiles
+- Hugging Face (external Pashto resource profile): `https://huggingface.co/ihanif`
+- Use this profile as a reference point for Pashto ASR/TTS datasets, models, and
+  community experiments.
+
 ## 🚀 Start Here
 - 📘 Purpose: `PROJECT_PURPOSE.md`
 - 🤝 Contributing: `CONTRIBUTING.md`

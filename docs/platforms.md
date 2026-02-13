@@ -8,3 +8,8 @@
 ## 📣 Publishing expectations
 - Every release links to changelog + benchmark snapshot
 - Every model links to dataset provenance and eval metrics
+
+## 🤝 Community resource profiles
+- Hugging Face Pashto resource profile (external): `https://huggingface.co/ihanif`
+- Contributors can review this profile for reference datasets/models related to
+  Pashto inclusion work.

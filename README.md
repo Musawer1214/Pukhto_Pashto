@@ -14,8 +14,8 @@ tags:
 Community-led open-source project to make Pashto a first-class language in AI speech and language tooling.
 
 ## 🔗 Project Links
-- GitHub: `https://github.com/Musawer1214/Pukhto_Pashto`
-- Hugging Face: `https://huggingface.co/Musawer14/Pukhto_Pashto`
+- GitHub: [https://github.com/Musawer1214/Pukhto_Pashto](https://github.com/Musawer1214/Pukhto_Pashto)
+- Hugging Face: [https://huggingface.co/Musawer14/Pukhto_Pashto](https://huggingface.co/Musawer14/Pukhto_Pashto)
 
 ## 🎯 Core Goal
 - Build open datasets, benchmarks, and models for Pashto ASR, TTS, and NLP.
@@ -23,19 +23,19 @@ Community-led open-source project to make Pashto a first-class language in AI sp
 - Focus on public good and broad accessibility.
 
 ## 📚 Featured External Dataset
-- `Common Voice Scripted Speech 24.0 - Pashto`
+- Common Voice Scripted Speech 24.0 - Pashto
 - Source:
-  `https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14`
-- Project integration guide: `docs/common_voice_pashto_24.md`
+  [https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14](https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14)
+- Project integration guide: [docs/common_voice_pashto_24.md](docs/common_voice_pashto_24.md)
 
 ## 🙌 Contribute Through Mozilla Common Voice
-- Speak: `https://commonvoice.mozilla.org/ps/speak`
-- Write: `https://commonvoice.mozilla.org/ps/write`
-- Listen: `https://commonvoice.mozilla.org/ps/listen`
-- Review: `https://commonvoice.mozilla.org/ps/review`
+- Speak: [https://commonvoice.mozilla.org/ps/speak](https://commonvoice.mozilla.org/ps/speak)
+- Write: [https://commonvoice.mozilla.org/ps/write](https://commonvoice.mozilla.org/ps/write)
+- Listen: [https://commonvoice.mozilla.org/ps/listen](https://commonvoice.mozilla.org/ps/listen)
+- Review: [https://commonvoice.mozilla.org/ps/review](https://commonvoice.mozilla.org/ps/review)
 
 ## 🌐 Community Resource Profiles
-- Hugging Face (external Pashto resource profile): `https://huggingface.co/ihanif`
+- Hugging Face (external Pashto resource profile): [https://huggingface.co/ihanif](https://huggingface.co/ihanif)
 - Use this profile as a reference point for Pashto ASR/TTS datasets, models, and
   community experiments.
 

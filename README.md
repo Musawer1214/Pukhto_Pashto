@@ -22,6 +22,18 @@ Community-led open-source project to make Pashto a first-class language in AI sp
 - Keep work reproducible, transparent, and contribution-friendly.
 - Focus on public good and broad accessibility.
 
+## 📚 Featured External Dataset
+- `Common Voice Scripted Speech 24.0 - Pashto`
+- Source:
+  `https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14`
+- Project integration guide: `docs/common_voice_pashto_24.md`
+
+## 🙌 Contribute Through Mozilla Common Voice
+- Speak: `https://commonvoice.mozilla.org/ps/speak`
+- Write: `https://commonvoice.mozilla.org/ps/write`
+- Listen: `https://commonvoice.mozilla.org/ps/listen`
+- Review: `https://commonvoice.mozilla.org/ps/review`
+
 ## 🚀 Start Here
 - 📘 Purpose: `PROJECT_PURPOSE.md`
 - 🤝 Contributing: `CONTRIBUTING.md`

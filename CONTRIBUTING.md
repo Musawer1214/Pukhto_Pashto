@@ -13,10 +13,10 @@ Thanks for helping build open Pashto AI resources.
 You can contribute to Pashto data directly on Common Voice and connect it back to this project.
 
 Common Voice Pashto actions:
-- Speak: `https://commonvoice.mozilla.org/ps/speak`
-- Write: `https://commonvoice.mozilla.org/ps/write`
-- Listen: `https://commonvoice.mozilla.org/ps/listen`
-- Review: `https://commonvoice.mozilla.org/ps/review`
+- Speak: [commonvoice.mozilla.org/ps/speak](https://commonvoice.mozilla.org/ps/speak)
+- Write: [commonvoice.mozilla.org/ps/write](https://commonvoice.mozilla.org/ps/write)
+- Listen: [commonvoice.mozilla.org/ps/listen](https://commonvoice.mozilla.org/ps/listen)
+- Review: [commonvoice.mozilla.org/ps/review](https://commonvoice.mozilla.org/ps/review)
 
 Then contribute here by opening an issue/PR with:
 - what you worked on,
@@ -25,7 +25,7 @@ Then contribute here by opening an issue/PR with:
 
 ## 🔍 External Resource Contribution Rules
 - Add links in the correct workspace README (`data`, `asr`, `tts`, `benchmarks`, `apps`).
-- Update `docs/resource_catalog.md` with:
+- Update [docs/resource_catalog.md](docs/resource_catalog.md) with:
   - what the resource is,
   - explicit Pashto support evidence,
   - how it can be used in this repository,

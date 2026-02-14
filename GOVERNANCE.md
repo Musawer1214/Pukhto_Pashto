@@ -17,5 +17,5 @@ Lightweight maintainer model with transparent decision-making.
 - Each release has one responsible maintainer and one backup reviewer.
 
 ## ⚖️ Conflict resolution
-- Follow `CODE_OF_CONDUCT.md`.
+- Follow [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 - Report issues privately to maintainers when needed.

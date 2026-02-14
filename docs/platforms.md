@@ -6,7 +6,7 @@
 - Community chat (Discord/Matrix): contributor coordination
 
 ## 📚 Resource Discovery and Validation
-- Use `docs/resource_catalog.md` as the single source of truth for validated external resources.
+- Use [docs/resource_catalog.md](resource_catalog.md) as the single source of truth for validated external resources.
 - Add new links only after checking official pages and explicit Pashto support markers.
 
 ## 📣 Publishing Expectations

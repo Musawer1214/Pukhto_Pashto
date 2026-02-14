@@ -5,17 +5,17 @@ Define fixed test sets, metrics, and leaderboard generation scripts.
 ## ✅ Verified Benchmark Sources
 
 ### 🌸 FLEURS (Pashto speech benchmark)
-- Dataset: `https://huggingface.co/datasets/google/fleurs`
-- Pashto validation: `fleurs.py` includes `ps_af`.
+- Dataset: [huggingface.co/datasets/google/fleurs](https://huggingface.co/datasets/google/fleurs)
+- Pashto validation: [fleurs.py includes `ps_af`](https://huggingface.co/datasets/google/fleurs/blob/main/fleurs.py).
 - Primary use: multilingual ASR benchmark with fixed split conventions.
 
 ### 📘 Belebele (Pashto reading benchmark)
-- Dataset: `https://huggingface.co/datasets/facebook/belebele`
+- Dataset: [huggingface.co/datasets/facebook/belebele](https://huggingface.co/datasets/facebook/belebele)
 - Pashto validation: subset includes `pbt_Arab`.
 - Primary use: comprehension benchmark for multilingual NLP models.
 
 ### 🗣️ Common Voice Pashto v24
-- Dataset: `https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14`
+- Dataset: [Mozilla Data Collective - Common Voice Pashto 24.0](https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14)
 - Primary use: ASR train/dev/test experiments and project baseline tracking.
 
 ## 📏 Recommended Metrics

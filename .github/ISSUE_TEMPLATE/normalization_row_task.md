@@ -8,7 +8,7 @@ assignees: ''
 
 ## Goal
 Add new high-quality rows to:
-- `data/processed/normalization_seed_v0.1.tsv`
+- [data/processed/normalization_seed_v0.1.tsv](../../data/processed/normalization_seed_v0.1.tsv)
 
 ## What to add
 - [ ] 5-20 new rows with unique `id` values

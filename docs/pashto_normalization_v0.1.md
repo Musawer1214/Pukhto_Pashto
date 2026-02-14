@@ -29,5 +29,5 @@ training ASR/TTS/NLP baselines.
 - No named-entity rewriting.
 
 ## File Reference
-- Seed examples: `data/processed/normalization_seed_v0.1.tsv`
-- Validator: `scripts/validate_normalization.py`
+- Seed examples: [data/processed/normalization_seed_v0.1.tsv](../data/processed/normalization_seed_v0.1.tsv)
+- Validator: [scripts/validate_normalization.py](../scripts/validate_normalization.py)

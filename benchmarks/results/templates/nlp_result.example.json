@@ -1,0 +1,28 @@
+{
+  "task": "nlp",
+  "dataset": {
+    "name": "facebook/belebele",
+    "version": "main",
+    "split": "test_pbt_Arab",
+    "source_url": "https://huggingface.co/datasets/facebook/belebele"
+  },
+  "model": {
+    "name": "facebook/nllb-200-distilled-600M",
+    "revision": "main",
+    "source_url": "https://huggingface.co/facebook/nllb-200-distilled-600M"
+  },
+  "metrics": {
+    "accuracy": 0.61,
+    "f1": 0.59
+  },
+  "run": {
+    "date_utc": "2026-02-14T00:00:00Z",
+    "hardware": "1x NVIDIA GPU",
+    "notes": "Zero-shot baseline."
+  },
+  "reproducibility": {
+    "normalization_policy": "docs/pashto_normalization_v0.1.md",
+    "command": "python benchmarks/eval_nlp.py --dataset belebele_pbt_arab --model nllb-600m",
+    "config_ref": "benchmarks/configs/nlp_belebele_baseline.yaml"
+  }
+}

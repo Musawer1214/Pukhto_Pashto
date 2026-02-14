@@ -1,0 +1,28 @@
+{
+  "task": "asr",
+  "dataset": {
+    "name": "google/fleurs",
+    "version": "main",
+    "split": "test_ps_af",
+    "source_url": "https://huggingface.co/datasets/google/fleurs"
+  },
+  "model": {
+    "name": "openai/whisper-large-v3",
+    "revision": "main",
+    "source_url": "https://huggingface.co/openai/whisper-large-v3"
+  },
+  "metrics": {
+    "wer": 0.312,
+    "cer": 0.159
+  },
+  "run": {
+    "date_utc": "2026-02-14T00:00:00Z",
+    "hardware": "1x NVIDIA GPU",
+    "notes": "Baseline run with default decoding."
+  },
+  "reproducibility": {
+    "normalization_policy": "docs/pashto_normalization_v0.1.md",
+    "command": "python asr/eval.py --dataset fleurs_ps_af --model whisper-large-v3",
+    "config_ref": "asr/configs/whisper_large_v3_eval.yaml"
+  }
+}

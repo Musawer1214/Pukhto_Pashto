@@ -1,0 +1,28 @@
+{
+  "task": "tts",
+  "dataset": {
+    "name": "internal_prompt_set",
+    "version": "v1",
+    "split": "eval",
+    "source_url": "https://github.com/Musawer1214/Pukhto_Pashto"
+  },
+  "model": {
+    "name": "facebook/mms-tts",
+    "revision": "main",
+    "source_url": "https://huggingface.co/facebook/mms-tts"
+  },
+  "metrics": {
+    "mos": 3.7,
+    "mcd": 5.2
+  },
+  "run": {
+    "date_utc": "2026-02-14T00:00:00Z",
+    "hardware": "CPU",
+    "notes": "Small prompt set with manual listening review."
+  },
+  "reproducibility": {
+    "normalization_policy": "docs/pashto_normalization_v0.1.md",
+    "command": "python tts/eval.py --model mms-tts --prompts data/processed/prompts_v1.tsv",
+    "config_ref": "tts/configs/mms_tts_eval.yaml"
+  }
+}

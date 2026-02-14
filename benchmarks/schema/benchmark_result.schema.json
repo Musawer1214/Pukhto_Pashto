@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Musawer1214/Pukhto_Pashto/benchmarks/schema/benchmark_result.schema.json",
+  "title": "Pashto Benchmark Result",
+  "type": "object",
+  "required": [
+    "task",
+    "dataset",
+    "model",
+    "metrics",
+    "run",
+    "reproducibility"
+  ],
+  "properties": {
+    "task": {
+      "type": "string",
+      "enum": ["asr", "tts", "nlp", "mt"]
+    },
+    "dataset": {
+      "type": "object",
+      "required": ["name", "version", "split"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "split": { "type": "string" },
+        "source_url": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": false
+    },
+    "model": {
+      "type": "object",
+      "required": ["name", "revision"],
+      "properties": {
+        "name": { "type": "string" },
+        "revision": { "type": "string" },
+        "source_url": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": false
+    },
+    "metrics": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": ["number", "string"]
+      }
+    },
+    "run": {
+      "type": "object",
+      "required": ["date_utc", "hardware", "notes"],
+      "properties": {
+        "date_utc": { "type": "string", "format": "date-time" },
+        "hardware": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "reproducibility": {
+      "type": "object",
+      "required": ["normalization_policy", "command", "config_ref"],
+      "properties": {
+        "normalization_policy": { "type": "string" },
+        "command": { "type": "string" },
+        "config_ref": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

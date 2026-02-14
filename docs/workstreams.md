@@ -15,6 +15,8 @@
 ## 🧪 Benchmarks
 - Fixed test set, metric definitions, and leaderboard process.
 - Benchmark resources: [benchmarks/README.md](../benchmarks/README.md)
+- Benchmark result schema: [benchmarks/schema/benchmark_result.schema.json](../benchmarks/schema/benchmark_result.schema.json)
+- Benchmark outputs: [benchmarks/results/README.md](../benchmarks/results/README.md)
 
 ## 🖥️ Applications
 - Desktop and API integrations for real-user testing.
@@ -22,3 +24,6 @@
 
 ## 📚 Master Resource Index
 - Full validated list: [docs/resource_catalog.md](resource_catalog.md)
+
+## 🧪 Experiment Tracking
+- Run cards and templates: [experiments/README.md](../experiments/README.md)

@@ -2,6 +2,10 @@
 
 Define fixed test sets, metrics, and leaderboard generation scripts.
 
+## 📦 Result Storage
+- Result format guide: [results/README.md](results/README.md)
+- JSON schema: [schema/benchmark_result.schema.json](schema/benchmark_result.schema.json)
+
 ## ✅ Verified Benchmark Sources
 
 ### 🌸 FLEURS (Pashto speech benchmark)

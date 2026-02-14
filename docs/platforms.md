@@ -13,6 +13,7 @@
 - Every release links to changelog + benchmark snapshot.
 - Every model links to dataset provenance and eval metrics.
 - Every new external link must include use-case notes and where it belongs in repo structure.
+- CI should pass before merging (`.github/workflows/ci.yml`).
 
 ## 🚀 Dual Publish Checklist (GitHub + Hugging Face)
 1. `git status` is clean except intended changes.
@@ -21,3 +22,6 @@
 4. Push to `origin` (GitHub).
 5. Push to `hf` (Hugging Face).
 6. Verify README render and link health on both platforms.
+
+## 🧰 Operations Guide
+- GitHub operations and manual UI tasks: [github_operations.md](github_operations.md)

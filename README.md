@@ -28,9 +28,11 @@ Community-led open-source project to make Pashto a first-class language in AI sp
 - Roadmap: [ROADMAP.md](ROADMAP.md)
 - Governance: [GOVERNANCE.md](GOVERNANCE.md)
 - License policy: [LICENSE_POLICY.md](LICENSE_POLICY.md)
+- Changelog: [CHANGELOG.md](CHANGELOG.md)
 - Community: [community/COMMUNICATION.md](community/COMMUNICATION.md)
 - Docs home: [docs/README.md](docs/README.md)
 - Release process: [docs/release_process.md](docs/release_process.md)
+- Release checklist: [docs/release_checklist.md](docs/release_checklist.md)
 - Workstreams: [docs/workstreams.md](docs/workstreams.md)
 - Resource index: [docs/resource_catalog.md](docs/resource_catalog.md)
 - Structured resources: [resources/README.md](resources/README.md)
@@ -59,5 +61,6 @@ The project tracks validated external resources in:
 - [asr/](asr/README.md) ASR baselines and experiments
 - [tts/](tts/README.md) TTS baselines and experiments
 - [benchmarks/](benchmarks/README.md) benchmark sets and evaluation
+- [experiments/](experiments/README.md) reproducible run cards
 - [apps/desktop/](apps/desktop/README.md) user-facing integration references
 - [models/](models/README.md) model layout and release conventions

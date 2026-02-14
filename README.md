@@ -22,11 +22,31 @@ Community-led open-source project to make Pashto a first-class language in AI sp
 - Keep work reproducible, transparent, and contribution-friendly.
 - Focus on public good and broad accessibility.
 
-## 📚 Featured External Dataset
-- Common Voice Scripted Speech 24.0 - Pashto
-- Source:
-  [https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14](https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14)
-- Project integration guide: [docs/common_voice_pashto_24.md](docs/common_voice_pashto_24.md)
+## 🧭 Documentation Map
+- Purpose: `PROJECT_PURPOSE.md`
+- Contributing: `CONTRIBUTING.md`
+- Roadmap: `ROADMAP.md`
+- Governance: `GOVERNANCE.md`
+- Community: `community/COMMUNICATION.md`
+- Release process: `docs/release_process.md`
+- Workstreams: `docs/workstreams.md`
+- Verified external resources: `docs/resource_catalog.md`
+
+## 📚 Verified Resource Catalog
+The project now tracks validated external resources in one place:
+- `docs/resource_catalog.md`
+
+This catalog includes:
+- Datasets
+- Models
+- Benchmarks
+- Tools and applications
+- Validation notes and integration guidance
+
+## 🎙️ Featured Dataset: Common Voice Pashto
+- Dataset: `Common Voice Scripted Speech 24.0 - Pashto`
+- Source: [https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14](https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14)
+- Integration guide: `docs/common_voice_pashto_24.md`
 
 ## 🙌 Contribute Through Mozilla Common Voice
 - Speak: [https://commonvoice.mozilla.org/ps/speak](https://commonvoice.mozilla.org/ps/speak)
@@ -34,21 +54,9 @@ Community-led open-source project to make Pashto a first-class language in AI sp
 - Listen: [https://commonvoice.mozilla.org/ps/listen](https://commonvoice.mozilla.org/ps/listen)
 - Review: [https://commonvoice.mozilla.org/ps/review](https://commonvoice.mozilla.org/ps/review)
 
-## 🌐 Community Resource Profiles
-- Hugging Face (external Pashto resource profile): [https://huggingface.co/ihanif](https://huggingface.co/ihanif)
-- Use this profile as a reference point for Pashto ASR/TTS datasets, models, and
-  community experiments.
-
-## 🚀 Start Here
-- 📘 Purpose: `PROJECT_PURPOSE.md`
-- 🤝 Contributing: `CONTRIBUTING.md`
-- 🗺️ Roadmap: `ROADMAP.md`
-- 🏛️ Governance: `GOVERNANCE.md`
-- 💬 Community coordination: `community/COMMUNICATION.md`
-
-## 🧩 Initial Workstreams
-- `data/` Pashto data collection, cleaning, metadata
-- `asr/` speech-to-text baselines and experiments
-- `tts/` text-to-speech baselines and experiments
-- `benchmarks/` fixed test sets and evaluation scripts
-- `apps/desktop/` app integration references
+## 🧩 Workspaces
+- `data/` datasets, curation, metadata, quality
+- `asr/` ASR baselines and experiments
+- `tts/` TTS baselines and experiments
+- `benchmarks/` benchmark sets and evaluation
+- `apps/desktop/` user-facing integration references

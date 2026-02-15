@@ -17,6 +17,7 @@ This repository uses a semi-automated process to keep Pashto resources current w
 - Validate catalog: `python scripts/validate_resource_catalog.py`
 - Generate markdown and search index: `python scripts/generate_resource_views.py`
 - Sync new candidates: `python scripts/sync_resources.py --limit 20`
+- Full run wrapper: `python scripts/run_resource_cycle.py --limit 25`
 
 ## GitHub Actions
 - CI (`.github/workflows/ci.yml`) enforces:
@@ -34,3 +35,6 @@ This repository uses a semi-automated process to keep Pashto resources current w
    - `python scripts/validate_resource_catalog.py`
    - `python scripts/generate_resource_views.py`
 5. Commit and open PR.
+
+## Runbook
+- Reusable process guide: [resource_cycle_runbook.md](resource_cycle_runbook.md)

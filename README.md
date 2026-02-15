@@ -37,6 +37,7 @@ This repository now has a machine-readable and searchable resource pipeline:
 - Search data export: [docs/search/resources.json](docs/search/resources.json)
 - Full index docs: [docs/resource_catalog.md](docs/resource_catalog.md)
 - Automation docs: [docs/resource_automation.md](docs/resource_automation.md)
+- Repeatable runbook: [docs/resource_cycle_runbook.md](docs/resource_cycle_runbook.md)
 
 ## How New Resources Are Added
 
@@ -54,6 +55,9 @@ The process is semi-automatic:
 - Run `python scripts/validate_resource_catalog.py`
 - Run `python scripts/generate_resource_views.py`
 - Commit generated updates (`resources/*/README.md` and `docs/search/resources.json`).
+
+Shortcut wrapper:
+- Run `python scripts/run_resource_cycle.py --limit 25`
 
 This prevents low-confidence links from being merged directly while still automating discovery.
 

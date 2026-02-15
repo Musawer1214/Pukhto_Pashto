@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-02-15T00:00:00Z",
-  "count": 25,
+  "count": 30,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -588,6 +588,133 @@
       "evidence_text": "Dataset implementation includes ps_af language code.",
       "evidence_url": "https://huggingface.co/datasets/google/fleurs/blob/main/fleurs.py",
       "markers": [
+        "ps_af"
+      ]
+    },
+    {
+      "id": "dataset-nexdata-99h-pashto-dialogue",
+      "title": "99 Hours Pashto Spontaneous Dialogue Smartphone Speech Dataset",
+      "url": "https://huggingface.co/datasets/Nexdata/99_Hours_Pashto_Spontaneous_Dialogue_Smartphone_speech_dataset",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Large spontaneous Pashto smartphone speech dataset for robust ASR experimentation.",
+      "primary_use": "Spontaneous speech ASR training and robustness evaluation",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "speech",
+        "asr",
+        "dialogue"
+      ],
+      "evidence_text": "Dataset title explicitly includes Pashto and API metadata marks audio and text modalities.",
+      "evidence_url": "https://huggingface.co/datasets/Nexdata/99_Hours_Pashto_Spontaneous_Dialogue_Smartphone_speech_dataset",
+      "markers": [
+        "Pashto"
+      ]
+    },
+    {
+      "id": "dataset-zirak-ai-pashto-ocr",
+      "title": "Zirak-AI PashtoOCR",
+      "url": "https://huggingface.co/datasets/zirak-ai/PashtoOCR",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto-focused OCR dataset with image-text pairs for document understanding tasks.",
+      "primary_use": "OCR and text extraction benchmarking",
+      "tasks": [
+        "ocr",
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "ocr",
+        "nlp",
+        "vision"
+      ],
+      "evidence_text": "Dataset tags include language:ps and the dataset name is PashtoOCR.",
+      "evidence_url": "https://huggingface.co/datasets/zirak-ai/PashtoOCR",
+      "markers": [
+        "ps",
+        "PashtoOCR"
+      ]
+    },
+    {
+      "id": "dataset-ihanif-pashto-wikipedia-corpus",
+      "title": "Pashto Wikipedia Corpus",
+      "url": "https://huggingface.co/datasets/ihanif/pashto-wikipedia-corpus",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto text corpus prepared from Wikipedia data for NLP and language modeling.",
+      "primary_use": "Pashto text corpus for NLP baselines",
+      "tasks": [
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "text",
+        "nlp",
+        "wikipedia"
+      ],
+      "evidence_text": "Dataset metadata includes language:ps and the title specifies Pashto corpus.",
+      "evidence_url": "https://huggingface.co/datasets/ihanif/pashto-wikipedia-corpus",
+      "markers": [
+        "ps",
+        "Pashto"
+      ]
+    },
+    {
+      "id": "model-ihanif-wav2vec2-xls-r-300m-pashto",
+      "title": "wav2vec2 XLS-R 300M Pashto",
+      "url": "https://huggingface.co/ihanif/wav2vec2-xls-r-300m-pashto",
+      "category": "model",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Fine-tuned wav2vec2 XLS-R model for Pashto ASR with published FLEURS evaluation tags.",
+      "primary_use": "Pashto ASR baseline and comparative experiments",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "asr",
+        "wav2vec2",
+        "fleurs"
+      ],
+      "evidence_text": "Model tags include pashto and ps, and model index references FLEURS config ps_af.",
+      "evidence_url": "https://huggingface.co/ihanif/wav2vec2-xls-r-300m-pashto",
+      "markers": [
+        "pashto",
+        "ps",
+        "ps_af"
+      ]
+    },
+    {
+      "id": "model-ihanif-whisper-medium-pashto",
+      "title": "Whisper Medium Pashto",
+      "url": "https://huggingface.co/ihanif/whisper-medium-pashto",
+      "category": "model",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Fine-tuned Whisper Medium checkpoint for Pashto ASR with benchmark metadata.",
+      "primary_use": "Pashto ASR baseline and transcription quality comparisons",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "asr",
+        "whisper",
+        "fleurs"
+      ],
+      "evidence_text": "Model tags include pashto and ps, and model index uses FLEURS ps_af split.",
+      "evidence_url": "https://huggingface.co/ihanif/whisper-medium-pashto",
+      "markers": [
+        "pashto",
+        "ps",
         "ps_af"
       ]
     }

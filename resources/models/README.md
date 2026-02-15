@@ -10,7 +10,9 @@
 | OPUS MT en-mul | [huggingface](https://huggingface.co/Helsinki-NLP/opus-mt-en-mul) | [Language list includes pus code. (`pus`)](https://huggingface.co/Helsinki-NLP/opus-mt-en-mul) | English to Pashto translation path |
 | OPUS MT mul-en | [huggingface](https://huggingface.co/Helsinki-NLP/opus-mt-mul-en) | [Language list includes pus code. (`pus`)](https://huggingface.co/Helsinki-NLP/opus-mt-mul-en) | Pashto to English translation path |
 | PashtoBERT | [huggingface](https://huggingface.co/mdarhri/pashto-bert) | [Model card states training on Pashto corpus data. (`Pashto`)](https://huggingface.co/mdarhri/pashto-bert) | Pashto NLP baseline encoder |
+| wav2vec2 XLS-R 300M Pashto | [huggingface](https://huggingface.co/ihanif/wav2vec2-xls-r-300m-pashto) | [Model tags include pashto and ps, and model index references FLEURS config ps_af. (`pashto`, `ps`, `ps_af`)](https://huggingface.co/ihanif/wav2vec2-xls-r-300m-pashto) | Pashto ASR baseline and comparative experiments |
 | Whisper Large v3 | [huggingface](https://huggingface.co/openai/whisper-large-v3) | [Whisper tokenizer map includes ps language key. (`ps`)](https://raw.githubusercontent.com/openai/whisper/main/whisper/tokenizer.py) | ASR baseline and pseudo-labeling |
+| Whisper Medium Pashto | [huggingface](https://huggingface.co/ihanif/whisper-medium-pashto) | [Model tags include pashto and ps, and model index uses FLEURS ps_af split. (`pashto`, `ps`, `ps_af`)](https://huggingface.co/ihanif/whisper-medium-pashto) | Pashto ASR baseline and transcription quality comparisons |
 
 ## Maintenance
 - Source of truth: [../catalog/resources.json](../catalog/resources.json)

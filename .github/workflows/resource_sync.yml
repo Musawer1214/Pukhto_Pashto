@@ -1,0 +1,52 @@
+name: Resource Sync
+
+on:
+  schedule:
+    - cron: "0 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+
+      - name: Sync candidate resources
+        run: python scripts/sync_resources.py --limit 20
+
+      - name: Validate catalog
+        run: python scripts/validate_resource_catalog.py
+
+      - name: Create review PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: bot/resource-sync
+          delete-branch: true
+          commit-message: "chore(resources): sync candidate feed"
+          title: "chore(resources): sync Pashto resource candidates"
+          body: |
+            Automated weekly candidate sync.
+
+            Scope:
+            - Updates `resources/catalog/pending_candidates.json`
+            - Leaves verified catalog unchanged for maintainer review
+          labels: |
+            resource-update
+            needs-review
+          add-paths: |
+            resources/catalog/pending_candidates.json

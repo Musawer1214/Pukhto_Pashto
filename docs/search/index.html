@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pashto Resource Search</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f4ec;
+      --panel: #fffef9;
+      --ink: #1d2a24;
+      --muted: #4c6158;
+      --line: #d6ddd7;
+      --brand: #106b53;
+      --brand-soft: #e0f0ea;
+      --accent: #c76a1a;
+      --accent-soft: #f7e9d8;
+      --shadow: 0 12px 30px rgba(29, 42, 36, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans Arabic", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 12%, #fce4c4 0, rgba(252, 228, 196, 0) 35%),
+        radial-gradient(circle at 92% 6%, #d8ece5 0, rgba(216, 236, 229, 0) 38%),
+        var(--bg);
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 18px 44px;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #fff, #f7fbf9);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      border-radius: 18px;
+      padding: 20px 18px;
+      margin-bottom: 16px;
+      transform: translateY(8px);
+      opacity: 0;
+      animation: rise 500ms ease forwards;
+    }
+
+    .eyebrow {
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 33px;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .controls {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: 2.2fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .field label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-family: "Space Grotesk", sans-serif;
+    }
+
+    input, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      border-radius: 10px;
+      padding: 10px 11px;
+      font: inherit;
+    }
+
+    input:focus, select:focus {
+      outline: 2px solid #8cc9b5;
+      border-color: #8cc9b5;
+    }
+
+    .summary {
+      margin: 14px 2px 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .badge {
+      background: var(--brand-soft);
+      color: var(--brand);
+      border: 1px solid #b7dccc;
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      padding: 13px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      opacity: 0;
+      animation: rise 420ms ease forwards;
+    }
+
+    .chips {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      font-family: "Space Grotesk", sans-serif;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+    }
+
+    .chip.category { background: var(--brand-soft); color: var(--brand); border-color: #b7dccc; }
+    .chip.source { background: var(--accent-soft); color: #955016; border-color: #efc89f; }
+    .chip.status { background: #eef3ff; color: #3e4f86; border-color: #d2dbf6; }
+
+    .title {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.3;
+    }
+
+    .title a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .title a:hover {
+      border-bottom-color: currentColor;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    .card footer {
+      margin-top: auto;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .empty {
+      border: 1px dashed #b9c4bd;
+      border-radius: 12px;
+      padding: 24px;
+      background: #fcfcfa;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 900px) {
+      .controls {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .controls .field:first-child {
+        grid-column: span 2;
+      }
+    }
+
+    @media (max-width: 560px) {
+      h1 { font-size: 28px; }
+      .controls { grid-template-columns: 1fr; }
+      .controls .field:first-child { grid-column: span 1; }
+      .summary { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Pukhto Pashto</div>
+      <h1>Pashto Technology Resource Search</h1>
+      <p>
+        Search and filter verified and candidate resources that support Pashto in ASR, TTS, NLP, translation, tooling, and research.
+      </p>
+
+      <div class="controls">
+        <div class="field">
+          <label for="q">Search</label>
+          <input id="q" type="search" placeholder="Try: ASR, pbt_Arab, translation, speech" />
+        </div>
+        <div class="field">
+          <label for="category">Category</label>
+          <select id="category"></select>
+        </div>
+        <div class="field">
+          <label for="source">Source</label>
+          <select id="source"></select>
+        </div>
+        <div class="field">
+          <label for="task">Task</label>
+          <select id="task"></select>
+        </div>
+        <div class="field">
+          <label for="status">Status</label>
+          <select id="status"></select>
+        </div>
+      </div>
+    </section>
+
+    <div class="summary">
+      <span id="countText">Loading resources...</span>
+      <span class="badge" id="generatedAt">Catalog timestamp: -</span>
+    </div>
+
+    <ul id="results" class="grid"></ul>
+  </main>
+
+  <script>
+    const state = {
+      all: [],
+      filtered: []
+    };
+
+    const els = {
+      q: document.getElementById("q"),
+      category: document.getElementById("category"),
+      source: document.getElementById("source"),
+      task: document.getElementById("task"),
+      status: document.getElementById("status"),
+      results: document.getElementById("results"),
+      countText: document.getElementById("countText"),
+      generatedAt: document.getElementById("generatedAt")
+    };
+
+    function uniqSorted(values) {
+      return [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b));
+    }
+
+    function fillSelect(select, options, allLabel) {
+      select.innerHTML = "";
+      const allOption = document.createElement("option");
+      allOption.value = "";
+      allOption.textContent = allLabel;
+      select.appendChild(allOption);
+      for (const opt of options) {
+        const el = document.createElement("option");
+        el.value = opt;
+        el.textContent = opt;
+        select.appendChild(el);
+      }
+    }
+
+    function matchesQuery(resource, query) {
+      if (!query) return true;
+      const hay = [
+        resource.title,
+        resource.summary,
+        resource.primary_use,
+        resource.category,
+        resource.source,
+        resource.status,
+        ...(resource.tags || []),
+        ...(resource.tasks || []),
+        ...(resource.markers || []),
+        resource.evidence_text
+      ].join(" ").toLowerCase();
+      return hay.includes(query);
+    }
+
+    function applyFilters() {
+      const q = els.q.value.trim().toLowerCase();
+      const category = els.category.value;
+      const source = els.source.value;
+      const task = els.task.value;
+      const status = els.status.value;
+
+      state.filtered = state.all.filter((resource) => {
+        if (!matchesQuery(resource, q)) return false;
+        if (category && resource.category !== category) return false;
+        if (source && resource.source !== source) return false;
+        if (status && resource.status !== status) return false;
+        if (task && !(resource.tasks || []).includes(task)) return false;
+        return true;
+      });
+
+      renderResults();
+    }
+
+    function chip(label, cls) {
+      return `<span class="chip ${cls}">${label}</span>`;
+    }
+
+    function renderResults() {
+      const items = state.filtered;
+      els.countText.textContent = `${items.length} result${items.length === 1 ? "" : "s"} of ${state.all.length}`;
+
+      if (!items.length) {
+        els.results.innerHTML = `<li class="empty">No matches. Try broadening filters or changing keywords.</li>`;
+        return;
+      }
+
+      els.results.innerHTML = items.map((resource, idx) => `
+        <li class="card" style="animation-delay:${Math.min(idx * 28, 320)}ms">
+          <div class="chips">
+            ${chip(resource.category, "category")}
+            ${chip(resource.source, "source")}
+            ${chip(resource.status, "status")}
+          </div>
+          <h2 class="title"><a href="${resource.url}" target="_blank" rel="noreferrer">${resource.title}</a></h2>
+          <p class="meta">${resource.summary}</p>
+          <p class="meta"><strong>Primary use:</strong> ${resource.primary_use}</p>
+          <p class="meta"><strong>Pashto evidence:</strong> <a href="${resource.evidence_url}" target="_blank" rel="noreferrer">${resource.evidence_text}</a></p>
+          <footer>
+            ${(resource.tasks || []).length ? `Tasks: ${resource.tasks.join(", ")}` : "Tasks: n/a"}
+          </footer>
+        </li>
+      `).join("");
+    }
+
+    async function load() {
+      try {
+        const res = await fetch("./resources.json", { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const payload = await res.json();
+        state.all = payload.resources || [];
+        state.filtered = [...state.all];
+
+        fillSelect(els.category, uniqSorted(state.all.map((r) => r.category)), "All categories");
+        fillSelect(els.source, uniqSorted(state.all.map((r) => r.source)), "All sources");
+        fillSelect(els.status, uniqSorted(state.all.map((r) => r.status)), "All statuses");
+        fillSelect(
+          els.task,
+          uniqSorted(state.all.flatMap((r) => r.tasks || [])),
+          "All tasks"
+        );
+
+        const generated = payload.generated_on ? new Date(payload.generated_on) : null;
+        els.generatedAt.textContent = generated && !Number.isNaN(generated.getTime())
+          ? `Catalog timestamp: ${generated.toISOString()}`
+          : "Catalog timestamp: unknown";
+
+        applyFilters();
+      } catch (err) {
+        els.countText.textContent = "Failed to load resources";
+        els.results.innerHTML = `<li class="empty">Could not load search data. ${String(err)}</li>`;
+      }
+    }
+
+    [els.q, els.category, els.source, els.task, els.status].forEach((el) => {
+      el.addEventListener("input", applyFilters);
+      el.addEventListener("change", applyFilters);
+    });
+
+    load();
+  </script>
+</body>
+</html>

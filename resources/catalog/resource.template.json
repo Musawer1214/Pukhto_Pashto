@@ -1,0 +1,25 @@
+{
+  "id": "example-resource-id",
+  "title": "Example Resource Title",
+  "url": "https://example.org/resource",
+  "category": "dataset",
+  "source": "other",
+  "status": "verified",
+  "summary": "One-line summary explaining why this resource matters for Pashto in technology.",
+  "primary_use": "ASR baseline",
+  "license": "Unknown",
+  "tasks": [
+    "asr"
+  ],
+  "pashto_evidence": {
+    "evidence_text": "Resource page explicitly lists Pashto support.",
+    "evidence_url": "https://example.org/resource",
+    "markers": [
+      "Pashto"
+    ]
+  },
+  "tags": [
+    "pashto",
+    "speech"
+  ]
+}

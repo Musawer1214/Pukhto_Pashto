@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://musawer1214.github.io/Pukhto_Pashto/resources/schema/resource.schema.json",
+  "title": "Pashto Resource Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "updated_on",
+    "resources"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "updated_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/resource"
+      }
+    }
+  },
+  "$defs": {
+    "resource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "url",
+        "category",
+        "source",
+        "status",
+        "summary",
+        "primary_use",
+        "pashto_evidence",
+        "tags"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "dataset",
+            "model",
+            "benchmark",
+            "tool",
+            "paper"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "huggingface",
+            "mozilla",
+            "kaggle",
+            "github",
+            "arxiv",
+            "meta",
+            "other"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "candidate"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 10
+        },
+        "primary_use": {
+          "type": "string",
+          "minLength": 3
+        },
+        "license": {
+          "type": "string"
+        },
+        "tasks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pashto_evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "evidence_text",
+            "evidence_url",
+            "markers"
+          ],
+          "properties": {
+            "evidence_text": {
+              "type": "string",
+              "minLength": 3
+            },
+            "evidence_url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https?://"
+            },
+            "markers": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

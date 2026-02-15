@@ -24,12 +24,10 @@ Then contribute here by opening an issue/PR with:
 - what concrete follow-up is needed in this repository.
 
 ## 🔍 External Resource Contribution Rules
-- Add links in the correct workspace README (`data`, `asr`, `tts`, `benchmarks`, `apps`).
-- Update [docs/resource_catalog.md](docs/resource_catalog.md) with:
-  - what the resource is,
-  - explicit Pashto support evidence,
-  - how it can be used in this repository,
-  - practical applications.
+- Add or update entries in [resources/catalog/resources.json](resources/catalog/resources.json) using [resources/catalog/resource.template.json](resources/catalog/resource.template.json).
+- Validate catalog changes with `python scripts/validate_resource_catalog.py`.
+- Regenerate resource docs and search data with `python scripts/generate_resource_views.py`.
+- Use [docs/resource_catalog.md](docs/resource_catalog.md) and [docs/resource_automation.md](docs/resource_automation.md) for full rules.
 - Prefer official pages and model/dataset cards over third-party reposts.
 
 ## 🔄 Contribution Flow

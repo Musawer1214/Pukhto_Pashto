@@ -21,7 +21,13 @@ title: About Pukhto Pashto
 - `benchmarks/`: benchmark schema, result format, and metric guidance.
 - `experiments/`: reproducible run cards and experiment records.
 - `docs/`: policies, roadmap, release process, and operating guides.
-- `resources/`: verified external Pashto datasets, models, tools, and benchmarks.
+- `resources/`: verified external Pashto datasets, models, tools, benchmarks, and papers.
+
+## Search Resources
+
+- Search UI: [Pashto Resource Search](search/)
+- Resource index docs: [resource_catalog.md](resource_catalog.md)
+- Machine-readable catalog: [../resources/catalog/resources.json](../resources/catalog/resources.json)
 
 ## Project References
 

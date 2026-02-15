@@ -1,10 +1,13 @@
-# ⚙️ Scripts
+# Scripts
 
-Automation scripts for data checks and documentation hygiene.
+Automation scripts for quality checks, resource catalog validation, and search index generation.
 
-## Available Scripts
-- Normalization validator: [validate_normalization.py](validate_normalization.py)
-- Markdown link checker: [check_links.py](check_links.py)
+## Available scripts
+- `validate_normalization.py`: validate normalization seed TSV format and rules.
+- `check_links.py`: ensure markdown links are clickable (optional online reachability check).
+- `validate_resource_catalog.py`: validate `resources/catalog/resources.json`.
+- `generate_resource_views.py`: generate `resources/*/README.md`, `resources/README.md`, and `docs/search/resources.json` from the catalog.
+- `sync_resources.py`: collect new candidate Pashto resources from public endpoints into `resources/catalog/pending_candidates.json`.
 
 ## Usage
 
@@ -13,7 +16,22 @@ Validate normalization seed file:
 python scripts/validate_normalization.py data/processed/normalization_seed_v0.1.tsv
 ```
 
-Check markdown links are clickable-format links:
+Validate resource catalog:
+```bash
+python scripts/validate_resource_catalog.py
+```
+
+Generate markdown and search index from catalog:
+```bash
+python scripts/generate_resource_views.py
+```
+
+Sync candidate resources for maintainer review:
+```bash
+python scripts/sync_resources.py --limit 20
+```
+
+Check markdown links format:
 ```bash
 python scripts/check_links.py
 ```

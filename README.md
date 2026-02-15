@@ -19,6 +19,7 @@ Community-led open-source project to make Pashto a first-class language in AI sp
 - GitHub: [Pukhto_Pashto](https://github.com/Musawer1214/Pukhto_Pashto)
 - Hugging Face: [Musawer14/Pukhto_Pashto](https://huggingface.co/Musawer14/Pukhto_Pashto)
 - GitHub Pages (About): [Pukhto_Pashto Site](https://musawer1214.github.io/Pukhto_Pashto/)
+- GitHub Pages (Resource Search): [Pashto Resource Search](https://musawer1214.github.io/Pukhto_Pashto/search/)
 
 ## 🎯 Core Goal
 - Build open datasets, benchmarks, and models for Pashto ASR, TTS, and NLP.
@@ -43,10 +44,13 @@ Community-led open-source project to make Pashto a first-class language in AI sp
 ## 📚 Verified Resource Catalog
 The project tracks validated external resources in:
 - [docs/resource_catalog.md](docs/resource_catalog.md) (master index)
+- [resources/catalog/resources.json](resources/catalog/resources.json) (canonical machine-readable catalog)
+- [resources/schema/resource.schema.json](resources/schema/resource.schema.json) (catalog schema)
 - [resources/datasets/README.md](resources/datasets/README.md)
 - [resources/models/README.md](resources/models/README.md)
 - [resources/benchmarks/README.md](resources/benchmarks/README.md)
 - [resources/tools/README.md](resources/tools/README.md)
+- [resources/papers/README.md](resources/papers/README.md)
 
 ## 🎙️ Featured Dataset: Common Voice Pashto
 - Dataset: Common Voice Scripted Speech 24.0 - Pashto

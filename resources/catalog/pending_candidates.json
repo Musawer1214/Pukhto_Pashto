@@ -1,10 +1,10 @@
 {
-  "generated_on": "2026-02-15T09:45:32.641403+00:00",
+  "generated_on": "2026-02-15T10:06:14.796338+00:00",
   "sources": [
     "huggingface-datasets",
     "huggingface-models"
   ],
-  "candidate_count": 20,
+  "candidate_count": 45,
   "candidates": [
     {
       "id": "candidate-hf-dataset-aamirhs-pashto",
@@ -65,6 +65,121 @@
       "pashto_evidence": {
         "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
         "evidence_url": "https://huggingface.co/datasets/aamirhs/pashto_test_1",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-aamirhs-wav2vec2-large-xls-r-300m-pashto-colab",
+      "title": "aamirhs/wav2vec2-large-xls-r-300m-pashto-colab",
+      "url": "https://huggingface.co/aamirhs/wav2vec2-large-xls-r-300m-pashto-colab",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/aamirhs/wav2vec2-large-xls-r-300m-pashto-colab",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-aamirhs-wav2vec2-large-xls-r-300m-pashto-colab-test-2",
+      "title": "aamirhs/wav2vec2-large-xls-r-300m-pashto-colab-test-2",
+      "url": "https://huggingface.co/aamirhs/wav2vec2-large-xls-r-300m-pashto-colab-test-2",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/aamirhs/wav2vec2-large-xls-r-300m-pashto-colab-test-2",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-adnankhan769-english-to-pashto-sentences-dataset",
+      "title": "adnankhan769/english_to_pashto_sentences_dataset",
+      "url": "https://huggingface.co/datasets/adnankhan769/english_to_pashto_sentences_dataset",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/adnankhan769/english_to_pashto_sentences_dataset",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-adnankhan769-proper-dataset-english-2-pashto",
+      "title": "adnankhan769/proper_dataset_english_2_pashto",
+      "url": "https://huggingface.co/datasets/adnankhan769/proper_dataset_english_2_pashto",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/adnankhan769/proper_dataset_english_2_pashto",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-alimuhammad73-pashto-poetry",
+      "title": "AliMuhammad73/Pashto-Poetry",
+      "url": "https://huggingface.co/datasets/AliMuhammad73/Pashto-Poetry",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/AliMuhammad73/Pashto-Poetry",
         "markers": [
           "pashto"
         ]
@@ -145,9 +260,9 @@
       ]
     },
     {
-      "id": "candidate-hf-model-ihanif-wav2vec2-xls-r-300m-pashto",
-      "title": "ihanif/wav2vec2-xls-r-300m-pashto",
-      "url": "https://huggingface.co/ihanif/wav2vec2-xls-r-300m-pashto",
+      "id": "candidate-hf-model-ihanif-pashto-asr-base",
+      "title": "ihanif/pashto-asr-base",
+      "url": "https://huggingface.co/ihanif/pashto-asr-base",
       "category": "model",
       "source": "huggingface",
       "status": "candidate",
@@ -156,7 +271,7 @@
       "tasks": [],
       "pashto_evidence": {
         "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
-        "evidence_url": "https://huggingface.co/ihanif/wav2vec2-xls-r-300m-pashto",
+        "evidence_url": "https://huggingface.co/ihanif/pashto-asr-base",
         "markers": [
           "pashto"
         ]
@@ -165,6 +280,167 @@
         "pashto",
         "candidate",
         "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-ihanif-pashto-asr-wer",
+      "title": "ihanif/pashto_asr_wer",
+      "url": "https://huggingface.co/datasets/ihanif/pashto_asr_wer",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_asr_wer",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-ihanif-pashto-speech-20k",
+      "title": "ihanif/pashto_speech_20k",
+      "url": "https://huggingface.co/datasets/ihanif/pashto_speech_20k",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_20k",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-ihanif-pashto-speech-2k",
+      "title": "ihanif/pashto_speech_2k",
+      "url": "https://huggingface.co/datasets/ihanif/pashto_speech_2k",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_2k",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-ihanif-pashto-speech-3k",
+      "title": "ihanif/pashto_speech_3k",
+      "url": "https://huggingface.co/datasets/ihanif/pashto_speech_3k",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_3k",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-ihanif-pashto-speech-5k",
+      "title": "ihanif/pashto_speech_5k",
+      "url": "https://huggingface.co/datasets/ihanif/pashto_speech_5k",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_5k",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-ihanif-pashto-speech-ds",
+      "title": "ihanif/pashto_speech_ds",
+      "url": "https://huggingface.co/datasets/ihanif/pashto_speech_ds",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_ds",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-ihanif-pashto-speech-parquet-10k",
+      "title": "ihanif/pashto_speech_parquet_10k",
+      "url": "https://huggingface.co/datasets/ihanif/pashto_speech_parquet_10k",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_parquet_10k",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
       ]
     },
     {
@@ -226,29 +502,6 @@
       "pashto_evidence": {
         "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
         "evidence_url": "https://huggingface.co/ihanif/whisper-large-pashto",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "model"
-      ]
-    },
-    {
-      "id": "candidate-hf-model-ihanif-whisper-medium-pashto",
-      "title": "ihanif/whisper-medium-pashto",
-      "url": "https://huggingface.co/ihanif/whisper-medium-pashto",
-      "category": "model",
-      "source": "huggingface",
-      "status": "candidate",
-      "summary": "Candidate model returned from Hugging Face search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
-        "evidence_url": "https://huggingface.co/ihanif/whisper-medium-pashto",
         "markers": [
           "pashto"
         ]
@@ -352,6 +605,236 @@
       ]
     },
     {
+      "id": "candidate-hf-model-ijazulhaq-bert-base-pashto",
+      "title": "ijazulhaq/bert-base-pashto",
+      "url": "https://huggingface.co/ijazulhaq/bert-base-pashto",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/ijazulhaq/bert-base-pashto",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-ijazulhaq-bert-base-pashto-v1",
+      "title": "ijazulhaq/bert-base-pashto-v1",
+      "url": "https://huggingface.co/ijazulhaq/bert-base-pashto-v1",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/ijazulhaq/bert-base-pashto-v1",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-jawaria-wav2vec2-large-xls-r-300m-pashto-colab-final-1",
+      "title": "Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-final-1",
+      "url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-final-1",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-final-1",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-jawaria-wav2vec2-large-xls-r-300m-pashto-colab-test-2",
+      "title": "Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-2",
+      "url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-2",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-2",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-jawaria-wav2vec2-large-xls-r-300m-pashto-colab-test-3",
+      "title": "Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-3",
+      "url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-3",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-3",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-jawaria-wav2vec2-large-xls-r-300m-pashto-colab-test-4",
+      "title": "Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-4",
+      "url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-4",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-4",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-jawaria-wav2vec2-large-xls-r-300m-pashto-colab-test-5",
+      "title": "Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-5",
+      "url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-5",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-5",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-jawaria-wav2vec2-large-xls-r-300m-pashto-colab-test-6",
+      "title": "Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-6",
+      "url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-6",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-6",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-jawaria-wav2vec2-large-xls-r-300m-pashto-colab-test-7",
+      "title": "Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-7",
+      "url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-7",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-7",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-jawaria-wav2vec2-large-xls-r-300m-pashto-colab-test-8",
+      "title": "Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-8",
+      "url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-8",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-test-8",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
       "id": "candidate-hf-dataset-koochikoo25-pashto-concatenated",
       "title": "koochikoo25/Pashto-Concatenated",
       "url": "https://huggingface.co/datasets/koochikoo25/Pashto-Concatenated",
@@ -375,9 +858,55 @@
       ]
     },
     {
-      "id": "candidate-hf-dataset-nexdata-99-hours-pashto-spontaneous-dialogue-smartphone-speech-dataset",
-      "title": "Nexdata/99_Hours_Pashto_Spontaneous_Dialogue_Smartphone_speech_dataset",
-      "url": "https://huggingface.co/datasets/Nexdata/99_Hours_Pashto_Spontaneous_Dialogue_Smartphone_speech_dataset",
+      "id": "candidate-hf-model-koochikoo25-pashto-whisper-large",
+      "title": "koochikoo25/pashto-whisper-large",
+      "url": "https://huggingface.co/koochikoo25/pashto-whisper-large",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/koochikoo25/pashto-whisper-large",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-koochikoo25-whisper-medium-pashto",
+      "title": "koochikoo25/Whisper-medium-pashto",
+      "url": "https://huggingface.co/koochikoo25/Whisper-medium-pashto",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/koochikoo25/Whisper-medium-pashto",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-saillab-alpaca-pashto-cleaned",
+      "title": "saillab/alpaca-pashto-cleaned",
+      "url": "https://huggingface.co/datasets/saillab/alpaca-pashto-cleaned",
       "category": "dataset",
       "source": "huggingface",
       "status": "candidate",
@@ -386,7 +915,7 @@
       "tasks": [],
       "pashto_evidence": {
         "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
-        "evidence_url": "https://huggingface.co/datasets/Nexdata/99_Hours_Pashto_Spontaneous_Dialogue_Smartphone_speech_dataset",
+        "evidence_url": "https://huggingface.co/datasets/saillab/alpaca-pashto-cleaned",
         "markers": [
           "pashto"
         ]
@@ -421,6 +950,75 @@
       ]
     },
     {
+      "id": "candidate-hf-dataset-sherwindesouza-pashto-common-voice-20",
+      "title": "SherwinDesouza/pashto-common-voice-20",
+      "url": "https://huggingface.co/datasets/SherwinDesouza/pashto-common-voice-20",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/SherwinDesouza/pashto-common-voice-20",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-tasal9-pashto-dataset",
+      "title": "tasal9/Pashto_Dataset",
+      "url": "https://huggingface.co/datasets/tasal9/Pashto_Dataset",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/tasal9/Pashto_Dataset",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-tasal9-zamai-pashto-dataset",
+      "title": "tasal9/ZamAI_Pashto_Dataset",
+      "url": "https://huggingface.co/datasets/tasal9/ZamAI_Pashto_Dataset",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/tasal9/ZamAI_Pashto_Dataset",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ]
+    },
+    {
       "id": "candidate-hf-model-zirak-ai-pashto-bert-v1",
       "title": "zirak-ai/pashto-bert-v1",
       "url": "https://huggingface.co/zirak-ai/pashto-bert-v1",
@@ -441,29 +1039,6 @@
         "pashto",
         "candidate",
         "model"
-      ]
-    },
-    {
-      "id": "candidate-hf-dataset-zirak-ai-pashtoocr",
-      "title": "zirak-ai/PashtoOCR",
-      "url": "https://huggingface.co/datasets/zirak-ai/PashtoOCR",
-      "category": "dataset",
-      "source": "huggingface",
-      "status": "candidate",
-      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
-        "evidence_url": "https://huggingface.co/datasets/zirak-ai/PashtoOCR",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "dataset"
       ]
     }
   ],

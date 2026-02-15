@@ -4,14 +4,17 @@
 
 | Resource | Link | Pashto Evidence | Primary Use |
 |---|---|---|---|
+| 99 Hours Pashto Spontaneous Dialogue Smartphone Speech Dataset | [huggingface](https://huggingface.co/datasets/Nexdata/99_Hours_Pashto_Spontaneous_Dialogue_Smartphone_speech_dataset) | [Dataset title explicitly includes Pashto and API metadata marks audio and text modalities. (`Pashto`)](https://huggingface.co/datasets/Nexdata/99_Hours_Pashto_Spontaneous_Dialogue_Smartphone_speech_dataset) | Spontaneous speech ASR training and robustness evaluation |
 | Belebele | [huggingface](https://huggingface.co/datasets/facebook/belebele) | [Dataset includes pbt_Arab subset. (`pbt_Arab`)](https://huggingface.co/datasets/facebook/belebele) | Comprehension and multilingual NLP benchmark |
 | Common Voice Scripted Speech 24.0 - Pashto | [mozilla](https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14) | [Official dataset page is for Pashto. (`Pashto`)](https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14) | ASR training and evaluation |
 | Google FLEURS | [huggingface](https://huggingface.co/datasets/google/fleurs) | [Dataset config includes ps_af. (`ps_af`)](https://huggingface.co/datasets/google/fleurs/blob/main/fleurs.py) | Speech benchmark and external evaluation |
 | OPUS-100 | [huggingface](https://huggingface.co/datasets/Helsinki-NLP/opus-100) | [Dataset viewer includes en-ps split. (`en-ps`)](https://huggingface.co/datasets/Helsinki-NLP/opus-100/viewer/en-ps) | Machine translation training and evaluation |
 | OSCAR Corpus | [huggingface](https://huggingface.co/datasets/oscar-corpus/oscar) | [Dataset includes unshuffled_deduplicated_ps split. (`unshuffled_deduplicated_ps`)](https://huggingface.co/datasets/oscar-corpus/oscar) | Language modeling and lexicon expansion |
 | Pashto Isolated Words Speech Dataset | [kaggle](https://www.kaggle.com/datasets/engrirf/pashto-isolated-words-speech-dataset) | [Dataset title explicitly states Pashto speech dataset. (`Pashto`)](https://www.kaggle.com/datasets/engrirf/pashto-isolated-words-speech-dataset) | Keyword spotting and constrained ASR experiments |
+| Pashto Wikipedia Corpus | [huggingface](https://huggingface.co/datasets/ihanif/pashto-wikipedia-corpus) | [Dataset metadata includes language:ps and the title specifies Pashto corpus. (`ps`, `Pashto`)](https://huggingface.co/datasets/ihanif/pashto-wikipedia-corpus) | Pashto text corpus for NLP baselines |
 | Pashto Word Embeddings | [kaggle](https://www.kaggle.com/datasets/drijaz/pashto-word-embeddings) | [Dataset description states pretrained Pashto embeddings. (`Pashto`)](https://www.kaggle.com/datasets/drijaz/pashto-word-embeddings) | Lexical semantics and lightweight NLP baselines |
 | Wikimedia Wikipedia | [huggingface](https://huggingface.co/datasets/wikimedia/wikipedia) | [Dataset includes 20231101.ps subset. (`20231101.ps`)](https://huggingface.co/datasets/wikimedia/wikipedia) | Terminology and balanced text corpus |
+| Zirak-AI PashtoOCR | [huggingface](https://huggingface.co/datasets/zirak-ai/PashtoOCR) | [Dataset tags include language:ps and the dataset name is PashtoOCR. (`ps`, `PashtoOCR`)](https://huggingface.co/datasets/zirak-ai/PashtoOCR) | OCR and text extraction benchmarking |
 
 ## Maintenance
 - Source of truth: [../catalog/resources.json](../catalog/resources.json)

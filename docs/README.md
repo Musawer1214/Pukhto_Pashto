@@ -20,6 +20,7 @@ This folder is the main documentation entry point for contributors.
 - Platforms and publish flow: [platforms.md](platforms.md)
 - GitHub operations: [github_operations.md](github_operations.md)
 - Resource automation: [resource_automation.md](resource_automation.md)
+- Resource cycle runbook: [resource_cycle_runbook.md](resource_cycle_runbook.md)
 
 ## Resource tracking
 - Master resource index: [resource_catalog.md](resource_catalog.md)

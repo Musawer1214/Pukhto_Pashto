@@ -8,6 +8,7 @@ Automation scripts for quality checks, resource catalog validation, and search i
 - `validate_resource_catalog.py`: validate `resources/catalog/resources.json`.
 - `generate_resource_views.py`: generate `resources/*/README.md`, `resources/README.md`, and `docs/search/resources.json` from the catalog.
 - `sync_resources.py`: collect new candidate Pashto resources from public endpoints into `resources/catalog/pending_candidates.json`.
+- `run_resource_cycle.py`: run the full repeatable resource cycle with one command.
 
 ## Usage
 
@@ -29,6 +30,16 @@ python scripts/generate_resource_views.py
 Sync candidate resources for maintainer review:
 ```bash
 python scripts/sync_resources.py --limit 20
+```
+
+Run full repeatable cycle:
+```bash
+python scripts/run_resource_cycle.py --limit 25
+```
+
+Run discovery only:
+```bash
+python scripts/run_resource_cycle.py --discover-only --limit 25
 ```
 
 Check markdown links format:

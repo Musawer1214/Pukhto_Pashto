@@ -17,6 +17,8 @@ CATEGORY_CONFIG = {
     "benchmark": ("resources/benchmarks/README.md", "Benchmarks"),
     "tool": ("resources/tools/README.md", "Tools"),
     "paper": ("resources/papers/README.md", "Papers"),
+    "project": ("resources/projects/README.md", "Projects"),
+    "code": ("resources/codes/README.md", "Code"),
 }
 
 
@@ -86,6 +88,8 @@ def _write_resources_home(path: Path, counts: dict[str, int], total_verified: in
         f"- Benchmarks ({counts.get('benchmark', 0)}): [benchmarks/README.md](benchmarks/README.md)",
         f"- Tools ({counts.get('tool', 0)}): [tools/README.md](tools/README.md)",
         f"- Papers ({counts.get('paper', 0)}): [papers/README.md](papers/README.md)",
+        f"- Projects ({counts.get('project', 0)}): [projects/README.md](projects/README.md)",
+        f"- Code ({counts.get('code', 0)}): [codes/README.md](codes/README.md)",
         "",
         "## Machine-Readable Catalog",
         "- Canonical catalog: [catalog/resources.json](catalog/resources.json)",

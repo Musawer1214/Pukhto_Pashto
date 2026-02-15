@@ -16,7 +16,7 @@ from typing import Any
 from urllib.parse import urlparse
 
 
-ALLOWED_CATEGORIES = {"dataset", "model", "benchmark", "tool", "paper"}
+ALLOWED_CATEGORIES = {"dataset", "model", "benchmark", "tool", "paper", "project", "code"}
 ALLOWED_SOURCES = {"huggingface", "mozilla", "kaggle", "github", "arxiv", "meta", "other"}
 ALLOWED_STATUS = {"verified", "candidate"}
 RESOURCE_ID_RE = re.compile(r"^[a-z0-9][a-z0-9._-]*$")

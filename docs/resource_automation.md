@@ -7,6 +7,14 @@ This repository uses a semi-automated process to keep Pashto resources current w
 - Keep a machine-readable canonical catalog.
 - Prevent unreviewed low-confidence resources from directly entering verified lists.
 
+## Covered source types
+- Kaggle datasets
+- Hugging Face datasets
+- Hugging Face models
+- Hugging Face Spaces (projects)
+- GitHub repositories (projects and code)
+- Research-paper endpoints
+
 ## Files involved
 - Canonical verified catalog: [../resources/catalog/resources.json](../resources/catalog/resources.json)
 - Candidate feed: [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json)

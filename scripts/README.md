@@ -7,7 +7,7 @@ Automation scripts for quality checks, resource catalog validation, and search i
 - `check_links.py`: ensure markdown links are clickable (optional online reachability check).
 - `validate_resource_catalog.py`: validate `resources/catalog/resources.json`.
 - `generate_resource_views.py`: generate `resources/*/README.md`, `resources/README.md`, and `docs/search/resources.json` from the catalog.
-- `sync_resources.py`: collect new candidate Pashto resources from public endpoints into `resources/catalog/pending_candidates.json`.
+- `sync_resources.py`: collect new candidate Pashto resources from Kaggle, Hugging Face (datasets/models/spaces), GitHub repositories, and paper endpoints into `resources/catalog/pending_candidates.json`.
 - `run_resource_cycle.py`: run the full repeatable resource cycle with one command.
 
 ## Usage

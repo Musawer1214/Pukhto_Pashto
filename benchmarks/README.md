@@ -18,6 +18,11 @@ Define fixed test sets, metrics, and leaderboard generation scripts.
 - Pashto validation: subset includes `pbt_Arab`.
 - Primary use: comprehension benchmark for multilingual NLP models.
 
+### 🌍 FLORES-200 (Pashto translation benchmark)
+- Dataset/language list: [facebookresearch/flores/tree/main/flores200](https://github.com/facebookresearch/flores/tree/main/flores200)
+- Pashto validation: language list includes `pbt_Arab`.
+- Primary use: fixed-reference MT evaluation for Pashto translation experiments.
+
 ### 🗣️ Common Voice Pashto v24
 - Dataset: [Mozilla Data Collective - Common Voice Pashto 24.0](https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14)
 - Primary use: ASR train/dev/test experiments and project baseline tracking.
@@ -26,6 +31,7 @@ Define fixed test sets, metrics, and leaderboard generation scripts.
 - ASR: `WER`, `CER`
 - TTS: `MCD`/objective proxies + human MOS-style scoring
 - NLP: task-specific accuracy/F1 with fixed test set
+- MT: `BLEU`, `chrF`, `COMET`
 
 ## 🧾 Reporting Template
 - Benchmark dataset + version

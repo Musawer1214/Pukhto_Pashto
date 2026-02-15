@@ -1,6 +1,6 @@
 # 📚 Verified Pashto Resource Catalog
 
-Last updated: `2026-02-14`
+Last updated: `2026-02-15`
 
 This index points to validated Pashto-related resources tracked in structured files.
 
@@ -27,3 +27,10 @@ Before each release:
 - Confirm links still resolve.
 - Confirm Pashto support markers remain valid.
 - Confirm license/usage terms are still compatible.
+
+## New Additions (2026-02-15)
+- `OPUS-100` dataset with `en-ps` subset support.
+- `FLORES-200` benchmark reference with `pbt_Arab` language code coverage.
+- `facebook/mms-1b-all` ASR model reference for multilingual Pashto transfer.
+- `mdarhri/pashto-bert` model for Pashto NLP baseline work.
+- Two Kaggle resources: Pashto isolated-word speech and Pashto word embeddings.

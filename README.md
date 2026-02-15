@@ -1,4 +1,4 @@
----
+﻿---
 license: apache-2.0
 language:
 - ps
@@ -9,22 +9,65 @@ tags:
 - nlp
 ---
 
-# 🌍 Pukhto/Pashto Open Language Project
+![Pukhto Pashto Repository Banner](Repository_banner_Image.png)
 
-Community-led open-source project to make Pashto a first-class language in AI speech and language tooling.
+# Pukhto/Pashto Open Language Project
 
-## 🔗 Project Links
+Community-led open-source project to make Pashto a first-class language in speech and language technology.
+
+## Project Links
 - GitHub: [Pukhto_Pashto](https://github.com/Musawer1214/Pukhto_Pashto)
 - Hugging Face: [Musawer14/Pukhto_Pashto](https://huggingface.co/Musawer14/Pukhto_Pashto)
 - GitHub Pages (About): [Pukhto_Pashto Site](https://musawer1214.github.io/Pukhto_Pashto/)
 - GitHub Pages (Resource Search): [Pashto Resource Search](https://musawer1214.github.io/Pukhto_Pashto/search/)
 
-## 🎯 Core Goal
-- Build open datasets, benchmarks, and models for Pashto ASR, TTS, and NLP.
-- Keep work reproducible, transparent, and contribution-friendly.
-- Focus on public good and broad accessibility.
+## Current Scope
+- Build open Pashto datasets, benchmarks, and model references for ASR, TTS, NLP, and MT.
+- Track practical tools, apps, and academic papers relevant to Pashto integration in technology.
+- Keep everything transparent, reproducible, and contribution-friendly.
 
-## 🧭 Documentation Map
+## Resource System (Current)
+
+This repository now has a machine-readable and searchable resource pipeline:
+
+- Canonical catalog: [resources/catalog/resources.json](resources/catalog/resources.json)
+- Catalog schema: [resources/schema/resource.schema.json](resources/schema/resource.schema.json)
+- Candidate feed (auto-generated): [resources/catalog/pending_candidates.json](resources/catalog/pending_candidates.json)
+- Search UI: [docs/search/index.html](docs/search/index.html)
+- Search data export: [docs/search/resources.json](docs/search/resources.json)
+- Full index docs: [docs/resource_catalog.md](docs/resource_catalog.md)
+- Automation docs: [docs/resource_automation.md](docs/resource_automation.md)
+
+## How New Resources Are Added
+
+The process is semi-automatic:
+
+1. Auto discovery:
+- Weekly GitHub Action runs `.github/workflows/resource_sync.yml`.
+- It updates `resources/catalog/pending_candidates.json` and opens a review PR.
+
+2. Manual review and promotion:
+- Maintainers inspect candidate quality, Pashto evidence, and license/usage compatibility.
+- Approved entries are moved into `resources/catalog/resources.json` with `status: verified`.
+
+3. Regeneration and validation:
+- Run `python scripts/validate_resource_catalog.py`
+- Run `python scripts/generate_resource_views.py`
+- Commit generated updates (`resources/*/README.md` and `docs/search/resources.json`).
+
+This prevents low-confidence links from being merged directly while still automating discovery.
+
+## Quickstart
+
+```bash
+python -m pip install -e ".[dev]"
+python scripts/validate_resource_catalog.py
+python scripts/generate_resource_views.py
+python scripts/check_links.py
+python -m pytest -q
+```
+
+## Documentation Map
 - Purpose: [PROJECT_PURPOSE.md](PROJECT_PURPOSE.md)
 - Contributing: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Roadmap: [ROADMAP.md](ROADMAP.md)
@@ -32,40 +75,22 @@ Community-led open-source project to make Pashto a first-class language in AI sp
 - License policy: [LICENSE_POLICY.md](LICENSE_POLICY.md)
 - Changelog: [CHANGELOG.md](CHANGELOG.md)
 - Community: [community/COMMUNICATION.md](community/COMMUNICATION.md)
-- Docs home: [docs/README.md](docs/README.md)
-- Release process: [docs/release_process.md](docs/release_process.md)
-- Release checklist: [docs/release_checklist.md](docs/release_checklist.md)
-- Workstreams: [docs/workstreams.md](docs/workstreams.md)
+- Docs hub: [docs/README.md](docs/README.md)
 - Resource index: [docs/resource_catalog.md](docs/resource_catalog.md)
-- Structured resources: [resources/README.md](resources/README.md)
+- Resource automation: [docs/resource_automation.md](docs/resource_automation.md)
 
-## 📚 Verified Resource Catalog
-The project tracks validated external resources in:
-- [docs/resource_catalog.md](docs/resource_catalog.md) (master index)
-- [resources/catalog/resources.json](resources/catalog/resources.json) (canonical machine-readable catalog)
-- [resources/schema/resource.schema.json](resources/schema/resource.schema.json) (catalog schema)
-- [resources/datasets/README.md](resources/datasets/README.md)
-- [resources/models/README.md](resources/models/README.md)
-- [resources/benchmarks/README.md](resources/benchmarks/README.md)
-- [resources/tools/README.md](resources/tools/README.md)
-- [resources/papers/README.md](resources/papers/README.md)
+## Resource Sections
+- Datasets: [resources/datasets/README.md](resources/datasets/README.md)
+- Models: [resources/models/README.md](resources/models/README.md)
+- Benchmarks: [resources/benchmarks/README.md](resources/benchmarks/README.md)
+- Tools: [resources/tools/README.md](resources/tools/README.md)
+- Papers: [resources/papers/README.md](resources/papers/README.md)
 
-## 🎙️ Featured Dataset: Common Voice Pashto
-- Dataset: Common Voice Scripted Speech 24.0 - Pashto
-- Source: [Mozilla Data Collective - Common Voice Pashto 24.0](https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14)
-- Integration guide: [docs/common_voice_pashto_24.md](docs/common_voice_pashto_24.md)
-
-## 🙌 Contribute Through Mozilla Common Voice
-- Speak: [commonvoice.mozilla.org/ps/speak](https://commonvoice.mozilla.org/ps/speak)
-- Write: [commonvoice.mozilla.org/ps/write](https://commonvoice.mozilla.org/ps/write)
-- Listen: [commonvoice.mozilla.org/ps/listen](https://commonvoice.mozilla.org/ps/listen)
-- Review: [commonvoice.mozilla.org/ps/review](https://commonvoice.mozilla.org/ps/review)
-
-## 🧩 Workspaces
-- [data/](data/README.md) datasets, curation, metadata, quality
-- [asr/](asr/README.md) ASR baselines and experiments
-- [tts/](tts/README.md) TTS baselines and experiments
-- [benchmarks/](benchmarks/README.md) benchmark sets and evaluation
-- [experiments/](experiments/README.md) reproducible run cards
-- [apps/desktop/](apps/desktop/README.md) user-facing integration references
-- [models/](models/README.md) model layout and release conventions
+## Workspaces
+- [data/](data/README.md): datasets, curation, metadata, quality
+- [asr/](asr/README.md): ASR baselines and experiments
+- [tts/](tts/README.md): TTS baselines and experiments
+- [benchmarks/](benchmarks/README.md): benchmark sets and evaluation
+- [experiments/](experiments/README.md): reproducible run cards
+- [apps/desktop/](apps/desktop/README.md): user-facing integration references
+- [models/](models/README.md): model layout and release conventions

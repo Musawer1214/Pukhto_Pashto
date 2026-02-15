@@ -62,7 +62,9 @@
             "model",
             "benchmark",
             "tool",
-            "paper"
+            "paper",
+            "project",
+            "code"
           ]
         },
         "source": {

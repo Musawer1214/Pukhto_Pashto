@@ -21,6 +21,8 @@ What it executes:
 4. `python scripts/check_links.py`
 5. `python -m pytest -q`
 
+Candidate sources in the sync step include Kaggle datasets, Hugging Face datasets/models/spaces, GitHub repositories, and paper endpoints.
+
 ## Discovery-only mode
 If you only want fresh candidates:
 

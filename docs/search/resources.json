@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-02-15T00:00:00Z",
-  "count": 30,
+  "count": 37,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -716,6 +716,184 @@
         "pashto",
         "ps",
         "ps_af"
+      ]
+    },
+    {
+      "id": "dataset-kaggle-pold-pashto-offensive",
+      "title": "POLD - Pashto Offensive Language Dataset",
+      "url": "https://www.kaggle.com/datasets/drijaz/pold-pashto-offensive-language-dataset",
+      "category": "dataset",
+      "source": "kaggle",
+      "status": "verified",
+      "summary": "Benchmark dataset for offensive content detection in Pashto social text.",
+      "primary_use": "Pashto toxicity and moderation NLP benchmarks",
+      "tasks": [
+        "nlp",
+        "classification"
+      ],
+      "tags": [
+        "pashto",
+        "kaggle",
+        "nlp",
+        "toxicity"
+      ],
+      "evidence_text": "Kaggle title and description explicitly state Pashto offensive language benchmark dataset.",
+      "evidence_url": "https://www.kaggle.com/api/v1/datasets/view/drijaz/pold-pashto-offensive-language-dataset",
+      "markers": [
+        "Pashto"
+      ]
+    },
+    {
+      "id": "dataset-kaggle-pashto-english-sentiment-corpus",
+      "title": "Pashto English Bilingual Sentiment Corpus",
+      "url": "https://www.kaggle.com/datasets/farhadkhan66/pashto-translated-corpus",
+      "category": "dataset",
+      "source": "kaggle",
+      "status": "verified",
+      "summary": "Pashto to English bilingual sentiment corpus useful for low-resource sentiment tasks.",
+      "primary_use": "Sentiment analysis and bilingual NLP experiments",
+      "tasks": [
+        "nlp",
+        "sentiment"
+      ],
+      "tags": [
+        "pashto",
+        "kaggle",
+        "sentiment",
+        "bilingual"
+      ],
+      "evidence_text": "Kaggle dataset title and description identify the corpus as Pashto-English sentiment data.",
+      "evidence_url": "https://www.kaggle.com/api/v1/datasets/view/farhadkhan66/pashto-translated-corpus",
+      "markers": [
+        "Pashto"
+      ]
+    },
+    {
+      "id": "dataset-kaggle-urdu-pashto-lexicon",
+      "title": "Urdu-Pashto Lexicon Dataset",
+      "url": "https://www.kaggle.com/datasets/shafeeqgigyani/urdu-pashto-lexicon-dataset",
+      "category": "dataset",
+      "source": "kaggle",
+      "status": "verified",
+      "summary": "Lexicon of Urdu words with Pashto translations for dictionary and MT support.",
+      "primary_use": "Lexicon and translation lexeme mapping",
+      "tasks": [
+        "nlp",
+        "mt"
+      ],
+      "tags": [
+        "pashto",
+        "kaggle",
+        "lexicon",
+        "translation"
+      ],
+      "evidence_text": "Kaggle metadata describes 7,601 Urdu entries with Pashto translations.",
+      "evidence_url": "https://www.kaggle.com/api/v1/datasets/view/shafeeqgigyani/urdu-pashto-lexicon-dataset",
+      "markers": [
+        "Pashto"
+      ]
+    },
+    {
+      "id": "project-hf-space-ihanif-pashto-asr-v3",
+      "title": "Pashto ASR V3 Space",
+      "url": "https://huggingface.co/spaces/ihanif/pashto-asr-v3",
+      "category": "project",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Interactive Hugging Face Space for Pashto automatic speech recognition demos.",
+      "primary_use": "Project demo for Pashto ASR user testing",
+      "tasks": [
+        "asr",
+        "demo"
+      ],
+      "tags": [
+        "pashto",
+        "project",
+        "huggingface-space",
+        "asr"
+      ],
+      "evidence_text": "Space card title is Pashto ASR V3 and short description states Pashto ASR.",
+      "evidence_url": "https://huggingface.co/api/spaces/ihanif/pashto-asr-v3",
+      "markers": [
+        "Pashto",
+        "ASR"
+      ]
+    },
+    {
+      "id": "project-hf-space-pashto2english-dictionary",
+      "title": "Pashto to English Dictionary Space",
+      "url": "https://huggingface.co/spaces/EngrAamirBangash/Pashto2English-Dictionary",
+      "category": "project",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Streamlit project for Pashto to English dictionary lookups.",
+      "primary_use": "Interactive bilingual lookup project",
+      "tasks": [
+        "dictionary",
+        "translation",
+        "demo"
+      ],
+      "tags": [
+        "pashto",
+        "project",
+        "huggingface-space",
+        "dictionary"
+      ],
+      "evidence_text": "Space metadata title states Pashto to English Dictionary.",
+      "evidence_url": "https://huggingface.co/api/spaces/EngrAamirBangash/Pashto2English-Dictionary",
+      "markers": [
+        "Pashto"
+      ]
+    },
+    {
+      "id": "project-hf-space-umar4321-pashto-translator",
+      "title": "Pashto Translator Space",
+      "url": "https://huggingface.co/spaces/Umar4321/Pashto-Translator",
+      "category": "project",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Streamlit translator project for Pashto to English and Urdu conversion.",
+      "primary_use": "Interactive translation project demo",
+      "tasks": [
+        "translation",
+        "demo"
+      ],
+      "tags": [
+        "pashto",
+        "project",
+        "huggingface-space",
+        "translation"
+      ],
+      "evidence_text": "Space title is Pashto Translator and description states Pashto to English and Urdu translation.",
+      "evidence_url": "https://huggingface.co/api/spaces/Umar4321/Pashto-Translator",
+      "markers": [
+        "Pashto"
+      ]
+    },
+    {
+      "id": "code-github-ijazul-haq-nlpashto",
+      "title": "nlpashto Toolkit",
+      "url": "https://github.com/ijazul-haq/nlpashto",
+      "category": "code",
+      "source": "github",
+      "status": "verified",
+      "summary": "Pashto NLP toolkit codebase for tokenization, embeddings, and downstream NLP workflows.",
+      "primary_use": "Pashto NLP code integration and experimentation",
+      "tasks": [
+        "nlp",
+        "tooling"
+      ],
+      "tags": [
+        "pashto",
+        "code",
+        "github",
+        "nlp"
+      ],
+      "evidence_text": "Repository name and description explicitly identify a Pashto NLP toolkit.",
+      "evidence_url": "https://api.github.com/repos/ijazul-haq/nlpashto",
+      "markers": [
+        "Pashto",
+        "NLP"
       ]
     }
   ]

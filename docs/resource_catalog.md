@@ -20,6 +20,8 @@ This index points to validated Pashto-related resources tracked in structured fi
 - Benchmarks: [../resources/benchmarks/README.md](../resources/benchmarks/README.md)
 - Tools: [../resources/tools/README.md](../resources/tools/README.md)
 - Papers: [../resources/papers/README.md](../resources/papers/README.md)
+- Projects: [../resources/projects/README.md](../resources/projects/README.md)
+- Code: [../resources/codes/README.md](../resources/codes/README.md)
 
 ## Search page
 - GitHub Pages search UI: [search/index.html](search/index.html)

@@ -2,7 +2,7 @@
   "id": "example-resource-id",
   "title": "Example Resource Title",
   "url": "https://example.org/resource",
-  "category": "dataset",
+  "category": "project",
   "source": "other",
   "status": "verified",
   "summary": "One-line summary explaining why this resource matters for Pashto in technology.",

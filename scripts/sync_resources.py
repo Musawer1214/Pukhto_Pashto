@@ -108,6 +108,138 @@ def fetch_huggingface(kind: str, limit: int) -> list[dict[str, Any]]:
     return out
 
 
+def fetch_huggingface_spaces(limit: int) -> list[dict[str, Any]]:
+    query = urllib.parse.urlencode({"search": "pashto", "limit": str(limit)})
+    url = f"https://huggingface.co/api/spaces?{query}"
+    payload = _fetch_json(url)
+
+    out: list[dict[str, Any]] = []
+    for item in payload:
+        space_id = item.get("id")
+        if not space_id:
+            continue
+        space_url = f"https://huggingface.co/spaces/{space_id}"
+        rid = f"candidate-hf-project-{_slug(space_id)}"
+        summary = "Candidate project app returned from Hugging Face Spaces Pashto search."
+        out.append(
+            _candidate(
+                rid=rid,
+                title=space_id,
+                url=space_url,
+                category="project",
+                source="huggingface",
+                summary=summary,
+                evidence_text="Matched by Pashto keyword in Hugging Face Spaces search.",
+                evidence_url=space_url,
+                markers=["pashto"],
+                tags=["pashto", "candidate", "project", "space"],
+            )
+        )
+    return out
+
+
+def fetch_kaggle_datasets(limit: int) -> list[dict[str, Any]]:
+    # Public Kaggle dataset listing endpoint (no auth needed for list responses).
+    query = urllib.parse.urlencode({"search": "pashto", "page": "1"})
+    url = f"https://www.kaggle.com/api/v1/datasets/list?{query}"
+    payload = _fetch_json(url)
+
+    out: list[dict[str, Any]] = []
+    for item in payload:
+        title = (item.get("titleNullable") or "").strip()
+        dataset_url = (item.get("urlNullable") or "").strip()
+        owner = (item.get("ownerRefNullable") or "").strip()
+        subtitle = (item.get("subtitleNullable") or "").strip()
+        if not title or not dataset_url:
+            continue
+
+        blob = f"{title} {subtitle}".lower()
+        if "pashto" not in blob and "pukhto" not in blob:
+            continue
+
+        owner_prefix = f"{owner}/" if owner else ""
+        rid = f"candidate-kaggle-dataset-{_slug(owner_prefix + title)}"
+        out.append(
+            _candidate(
+                rid=rid,
+                title=title,
+                url=dataset_url,
+                category="dataset",
+                source="kaggle",
+                summary=(subtitle or "Candidate Kaggle dataset returned from Pashto search.")[:240],
+                evidence_text="Kaggle dataset title/subtitle includes Pashto keyword.",
+                evidence_url=dataset_url,
+                markers=["Pashto"],
+                tags=["pashto", "candidate", "dataset", "kaggle"],
+            )
+        )
+        if len(out) >= limit:
+            break
+    return out
+
+
+def fetch_github_pashto_repos(limit: int) -> list[dict[str, Any]]:
+    # Query by topic first for high precision, then by keyword for recall.
+    query_variants = [
+        "topic:pashto",
+        "pashto in:name,description,readme",
+    ]
+
+    combined: dict[str, dict[str, Any]] = {}
+    for query_text in query_variants:
+        query = urllib.parse.urlencode(
+            {"q": query_text, "sort": "stars", "order": "desc", "per_page": str(limit)}
+        )
+        url = f"https://api.github.com/search/repositories?{query}"
+        payload = _fetch_json(url)
+        for item in payload.get("items", []):
+            full_name = item.get("full_name")
+            html_url = item.get("html_url")
+            if not full_name or not html_url:
+                continue
+            combined[full_name] = item
+
+    out: list[dict[str, Any]] = []
+    for full_name, item in sorted(combined.items(), key=lambda kv: kv[1].get("stargazers_count", 0), reverse=True):
+        name_blob = " ".join(
+            [
+                full_name or "",
+                item.get("name") or "",
+                item.get("description") or "",
+                " ".join(item.get("topics") or []),
+            ]
+        ).lower()
+        if "pashto" not in name_blob and "pukhto" not in name_blob:
+            continue
+
+        html_url = item["html_url"]
+        category = "project"
+        topics = item.get("topics") or []
+        if any(token in name_blob for token in ("toolkit", "library", "nlp", "asr", "tts", "ocr", "api", "code")):
+            category = "code"
+
+        rid = f"candidate-gh-{category}-{_slug(full_name)}"
+        description = (item.get("description") or "").strip()
+        summary = description or "Candidate Pashto-related GitHub repository."
+        out.append(
+            _candidate(
+                rid=rid,
+                title=full_name,
+                url=html_url,
+                category=category,
+                source="github",
+                summary=summary[:240] if summary else "Candidate Pashto-related GitHub repository.",
+                evidence_text="Repository metadata (name/description/topics) includes Pashto markers.",
+                evidence_url=html_url,
+                markers=["pashto"],
+                tags=["pashto", "candidate", category, "github", *(topics[:3])],
+            )
+        )
+        if len(out) >= limit:
+            break
+    return out
+
+
 def fetch_arxiv(limit: int) -> list[dict[str, Any]]:
     query = urllib.parse.urlencode(
         {"search_query": "all:pashto", "start": "0", "max_results": str(limit)}
@@ -228,8 +360,11 @@ def main() -> int:
     sources_used: list[str] = []
 
     fetch_steps = [
+        ("kaggle-datasets", lambda: fetch_kaggle_datasets(args.limit)),
         ("huggingface-datasets", lambda: fetch_huggingface("datasets", args.limit)),
         ("huggingface-models", lambda: fetch_huggingface("models", args.limit)),
+        ("huggingface-spaces", lambda: fetch_huggingface_spaces(args.limit)),
+        ("github-repositories", lambda: fetch_github_pashto_repos(args.limit)),
         ("arxiv", lambda: fetch_arxiv(args.limit)),
         ("semantic-scholar", lambda: fetch_semantic_scholar(args.limit)),
     ]

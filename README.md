@@ -89,6 +89,8 @@ python -m pytest -q
 - Benchmarks: [resources/benchmarks/README.md](resources/benchmarks/README.md)
 - Tools: [resources/tools/README.md](resources/tools/README.md)
 - Papers: [resources/papers/README.md](resources/papers/README.md)
+- Projects: [resources/projects/README.md](resources/projects/README.md)
+- Code: [resources/codes/README.md](resources/codes/README.md)
 
 ## Workspaces
 - [data/](data/README.md): datasets, curation, metadata, quality

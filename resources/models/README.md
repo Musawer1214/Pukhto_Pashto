@@ -4,6 +4,13 @@
 
 | Resource | Link | Pashto Evidence | Primary Use |
 |---|---|---|---|
+| ihanif/pashto-asr-base | [huggingface](https://huggingface.co/ihanif/pashto-asr-base) | [Matched by Pashto keyword in Hugging Face search results. (`pashto`)](https://huggingface.co/ihanif/pashto-asr-base) | Pashto ASR baseline and model comparison |
+| ihanif/wav2vec2-xls-r-300m-pashto-lm | [huggingface](https://huggingface.co/ihanif/wav2vec2-xls-r-300m-pashto-lm) | [Matched by Pashto keyword in Hugging Face search results. (`pashto`)](https://huggingface.co/ihanif/wav2vec2-xls-r-300m-pashto-lm) | Pashto ASR baseline and model comparison |
+| ihanif/whisper-large-pashto | [huggingface](https://huggingface.co/ihanif/whisper-large-pashto) | [Matched by Pashto keyword in Hugging Face search results. (`pashto`)](https://huggingface.co/ihanif/whisper-large-pashto) | Pashto ASR baseline and model comparison |
+| ihanif/whisper-medium-pashto-3e-7 | [huggingface](https://huggingface.co/ihanif/whisper-medium-pashto-3e-7) | [Matched by Pashto keyword in Hugging Face search results. (`pashto`)](https://huggingface.co/ihanif/whisper-medium-pashto-3e-7) | Pashto ASR baseline and model comparison |
+| ihanif/whisper-small-pashto | [huggingface](https://huggingface.co/ihanif/whisper-small-pashto) | [Matched by Pashto keyword in Hugging Face search results. (`pashto`)](https://huggingface.co/ihanif/whisper-small-pashto) | Pashto ASR baseline and model comparison |
+| ihanif/xls-r-1b-pashto | [huggingface](https://huggingface.co/ihanif/xls-r-1b-pashto) | [Matched by Pashto keyword in Hugging Face search results. (`pashto`)](https://huggingface.co/ihanif/xls-r-1b-pashto) | Pashto ASR baseline and model comparison |
+| ijazulhaq/bert-base-pashto-v1 | [huggingface](https://huggingface.co/ijazulhaq/bert-base-pashto-v1) | [Matched by Pashto keyword in Hugging Face search results. (`pashto`)](https://huggingface.co/ijazulhaq/bert-base-pashto-v1) | Pashto model baseline for downstream NLP tasks |
 | MMS 1B All | [huggingface](https://huggingface.co/facebook/mms-1b-all) | [MMS coverage table includes pus with ASR support. (`pus`)](https://dl.fbaipublicfiles.com/mms/misc/language_coverage_mms.html) | ASR transfer baseline |
 | MMS TTS | [huggingface](https://huggingface.co/facebook/mms-tts) | [MMS coverage table includes pus with TTS support. (`pus`)](https://dl.fbaipublicfiles.com/mms/misc/language_coverage_mms.html) | TTS baseline and transfer |
 | NLLB-200 Distilled 600M | [huggingface](https://huggingface.co/facebook/nllb-200-distilled-600M) | [Model special token map includes pbt_Arab. (`pbt_Arab`)](https://huggingface.co/facebook/nllb-200-distilled-600M/blob/main/special_tokens_map.json) | Pashto translation baseline |

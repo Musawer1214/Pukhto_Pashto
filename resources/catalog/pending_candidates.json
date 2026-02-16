@@ -1,13 +1,12 @@
 {
-  "generated_on": "2026-02-16T06:14:17.639130+00:00",
+  "generated_on": "2026-02-16T07:10:48.555469+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
     "huggingface-models",
-    "huggingface-spaces",
-    "github-repositories"
+    "huggingface-spaces"
   ],
-  "candidate_count": 85,
+  "candidate_count": 67,
   "candidates": [
     {
       "id": "candidate-hf-dataset-aamirhs-pashto",
@@ -173,29 +172,6 @@
       ]
     },
     {
-      "id": "candidate-hf-dataset-adnankhan769-english-to-pashto-sentences-dataset",
-      "title": "adnankhan769/english_to_pashto_sentences_dataset",
-      "url": "https://huggingface.co/datasets/adnankhan769/english_to_pashto_sentences_dataset",
-      "category": "dataset",
-      "source": "huggingface",
-      "status": "candidate",
-      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
-        "evidence_url": "https://huggingface.co/datasets/adnankhan769/english_to_pashto_sentences_dataset",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "dataset"
-      ]
-    },
-    {
       "id": "candidate-hf-dataset-adnankhan769-proper-dataset-english-2-pashto",
       "title": "adnankhan769/proper_dataset_english_2_pashto",
       "url": "https://huggingface.co/datasets/adnankhan769/proper_dataset_english_2_pashto",
@@ -311,33 +287,6 @@
         "pashto",
         "candidate",
         "dataset"
-      ]
-    },
-    {
-      "id": "candidate-gh-project-amirajorloo-jira-auto-direction-chrome-extension",
-      "title": "amirajorloo/jira-auto-direction-chrome-extension",
-      "url": "https://github.com/amirajorloo/jira-auto-direction-chrome-extension",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "This is an extension to set dir=\"auto\" in content wrappers to make them right-aligned when the language is an RTL language (like Persian, Arabic, ...)",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/amirajorloo/jira-auto-direction-chrome-extension",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "arabic",
-        "chrome-extension",
-        "farsi"
       ]
     },
     {
@@ -479,87 +428,6 @@
         "candidate",
         "dataset",
         "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-gh-project-fazlullahmamond-hadith-collection-pashto",
-      "title": "Fazlullahmamond/hadith-collection-pashto",
-      "url": "https://github.com/Fazlullahmamond/hadith-collection-pashto",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "Hadith collection in Pashto language, developed by flutter.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/Fazlullahmamond/hadith-collection-pashto",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "flutter",
-        "hadith",
-        "islamic"
-      ]
-    },
-    {
-      "id": "candidate-gh-project-fazlullahmamond-pashto-typing",
-      "title": "Fazlullahmamond/Pashto-Typing",
-      "url": "https://github.com/Fazlullahmamond/Pashto-Typing",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "Check how many Pashto words you can type in one minute, check you typing speed in Pashto language, imporve your Pashto typing speed, learn how to type in Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/Fazlullahmamond/Pashto-Typing",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "checkspeed",
-        "pashto",
-        "pashto-language"
-      ]
-    },
-    {
-      "id": "candidate-gh-project-haseebjanhamraz-pashtofonts",
-      "title": "haseebjanhamraz/PashtoFonts",
-      "url": "https://github.com/haseebjanhamraz/PashtoFonts",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "This repo contains Pashto fonts hosted by pashtology.com",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/haseebjanhamraz/PashtoFonts",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "fonts",
-        "fontserver",
-        "pashto"
       ]
     },
     {
@@ -842,29 +710,6 @@
       ]
     },
     {
-      "id": "candidate-hf-model-ihanif-whisper-base-pashto",
-      "title": "ihanif/whisper-base-pashto",
-      "url": "https://huggingface.co/ihanif/whisper-base-pashto",
-      "category": "model",
-      "source": "huggingface",
-      "status": "candidate",
-      "summary": "Candidate model returned from Hugging Face search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
-        "evidence_url": "https://huggingface.co/ihanif/whisper-base-pashto",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "model"
-      ]
-    },
-    {
       "id": "candidate-hf-model-ihanif-whisper-large-pashto",
       "title": "ihanif/whisper-large-pashto",
       "url": "https://huggingface.co/ihanif/whisper-large-pashto",
@@ -1001,33 +846,6 @@
         "pashto",
         "candidate",
         "model"
-      ]
-    },
-    {
-      "id": "candidate-gh-project-ihyacommunity-khushkhat-extension",
-      "title": "IhyaCommunity/Khushkhat-Extension",
-      "url": "https://github.com/IhyaCommunity/Khushkhat-Extension",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "Beautifies Arabic, Persian, Urdu, Pashto and other right-to-left (RTL) languages",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/IhyaCommunity/Khushkhat-Extension",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "addon",
-        "arabic",
-        "beautify"
       ]
     },
     {
@@ -1378,87 +1196,6 @@
       ]
     },
     {
-      "id": "candidate-gh-project-lecramyajiv-fonts-arabic-extra",
-      "title": "lecramyajiv/fonts-arabic-extra",
-      "url": "https://github.com/lecramyajiv/fonts-arabic-extra",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "Extra Arabic fonts for Slackware Linux",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/lecramyajiv/fonts-arabic-extra",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "arabic",
-        "fonts",
-        "kufi"
-      ]
-    },
-    {
-      "id": "candidate-gh-project-lecramyajiv-ttf-x2",
-      "title": "lecramyajiv/ttf-x2",
-      "url": "https://github.com/lecramyajiv/ttf-x2",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "X Series 2 Webfont for Arabic Script",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/lecramyajiv/ttf-x2",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "arabic",
-        "dari",
-        "farsi"
-      ]
-    },
-    {
-      "id": "candidate-gh-code-lgug2z-tashkil",
-      "title": "LGUG2Z/tashkil",
-      "url": "https://github.com/LGUG2Z/tashkil",
-      "category": "code",
-      "source": "github",
-      "status": "candidate",
-      "summary": "A lightweight Rust library for removing Arabic diacritics",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/LGUG2Z/tashkil",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "code",
-        "github",
-        "arabic",
-        "dari",
-        "diacritics"
-      ]
-    },
-    {
       "id": "candidate-hf-project-mahmudaq-pashtoasrnmt1",
       "title": "mahmudaq/PashtoASRNMT1",
       "url": "https://huggingface.co/spaces/mahmudaq/PashtoASRNMT1",
@@ -1483,59 +1220,6 @@
       ]
     },
     {
-      "id": "candidate-gh-project-mastermoo-pashto-quran",
-      "title": "mastermoo/pashto-quran",
-      "url": "https://github.com/mastermoo/pashto-quran",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "Website for reading Quran with Pashto translation",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/mastermoo/pashto-quran",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "pashto",
-        "quran"
-      ]
-    },
-    {
-      "id": "candidate-gh-project-nanonulla-lorem",
-      "title": "NanoNulla/lorem",
-      "url": "https://github.com/NanoNulla/lorem",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "ایجاد متن های ساختگی دری و پشتو",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/NanoNulla/lorem",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "dari",
-        "lorem",
-        "pashto"
-      ]
-    },
-    {
       "id": "candidate-hf-project-nasirkhansayyad-pashto-whisper-demo",
       "title": "nasirkhansayyad/pashto-whisper-demo",
       "url": "https://huggingface.co/spaces/nasirkhansayyad/pashto-whisper-demo",
@@ -1557,33 +1241,6 @@
         "candidate",
         "project",
         "space"
-      ]
-    },
-    {
-      "id": "candidate-gh-project-omid-persian-log2vis",
-      "title": "omid/Persian-Log2Vis",
-      "url": "https://github.com/omid/Persian-Log2Vis",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "Persian Log2Vis / Arabic Log2Vis / A PHP project to convert logical UTF8 Persian and Arabic characters to visual.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/omid/Persian-Log2Vis",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "arabic",
-        "arabic-language",
-        "character"
       ]
     },
     {
@@ -1731,29 +1388,6 @@
       ]
     },
     {
-      "id": "candidate-hf-dataset-saillab-alpaca-pashto-cleaned",
-      "title": "saillab/alpaca-pashto-cleaned",
-      "url": "https://huggingface.co/datasets/saillab/alpaca-pashto-cleaned",
-      "category": "dataset",
-      "source": "huggingface",
-      "status": "candidate",
-      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
-        "evidence_url": "https://huggingface.co/datasets/saillab/alpaca-pashto-cleaned",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "dataset"
-      ]
-    },
-    {
       "id": "candidate-hf-dataset-saillab-alpaca-pashto-taco",
       "title": "saillab/alpaca_pashto_taco",
       "url": "https://huggingface.co/datasets/saillab/alpaca_pashto_taco",
@@ -1777,33 +1411,6 @@
       ]
     },
     {
-      "id": "candidate-gh-project-shahzamanpatan-pashto-baran",
-      "title": "ShahZamanPatan/Pashto-Baran",
-      "url": "https://github.com/ShahZamanPatan/Pashto-Baran",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "پښتو باران يوه پښتو ليکبڼه ده چې په ځانګړې توګه د پښتو ژبې وېبپاڼو لپاره د نازنين او اېکس بي کيهان ليکبڼو تر اغېز لاندې ډيزاين شوې ده تاسو کولی شئ ياده ليکبڼه هرځای کې له وړيا سوداګريزې کارونې جواز سره د پښتو، اردو، عربي، فارسي، کهوار، سرائ",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/ShahZamanPatan/Pashto-Baran",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "fonts",
-        "freepashtofonts",
-        "pashto"
-      ]
-    },
-    {
       "id": "candidate-hf-dataset-sherwindesouza-pashto-common-voice-20",
       "title": "SherwinDesouza/pashto-common-voice-20",
       "url": "https://huggingface.co/datasets/SherwinDesouza/pashto-common-voice-20",
@@ -1824,33 +1431,6 @@
         "pashto",
         "candidate",
         "dataset"
-      ]
-    },
-    {
-      "id": "candidate-gh-project-sinaahmadi-persoarabiclid",
-      "title": "sinaahmadi/PersoArabicLID",
-      "url": "https://github.com/sinaahmadi/PersoArabicLID",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "PALI: Language identification for Perso-Arabic Scripts",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/sinaahmadi/PersoArabicLID",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "arabic",
-        "balochi",
-        "brahui"
       ]
     },
     {
@@ -1898,30 +1478,6 @@
         "pashto",
         "candidate",
         "dataset"
-      ]
-    },
-    {
-      "id": "candidate-hf-project-tasal9-zamai-mistral-7b-pashto-space",
-      "title": "tasal9/ZamAI-Mistral-7B-Pashto-space",
-      "url": "https://huggingface.co/spaces/tasal9/ZamAI-Mistral-7B-Pashto-space",
-      "category": "project",
-      "source": "huggingface",
-      "status": "candidate",
-      "summary": "Candidate project app returned from Hugging Face Spaces Pashto search.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Pashto keyword in Hugging Face Spaces search.",
-        "evidence_url": "https://huggingface.co/spaces/tasal9/ZamAI-Mistral-7B-Pashto-space",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "space"
       ]
     },
     {
@@ -2018,36 +1574,10 @@
         "project",
         "space"
       ]
-    },
-    {
-      "id": "candidate-gh-project-wikis-on-git-ps-wikipedia-org",
-      "title": "wikis-on-git/ps.wikipedia.org",
-      "url": "https://github.com/wikis-on-git/ps.wikipedia.org",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "Wikipedia in Pashto (پښتو)",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/wikis-on-git/ps.wikipedia.org",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "mediawiki",
-        "pashto",
-        "wikipedia"
-      ]
     }
   ],
   "errors": [
+    "github-repositories: IncompleteRead(0 bytes read)",
     "arxiv: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)>",
     "semantic-scholar: HTTP Error 429: "
   ]

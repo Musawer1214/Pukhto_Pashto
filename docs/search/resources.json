@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-02-16T00:00:00Z",
-  "count": 42,
+  "count": 46,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -1022,6 +1022,107 @@
       "markers": [
         "Pashto",
         "OCR"
+      ]
+    },
+    {
+      "id": "dataset-hf-adnankhan769-english-to-pashto",
+      "title": "English to Pashto Sentences Dataset",
+      "url": "https://huggingface.co/datasets/adnankhan769/english_to_pashto_sentences_dataset",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Parallel English-Pashto sentence dataset for bilingual NLP and translation experiments.",
+      "primary_use": "MT and bilingual sentence alignment baseline",
+      "tasks": [
+        "mt",
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "dataset",
+        "huggingface",
+        "translation"
+      ],
+      "evidence_text": "Dataset ID explicitly states English-to-Pashto and includes Pashto-script sentence column.",
+      "evidence_url": "https://huggingface.co/api/datasets/adnankhan769/english_to_pashto_sentences_dataset",
+      "markers": [
+        "Pashto"
+      ]
+    },
+    {
+      "id": "dataset-hf-saillab-alpaca-pashto-cleaned",
+      "title": "alpaca-pashto-cleaned",
+      "url": "https://huggingface.co/datasets/saillab/alpaca-pashto-cleaned",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Instruction-style Pashto text dataset suitable for LLM tuning and instruction-following research.",
+      "primary_use": "Pashto instruction tuning and conversational NLP experiments",
+      "tasks": [
+        "nlp",
+        "llm"
+      ],
+      "tags": [
+        "pashto",
+        "dataset",
+        "huggingface",
+        "instruction"
+      ],
+      "evidence_text": "Dataset metadata includes language:ps and dataset name includes Pashto.",
+      "evidence_url": "https://huggingface.co/api/datasets/saillab/alpaca-pashto-cleaned",
+      "markers": [
+        "ps",
+        "Pashto"
+      ]
+    },
+    {
+      "id": "model-hf-ihanif-whisper-base-pashto",
+      "title": "Whisper Base Pashto",
+      "url": "https://huggingface.co/ihanif/whisper-base-pashto",
+      "category": "model",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Fine-tuned Whisper Base checkpoint for Pashto ASR with FLEURS ps_af evaluation metadata.",
+      "primary_use": "Pashto ASR baseline and speed-accuracy comparison",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "model",
+        "huggingface",
+        "asr"
+      ],
+      "evidence_text": "Model ID includes Pashto and card metadata references FLEURS config ps_af.",
+      "evidence_url": "https://huggingface.co/api/models/ihanif/whisper-base-pashto",
+      "markers": [
+        "Pashto",
+        "ps_af"
+      ]
+    },
+    {
+      "id": "project-hf-space-zamai-mistral-7b-pashto",
+      "title": "ZamAI-Mistral-7B-Pashto Space",
+      "url": "https://huggingface.co/spaces/tasal9/ZamAI-Mistral-7B-Pashto-space",
+      "category": "project",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Gradio project space demonstrating a Pashto-adapted Mistral 7B interface.",
+      "primary_use": "Interactive Pashto LLM project demo",
+      "tasks": [
+        "llm",
+        "demo"
+      ],
+      "tags": [
+        "pashto",
+        "project",
+        "huggingface-space",
+        "llm"
+      ],
+      "evidence_text": "Space title and ID explicitly include Pashto and model card metadata exposes project details.",
+      "evidence_url": "https://huggingface.co/api/spaces/tasal9/ZamAI-Mistral-7B-Pashto-space",
+      "markers": [
+        "Pashto"
       ]
     }
   ]

@@ -1,19 +1,14 @@
----
-license: apache-2.0
-language:
-- ps
-tags:
-- pashto
-- asr
-- tts
-- nlp
----
-
-![Pukhto Pashto Repository Banner](Repository_banner_Image.png)
-
 # Pukhto/Pashto Open Language Project
 
 Community-led open-source project to make Pashto a first-class language in speech and language technology.
+
+## Start Here: Pashto Resource Search
+
+**Main Resource Hub:** [Pashto Resource Search](https://musawer1214.github.io/Pukhto_Pashto/search/)
+
+Use this first to find Pashto datasets, models, projects, code, papers, and tools.
+
+![Pukhto Pashto Repository Banner](Repository_banner_Image.png)
 
 ## Project Links
 - GitHub: [Pukhto_Pashto](https://github.com/Musawer1214/Pukhto_Pashto)

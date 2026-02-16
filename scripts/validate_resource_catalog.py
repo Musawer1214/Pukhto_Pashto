@@ -55,6 +55,23 @@ def _contains_pashto_marker(value: str) -> bool:
     return any(marker in value for marker in ("پښتو", "پشتو"))
 
 
+def _has_pashto_evidence(evidence: dict[str, Any]) -> bool:
+    fields: list[str] = []
+    evidence_text = evidence.get("evidence_text")
+    if isinstance(evidence_text, str):
+        fields.append(evidence_text)
+
+    evidence_url = evidence.get("evidence_url")
+    if isinstance(evidence_url, str):
+        fields.append(evidence_url)
+
+    markers = evidence.get("markers")
+    if isinstance(markers, list):
+        fields.extend(marker for marker in markers if isinstance(marker, str))
+
+    return any(_contains_pashto_marker(field) for field in fields)
+
+
 def validate_resource(resource: dict[str, Any], index: int) -> list[str]:
     errors: list[str] = []
     prefix = f"resource[{index}]"
@@ -140,11 +157,13 @@ def validate_resource(resource: dict[str, Any], index: int) -> list[str]:
         errors.append(f"{prefix}.pashto_evidence.markers must be a non-empty list of strings")
 
     if category in STRICT_PASHTO_CATEGORIES and not (
-        _contains_pashto_marker(title) or _contains_pashto_marker(url)
+        _contains_pashto_marker(title)
+        or _contains_pashto_marker(url)
+        or _has_pashto_evidence(evidence)
     ):
         errors.append(
             f"{prefix} must be Pashto-centric for category '{category}' "
-            "(include a Pashto marker in title or URL)"
+            "(include a Pashto marker in title, URL, or pashto_evidence)"
         )
 
     return errors

@@ -1,38 +1,14 @@
 {
-  "generated_on": "2026-02-15T10:54:46.151446+00:00",
+  "generated_on": "2026-02-16T06:14:17.639130+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
     "huggingface-models",
     "huggingface-spaces",
-    "github-repositories",
-    "semantic-scholar"
+    "github-repositories"
   ],
-  "candidate_count": 114,
+  "candidate_count": 85,
   "candidates": [
-    {
-      "id": "candidate-s2-a-comparative-analysis-of-pashto-ghazals-and-english-sonnets-in-17th-century",
-      "title": "A Comparative Analysis of Pashto Ghazals and English Sonnets in 17th Century",
-      "url": "https://www.semanticscholar.org/paper/55b044485b2f134c69c9b9b6dfeaa7e71e704b3d",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "This study conducts a comparative analysis of Pashto ghazals and English sonnets in 17th century  to explore their unique structures, themes, and cultural significance. Utilizing descriptive and comparative methods, the study examines how t",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/55b044485b2f134c69c9b9b6dfeaa7e71e704b3d",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
     {
       "id": "candidate-hf-dataset-aamirhs-pashto",
       "title": "aamirhs/pashto",
@@ -365,75 +341,6 @@
       ]
     },
     {
-      "id": "candidate-s2-an-acoustic-analysis-of-consonants-of-khattak-dialect-of-pashto",
-      "title": "An Acoustic Analysis of consonants of Khattak Dialect of Pashto",
-      "url": "https://www.semanticscholar.org/paper/ed06d206e60a62c2bebdd487b4f8dea253a9a0a8",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Pashto, an ancient language written in Perso-Arabic script, is predominantly spoken in Pakistan's Khyber Pakhtunkhwa Province and Afghanistan. Despite its wide usage, more research is needed on the consonantal sounds of the Khattak dialect.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/ed06d206e60a62c2bebdd487b4f8dea253a9a0a8",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-s2-an-analysis-of-the-syntactic-and-pragmatic-effects-on-word-order-flexibility-in-",
-      "title": "An Analysis of the Syntactic and Pragmatic Effects on Word Order Flexibility in Pashto and English",
-      "url": "https://www.semanticscholar.org/paper/136c23f176399f7dfc45e6ae990a975aafd7da1d",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "This research explores the syntactic and pragmatic aspects that condition word order flexibility in Pashto and English, comparing how the two languages communicate emphasis, focus, and topicalization. This paper compares the flexibility of",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/136c23f176399f7dfc45e6ae990a975aafd7da1d",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-s2-analysing-deep-meaning-of-proverbs-in-pashto-language",
-      "title": "Analysing Deep Meaning of Proverbs in Pashto Language",
-      "url": "https://www.semanticscholar.org/paper/1a804a9701c5103ed38df3350da61abdf5df2b57",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "As other ancient languages of the world, Pashto is one of them having  rich folkloric literature. One of the most important part of this literature is proverbs, which makes a special part of history of this language. These proverbs shows  d",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/1a804a9701c5103ed38df3350da61abdf5df2b57",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
       "id": "candidate-hf-dataset-arsalagrey-pashto",
       "title": "arsalagrey/pashto",
       "url": "https://huggingface.co/datasets/arsalagrey/pashto",
@@ -503,75 +410,6 @@
       ]
     },
     {
-      "id": "candidate-s2-benchmarking-whisper-for-low-resource-speech-recognition-an-n-shot-evaluation-on",
-      "title": "Benchmarking Whisper for Low-Resource Speech Recognition: An N-Shot Evaluation on Pashto, Punjabi, and Urdu",
-      "url": "https://www.semanticscholar.org/paper/13104eddc785756132a19242ac7e74442b145693",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/13104eddc785756132a19242ac7e74442b145693",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-s2-child-marriage-as-a-major-concern-in-pashto-poetry",
-      "title": "Child Marriage As A Major Concern in Pashto Poetry",
-      "url": "https://www.semanticscholar.org/paper/87fea719c6b5e4a7c65ad552fffa6b2bffef2580",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Child marriage is a major concern we read in Pashto poetry. They believe fewer financial resources left people in desperate need to survive, and it has caused both girls and boys to pay the price. Poor parents give away their girls to wealt",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/87fea719c6b5e4a7c65ad552fffa6b2bffef2580",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-s2-cinematic-misnomers-examining-the-effects-of-pashto-movie-titles-on-the-percepti",
-      "title": "Cinematic Misnomers: Examining the Effects of Pashto Movie Titles on the Perception of Pashtun Identity",
-      "url": "https://www.semanticscholar.org/paper/1b4c38ce4ceb6ac7846062bb589351cc88a36617",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "The current research is a critical study of the impacts of inappropriate and misleading titles of Pashtu movies on the perception of Pashtun identity. Because most of the titles are abusive and immoral in nature and do not conform to the st",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/1b4c38ce4ceb6ac7846062bb589351cc88a36617",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
       "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
       "title": "Common Voice 24.0: Pashto Speech Dataset",
       "url": "https://www.kaggle.com/datasets/ataullahaali/common-voice-scripted-speech-24-0-pashto",
@@ -593,52 +431,6 @@
         "candidate",
         "dataset",
         "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-s2-comparative-study-of-adjectives-in-pashto-and-dari-as-cognate-languages",
-      "title": "Comparative Study of Adjectives in Pashto and Dari as Cognate Languages",
-      "url": "https://www.semanticscholar.org/paper/558e9dd7d4027be391a39f5e5ef988cf05039dc7",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "In Pashto, adjectives align with nouns in terms of number, gender, and case, which distinguishthem from adjectives in Modern Persian-Dari. In both Old and Modern Persian, unlike in Pashto, adjectives are divided into two categories: attribu",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/558e9dd7d4027be391a39f5e5ef988cf05039dc7",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-s2-deep-learning-based-detection-of-one-and-two-column-textual-blocks-in-camera-cap",
-      "title": "Deep Learning-Based Detection of One and Two-Column Textual Blocks in Camera-Captured Pashto Documents Images",
-      "url": "https://www.semanticscholar.org/paper/8c9d2628e23d5c27edc656071f11f0e78124d182",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "The paper explores the layout analysis and classification task of Pashto document images, a field with limited research due to the language’s low-resource status. It uses Document Image Analysis (DIA) to detect one-column and two-column tex",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/8c9d2628e23d5c27edc656071f11f0e78124d182",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
       ]
     },
     {
@@ -666,29 +458,6 @@
       ]
     },
     {
-      "id": "candidate-s2-english-in-contact-with-pashto-and-other-pakistani-languages-a-review-of-studies",
-      "title": "English in contact with Pashto and other Pakistani languages: A review of studies on the language interplay",
-      "url": "https://www.semanticscholar.org/paper/9f96ab1e1d09d1a78874e9fa6e5a76401f4c481c",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Languages in contact impact each other in multiple ways. Various studies have been conducted to report how the official and the regional languages in Pakistan affect each other. However, they are too scarce to cover the multitude of the lan",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/9f96ab1e1d09d1a78874e9fa6e5a76401f4c481c",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
       "id": "candidate-kaggle-dataset-rabiakhan827-english-pashto-language-dataset-epld",
       "title": "English-Pashto Language Dataset (EPLD)",
       "url": "https://www.kaggle.com/datasets/rabiakhan827/english-pashto-language-dataset-epld",
@@ -710,29 +479,6 @@
         "candidate",
         "dataset",
         "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-s2-evaluating-the-message-of-pashto-landay-according-to-the-audience",
-      "title": "Evaluating the Message of Pashto Landay According to the Audience",
-      "url": "https://www.semanticscholar.org/paper/4d3c8ff75f35ec9fca171a53e6bafbcc88364bd6",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "This research examines the message of folk poetry and folktales (Landay), which are the content of the (Landay) and are performed and recited by people and nations for their own purposes in their daily lives. Landay reveals why people are i",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/4d3c8ff75f35ec9fca171a53e6bafbcc88364bd6",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
       ]
     },
     {
@@ -790,52 +536,6 @@
       ]
     },
     {
-      "id": "candidate-s2-fragments-of-life-in-death-world-an-analysis-of-pashto-poetry-as-a-non-violent-r",
-      "title": "Fragments of life in ‘death world’: an analysis of Pashto poetry as a non-violent resistance to necropolitics",
-      "url": "https://www.semanticscholar.org/paper/9726f372b07f677fad23e2ee27a7f50f985e8ed8",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/9726f372b07f677fad23e2ee27a7f50f985e8ed8",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-s2-gemination-in-pashto",
-      "title": "Gemination in Pashto",
-      "url": "https://www.semanticscholar.org/paper/ccf72dc1bcd0a0cd3a4b97cc7fe1830c37922c64",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "The purpose of the present study was to analyze gemination in Pashto. For this purpose, first, data was collected generally from elder native speakers who speak the Yousafzai dialect. The collected data then was verified and discussed sever",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/ccf72dc1bcd0a0cd3a4b97cc7fe1830c37922c64",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
       "id": "candidate-gh-project-haseebjanhamraz-pashtofonts",
       "title": "haseebjanhamraz/PashtoFonts",
       "url": "https://github.com/haseebjanhamraz/PashtoFonts",
@@ -875,53 +575,6 @@
       "pashto_evidence": {
         "evidence_text": "Matched by Pashto keyword in Hugging Face Spaces search.",
         "evidence_url": "https://huggingface.co/spaces/Hassaankabir/Pashto_Malgaray",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "space"
-      ]
-    },
-    {
-      "id": "candidate-s2-identifying-cultural-and-semantic-translation-errors-in-pashto-english-proverbs-",
-      "title": "Identifying Cultural and Semantic Translation Errors in Pashto–English Proverbs Translation: A Comparative Study of ChatGPT, Gemini, and Google Translations",
-      "url": "https://www.semanticscholar.org/paper/dfd31f726fb5b8be2c457d4b73f904196deae0a3",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Machine Translation (MT) has advanced rapidly with the emergence of neural and AI- powered systems, yet translating culturally embedded figurative language particularly proverbs continue to pose significant challenges, especially in low-res",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/dfd31f726fb5b8be2c457d4b73f904196deae0a3",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-hf-project-ihanif-pashto-asr",
-      "title": "ihanif/pashto-asr",
-      "url": "https://huggingface.co/spaces/ihanif/pashto-asr",
-      "category": "project",
-      "source": "huggingface",
-      "status": "candidate",
-      "summary": "Candidate project app returned from Hugging Face Spaces Pashto search.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Pashto keyword in Hugging Face Spaces search.",
-        "evidence_url": "https://huggingface.co/spaces/ihanif/pashto-asr",
         "markers": [
           "pashto"
         ]
@@ -1725,29 +1378,6 @@
       ]
     },
     {
-      "id": "candidate-s2-language-of-resistance-in-pashto-poetry-during-the-war-on-terror",
-      "title": "Language of Resistance in Pashto Poetry during the War on Terror",
-      "url": "https://www.semanticscholar.org/paper/23dbf301cdadbb3e1e309ed232baf5cfb2b6414b",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "The paper explores the compelling nature of Pashto poetry as a weapon of resistance in the War on Terror, how it has been used to reveal Pashtun identity, political protest, and cultural strength. With military activities dismantling the Pa",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/23dbf301cdadbb3e1e309ed232baf5cfb2b6414b",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
       "id": "candidate-gh-project-lecramyajiv-fonts-arabic-extra",
       "title": "lecramyajiv/fonts-arabic-extra",
       "url": "https://github.com/lecramyajiv/fonts-arabic-extra",
@@ -1879,56 +1509,6 @@
       ]
     },
     {
-      "id": "candidate-gh-code-mrychlik-worldly-ocr",
-      "title": "mrychlik/worldly-ocr",
-      "url": "https://github.com/mrychlik/worldly-ocr",
-      "category": "code",
-      "source": "github",
-      "status": "candidate",
-      "summary": "Text-to-image conversion (OCR) for Pashto and Chinese, with a view towards comprehensive, multi-lingual OCR",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/mrychlik/worldly-ocr",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "code",
-        "github",
-        "multi-lingual-ocr",
-        "ocr",
-        "pashto"
-      ]
-    },
-    {
-      "id": "candidate-s2-multilingual-interplay-and-the-influence-of-the-official-languages-on-the-use-an",
-      "title": "Multilingual interplay and the influence of the official languages on the use and transmission of the regional language Pashto: a case study of a Pashtun family in Pakistan",
-      "url": "https://www.semanticscholar.org/paper/2b42be99fa7ad002efd3cf1d1c75834b69108a07",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "ABSTRACT The impact of English and Urdu in Pakistan on the intergenerational transmission and use of the regional language, Pashto, in the family domain is not well known. This paper, therefore, examines language use patterns in a middle-cl",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/2b42be99fa7ad002efd3cf1d1c75834b69108a07",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
       "id": "candidate-gh-project-nanonulla-lorem",
       "title": "NanoNulla/lorem",
       "url": "https://github.com/NanoNulla/lorem",
@@ -2004,29 +1584,6 @@
         "arabic",
         "arabic-language",
         "character"
-      ]
-    },
-    {
-      "id": "candidate-s2-out-of-vocabulary-pashto-spell-checker-using-morphological-operations",
-      "title": "Out-of-Vocabulary Pashto Spell Checker using Morphological Operations",
-      "url": "https://www.semanticscholar.org/paper/802aae68a6a7fdfb29d51be03fb2b09e29311fa7",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "A spell checking model detects spelling errors in the input text, generates possible corrections for each error, and organizes them based on their relevance. Such tools are essential for writing, editing, and publishing in a language. In li",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/802aae68a6a7fdfb29d51be03fb2b09e29311fa7",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
       ]
     },
     {
@@ -2174,76 +1731,6 @@
       ]
     },
     {
-      "id": "candidate-kaggle-dataset-drijaz-pashtoocr",
-      "title": "PashtoOCR",
-      "url": "https://www.kaggle.com/datasets/drijaz/pashtoocr",
-      "category": "dataset",
-      "source": "kaggle",
-      "status": "candidate",
-      "summary": "A Synthetic Dataset for Optical Character Recognition (OCR) in Pashto",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Kaggle dataset title/subtitle includes Pashto keyword.",
-        "evidence_url": "https://www.kaggle.com/datasets/drijaz/pashtoocr",
-        "markers": [
-          "Pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "dataset",
-        "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-s2-pos-tagging-of-low-resource-pashto-language-annotated-corpus-and-bert-based-mode",
-      "title": "POS tagging of low-resource Pashto language: annotated corpus and BERT-based model",
-      "url": "https://www.semanticscholar.org/paper/1b2d5c896fec735483e8c8fb0a75e13125e08769",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/1b2d5c896fec735483e8c8fb0a75e13125e08769",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-s2-psocr-benchmarking-large-multimodal-models-for-optical-character-recognition-in-",
-      "title": "PsOCR: Benchmarking Large Multimodal Models for Optical Character Recognition in Low-resource Pashto Language",
-      "url": "https://www.semanticscholar.org/paper/d2743c0dcdbc65f5b46fcec2f0ba7cb379c4134f",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "This paper evaluates the performance of Large Multimodal Models (LMMs) on Optical Character Recognition (OCR) in the low-resource Pashto language. Natural Language Processing (NLP) in Pashto faces several challenges due to the cursive natur",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/d2743c0dcdbc65f5b46fcec2f0ba7cb379c4134f",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
       "id": "candidate-hf-dataset-saillab-alpaca-pashto-cleaned",
       "title": "saillab/alpaca-pashto-cleaned",
       "url": "https://huggingface.co/datasets/saillab/alpaca-pashto-cleaned",
@@ -2364,52 +1851,6 @@
         "arabic",
         "balochi",
         "brahui"
-      ]
-    },
-    {
-      "id": "candidate-s2-switching-selves-online-pashto-english-bilingualism-identity-and-expression-in-p",
-      "title": "SWITCHING SELVES ONLINE:PASHTO-ENGLISH BILINGUALISM,IDENTITY, AND EXPRESSION IN PAKISTAN’S DIGITAL DISCOURSE",
-      "url": "https://www.semanticscholar.org/paper/7a330c5fb416a1105866a895748b4336f8ef8100",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "The language in modern digital realms goes beyond its message carrying center; it serves as a mirror of itself in identity, emotion, and cultural location. The current paper examines what happens when Pashto-English bilinguals in Pakistan n",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/7a330c5fb416a1105866a895748b4336f8ef8100",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-s2-syntax-and-morphology-of-baniswola-pashto-investigating-universal-and-dialectal-",
-      "title": "Syntax and morphology of Baniswola Pashto: investigating universal and dialectal variations",
-      "url": "https://www.semanticscholar.org/paper/9f725b3b282cf05f9089002d474010c6021001f9",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/9f725b3b282cf05f9089002d474010c6021001f9",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
       ]
     },
     {
@@ -2555,98 +1996,6 @@
       ]
     },
     {
-      "id": "candidate-s2-the-development-and-evaluation-of-an-automatic-clitic-generator-for-pashto-langu",
-      "title": "The development and evaluation of an automatic clitic generator for Pashto language",
-      "url": "https://www.semanticscholar.org/paper/3d95449d67799fcac83f855984cb0c29cc500d7b",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/3d95449d67799fcac83f855984cb0c29cc500d7b",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-s2-the-role-of-early-literary-biographies-tazkiri-in-the-ancient-history-of-pashto-",
-      "title": "The Role of Early Literary Biographies (Tazkiri) in the Ancient History of Pashto Literature",
-      "url": "https://www.semanticscholar.org/paper/4938170077d3430c2e3f9fadc161ed7b79242917",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "The role of early literary biographies in the ancient history of Pashto literature is a significant and fundamental subject, as these biographies have transmitted to us the thoughts, styles, and contributions of early poets, writers, and Su",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/4938170077d3430c2e3f9fadc161ed7b79242917",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-s2-the-roshani-movement-literary-services-and-the-contribution-of-this-movement-in-",
-      "title": "The Roshani Movement literary services and the contribution of this Movement in the development of Pashto Literature",
-      "url": "https://www.semanticscholar.org/paper/88a3cd1ec497844c5997ae1795f8e72bbb314112",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Literature is the mirror of society. The purpose of this article was to review the achievements and literary services of the Roshani Movement, in order to use their positive points in the development of Pashto language and literature. The r",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/88a3cd1ec497844c5997ae1795f8e72bbb314112",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-s2-the-themes-of-insomnia-in-pashto-tappa-a-cultural-and-literary-representation",
-      "title": "The Themes of Insomnia in Pashto Tappa: A Cultural and Literary Representation",
-      "url": "https://www.semanticscholar.org/paper/95bd6f1b23e3331f8e5faedb87b6bb9c1c574c4b",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "This study explores the motif of insomnia in Pashto tappa as a culturally embedded literary symptom that reflects emotional, social, and existential tensions in Pashtun life. Drawing on a qualitative content analysis of a purposive corpus o",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Semantic Scholar query: pashto.",
-        "evidence_url": "https://www.semanticscholar.org/paper/95bd6f1b23e3331f8e5faedb87b6bb9c1c574c4b",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
       "id": "candidate-hf-project-umar4321-pashto-to-english-urdu",
       "title": "Umar4321/Pashto-To-English-Urdu",
       "url": "https://huggingface.co/spaces/Umar4321/Pashto-To-English-Urdu",
@@ -2696,32 +2045,10 @@
         "pashto",
         "wikipedia"
       ]
-    },
-    {
-      "id": "candidate-hf-model-zirak-ai-pashto-bert-v1",
-      "title": "zirak-ai/pashto-bert-v1",
-      "url": "https://huggingface.co/zirak-ai/pashto-bert-v1",
-      "category": "model",
-      "source": "huggingface",
-      "status": "candidate",
-      "summary": "Candidate model returned from Hugging Face search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
-        "evidence_url": "https://huggingface.co/zirak-ai/pashto-bert-v1",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "model"
-      ]
     }
   ],
   "errors": [
-    "arxiv: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)>"
+    "arxiv: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)>",
+    "semantic-scholar: HTTP Error 429: "
   ]
 }

@@ -32,6 +32,36 @@ jobs:
       - name: Validate catalog
         run: python scripts/validate_resource_catalog.py
 
+      - name: Ensure labels exist
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const labels = [
+              { name: "resource-update", color: "0e8a16", description: "Automated resource catalog updates" },
+              { name: "needs-review", color: "fbca04", description: "Needs maintainer review before merge" }
+            ];
+            for (const label of labels) {
+              try {
+                await github.rest.issues.getLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: label.name
+                });
+              } catch (error) {
+                if (error.status === 404) {
+                  await github.rest.issues.createLabel({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    name: label.name,
+                    color: label.color,
+                    description: label.description
+                  });
+                } else {
+                  throw error;
+                }
+              }
+            }
+
       - name: Create review PR
         uses: peter-evans/create-pull-request@v6
         with:

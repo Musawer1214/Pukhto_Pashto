@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-02-15T00:00:00Z",
-  "count": 37,
+  "generated_on": "2026-02-16T00:00:00Z",
+  "count": 42,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -894,6 +894,134 @@
       "markers": [
         "Pashto",
         "NLP"
+      ]
+    },
+    {
+      "id": "dataset-kaggle-drijaz-pashtoocr",
+      "title": "PashtoOCR (Kaggle)",
+      "url": "https://www.kaggle.com/datasets/drijaz/pashtoocr",
+      "category": "dataset",
+      "source": "kaggle",
+      "status": "verified",
+      "summary": "Synthetic OCR dataset focused on Pashto ligatures and text recognition tasks.",
+      "primary_use": "Pashto OCR dataset benchmarking and training",
+      "tasks": [
+        "ocr",
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "kaggle",
+        "ocr",
+        "dataset"
+      ],
+      "evidence_text": "Kaggle dataset title and subtitle explicitly identify a Pashto OCR dataset.",
+      "evidence_url": "https://www.kaggle.com/api/v1/datasets/view/drijaz/pashtoocr",
+      "markers": [
+        "Pashto",
+        "OCR"
+      ]
+    },
+    {
+      "id": "model-hf-zirak-ai-pashto-bert-v1",
+      "title": "zirak-ai/pashto-bert-v1",
+      "url": "https://huggingface.co/zirak-ai/pashto-bert-v1",
+      "category": "model",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto BERT model checkpoint for low-resource Pashto NLP experiments.",
+      "primary_use": "Pashto encoder baseline for NLP tasks",
+      "tasks": [
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "huggingface",
+        "bert",
+        "nlp"
+      ],
+      "evidence_text": "Hugging Face model ID and search tags explicitly include pashto marker.",
+      "evidence_url": "https://huggingface.co/zirak-ai/pashto-bert-v1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "project-hf-space-ihanif-pashto-asr",
+      "title": "Pashto ASR Space",
+      "url": "https://huggingface.co/spaces/ihanif/pashto-asr",
+      "category": "project",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Interactive Hugging Face Space for Pashto ASR inference demos.",
+      "primary_use": "Live Pashto speech-to-text demo project",
+      "tasks": [
+        "asr",
+        "demo"
+      ],
+      "tags": [
+        "pashto",
+        "project",
+        "huggingface-space",
+        "asr"
+      ],
+      "evidence_text": "Space ID includes pashto-asr and is returned by Hugging Face Pashto space search.",
+      "evidence_url": "https://huggingface.co/api/spaces/ihanif/pashto-asr",
+      "markers": [
+        "pashto",
+        "asr"
+      ]
+    },
+    {
+      "id": "code-github-mrychlik-worldly-ocr",
+      "title": "worldly-ocr",
+      "url": "https://github.com/mrychlik/worldly-ocr",
+      "category": "code",
+      "source": "github",
+      "status": "verified",
+      "summary": "Open OCR code project that explicitly includes Pashto among target languages.",
+      "primary_use": "Pashto OCR code reference and experimentation",
+      "tasks": [
+        "ocr",
+        "tooling"
+      ],
+      "tags": [
+        "pashto",
+        "code",
+        "github",
+        "ocr"
+      ],
+      "evidence_text": "Repository description explicitly says OCR for Pashto and Chinese.",
+      "evidence_url": "https://api.github.com/repos/mrychlik/worldly-ocr",
+      "markers": [
+        "Pashto",
+        "OCR"
+      ]
+    },
+    {
+      "id": "paper-s2-psocr-lmm-pashto",
+      "title": "PsOCR: Benchmarking Large Multimodal Models for Optical Character Recognition in Low-resource Pashto Language",
+      "url": "https://www.semanticscholar.org/paper/d2743c0dcdbc65f5b46fcec2f0ba7cb379c4134f",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Research paper benchmarking multimodal OCR models on low-resource Pashto OCR tasks.",
+      "primary_use": "Pashto OCR research baseline and evaluation reference",
+      "tasks": [
+        "ocr",
+        "research"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "ocr",
+        "multimodal"
+      ],
+      "evidence_text": "Paper title explicitly references low-resource Pashto language OCR benchmarking.",
+      "evidence_url": "https://www.semanticscholar.org/paper/d2743c0dcdbc65f5b46fcec2f0ba7cb379c4134f",
+      "markers": [
+        "Pashto",
+        "OCR"
       ]
     }
   ]

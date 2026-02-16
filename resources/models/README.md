@@ -13,6 +13,7 @@
 | wav2vec2 XLS-R 300M Pashto | [huggingface](https://huggingface.co/ihanif/wav2vec2-xls-r-300m-pashto) | [Model tags include pashto and ps, and model index references FLEURS config ps_af. (`pashto`, `ps`, `ps_af`)](https://huggingface.co/ihanif/wav2vec2-xls-r-300m-pashto) | Pashto ASR baseline and comparative experiments |
 | Whisper Large v3 | [huggingface](https://huggingface.co/openai/whisper-large-v3) | [Whisper tokenizer map includes ps language key. (`ps`)](https://raw.githubusercontent.com/openai/whisper/main/whisper/tokenizer.py) | ASR baseline and pseudo-labeling |
 | Whisper Medium Pashto | [huggingface](https://huggingface.co/ihanif/whisper-medium-pashto) | [Model tags include pashto and ps, and model index uses FLEURS ps_af split. (`pashto`, `ps`, `ps_af`)](https://huggingface.co/ihanif/whisper-medium-pashto) | Pashto ASR baseline and transcription quality comparisons |
+| zirak-ai/pashto-bert-v1 | [huggingface](https://huggingface.co/zirak-ai/pashto-bert-v1) | [Hugging Face model ID and search tags explicitly include pashto marker. (`pashto`)](https://huggingface.co/zirak-ai/pashto-bert-v1) | Pashto encoder baseline for NLP tasks |
 
 ## Maintenance
 - Source of truth: [../catalog/resources.json](../catalog/resources.json)

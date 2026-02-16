@@ -4,6 +4,7 @@
 
 | Resource | Link | Pashto Evidence | Primary Use |
 |---|---|---|---|
+| Pashto ASR Space | [huggingface](https://huggingface.co/spaces/ihanif/pashto-asr) | [Space ID includes pashto-asr and is returned by Hugging Face Pashto space search. (`pashto`, `asr`)](https://huggingface.co/api/spaces/ihanif/pashto-asr) | Live Pashto speech-to-text demo project |
 | Pashto ASR V3 Space | [huggingface](https://huggingface.co/spaces/ihanif/pashto-asr-v3) | [Space card title is Pashto ASR V3 and short description states Pashto ASR. (`Pashto`, `ASR`)](https://huggingface.co/api/spaces/ihanif/pashto-asr-v3) | Project demo for Pashto ASR user testing |
 | Pashto to English Dictionary Space | [huggingface](https://huggingface.co/spaces/EngrAamirBangash/Pashto2English-Dictionary) | [Space metadata title states Pashto to English Dictionary. (`Pashto`)](https://huggingface.co/api/spaces/EngrAamirBangash/Pashto2English-Dictionary) | Interactive bilingual lookup project |
 | Pashto Translator Space | [huggingface](https://huggingface.co/spaces/Umar4321/Pashto-Translator) | [Space title is Pashto Translator and description states Pashto to English and Urdu translation. (`Pashto`)](https://huggingface.co/api/spaces/Umar4321/Pashto-Translator) | Interactive translation project demo |

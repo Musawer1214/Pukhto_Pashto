@@ -6,6 +6,7 @@
 |---|---|---|---|
 | FLEURS: Few-shot Learning Evaluation of Universal Representations of Speech | [arxiv](https://arxiv.org/abs/2205.12446) | [Dataset implementation includes ps_af language code. (`ps_af`)](https://huggingface.co/datasets/google/fleurs/blob/main/fleurs.py) | Speech benchmark methodology reference |
 | No Language Left Behind | [arxiv](https://arxiv.org/abs/2207.04672) | [Model usage in repo references pbt_Arab token support. (`pbt_Arab`)](https://huggingface.co/facebook/nllb-200-distilled-600M/blob/main/special_tokens_map.json) | MT research reference |
+| PsOCR: Benchmarking Large Multimodal Models for Optical Character Recognition in Low-resource Pashto Language | [other](https://www.semanticscholar.org/paper/d2743c0dcdbc65f5b46fcec2f0ba7cb379c4134f) | [Paper title explicitly references low-resource Pashto language OCR benchmarking. (`Pashto`, `OCR`)](https://www.semanticscholar.org/paper/d2743c0dcdbc65f5b46fcec2f0ba7cb379c4134f) | Pashto OCR research baseline and evaluation reference |
 | Robust Speech Recognition via Large-Scale Weak Supervision | [arxiv](https://arxiv.org/abs/2212.04356) | [Paired with tokenizer language map containing ps. (`ps`)](https://raw.githubusercontent.com/openai/whisper/main/whisper/tokenizer.py) | ASR methodology reference |
 | Scaling Speech Technology to 1,000+ Languages | [arxiv](https://arxiv.org/abs/2305.13516) | [Coverage table marks pus support in MMS release. (`pus`)](https://dl.fbaipublicfiles.com/mms/misc/language_coverage_mms.html) | ASR and TTS transfer reference |
 

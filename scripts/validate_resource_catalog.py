@@ -20,6 +20,9 @@ ALLOWED_CATEGORIES = {"dataset", "model", "benchmark", "tool", "paper", "project
 ALLOWED_SOURCES = {"huggingface", "mozilla", "kaggle", "github", "arxiv", "meta", "other"}
 ALLOWED_STATUS = {"verified", "candidate"}
 RESOURCE_ID_RE = re.compile(r"^[a-z0-9][a-z0-9._-]*$")
+STRICT_PASHTO_CATEGORIES = {"model", "paper", "tool", "code", "project"}
+PASHTO_PUSHTO_WORD_RE = re.compile(r"(?<![a-z0-9])pushto(?![a-z0-9])")
+PASHTO_CODE_RE = re.compile(r"\b(ps(_af)?|pus|pbt[_-]?arab)\b")
 
 
 def _load_json(path: Path) -> dict[str, Any]:
@@ -37,6 +40,19 @@ def _validate_iso_date(value: str) -> bool:
     except ValueError:
         return False
     return True
+
+
+def _contains_pashto_marker(value: str) -> bool:
+    if not isinstance(value, str):
+        return False
+    lowered = value.casefold()
+    if any(marker in lowered for marker in ("pashto", "pukhto", "pakhto")):
+        return True
+    if PASHTO_PUSHTO_WORD_RE.search(lowered):
+        return True
+    if PASHTO_CODE_RE.search(lowered):
+        return True
+    return any(marker in value for marker in ("پښتو", "پشتو"))
 
 
 def validate_resource(resource: dict[str, Any], index: int) -> list[str]:
@@ -122,6 +138,14 @@ def validate_resource(resource: dict[str, Any], index: int) -> list[str]:
     markers = evidence.get("markers")
     if not (isinstance(markers, list) and markers and all(isinstance(marker, str) and marker.strip() for marker in markers)):
         errors.append(f"{prefix}.pashto_evidence.markers must be a non-empty list of strings")
+
+    if category in STRICT_PASHTO_CATEGORIES and not (
+        _contains_pashto_marker(title) or _contains_pashto_marker(url)
+    ):
+        errors.append(
+            f"{prefix} must be Pashto-centric for category '{category}' "
+            "(include a Pashto marker in title or URL)"
+        )
 
     return errors
 

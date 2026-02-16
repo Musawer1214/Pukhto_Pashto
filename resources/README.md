@@ -4,12 +4,12 @@ Structured, Pashto-focused resource tracking lives in this folder.
 
 ## Sections
 - Datasets (28): [datasets/README.md](datasets/README.md)
-- Models (18): [models/README.md](models/README.md)
+- Models (12): [models/README.md](models/README.md)
 - Benchmarks (4): [benchmarks/README.md](benchmarks/README.md)
-- Tools (2): [tools/README.md](tools/README.md)
-- Papers (12): [papers/README.md](papers/README.md)
-- Projects (11): [projects/README.md](projects/README.md)
-- Code (2): [codes/README.md](codes/README.md)
+- Tools (0): [tools/README.md](tools/README.md)
+- Papers (8): [papers/README.md](papers/README.md)
+- Projects (10): [projects/README.md](projects/README.md)
+- Code (1): [codes/README.md](codes/README.md)
 
 ## Machine-Readable Catalog
 - Canonical catalog: [catalog/resources.json](catalog/resources.json)
@@ -22,4 +22,4 @@ Structured, Pashto-focused resource tracking lives in this folder.
 - Run `python scripts/validate_resource_catalog.py` before opening a PR.
 - Run `python scripts/generate_resource_views.py` after catalog changes.
 
-Verified resource count: `77`
+Verified resource count: `63`

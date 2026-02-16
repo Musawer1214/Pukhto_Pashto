@@ -30,6 +30,19 @@ from urllib.error import HTTPError, URLError
 USER_AGENT = "pashto-resource-sync/1.0"
 MAX_FETCH_RETRIES = 4
 RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
+PASHTO_QUERY_TERMS = ["pashto", "pukhto", "pushto", "pakhto"]
+PASHTO_TEXT_MARKERS = ("pashto", "pukhto", "pushto", "pakhto")
+PASHTO_SCRIPT_MARKERS = ("پښتو", "پشتو")
+PASHTO_WORD_RE = re.compile(
+    r"(?<![A-Za-z0-9])(pashto|pukhto|pushto|pakhto)(?![A-Za-z0-9])",
+    re.IGNORECASE,
+)
+PASHTO_CAMEL_RE = re.compile(
+    r"(?<![A-Za-z0-9])(pashto|pukhto|pakhto)(?=[A-Z])",
+    re.IGNORECASE,
+)
+PASHTO_CODE_RE = re.compile(r"\b(ps(_af)?|pus|pbt[_-]?arab)\b", re.IGNORECASE)
+LOW_SIGNAL_RE = re.compile(r"(^|[-_/ ])(test|tmp|trial|scratch)([-_/ ]|$)", re.IGNORECASE)
 
 
 def _slug(value: str) -> str:
@@ -37,6 +50,28 @@ def _slug(value: str) -> str:
     value = re.sub(r"[^a-z0-9]+", "-", value)
     value = re.sub(r"-+", "-", value).strip("-")
     return value[:80] if value else "resource"
+
+
+def _contains_pashto_marker(value: str) -> bool:
+    text = (value or "").strip()
+    if not text:
+        return False
+    if PASHTO_WORD_RE.search(text):
+        return True
+    if PASHTO_CAMEL_RE.search(text):
+        return True
+    if any(marker in text for marker in PASHTO_SCRIPT_MARKERS):
+        return True
+    lowered = text.casefold()
+    return bool(PASHTO_CODE_RE.search(lowered))
+
+
+def _is_pashto_centric(*values: str) -> bool:
+    return any(_contains_pashto_marker(value) for value in values)
+
+
+def _is_low_signal_name(value: str) -> bool:
+    return bool(LOW_SIGNAL_RE.search(value or ""))
 
 
 def _parse_retry_after_seconds(retry_after: str | None) -> float | None:
@@ -201,15 +236,34 @@ def fetch_huggingface(kind: str, limit: int) -> list[dict[str, Any]]:
     if kind not in {"datasets", "models"}:
         return []
 
-    query = urllib.parse.urlencode({"search": "pashto", "limit": str(limit)})
-    url = f"https://huggingface.co/api/{kind}?{query}"
-    payload = _fetch_json(url, source_name=f"huggingface-{kind}")
+    combined: dict[str, dict[str, Any]] = {}
+    errors: list[str] = []
+    for term in PASHTO_QUERY_TERMS:
+        query = urllib.parse.urlencode({"search": term, "limit": str(limit)})
+        url = f"https://huggingface.co/api/{kind}?{query}"
+        try:
+            payload = _fetch_json(url, source_name=f"huggingface-{kind}")
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{term}: {exc}")
+            continue
+        for item in payload:
+            repo_id = item.get("id") or item.get("modelId")
+            if not repo_id:
+                continue
+            combined[repo_id] = item
+
+    if not combined and errors:
+        raise RuntimeError("; ".join(errors))
 
     category = "dataset" if kind == "datasets" else "model"
     out: list[dict[str, Any]] = []
-    for item in payload:
+    for item in combined.values():
         repo_id = item.get("id") or item.get("modelId")
         if not repo_id:
+            continue
+        if not _is_pashto_centric(repo_id):
+            continue
+        if _is_low_signal_name(repo_id):
             continue
         repo_url = f"https://huggingface.co/{'datasets/' if kind == 'datasets' else ''}{repo_id}"
         rid = f"candidate-hf-{kind[:-1]}-{_slug(repo_id)}"
@@ -227,18 +281,39 @@ def fetch_huggingface(kind: str, limit: int) -> list[dict[str, Any]]:
                 tags=["pashto", "candidate", category],
             )
         )
+        if len(out) >= limit:
+            break
     return out
 
 
 def fetch_huggingface_spaces(limit: int) -> list[dict[str, Any]]:
-    query = urllib.parse.urlencode({"search": "pashto", "limit": str(limit)})
-    url = f"https://huggingface.co/api/spaces?{query}"
-    payload = _fetch_json(url, source_name="huggingface-spaces")
+    combined: dict[str, dict[str, Any]] = {}
+    errors: list[str] = []
+    for term in PASHTO_QUERY_TERMS:
+        query = urllib.parse.urlencode({"search": term, "limit": str(limit)})
+        url = f"https://huggingface.co/api/spaces?{query}"
+        try:
+            payload = _fetch_json(url, source_name="huggingface-spaces")
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{term}: {exc}")
+            continue
+        for item in payload:
+            space_id = item.get("id")
+            if not space_id:
+                continue
+            combined[space_id] = item
+
+    if not combined and errors:
+        raise RuntimeError("; ".join(errors))
 
     out: list[dict[str, Any]] = []
-    for item in payload:
+    for item in combined.values():
         space_id = item.get("id")
         if not space_id:
+            continue
+        if not _is_pashto_centric(space_id):
+            continue
+        if _is_low_signal_name(space_id):
             continue
         space_url = f"https://huggingface.co/spaces/{space_id}"
         rid = f"candidate-hf-project-{_slug(space_id)}"
@@ -257,17 +332,36 @@ def fetch_huggingface_spaces(limit: int) -> list[dict[str, Any]]:
                 tags=["pashto", "candidate", "project", "space"],
             )
         )
+        if len(out) >= limit:
+            break
     return out
 
 
 def fetch_kaggle_datasets(limit: int) -> list[dict[str, Any]]:
     # Public Kaggle dataset listing endpoint (no auth needed for list responses).
-    query = urllib.parse.urlencode({"search": "pashto", "page": "1"})
-    url = f"https://www.kaggle.com/api/v1/datasets/list?{query}"
-    payload = _fetch_json(url, source_name="kaggle-datasets")
+    combined: list[dict[str, Any]] = []
+    seen_urls: set[str] = set()
+    errors: list[str] = []
+    for term in PASHTO_QUERY_TERMS:
+        query = urllib.parse.urlencode({"search": term, "page": "1"})
+        url = f"https://www.kaggle.com/api/v1/datasets/list?{query}"
+        try:
+            payload = _fetch_json(url, source_name="kaggle-datasets")
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{term}: {exc}")
+            continue
+        for item in payload:
+            dataset_url = (item.get("urlNullable") or "").strip()
+            if not dataset_url or dataset_url in seen_urls:
+                continue
+            seen_urls.add(dataset_url)
+            combined.append(item)
+
+    if not combined and errors:
+        raise RuntimeError("; ".join(errors))
 
     out: list[dict[str, Any]] = []
-    for item in payload:
+    for item in combined:
         title = (item.get("titleNullable") or "").strip()
         dataset_url = (item.get("urlNullable") or "").strip()
         owner = (item.get("ownerRefNullable") or "").strip()
@@ -275,8 +369,9 @@ def fetch_kaggle_datasets(limit: int) -> list[dict[str, Any]]:
         if not title or not dataset_url:
             continue
 
-        blob = f"{title} {subtitle}".lower()
-        if "pashto" not in blob and "pukhto" not in blob:
+        if not _is_pashto_centric(title, subtitle):
+            continue
+        if _is_low_signal_name(title):
             continue
 
         owner_prefix = f"{owner}/" if owner else ""
@@ -304,7 +399,11 @@ def fetch_github_pashto_repos(limit: int) -> list[dict[str, Any]]:
     # Query by topic first for high precision, then by keyword for recall.
     query_variants = [
         "topic:pashto",
+        "topic:pukhto",
         "pashto in:name,description,readme",
+        "pukhto in:name,description,readme",
+        "pushto in:name,description,readme",
+        "pakhto in:name,description,readme",
     ]
 
     combined: dict[str, dict[str, Any]] = {}
@@ -334,8 +433,10 @@ def fetch_github_pashto_repos(limit: int) -> list[dict[str, Any]]:
                 item.get("description") or "",
                 " ".join(item.get("topics") or []),
             ]
-        ).lower()
-        if "pashto" not in name_blob and "pukhto" not in name_blob:
+        )
+        if not _is_pashto_centric(name_blob):
+            continue
+        if _is_low_signal_name(full_name):
             continue
 
         html_url = item["html_url"]
@@ -367,69 +468,109 @@ def fetch_github_pashto_repos(limit: int) -> list[dict[str, Any]]:
 
 
 def fetch_arxiv(limit: int) -> list[dict[str, Any]]:
-    query = urllib.parse.urlencode(
-        {"search_query": "all:pashto", "start": "0", "max_results": str(limit)}
-    )
-    url = f"https://export.arxiv.org/api/query?{query}"
-    try:
-        xml_text = _fetch_text(url, timeout=30.0, source_name="arxiv")
-    except Exception as exc:  # noqa: BLE001
-        if not _is_ssl_cert_error(exc):
-            raise
-        # arXiv occasionally fails cert chain validation in some runner images.
-        insecure_context = ssl._create_unverified_context()
-        print("[warn] arxiv SSL verification failed; retrying with unverified TLS context")
-        xml_text = _fetch_text(
-            url,
-            timeout=30.0,
-            ssl_context=insecure_context,
-            source_name="arxiv",
+    roots: list[ET.Element] = []
+    errors: list[str] = []
+    for term in PASHTO_QUERY_TERMS:
+        query = urllib.parse.urlencode(
+            {"search_query": f"all:{term}", "start": "0", "max_results": str(limit)}
         )
-    root = ET.fromstring(xml_text)
+        url = f"https://export.arxiv.org/api/query?{query}"
+        try:
+            xml_text = _fetch_text(url, timeout=30.0, source_name="arxiv")
+        except Exception as exc:  # noqa: BLE001
+            if not _is_ssl_cert_error(exc):
+                errors.append(f"{term}: {exc}")
+                continue
+            # arXiv occasionally fails cert chain validation in some runner images.
+            insecure_context = ssl._create_unverified_context()
+            print("[warn] arxiv SSL verification failed; retrying with unverified TLS context")
+            xml_text = _fetch_text(
+                url,
+                timeout=30.0,
+                ssl_context=insecure_context,
+                source_name="arxiv",
+            )
+        roots.append(ET.fromstring(xml_text))
+
+    if not roots and errors:
+        raise RuntimeError("; ".join(errors))
+
     ns = {"atom": "http://www.w3.org/2005/Atom"}
 
+    seen_links: set[str] = set()
     out: list[dict[str, Any]] = []
-    for entry in root.findall("atom:entry", ns):
-        title = (entry.findtext("atom:title", default="", namespaces=ns) or "").strip()
-        link = (entry.findtext("atom:id", default="", namespaces=ns) or "").strip()
-        summary = (entry.findtext("atom:summary", default="", namespaces=ns) or "").strip()
-        if not title or not link:
-            continue
+    for root in roots:
+        for entry in root.findall("atom:entry", ns):
+            title = (entry.findtext("atom:title", default="", namespaces=ns) or "").strip()
+            link = (entry.findtext("atom:id", default="", namespaces=ns) or "").strip()
+            summary = (entry.findtext("atom:summary", default="", namespaces=ns) or "").strip()
+            if not title or not link:
+                continue
+            if link in seen_links:
+                continue
+            # Strict: keep only papers with explicit Pashto markers in title.
+            if not _is_pashto_centric(title):
+                continue
+            if _is_low_signal_name(title):
+                continue
 
-        rid = f"candidate-arxiv-{_slug(title)}"
-        out.append(
-            _candidate(
-                rid=rid,
-                title=title,
-                url=link,
-                category="paper",
-                source="arxiv",
-                summary=summary[:240] if summary else "Candidate paper returned from arXiv query for Pashto.",
-                evidence_text="Matched by arXiv query: all:pashto.",
-                evidence_url=link,
-                markers=["pashto"],
-                tags=["pashto", "candidate", "paper"],
+            seen_links.add(link)
+            rid = f"candidate-arxiv-{_slug(title)}"
+            out.append(
+                _candidate(
+                    rid=rid,
+                    title=title,
+                    url=link,
+                    category="paper",
+                    source="arxiv",
+                    summary=summary[:240] if summary else "Candidate paper returned from arXiv query for Pashto.",
+                    evidence_text="Matched by Pashto marker in paper title from arXiv query results.",
+                    evidence_url=link,
+                    markers=["pashto"],
+                    tags=["pashto", "candidate", "paper"],
+                )
             )
-        )
+            if len(out) >= limit:
+                return out
     return out
 
 
 def fetch_semantic_scholar(limit: int) -> list[dict[str, Any]]:
     fields = "title,url,abstract,year,externalIds"
-    query = urllib.parse.urlencode(
-        {"query": "pashto", "limit": str(limit), "fields": fields}
-    )
-    url = f"https://api.semanticscholar.org/graph/v1/paper/search?{query}"
-    payload = _fetch_json(
-        url,
-        timeout=30.0,
-        source_name="semantic-scholar",
-    )
+    combined: dict[str, dict[str, Any]] = {}
+    errors: list[str] = []
+    for term in PASHTO_QUERY_TERMS:
+        query = urllib.parse.urlencode(
+            {"query": term, "limit": str(limit), "fields": fields}
+        )
+        url = f"https://api.semanticscholar.org/graph/v1/paper/search?{query}"
+        try:
+            payload = _fetch_json(
+                url,
+                timeout=30.0,
+                source_name="semantic-scholar",
+            )
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{term}: {exc}")
+            continue
+        for item in payload.get("data", []):
+            title = (item.get("title") or "").strip()
+            if not title:
+                continue
+            combined[title] = item
+
+    if not combined and errors:
+        raise RuntimeError("; ".join(errors))
 
     out: list[dict[str, Any]] = []
-    for item in payload.get("data", []):
+    for item in combined.values():
         title = (item.get("title") or "").strip()
         if not title:
+            continue
+        # Strict: keep only papers with explicit Pashto markers in title.
+        if not _is_pashto_centric(title):
+            continue
+        if _is_low_signal_name(title):
             continue
         paper_url = (item.get("url") or "").strip()
         if not paper_url:
@@ -450,12 +591,14 @@ def fetch_semantic_scholar(limit: int) -> list[dict[str, Any]]:
                 category="paper",
                 source="other",
                 summary=summary[:240] if summary else "Candidate paper returned from Semantic Scholar search for Pashto.",
-                evidence_text="Matched by Semantic Scholar query: pashto.",
+                evidence_text="Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
                 evidence_url=paper_url,
                 markers=["pashto"],
                 tags=["pashto", "candidate", "paper"],
             )
         )
+        if len(out) >= limit:
+            break
     return out
 
 

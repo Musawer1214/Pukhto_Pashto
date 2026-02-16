@@ -50,6 +50,9 @@ def test_validate_catalog_fails_for_non_pashto_centric_model() -> None:
     catalog["resources"][0]["category"] = "model"
     catalog["resources"][0]["title"] = "Generic Multilingual Model"
     catalog["resources"][0]["url"] = "https://example.org/model"
+    catalog["resources"][0]["pashto_evidence"]["evidence_text"] = "Language support listed in docs."
+    catalog["resources"][0]["pashto_evidence"]["evidence_url"] = "https://example.org/model-docs"
+    catalog["resources"][0]["pashto_evidence"]["markers"] = ["multilingual"]
     errors = validate_catalog(catalog)
     assert any("must be Pashto-centric" in error for error in errors)
 
@@ -59,5 +62,17 @@ def test_validate_catalog_allows_pashto_centric_model() -> None:
     catalog["resources"][0]["category"] = "model"
     catalog["resources"][0]["title"] = "Pashto ASR Model"
     catalog["resources"][0]["url"] = "https://example.org/pashto-model"
+    errors = validate_catalog(catalog)
+    assert errors == []
+
+
+def test_validate_catalog_allows_multilingual_model_with_pashto_evidence() -> None:
+    catalog = _minimal_catalog()
+    catalog["resources"][0]["category"] = "model"
+    catalog["resources"][0]["title"] = "Generic Multilingual Model"
+    catalog["resources"][0]["url"] = "https://example.org/model"
+    catalog["resources"][0]["pashto_evidence"]["evidence_text"] = "Language table explicitly includes Pashto."
+    catalog["resources"][0]["pashto_evidence"]["evidence_url"] = "https://example.org/model/languages"
+    catalog["resources"][0]["pashto_evidence"]["markers"] = ["Pashto", "ps"]
     errors = validate_catalog(catalog)
     assert errors == []

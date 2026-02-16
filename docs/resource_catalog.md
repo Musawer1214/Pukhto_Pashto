@@ -8,6 +8,7 @@ This index points to validated Pashto-related resources tracked in structured fi
 - Verify source URL resolves to official page or canonical repository.
 - Verify explicit Pashto support markers (`Pashto`, `Pukhto`, `Pushto`, `Pakhto`, `پښتو`, `ps`, `ps_af`, `pus`, `pbt_Arab`) where possible.
 - Reject resources where Pashto is only mentioned in passing and the primary work is focused on another language.
+- Multilingual resources are allowed when `pashto_evidence` clearly proves Pashto support (for example language table, split code, or model language code).
 - Include only resources with practical use for this repository.
 
 ## Structured catalog

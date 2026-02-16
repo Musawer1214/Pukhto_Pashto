@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-02-16T00:00:00Z",
-  "count": 63,
+  "count": 75,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -1545,6 +1545,304 @@
       ],
       "evidence_text": "Matched by arXiv query: all:pashto.",
       "evidence_url": "http://arxiv.org/abs/1904.03391v2",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "dataset-hf-oowais-pushto-text-to-speech-dataset",
+      "title": "oowais/pushto-text-to-speech-dataset",
+      "url": "https://huggingface.co/datasets/oowais/pushto-text-to-speech-dataset",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto speech dataset discovered from huggingface candidate sync for ASR training and evaluation.",
+      "primary_use": "ASR training and evaluation data source",
+      "tasks": [
+        "asr",
+        "tts"
+      ],
+      "tags": [
+        "pashto",
+        "dataset",
+        "huggingface",
+        "asr",
+        "tts"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/datasets/oowais/pushto-text-to-speech-dataset",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "dataset-hf-ihanif-pashto-speech-20k",
+      "title": "ihanif/pashto_speech_20k",
+      "url": "https://huggingface.co/datasets/ihanif/pashto_speech_20k",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto speech dataset discovered from huggingface candidate sync for ASR training and evaluation.",
+      "primary_use": "ASR training and evaluation data source",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "dataset",
+        "huggingface",
+        "asr"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_20k",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "dataset-hf-ihanif-pashto-speech-5k",
+      "title": "ihanif/pashto_speech_5k",
+      "url": "https://huggingface.co/datasets/ihanif/pashto_speech_5k",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto speech dataset discovered from huggingface candidate sync for ASR training and evaluation.",
+      "primary_use": "ASR training and evaluation data source",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "dataset",
+        "huggingface",
+        "asr"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_5k",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "dataset-hf-tasal9-pashto-dataset",
+      "title": "tasal9/Pashto_Dataset",
+      "url": "https://huggingface.co/datasets/tasal9/Pashto_Dataset",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto-focused dataset discovered from huggingface candidate sync.",
+      "primary_use": "Pashto data source for NLP experimentation",
+      "tasks": [
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "dataset",
+        "huggingface",
+        "nlp"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/datasets/tasal9/Pashto_Dataset",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "model-hf-ijazulhaq-bert-base-pashto",
+      "title": "ijazulhaq/bert-base-pashto",
+      "url": "https://huggingface.co/ijazulhaq/bert-base-pashto",
+      "category": "model",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto NLP model checkpoint discovered from huggingface candidate sync.",
+      "primary_use": "Pashto model baseline for downstream NLP tasks",
+      "tasks": [
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "model",
+        "huggingface",
+        "nlp"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/ijazulhaq/bert-base-pashto",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "model-hf-ihanif-whisper-small-pashto-dropout",
+      "title": "ihanif/whisper-small-pashto-dropout",
+      "url": "https://huggingface.co/ihanif/whisper-small-pashto-dropout",
+      "category": "model",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto ASR model checkpoint discovered from huggingface candidate sync.",
+      "primary_use": "Pashto ASR baseline and model comparison",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "model",
+        "huggingface",
+        "asr"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/ihanif/whisper-small-pashto-dropout",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "model-hf-koochikoo25-pashto-whisper-large",
+      "title": "koochikoo25/pashto-whisper-large",
+      "url": "https://huggingface.co/koochikoo25/pashto-whisper-large",
+      "category": "model",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto ASR model checkpoint discovered from huggingface candidate sync.",
+      "primary_use": "Pashto ASR baseline and model comparison",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "model",
+        "huggingface",
+        "asr"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/koochikoo25/pashto-whisper-large",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "project-hf-space-ihanif-wav2vec-pashto-asr",
+      "title": "ihanif/wav2vec-pashto-asr",
+      "url": "https://huggingface.co/spaces/ihanif/wav2vec-pashto-asr",
+      "category": "project",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto-focused interactive project discovered from huggingface for demonstration and evaluation.",
+      "primary_use": "Interactive Pashto demo and quick qualitative validation",
+      "tasks": [
+        "asr",
+        "demo"
+      ],
+      "tags": [
+        "pashto",
+        "project",
+        "huggingface",
+        "asr",
+        "demo"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face Spaces search.",
+      "evidence_url": "https://huggingface.co/spaces/ihanif/wav2vec-pashto-asr",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "project-hf-space-afaqalinagra-pashto-asr-model",
+      "title": "afaqalinagra/PASHTO-ASR-MODEL",
+      "url": "https://huggingface.co/spaces/afaqalinagra/PASHTO-ASR-MODEL",
+      "category": "project",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto-focused interactive project discovered from huggingface for demonstration and evaluation.",
+      "primary_use": "Interactive Pashto demo and quick qualitative validation",
+      "tasks": [
+        "asr",
+        "demo"
+      ],
+      "tags": [
+        "pashto",
+        "project",
+        "huggingface",
+        "asr",
+        "demo"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face Spaces search.",
+      "evidence_url": "https://huggingface.co/spaces/afaqalinagra/PASHTO-ASR-MODEL",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "project-hf-space-ilyas02828-pashto-sign-language",
+      "title": "ilyas02828/Pashto_Sign_Language",
+      "url": "https://huggingface.co/spaces/ilyas02828/Pashto_Sign_Language",
+      "category": "project",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto-focused interactive project discovered from huggingface for demonstration and evaluation.",
+      "primary_use": "Interactive Pashto demo and quick qualitative validation",
+      "tasks": [
+        "demo"
+      ],
+      "tags": [
+        "pashto",
+        "project",
+        "huggingface",
+        "demo"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face Spaces search.",
+      "evidence_url": "https://huggingface.co/spaces/ilyas02828/Pashto_Sign_Language",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "project-hf-space-mahmudaq-pashtoasrnmt1",
+      "title": "mahmudaq/PashtoASRNMT1",
+      "url": "https://huggingface.co/spaces/mahmudaq/PashtoASRNMT1",
+      "category": "project",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto-focused interactive project discovered from huggingface for demonstration and evaluation.",
+      "primary_use": "Interactive Pashto demo and quick qualitative validation",
+      "tasks": [
+        "asr",
+        "mt",
+        "demo"
+      ],
+      "tags": [
+        "pashto",
+        "project",
+        "huggingface",
+        "asr",
+        "mt",
+        "demo"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face Spaces search.",
+      "evidence_url": "https://huggingface.co/spaces/mahmudaq/PashtoASRNMT1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-s2-enhancing-pashto-ner-using-machine-labeled-data-and-transformer-based-models",
+      "title": "Enhancing Pashto NER Using Machine-Labeled Data and Transformer-Based Models",
+      "url": "https://www.semanticscholar.org/paper/be851ecf9197ef9bb8bf764abf4db0dda95cd9da",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Pashto language technology paper discovered from other for research reference.",
+      "primary_use": "Pashto research reference for methods and benchmarking",
+      "tasks": [
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "other",
+        "nlp"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/be851ecf9197ef9bb8bf764abf4db0dda95cd9da",
       "markers": [
         "pashto"
       ]

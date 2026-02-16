@@ -4,8 +4,7 @@
 
 | Resource | Link | Pashto Evidence | Primary Use |
 |---|---|---|---|
-| Coqui TTS | [github](https://github.com/coqui-ai/TTS) | [Can be paired with Pashto-supporting MMS checkpoints. (`pus`)](https://dl.fbaipublicfiles.com/mms/misc/language_coverage_mms.html) | TTS training and inference |
-| Faster-Whisper | [github](https://github.com/SYSTRAN/faster-whisper) | [Whisper tokenizer includes ps and tool runs Whisper models. (`ps`)](https://raw.githubusercontent.com/openai/whisper/main/whisper/tokenizer.py) | ASR inference acceleration |
+| _None yet_ | - | - | - |
 
 ## Maintenance
 - Source of truth: [../catalog/resources.json](../catalog/resources.json)

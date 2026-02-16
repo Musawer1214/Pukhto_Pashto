@@ -5,7 +5,6 @@
 | Resource | Link | Pashto Evidence | Primary Use |
 |---|---|---|---|
 | nlpashto Toolkit | [github](https://github.com/ijazul-haq/nlpashto) | [Repository name and description explicitly identify a Pashto NLP toolkit. (`Pashto`, `NLP`)](https://api.github.com/repos/ijazul-haq/nlpashto) | Pashto NLP code integration and experimentation |
-| worldly-ocr | [github](https://github.com/mrychlik/worldly-ocr) | [Repository description explicitly says OCR for Pashto and Chinese. (`Pashto`, `OCR`)](https://api.github.com/repos/mrychlik/worldly-ocr) | Pashto OCR code reference and experimentation |
 
 ## Maintenance
 - Source of truth: [../catalog/resources.json](../catalog/resources.json)

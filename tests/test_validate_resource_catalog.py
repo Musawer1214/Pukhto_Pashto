@@ -43,3 +43,21 @@ def test_validate_catalog_fails_for_invalid_evidence_url() -> None:
     catalog["resources"][0]["pashto_evidence"]["evidence_url"] = "not-a-url"
     errors = validate_catalog(catalog)
     assert any("evidence_url" in error for error in errors)
+
+
+def test_validate_catalog_fails_for_non_pashto_centric_model() -> None:
+    catalog = _minimal_catalog()
+    catalog["resources"][0]["category"] = "model"
+    catalog["resources"][0]["title"] = "Generic Multilingual Model"
+    catalog["resources"][0]["url"] = "https://example.org/model"
+    errors = validate_catalog(catalog)
+    assert any("must be Pashto-centric" in error for error in errors)
+
+
+def test_validate_catalog_allows_pashto_centric_model() -> None:
+    catalog = _minimal_catalog()
+    catalog["resources"][0]["category"] = "model"
+    catalog["resources"][0]["title"] = "Pashto ASR Model"
+    catalog["resources"][0]["url"] = "https://example.org/pashto-model"
+    errors = validate_catalog(catalog)
+    assert errors == []

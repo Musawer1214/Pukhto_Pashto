@@ -42,4 +42,6 @@ After discovery, promote only approved resources:
 ## Guardrails
 - Do not auto-promote candidates without evidence and license review.
 - Keep `status: verified` only for reviewed entries.
+- Do not promote "reference-only" resources where Pashto is incidental; only Pashto-centric resources are eligible.
+- Treat spelling variants as valid Pashto markers during review (`pashto`, `pukhto`, `pushto`, `pakhto`, `پښتو`).
 - Generated files must be committed after catalog updates.

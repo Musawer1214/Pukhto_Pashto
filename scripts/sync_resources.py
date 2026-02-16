@@ -13,15 +13,23 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import socket
+import ssl
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from http.client import IncompleteRead
 from pathlib import Path
 from typing import Any
+from urllib.error import HTTPError, URLError
 
 
 USER_AGENT = "pashto-resource-sync/1.0"
+MAX_FETCH_RETRIES = 4
+RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
 
 
 def _slug(value: str) -> str:
@@ -31,16 +39,130 @@ def _slug(value: str) -> str:
     return value[:80] if value else "resource"
 
 
-def _fetch_json(url: str, timeout: float = 20.0) -> Any:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=timeout) as response:
-        return json.loads(response.read().decode("utf-8"))
+def _parse_retry_after_seconds(retry_after: str | None) -> float | None:
+    if not retry_after:
+        return None
+
+    retry_after = retry_after.strip()
+    if not retry_after:
+        return None
+
+    if retry_after.isdigit():
+        return float(retry_after)
+
+    try:
+        retry_at = parsedate_to_datetime(retry_after)
+    except (TypeError, ValueError):
+        return None
+
+    now = datetime.now(timezone.utc)
+    if retry_at.tzinfo is None:
+        retry_at = retry_at.replace(tzinfo=timezone.utc)
+    return max(0.0, (retry_at - now).total_seconds())
 
 
-def _fetch_text(url: str, timeout: float = 20.0) -> str:
+def _is_ssl_cert_error(exc: BaseException) -> bool:
+    if isinstance(exc, ssl.SSLCertVerificationError):
+        return True
+    if isinstance(exc, URLError):
+        reason = exc.reason
+        if isinstance(reason, ssl.SSLCertVerificationError):
+            return True
+    return "CERTIFICATE_VERIFY_FAILED" in str(exc)
+
+
+def _retryable_network_error(exc: BaseException) -> bool:
+    if _is_ssl_cert_error(exc):
+        return False
+    if isinstance(exc, (TimeoutError, socket.timeout, IncompleteRead, ConnectionResetError)):
+        return True
+    if isinstance(exc, URLError):
+        reason = exc.reason
+        if isinstance(reason, (TimeoutError, socket.timeout, IncompleteRead, ConnectionResetError)):
+            return True
+        return True
+    return False
+
+
+def _retry_delay(attempt: int, retry_after: str | None = None) -> float:
+    parsed = _parse_retry_after_seconds(retry_after)
+    if parsed is not None:
+        return min(max(parsed, 0.0), 60.0)
+    return min(2 ** (attempt - 1), 30.0)
+
+
+def _fetch_bytes(
+    url: str,
+    *,
+    timeout: float = 20.0,
+    ssl_context: ssl.SSLContext | None = None,
+    source_name: str = "remote",
+) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=timeout) as response:
-        return response.read().decode("utf-8", errors="replace")
+    last_exc: BaseException | None = None
+
+    for attempt in range(1, MAX_FETCH_RETRIES + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout, context=ssl_context) as response:
+                return response.read()
+        except HTTPError as exc:
+            last_exc = exc
+            if exc.code in RETRYABLE_HTTP_CODES and attempt < MAX_FETCH_RETRIES:
+                delay = _retry_delay(attempt, exc.headers.get("Retry-After"))
+                print(
+                    f"[retry] {source_name} HTTP {exc.code} from {url}; "
+                    f"retrying in {delay:.1f}s ({attempt}/{MAX_FETCH_RETRIES})"
+                )
+                time.sleep(delay)
+                continue
+            raise
+        except Exception as exc:  # noqa: BLE001
+            last_exc = exc
+            if _retryable_network_error(exc) and attempt < MAX_FETCH_RETRIES:
+                delay = _retry_delay(attempt)
+                print(
+                    f"[retry] {source_name} network error from {url}: {exc}; "
+                    f"retrying in {delay:.1f}s ({attempt}/{MAX_FETCH_RETRIES})"
+                )
+                time.sleep(delay)
+                continue
+            raise
+
+    if last_exc is not None:
+        raise RuntimeError(f"{source_name} fetch failed after retries: {last_exc}") from last_exc
+    raise RuntimeError(f"{source_name} fetch failed unexpectedly for {url}")
+
+
+def _fetch_json(
+    url: str,
+    *,
+    timeout: float = 20.0,
+    ssl_context: ssl.SSLContext | None = None,
+    source_name: str = "remote",
+) -> Any:
+    payload = _fetch_bytes(
+        url,
+        timeout=timeout,
+        ssl_context=ssl_context,
+        source_name=source_name,
+    )
+    return json.loads(payload.decode("utf-8"))
+
+
+def _fetch_text(
+    url: str,
+    *,
+    timeout: float = 20.0,
+    ssl_context: ssl.SSLContext | None = None,
+    source_name: str = "remote",
+) -> str:
+    payload = _fetch_bytes(
+        url,
+        timeout=timeout,
+        ssl_context=ssl_context,
+        source_name=source_name,
+    )
+    return payload.decode("utf-8", errors="replace")
 
 
 def _candidate(
@@ -81,7 +203,7 @@ def fetch_huggingface(kind: str, limit: int) -> list[dict[str, Any]]:
 
     query = urllib.parse.urlencode({"search": "pashto", "limit": str(limit)})
     url = f"https://huggingface.co/api/{kind}?{query}"
-    payload = _fetch_json(url)
+    payload = _fetch_json(url, source_name=f"huggingface-{kind}")
 
     category = "dataset" if kind == "datasets" else "model"
     out: list[dict[str, Any]] = []
@@ -111,7 +233,7 @@ def fetch_huggingface(kind: str, limit: int) -> list[dict[str, Any]]:
 def fetch_huggingface_spaces(limit: int) -> list[dict[str, Any]]:
     query = urllib.parse.urlencode({"search": "pashto", "limit": str(limit)})
     url = f"https://huggingface.co/api/spaces?{query}"
-    payload = _fetch_json(url)
+    payload = _fetch_json(url, source_name="huggingface-spaces")
 
     out: list[dict[str, Any]] = []
     for item in payload:
@@ -142,7 +264,7 @@ def fetch_kaggle_datasets(limit: int) -> list[dict[str, Any]]:
     # Public Kaggle dataset listing endpoint (no auth needed for list responses).
     query = urllib.parse.urlencode({"search": "pashto", "page": "1"})
     url = f"https://www.kaggle.com/api/v1/datasets/list?{query}"
-    payload = _fetch_json(url)
+    payload = _fetch_json(url, source_name="kaggle-datasets")
 
     out: list[dict[str, Any]] = []
     for item in payload:
@@ -191,7 +313,11 @@ def fetch_github_pashto_repos(limit: int) -> list[dict[str, Any]]:
             {"q": query_text, "sort": "stars", "order": "desc", "per_page": str(limit)}
         )
         url = f"https://api.github.com/search/repositories?{query}"
-        payload = _fetch_json(url)
+        payload = _fetch_json(
+            url,
+            timeout=30.0,
+            source_name="github-repositories",
+        )
         for item in payload.get("items", []):
             full_name = item.get("full_name")
             html_url = item.get("html_url")
@@ -244,8 +370,21 @@ def fetch_arxiv(limit: int) -> list[dict[str, Any]]:
     query = urllib.parse.urlencode(
         {"search_query": "all:pashto", "start": "0", "max_results": str(limit)}
     )
-    url = f"http://export.arxiv.org/api/query?{query}"
-    xml_text = _fetch_text(url)
+    url = f"https://export.arxiv.org/api/query?{query}"
+    try:
+        xml_text = _fetch_text(url, timeout=30.0, source_name="arxiv")
+    except Exception as exc:  # noqa: BLE001
+        if not _is_ssl_cert_error(exc):
+            raise
+        # arXiv occasionally fails cert chain validation in some runner images.
+        insecure_context = ssl._create_unverified_context()
+        print("[warn] arxiv SSL verification failed; retrying with unverified TLS context")
+        xml_text = _fetch_text(
+            url,
+            timeout=30.0,
+            ssl_context=insecure_context,
+            source_name="arxiv",
+        )
     root = ET.fromstring(xml_text)
     ns = {"atom": "http://www.w3.org/2005/Atom"}
 
@@ -281,7 +420,11 @@ def fetch_semantic_scholar(limit: int) -> list[dict[str, Any]]:
         {"query": "pashto", "limit": str(limit), "fields": fields}
     )
     url = f"https://api.semanticscholar.org/graph/v1/paper/search?{query}"
-    payload = _fetch_json(url)
+    payload = _fetch_json(
+        url,
+        timeout=30.0,
+        source_name="semantic-scholar",
+    )
 
     out: list[dict[str, Any]] = []
     for item in payload.get("data", []):

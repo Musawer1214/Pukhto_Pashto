@@ -2394,6 +2394,171 @@
         "ocr",
         "deep-learning"
       ]
+    },
+    {
+      "id": "paper-openalex-kpti-katib-pashto-text-imagebase-benchmark",
+      "title": "KPTI: Katib's Pashto Text Imagebase and Deep Learning Benchmark",
+      "url": "https://doi.org/10.1109/icfhr.2016.0090",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper introducing KPTI, a Pashto text imagebase and benchmark for handwritten recognition.",
+      "primary_use": "Pashto OCR dataset and benchmarking reference",
+      "tasks": [
+        "ocr",
+        "benchmarking"
+      ],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+        "evidence_url": "https://doi.org/10.1109/icfhr.2016.0090",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "benchmark"
+      ]
+    },
+    {
+      "id": "paper-openalex-pioneer-dataset-handwritten-pashto-cnn",
+      "title": "Pioneer dataset and recognition of Handwritten Pashto characters using Convolution Neural Networks",
+      "url": "https://doi.org/10.1177/0020294020964826",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on a pioneer handwritten Pashto character dataset with CNN-based recognition.",
+      "primary_use": "Pashto handwritten character recognition reference",
+      "tasks": [
+        "ocr",
+        "benchmarking"
+      ],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+        "evidence_url": "https://doi.org/10.1177/0020294020964826",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "deep-learning"
+      ]
+    },
+    {
+      "id": "paper-openalex-scale-rotation-invariant-ocr-pashto-mdlstm",
+      "title": "Scale and rotation invariant OCR for Pashto cursive script using MDLSTM network",
+      "url": "https://doi.org/10.1109/icdar.2015.7333931",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on scale- and rotation-invariant OCR for cursive Pashto using MDLSTM.",
+      "primary_use": "Pashto OCR model architecture reference",
+      "tasks": [
+        "ocr"
+      ],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+        "evidence_url": "https://doi.org/10.1109/icdar.2015.7333931",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "mdlstm"
+      ]
+    },
+    {
+      "id": "paper-openalex-recognizable-units-pashto-ocr",
+      "title": "Recognizable units in Pashto language for OCR",
+      "url": "https://doi.org/10.1109/icdar.2015.7333963",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper defining recognizable units in Pashto for OCR workflows.",
+      "primary_use": "Pashto OCR preprocessing and unit-design reference",
+      "tasks": [
+        "ocr"
+      ],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+        "evidence_url": "https://doi.org/10.1109/icdar.2015.7333963",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr"
+      ]
+    },
+    {
+      "id": "paper-openalex-shape-analysis-pashto-script-image-database-ocr",
+      "title": "Shape analysis of Pashto script and creation of image database for OCR",
+      "url": "https://doi.org/10.1109/icet.2009.5353160",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on Pashto script shape analysis and image database creation for OCR.",
+      "primary_use": "Pashto OCR dataset design and feature reference",
+      "tasks": [
+        "ocr",
+        "benchmarking"
+      ],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+        "evidence_url": "https://doi.org/10.1109/icet.2009.5353160",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "dataset"
+      ]
+    },
+    {
+      "id": "paper-openalex-speech-translation-low-resource-case-pashto",
+      "title": "Speech translation for low-resource languages: the case of Pashto",
+      "url": "https://doi.org/10.21437/interspeech.2005-723",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on speech translation for low-resource languages, including Pashto.",
+      "primary_use": "Pashto speech translation and low-resource MT reference",
+      "tasks": [
+        "asr",
+        "mt"
+      ],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+        "evidence_url": "https://doi.org/10.21437/interspeech.2005-723",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "speech",
+        "translation"
+      ]
     }
   ]
 }

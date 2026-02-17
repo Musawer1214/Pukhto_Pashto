@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-02-17T07:38:16.115331+00:00",
+  "generated_on": "2026-02-17T13:19:27.243715+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
@@ -15,21 +15,21 @@
     "arxiv",
     "semantic-scholar"
   ],
-  "candidate_count": 143,
+  "candidate_count": 136,
   "candidates": [
     {
-      "id": "candidate-s2-a-lexical-analysis-of-pashto-language",
-      "title": "A Lexical Analysis of Pashto Language",
-      "url": "https://www.semanticscholar.org/paper/6a1422eaca906a6657aa667b30dcb5575d25f8f8",
+      "id": "candidate-s2-a-comparison-of-pashto-and-turkmen-languages-vowel",
+      "title": "A Comparison of Pashto and Turkmen Languages Vowel",
+      "url": "https://www.semanticscholar.org/paper/9acff7425bcd0d6fe8ebca8945dd0f450cbd1ebb",
       "category": "paper",
       "source": "other",
       "status": "candidate",
-      "summary": "Language changes over time. Apart from many other reasons, some words become dormant and remain no more in use. In this research, an attempt has been made to show language change in Pashto language. For this purpose, images of different cul",
+      "summary": "Vowel sounds, which do not obstruct the vocal tract when articulated, are fundamental to language's movement, sound, and rhythm. They form the core of syllables, and the interplay between these syllables and sounds constructs words, phrases",
       "primary_use": "Needs maintainer review before promotion to verified catalog.",
       "tasks": [],
       "pashto_evidence": {
         "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
-        "evidence_url": "https://www.semanticscholar.org/paper/6a1422eaca906a6657aa667b30dcb5575d25f8f8",
+        "evidence_url": "https://www.semanticscholar.org/paper/9acff7425bcd0d6fe8ebca8945dd0f450cbd1ebb",
         "markers": [
           "pashto"
         ]
@@ -258,6 +258,29 @@
       ]
     },
     {
+      "id": "candidate-s2-animals-as-metaphors-an-analysis-of-gender-representation-in-pashto-proverbs",
+      "title": "ANIMALS AS METAPHORS: AN ANALYSIS OF GENDER REPRESENTATION IN PASHTO PROVERBS",
+      "url": "https://www.semanticscholar.org/paper/8cc1765aa09f175f567d8fd607953638391f89da",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Pashto proverbs are a significant genre in the Pashto folklore and communication. The proverbs play an important role in framing the social cognition of the Pashtun community. Few past studies have been carried out on the various social asp",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/8cc1765aa09f175f567d8fd607953638391f89da",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
       "id": "candidate-hf-dataset-arsalagrey-pashto",
       "title": "arsalagrey/pashto",
       "url": "https://huggingface.co/datasets/arsalagrey/pashto",
@@ -419,29 +442,6 @@
         "candidate",
         "dataset",
         "zenodo"
-      ]
-    },
-    {
-      "id": "candidate-s2-comprehensive-socio-phonetic-study-of-the-plosive-p-and-fricative-f-merger-among",
-      "title": "Comprehensive Socio-phonetic Study of the Plosive /p/ and Fricative /f/ Merger among Pashto Speakers in Khyber Pakhtunkhwa",
-      "url": "https://www.semanticscholar.org/paper/4f01f2250c897dc53099f76a2455471b480f22cf",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Introduction: The phonological systems of a first language (L1) can fundamentally constrain the acquisition of a second language (L2), particularly in speech sound perception and production. In Pashto-English bilinguals, the absence of the",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
-        "evidence_url": "https://www.semanticscholar.org/paper/4f01f2250c897dc53099f76a2455471b480f22cf",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
       ]
     },
     {
@@ -922,7 +922,7 @@
     {
       "id": "candidate-datacite-paper-fairness-evaluation-and-inference-level-mitigation-in-llms",
       "title": "Fairness Evaluation and Inference Level Mitigation in LLMs",
-      "url": "https://figshare.mq.edu.au/articles/thesis/Fairness_Evaluation_and_Inference_Level_Mitigation_in_LLMs/31093552/1",
+      "url": "https://figshare.mq.edu.au/articles/thesis/Fairness_Evaluation_and_Inference_Level_Mitigation_in_LLMs/31093552",
       "category": "paper",
       "source": "datacite",
       "status": "candidate",
@@ -931,7 +931,7 @@
       "tasks": [],
       "pashto_evidence": {
         "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://figshare.mq.edu.au/articles/thesis/Fairness_Evaluation_and_Inference_Level_Mitigation_in_LLMs/31093552/1",
+        "evidence_url": "https://figshare.mq.edu.au/articles/thesis/Fairness_Evaluation_and_Inference_Level_Mitigation_in_LLMs/31093552",
         "markers": [
           "pashto"
         ]
@@ -1471,30 +1471,6 @@
         "pashto",
         "candidate",
         "model"
-      ]
-    },
-    {
-      "id": "candidate-openalex-kpti-katib-s-pashto-text-imagebase-and-deep-learning-benchmark",
-      "title": "KPTI: Katib's Pashto Text Imagebase and Deep Learning Benchmark",
-      "url": "https://doi.org/10.1109/icfhr.2016.0090",
-      "category": "paper",
-      "source": "openalex",
-      "status": "candidate",
-      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
-        "evidence_url": "https://doi.org/10.1109/icfhr.2016.0090",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "openalex"
       ]
     },
     {
@@ -2404,30 +2380,6 @@
       ]
     },
     {
-      "id": "candidate-openalex-pioneer-dataset-and-recognition-of-handwritten-pashto-characters-using-convoluti",
-      "title": "Pioneer dataset and recognition of Handwritten Pashto characters using Convolution Neural Networks",
-      "url": "https://doi.org/10.1177/0020294020964826",
-      "category": "paper",
-      "source": "openalex",
-      "status": "candidate",
-      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
-        "evidence_url": "https://doi.org/10.1177/0020294020964826",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "openalex"
-      ]
-    },
-    {
       "id": "candidate-zenodo-paper-portrayal-of-death-in-the-selected-poems-of-abdul-ghani-khan-and-emily-dickinson",
       "title": "Portrayal of Death in the Selected Poems of Abdul Ghani Khan and Emily Dickinson: A Comparative Thematic Analysis",
       "url": "https://zenodo.org/records/15046502",
@@ -2520,6 +2472,32 @@
         "candidate",
         "project",
         "github"
+      ]
+    },
+    {
+      "id": "candidate-gh-project-pukhtoonmafia009-pukhtoonmafia009",
+      "title": "Pukhtoonmafia009/Pukhtoonmafia009",
+      "url": "https://github.com/Pukhtoonmafia009/Pukhtoonmafia009",
+      "category": "project",
+      "source": "github",
+      "status": "candidate",
+      "summary": "Config files for my GitHub profile.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
+        "evidence_url": "https://github.com/Pukhtoonmafia009/Pukhtoonmafia009",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "project",
+        "github",
+        "config",
+        "github-config"
       ]
     },
     {
@@ -2669,30 +2647,6 @@
       ]
     },
     {
-      "id": "candidate-openalex-recognizable-units-in-pashto-language-for-ocr",
-      "title": "Recognizable units in Pashto language for OCR",
-      "url": "https://doi.org/10.1109/icdar.2015.7333963",
-      "category": "paper",
-      "source": "openalex",
-      "status": "candidate",
-      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
-        "evidence_url": "https://doi.org/10.1109/icdar.2015.7333963",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "openalex"
-      ]
-    },
-    {
       "id": "candidate-s2-resolving-the-dual-y-orthographic-variation-in-pashto-an-interdisciplinary-appro",
       "title": "Resolving the Dual Yā Orthographic Variation in Pashto: An Interdisciplinary Approach Integrating Linguistic, Technological, and Educational Perspectives in Afghanistan and Pakistan",
       "url": "https://www.semanticscholar.org/paper/3741ccd390216a00431606d85f6c21a174244ccb",
@@ -2713,30 +2667,6 @@
         "pashto",
         "candidate",
         "paper"
-      ]
-    },
-    {
-      "id": "candidate-openalex-scale-and-rotation-invariant-ocr-for-pashto-cursive-script-using-mdlstm-network",
-      "title": "Scale and rotation invariant OCR for Pashto cursive script using MDLSTM network",
-      "url": "https://doi.org/10.1109/icdar.2015.7333931",
-      "category": "paper",
-      "source": "openalex",
-      "status": "candidate",
-      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
-        "evidence_url": "https://doi.org/10.1109/icdar.2015.7333931",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "openalex"
       ]
     },
     {
@@ -2812,30 +2742,6 @@
         "fonts",
         "freepashtofonts",
         "pashto"
-      ]
-    },
-    {
-      "id": "candidate-openalex-shape-analysis-of-pashto-script-and-creation-of-image-database-for-ocr",
-      "title": "Shape analysis of Pashto script and creation of image database for OCR",
-      "url": "https://doi.org/10.1109/icet.2009.5353160",
-      "category": "paper",
-      "source": "openalex",
-      "status": "candidate",
-      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
-        "evidence_url": "https://doi.org/10.1109/icet.2009.5353160",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "openalex"
       ]
     },
     {
@@ -2935,30 +2841,6 @@
         "candidate",
         "paper",
         "zenodo"
-      ]
-    },
-    {
-      "id": "candidate-openalex-speech-translation-for-low-resource-languages-the-case-of-pashto",
-      "title": "Speech translation for low-resource languages: the case of Pashto",
-      "url": "https://doi.org/10.21437/interspeech.2005-723",
-      "category": "paper",
-      "source": "openalex",
-      "status": "candidate",
-      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
-        "evidence_url": "https://doi.org/10.21437/interspeech.2005-723",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "openalex"
       ]
     },
     {
@@ -3366,68 +3248,18 @@
       ]
     },
     {
-      "id": "candidate-s2-transformer-based-title-generation-for-pashto-texts-using-topic-modeling-techniq",
-      "title": "Transformer-Based Title Generation for Pashto Texts Using Topic Modeling Techniques",
-      "url": "https://www.semanticscholar.org/paper/1b675f8b6e3683677cfa3bf3fec40ae9649d8d8c",
+      "id": "candidate-s2-validation-of-the-pashto-version-of-the-premature-ejaculation-diagnostic-tool-pe",
+      "title": "Validation of the Pashto Version of the Premature Ejaculation Diagnostic Tool (PEDT)",
+      "url": "https://www.semanticscholar.org/paper/4ecd042988e98a5fe82dce2f9c6c179bf635559b",
       "category": "paper",
       "source": "other",
       "status": "candidate",
-      "summary": "This study proposes a transformer-assisted framework for automatic title generation in Pashto, a low-resource language with limited NLP resources. The approach combines topic modeling techniques with a generative transformer to produce cohe",
+      "summary": "Objective: The research goal involved evaluating the validity of the Pashto version of the Premature Ejaculation Diagnostic Tool (PEDT) by assessing its relationship with clinical premature ejaculation (PE) diagnosis and intravaginal ejacul",
       "primary_use": "Needs maintainer review before promotion to verified catalog.",
       "tasks": [],
       "pashto_evidence": {
         "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
-        "evidence_url": "https://www.semanticscholar.org/paper/1b675f8b6e3683677cfa3bf3fec40ae9649d8d8c",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
-      "id": "candidate-gh-project-wikis-on-git-ps-wikipedia-org",
-      "title": "wikis-on-git/ps.wikipedia.org",
-      "url": "https://github.com/wikis-on-git/ps.wikipedia.org",
-      "category": "project",
-      "source": "github",
-      "status": "candidate",
-      "summary": "Wikipedia in Pashto (پښتو)",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
-        "evidence_url": "https://github.com/wikis-on-git/ps.wikipedia.org",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "github",
-        "mediawiki",
-        "pashto",
-        "wikipedia"
-      ]
-    },
-    {
-      "id": "candidate-s2-word-order-in-pashto-sentences",
-      "title": "Word Order in Pashto Sentences",
-      "url": "https://www.semanticscholar.org/paper/ed2025e7f944cfa86bdd4c24508e1676b788ae02",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "This article attempts to show the order of words in Pashto phrases and sentences. Their original position is explained, and if the same structure or word changes its position, it is also explained. No specific article or book has been publi",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
-        "evidence_url": "https://www.semanticscholar.org/paper/ed2025e7f944cfa86bdd4c24508e1676b788ae02",
+        "evidence_url": "https://www.semanticscholar.org/paper/4ecd042988e98a5fe82dce2f9c6c179bf635559b",
         "markers": [
           "pashto"
         ]

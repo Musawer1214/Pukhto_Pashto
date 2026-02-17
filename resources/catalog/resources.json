@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_on": "2026-02-16",
+  "updated_on": "2026-02-17",
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -2007,6 +2007,170 @@
         "paper",
         "other",
         "nlp"
+      ]
+    },
+    {
+      "id": "dataset-hf-aamirhs-pashto-audio-wav2vec",
+      "title": "aamirhs/pashto-audio-wav2vec",
+      "url": "https://huggingface.co/datasets/aamirhs/pashto-audio-wav2vec",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto speech dataset surfaced from Hugging Face candidate sync for ASR experiments.",
+      "primary_use": "Pashto ASR data exploration and baseline training",
+      "tasks": [
+        "asr"
+      ],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/aamirhs/pashto-audio-wav2vec",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "dataset",
+        "huggingface",
+        "speech",
+        "asr"
+      ]
+    },
+    {
+      "id": "dataset-hf-alimuhammad73-pashto-poetry",
+      "title": "AliMuhammad73/Pashto-Poetry",
+      "url": "https://huggingface.co/datasets/AliMuhammad73/Pashto-Poetry",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto poetry text dataset surfaced from Hugging Face candidate sync for NLP experiments.",
+      "primary_use": "Pashto poetry corpus for language modeling and text analysis",
+      "tasks": [
+        "nlp"
+      ],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/datasets/AliMuhammad73/Pashto-Poetry",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "dataset",
+        "huggingface",
+        "text",
+        "poetry",
+        "nlp"
+      ]
+    },
+    {
+      "id": "model-hf-aamirhs-wav2vec2-large-xls-r-300m-pashto-colab",
+      "title": "aamirhs/wav2vec2-large-xls-r-300m-pashto-colab",
+      "url": "https://huggingface.co/aamirhs/wav2vec2-large-xls-r-300m-pashto-colab",
+      "category": "model",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto ASR model checkpoint surfaced from Hugging Face candidate sync.",
+      "primary_use": "Pashto ASR baseline and transfer-learning comparison",
+      "tasks": [
+        "asr"
+      ],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/aamirhs/wav2vec2-large-xls-r-300m-pashto-colab",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "model",
+        "huggingface",
+        "asr"
+      ]
+    },
+    {
+      "id": "project-hf-space-aizazayyubi-pashto-asr",
+      "title": "Aizazayyubi/pashto_asr",
+      "url": "https://huggingface.co/spaces/Aizazayyubi/pashto_asr",
+      "category": "project",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto ASR interactive demo surfaced from Hugging Face Spaces candidate sync.",
+      "primary_use": "Interactive Pashto ASR demo for qualitative evaluation",
+      "tasks": [
+        "asr",
+        "demo"
+      ],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face Spaces search.",
+        "evidence_url": "https://huggingface.co/spaces/Aizazayyubi/pashto_asr",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "project",
+        "huggingface",
+        "asr",
+        "demo"
+      ]
+    },
+    {
+      "id": "paper-arxiv-from-scarcity-to-scale-pashto-common-voice",
+      "title": "From Scarcity to Scale: A Release-Level Analysis of the Pashto Common Voice Dataset",
+      "url": "http://arxiv.org/abs/2602.14062v1",
+      "category": "paper",
+      "source": "arxiv",
+      "status": "verified",
+      "summary": "Research paper analyzing Pashto Common Voice releases and dataset scaling characteristics.",
+      "primary_use": "ASR data quality and release trend reference",
+      "tasks": [
+        "asr",
+        "benchmarking"
+      ],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto marker in paper title from arXiv query results.",
+        "evidence_url": "http://arxiv.org/abs/2602.14062v1",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "paper",
+        "arxiv",
+        "asr",
+        "common-voice"
+      ]
+    },
+    {
+      "id": "paper-arxiv-tuning-traditional-pashto-text-classification",
+      "title": "Tuning Traditional Language Processing Approaches for Pashto Text Classification",
+      "url": "http://arxiv.org/abs/2305.03737v1",
+      "category": "paper",
+      "source": "arxiv",
+      "status": "verified",
+      "summary": "Research paper focused on Pashto text classification using traditional NLP approaches.",
+      "primary_use": "Pashto text classification method reference",
+      "tasks": [
+        "nlp"
+      ],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto marker in paper title from arXiv query results.",
+        "evidence_url": "http://arxiv.org/abs/2305.03737v1",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "paper",
+        "arxiv",
+        "nlp",
+        "classification"
       ]
     }
   ]

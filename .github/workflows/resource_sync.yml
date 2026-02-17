@@ -2,7 +2,7 @@ name: Resource Sync
 
 on:
   schedule:
-    - cron: "0 4 * * 1"
+    - cron: "0 4 * * *"
   workflow_dispatch:
 
 permissions:
@@ -40,7 +40,7 @@ jobs:
           commit-message: "chore(resources): sync candidate feed"
           title: "chore(resources): sync Pashto resource candidates"
           body: |
-            Automated weekly candidate sync.
+            Automated daily candidate sync.
 
             Scope:
             - Updates `resources/catalog/pending_candidates.json`

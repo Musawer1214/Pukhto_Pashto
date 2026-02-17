@@ -2,9 +2,9 @@
 
 Use this runbook whenever you want to repeat the resource update process without re-explaining it.
 
-## Weekly automation (already enabled)
+## Daily automation (already enabled)
 - Workflow: [../.github/workflows/resource_sync.yml](../.github/workflows/resource_sync.yml)
-- Schedule: every Monday (UTC) via GitHub Actions cron.
+- Schedule: every day at 04:00 UTC via GitHub Actions cron.
 - Output: updates [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json) and opens a review PR.
 
 ## Manual run (single command)

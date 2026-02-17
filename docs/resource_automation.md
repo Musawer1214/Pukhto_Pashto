@@ -33,7 +33,7 @@ This repository uses a semi-automated process to keep Pashto resources current w
   - generated file consistency
   - markdown link checks
   - tests
-- Resource Sync (`.github/workflows/resource_sync.yml`) runs weekly and opens a PR with candidate updates.
+- Resource Sync (`.github/workflows/resource_sync.yml`) runs daily and opens a PR with candidate updates.
 
 ## Review flow
 1. Inspect candidate entries in `resources/catalog/pending_candidates.json`.

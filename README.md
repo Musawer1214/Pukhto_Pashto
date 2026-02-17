@@ -42,7 +42,7 @@ This repository now has a machine-readable and searchable resource pipeline:
 The process is semi-automatic:
 
 1. Auto discovery:
-- Weekly GitHub Action runs `.github/workflows/resource_sync.yml`.
+- Daily GitHub Action runs `.github/workflows/resource_sync.yml`.
 - It updates `resources/catalog/pending_candidates.json` and opens a review PR.
 
 2. Manual review and promotion:

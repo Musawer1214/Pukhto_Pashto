@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-02-17T00:00:00Z",
-  "count": 81,
+  "count": 89,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -1995,6 +1995,212 @@
       ],
       "evidence_text": "Matched by Pashto marker in paper title from arXiv query results.",
       "evidence_url": "http://arxiv.org/abs/2305.03737v1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "dataset-dataverse-iarpa-babel-pashto-language-pack-v0-4by",
+      "title": "IARPA Babel Pashto Language Pack IARPA-babel104b-v0.4bY",
+      "url": "https://hdl.handle.net/11272.1/AB2/GLFN3X",
+      "category": "dataset",
+      "source": "dataverse",
+      "status": "verified",
+      "summary": "Pashto Babel language pack dataset for speech and language processing evaluation.",
+      "primary_use": "Pashto speech dataset for ASR and language identification experiments",
+      "tasks": [
+        "asr",
+        "benchmarking"
+      ],
+      "tags": [
+        "pashto",
+        "dataset",
+        "dataverse",
+        "speech",
+        "asr",
+        "babel"
+      ],
+      "evidence_text": "Dataverse metadata includes Pashto markers in dataset title or description.",
+      "evidence_url": "https://hdl.handle.net/11272.1/AB2/GLFN3X",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-arxiv-image-to-text-pashto-farsi-traditional-chinese",
+      "title": "Development of a New Image-to-text Conversion System for Pashto, Farsi and Traditional Chinese",
+      "url": "http://arxiv.org/abs/2005.08650v1",
+      "category": "paper",
+      "source": "arxiv",
+      "status": "verified",
+      "summary": "Research paper on image-to-text conversion including Pashto OCR.",
+      "primary_use": "Pashto OCR method reference",
+      "tasks": [
+        "ocr",
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "arxiv",
+        "ocr"
+      ],
+      "evidence_text": "Matched by Pashto marker in paper title from arXiv query results.",
+      "evidence_url": "http://arxiv.org/abs/2005.08650v1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-benchmark-pashto-handwritten-character-dataset-ocr",
+      "title": "Benchmark Pashto Handwritten Character Dataset and Pashto Object Character Recognition (OCR) Using Deep Neural Network with Rule Activation Function",
+      "url": "https://doi.org/10.1155/2021/6669672",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper introducing a benchmark dataset and OCR approach for Pashto handwritten characters.",
+      "primary_use": "Pashto handwritten OCR benchmark and methodology reference",
+      "tasks": [
+        "ocr",
+        "benchmarking"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "benchmark"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1155/2021/6669672",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-asr-isolated-pashto-spoken-digits-mfcc-knn",
+      "title": "Database development and automatic speech recognition of isolated Pashto spoken digits using MFCC and K-NN",
+      "url": "https://doi.org/10.1007/s10772-014-9267-z",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on isolated Pashto spoken-digit ASR with MFCC and K-NN.",
+      "primary_use": "Pashto ASR baseline method reference for digit recognition",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "asr",
+        "speech"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1007/s10772-014-9267-z",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-pashto-isolated-digits-recognition-dcnn",
+      "title": "Pashto isolated digits recognition using deep convolutional neural network",
+      "url": "https://doi.org/10.1016/j.heliyon.2020.e03372",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on Pashto isolated-digit recognition using deep convolutional neural networks.",
+      "primary_use": "Pashto speech recognition research reference",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "asr",
+        "deep-learning"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1016/j.heliyon.2020.e03372",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-pashto-offensive-language-detection-benchmark-bert",
+      "title": "Pashto offensive language detection: a benchmark dataset and monolingual Pashto BERT",
+      "url": "https://doi.org/10.7717/peerj-cs.1617",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on Pashto offensive language detection with benchmark dataset and monolingual BERT model.",
+      "primary_use": "Pashto NLP toxicity detection benchmark and model reference",
+      "tasks": [
+        "nlp",
+        "benchmarking"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "nlp",
+        "bert",
+        "benchmark"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.7717/peerj-cs.1617",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-phti-pashto-handwritten-text-imagebase",
+      "title": "PHTI: Pashto Handwritten Text Imagebase for Deep Learning Applications",
+      "url": "https://doi.org/10.1109/access.2022.3216881",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper describing PHTI, a Pashto handwritten text imagebase for deep learning.",
+      "primary_use": "Pashto OCR dataset and benchmark reference",
+      "tasks": [
+        "ocr",
+        "benchmarking"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "dataset"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1109/access.2022.3216881",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-recognition-of-pashto-handwritten-characters-deep-learning",
+      "title": "Recognition of Pashto Handwritten Characters Based on Deep Learning",
+      "url": "https://doi.org/10.3390/s20205884",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on deep-learning-based recognition of Pashto handwritten characters.",
+      "primary_use": "Pashto OCR model reference for handwritten character recognition",
+      "tasks": [
+        "ocr"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "deep-learning"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.3390/s20205884",
       "markers": [
         "pashto"
       ]

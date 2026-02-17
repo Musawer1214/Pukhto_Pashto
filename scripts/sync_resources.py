@@ -21,6 +21,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
+from html import unescape
 from http.client import IncompleteRead
 from pathlib import Path
 from typing import Any
@@ -72,6 +73,20 @@ def _is_pashto_centric(*values: str) -> bool:
 
 def _is_low_signal_name(value: str) -> bool:
     return bool(LOW_SIGNAL_RE.search(value or ""))
+
+
+def _strip_html(value: str) -> str:
+    text = re.sub(r"<[^>]+>", " ", value or "")
+    text = unescape(text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _classify_repo_category(name_blob: str) -> str:
+    lowered = (name_blob or "").casefold()
+    code_tokens = ("toolkit", "library", "nlp", "asr", "tts", "ocr", "api", "code", "cli", "sdk")
+    if any(token in lowered for token in code_tokens):
+        return "code"
+    return "project"
 
 
 def _parse_retry_after_seconds(retry_after: str | None) -> float | None:
@@ -440,10 +455,8 @@ def fetch_github_pashto_repos(limit: int) -> list[dict[str, Any]]:
             continue
 
         html_url = item["html_url"]
-        category = "project"
         topics = item.get("topics") or []
-        if any(token in name_blob for token in ("toolkit", "library", "nlp", "asr", "tts", "ocr", "api", "code")):
-            category = "code"
+        category = _classify_repo_category(name_blob)
 
         rid = f"candidate-gh-{category}-{_slug(full_name)}"
         description = (item.get("description") or "").strip()
@@ -460,6 +473,433 @@ def fetch_github_pashto_repos(limit: int) -> list[dict[str, Any]]:
                 evidence_url=html_url,
                 markers=["pashto"],
                 tags=["pashto", "candidate", category, "github", *(topics[:3])],
+            )
+        )
+        if len(out) >= limit:
+            break
+    return out
+
+
+def fetch_gitlab_pashto_projects(limit: int) -> list[dict[str, Any]]:
+    combined: dict[str, dict[str, Any]] = {}
+    errors: list[str] = []
+    for term in PASHTO_QUERY_TERMS:
+        query = urllib.parse.urlencode(
+            {
+                "search": term,
+                "simple": "true",
+                "order_by": "star_count",
+                "sort": "desc",
+                "per_page": str(limit),
+            }
+        )
+        url = f"https://gitlab.com/api/v4/projects?{query}"
+        try:
+            payload = _fetch_json(url, timeout=30.0, source_name="gitlab-projects")
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{term}: {exc}")
+            continue
+        for item in payload:
+            full_name = (item.get("path_with_namespace") or item.get("name_with_namespace") or "").strip()
+            if not full_name:
+                continue
+            combined[full_name] = item
+
+    if not combined and errors:
+        raise RuntimeError("; ".join(errors))
+
+    out: list[dict[str, Any]] = []
+    sorted_items = sorted(
+        combined.items(),
+        key=lambda kv: kv[1].get("star_count") or 0,
+        reverse=True,
+    )
+    for full_name, item in sorted_items:
+        web_url = (item.get("web_url") or "").strip()
+        if not web_url:
+            continue
+
+        description = (item.get("description") or "").strip()
+        topics = item.get("topics") or []
+        if not isinstance(topics, list):
+            topics = []
+        topics = [str(topic).strip() for topic in topics if str(topic).strip()]
+        name_blob = " ".join([full_name, item.get("name") or "", description, " ".join(topics)])
+        if not _is_pashto_centric(name_blob):
+            continue
+        if _is_low_signal_name(full_name):
+            continue
+
+        category = _classify_repo_category(name_blob)
+        rid = f"candidate-gitlab-{category}-{_slug(full_name)}"
+        summary = description or "Candidate Pashto-related GitLab repository."
+        out.append(
+            _candidate(
+                rid=rid,
+                title=full_name,
+                url=web_url,
+                category=category,
+                source="gitlab",
+                summary=summary[:240] if summary else "Candidate Pashto-related GitLab repository.",
+                evidence_text="Project metadata (name/description/topics) includes Pashto markers.",
+                evidence_url=web_url,
+                markers=["pashto"],
+                tags=["pashto", "candidate", category, "gitlab", *(topics[:3])],
+            )
+        )
+        if len(out) >= limit:
+            break
+    return out
+
+
+def fetch_openalex_papers(limit: int) -> list[dict[str, Any]]:
+    combined: dict[str, dict[str, Any]] = {}
+    errors: list[str] = []
+    for term in PASHTO_QUERY_TERMS:
+        query = urllib.parse.urlencode({"search": term, "per-page": str(limit)})
+        url = f"https://api.openalex.org/works?{query}"
+        try:
+            payload = _fetch_json(url, timeout=30.0, source_name="openalex")
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{term}: {exc}")
+            continue
+        for item in payload.get("results", []):
+            work_id = (item.get("id") or "").strip()
+            if not work_id:
+                continue
+            combined[work_id] = item
+
+    if not combined and errors:
+        raise RuntimeError("; ".join(errors))
+
+    out: list[dict[str, Any]] = []
+    for item in combined.values():
+        title = (item.get("display_name") or "").strip()
+        if not title:
+            continue
+        if not _is_pashto_centric(title):
+            continue
+        if _is_low_signal_name(title):
+            continue
+
+        doi = (item.get("doi") or "").strip()
+        if doi and not doi.startswith("http"):
+            doi = f"https://doi.org/{doi}"
+        primary = item.get("primary_location") or {}
+        landing = (primary.get("landing_page_url") or "").strip()
+        paper_url = doi or landing or (item.get("id") or "").strip()
+        if not paper_url:
+            continue
+
+        rid = f"candidate-openalex-{_slug(title)}"
+        out.append(
+            _candidate(
+                rid=rid,
+                title=title,
+                url=paper_url,
+                category="paper",
+                source="openalex",
+                summary="Candidate paper returned from OpenAlex works search for Pashto.",
+                evidence_text="Matched by explicit Pashto marker in title from OpenAlex works search.",
+                evidence_url=paper_url,
+                markers=["pashto"],
+                tags=["pashto", "candidate", "paper", "openalex"],
+            )
+        )
+        if len(out) >= limit:
+            break
+    return out
+
+
+def fetch_crossref_papers(limit: int) -> list[dict[str, Any]]:
+    combined: dict[str, dict[str, Any]] = {}
+    errors: list[str] = []
+    for term in PASHTO_QUERY_TERMS:
+        query = urllib.parse.urlencode({"query.title": term, "rows": str(limit)})
+        url = f"https://api.crossref.org/works?{query}"
+        try:
+            payload = _fetch_json(url, timeout=30.0, source_name="crossref")
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{term}: {exc}")
+            continue
+        for item in payload.get("message", {}).get("items", []):
+            doi = (item.get("DOI") or "").strip()
+            title_list = item.get("title") or []
+            title = (title_list[0] if isinstance(title_list, list) and title_list else "").strip()
+            key = doi or title
+            if not key:
+                continue
+            combined[key] = item
+
+    if not combined and errors:
+        raise RuntimeError("; ".join(errors))
+
+    out: list[dict[str, Any]] = []
+    for item in combined.values():
+        title_list = item.get("title") or []
+        title = (title_list[0] if isinstance(title_list, list) and title_list else "").strip()
+        if not title:
+            continue
+        if not _is_pashto_centric(title):
+            continue
+        if _is_low_signal_name(title):
+            continue
+
+        doi = (item.get("DOI") or "").strip()
+        paper_url = (item.get("URL") or "").strip()
+        if not paper_url and doi:
+            paper_url = f"https://doi.org/{doi}"
+        if not paper_url:
+            continue
+
+        abstract = _strip_html(item.get("abstract") or "")
+        rid = f"candidate-crossref-{_slug(title)}"
+        out.append(
+            _candidate(
+                rid=rid,
+                title=title,
+                url=paper_url,
+                category="paper",
+                source="crossref",
+                summary=(abstract or "Candidate paper returned from Crossref search for Pashto.")[:240],
+                evidence_text="Matched by explicit Pashto marker in title from Crossref search.",
+                evidence_url=paper_url,
+                markers=["pashto"],
+                tags=["pashto", "candidate", "paper", "crossref"],
+            )
+        )
+        if len(out) >= limit:
+            break
+    return out
+
+
+def fetch_zenodo_records(limit: int) -> list[dict[str, Any]]:
+    combined: dict[str, dict[str, Any]] = {}
+    errors: list[str] = []
+    for term in PASHTO_QUERY_TERMS:
+        query = urllib.parse.urlencode({"q": term, "size": str(limit), "sort": "mostrecent"})
+        url = f"https://zenodo.org/api/records/?{query}"
+        try:
+            payload = _fetch_json(url, timeout=30.0, source_name="zenodo")
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{term}: {exc}")
+            continue
+        for item in payload.get("hits", {}).get("hits", []):
+            record_id = str(item.get("id") or "").strip()
+            if not record_id:
+                continue
+            combined[record_id] = item
+
+    if not combined and errors:
+        raise RuntimeError("; ".join(errors))
+
+    category_map = {
+        "dataset": "dataset",
+        "software": "code",
+        "publication": "paper",
+        "poster": "project",
+        "presentation": "project",
+    }
+
+    out: list[dict[str, Any]] = []
+    for item in combined.values():
+        metadata = item.get("metadata") or {}
+        title = (metadata.get("title") or "").strip()
+        description = _strip_html(metadata.get("description") or "")
+        if not title:
+            continue
+        if not _is_pashto_centric(title, description):
+            continue
+        if _is_low_signal_name(title):
+            continue
+
+        links = item.get("links") or {}
+        record_url = (links.get("self_html") or links.get("doi") or "").strip()
+        if not record_url:
+            doi = (metadata.get("doi") or "").strip()
+            if doi:
+                record_url = f"https://doi.org/{doi}"
+        if not record_url:
+            continue
+
+        rtype = (metadata.get("resource_type") or {}).get("type") or ""
+        category = category_map.get(str(rtype).casefold(), "project")
+        rid = f"candidate-zenodo-{category}-{_slug(title)}"
+        summary = description or "Candidate resource returned from Zenodo search for Pashto."
+        out.append(
+            _candidate(
+                rid=rid,
+                title=title,
+                url=record_url,
+                category=category,
+                source="zenodo",
+                summary=summary[:240],
+                evidence_text="Zenodo metadata includes Pashto markers in title or description.",
+                evidence_url=record_url,
+                markers=["pashto"],
+                tags=["pashto", "candidate", category, "zenodo"],
+            )
+        )
+        if len(out) >= limit:
+            break
+    return out
+
+
+def fetch_dataverse_datasets(limit: int) -> list[dict[str, Any]]:
+    combined: dict[str, dict[str, Any]] = {}
+    errors: list[str] = []
+    base_url = "https://dataverse.harvard.edu"
+    for term in PASHTO_QUERY_TERMS:
+        query = urllib.parse.urlencode(
+            {
+                "q": term,
+                "type": "dataset",
+                "per_page": str(limit),
+                "start": "0",
+            }
+        )
+        url = f"{base_url}/api/search?{query}"
+        try:
+            payload = _fetch_json(url, timeout=30.0, source_name="dataverse")
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{term}: {exc}")
+            continue
+        for item in payload.get("data", {}).get("items", []):
+            key = str(item.get("global_id") or item.get("identifier") or item.get("url") or "").strip()
+            if not key:
+                continue
+            combined[key] = item
+
+    if not combined and errors:
+        raise RuntimeError("; ".join(errors))
+
+    out: list[dict[str, Any]] = []
+    for item in combined.values():
+        title = (item.get("name") or "").strip()
+        description = (item.get("description") or "").strip()
+        if not title:
+            continue
+        if not _is_pashto_centric(title, description):
+            continue
+        if _is_low_signal_name(title):
+            continue
+
+        record_url = (item.get("url") or "").strip()
+        if record_url and record_url.startswith("/"):
+            record_url = f"{base_url}{record_url}"
+        if not record_url:
+            global_id = (item.get("global_id") or "").strip()
+            if global_id:
+                escaped_id = urllib.parse.quote(global_id, safe=":/")
+                record_url = f"{base_url}/dataset.xhtml?persistentId={escaped_id}"
+        if not record_url:
+            continue
+
+        rid = f"candidate-dataverse-dataset-{_slug(title)}"
+        out.append(
+            _candidate(
+                rid=rid,
+                title=title,
+                url=record_url,
+                category="dataset",
+                source="dataverse",
+                summary=(description or "Candidate dataset returned from Dataverse search for Pashto.")[:240],
+                evidence_text="Dataverse metadata includes Pashto markers in dataset title or description.",
+                evidence_url=record_url,
+                markers=["pashto"],
+                tags=["pashto", "candidate", "dataset", "dataverse"],
+            )
+        )
+        if len(out) >= limit:
+            break
+    return out
+
+
+def fetch_datacite_records(limit: int) -> list[dict[str, Any]]:
+    combined: dict[str, dict[str, Any]] = {}
+    errors: list[str] = []
+    for term in PASHTO_QUERY_TERMS:
+        query = urllib.parse.urlencode(
+            {
+                "query": term,
+                "page[size]": str(limit),
+            }
+        )
+        url = f"https://api.datacite.org/dois?{query}"
+        try:
+            payload = _fetch_json(url, timeout=30.0, source_name="datacite")
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{term}: {exc}")
+            continue
+        for item in payload.get("data", []):
+            record_id = (item.get("id") or "").strip()
+            if not record_id:
+                continue
+            combined[record_id] = item
+
+    if not combined and errors:
+        raise RuntimeError("; ".join(errors))
+
+    dataset_types = {"dataset", "collection"}
+    software_types = {"software"}
+    paper_types = {"journalarticle", "conferencepaper", "preprint", "text"}
+
+    out: list[dict[str, Any]] = []
+    for item in combined.values():
+        attributes = item.get("attributes") or {}
+        titles = attributes.get("titles") or []
+        title = ""
+        if isinstance(titles, list) and titles:
+            first = titles[0] or {}
+            if isinstance(first, dict):
+                title = (first.get("title") or "").strip()
+        if not title:
+            continue
+        description_items = attributes.get("descriptions") or []
+        descriptions: list[str] = []
+        if isinstance(description_items, list):
+            for block in description_items:
+                if isinstance(block, dict):
+                    value = (block.get("description") or "").strip()
+                    if value:
+                        descriptions.append(_strip_html(value))
+        description_blob = " ".join(descriptions).strip()
+        if not _is_pashto_centric(title, description_blob):
+            continue
+        if _is_low_signal_name(title):
+            continue
+
+        doi = (attributes.get("doi") or item.get("id") or "").strip()
+        record_url = (attributes.get("url") or "").strip()
+        if not record_url and doi:
+            record_url = f"https://doi.org/{doi}"
+        if not record_url:
+            continue
+
+        general_type = str((attributes.get("types") or {}).get("resourceTypeGeneral") or "").casefold()
+        if general_type in dataset_types:
+            category = "dataset"
+        elif general_type in software_types:
+            category = "code"
+        elif general_type in paper_types:
+            category = "paper"
+        else:
+            category = "project"
+
+        rid = f"candidate-datacite-{category}-{_slug(title)}"
+        summary = description_blob or "Candidate record returned from DataCite DOI search for Pashto."
+        out.append(
+            _candidate(
+                rid=rid,
+                title=title,
+                url=record_url,
+                category=category,
+                source="datacite",
+                summary=summary[:240],
+                evidence_text="DataCite metadata includes Pashto markers in title or description.",
+                evidence_url=record_url,
+                markers=["pashto"],
+                tags=["pashto", "candidate", category, "datacite"],
             )
         )
         if len(out) >= limit:
@@ -651,6 +1091,12 @@ def main() -> int:
         ("huggingface-models", lambda: fetch_huggingface("models", args.limit)),
         ("huggingface-spaces", lambda: fetch_huggingface_spaces(args.limit)),
         ("github-repositories", lambda: fetch_github_pashto_repos(args.limit)),
+        ("gitlab-projects", lambda: fetch_gitlab_pashto_projects(args.limit)),
+        ("openalex", lambda: fetch_openalex_papers(args.limit)),
+        ("crossref", lambda: fetch_crossref_papers(args.limit)),
+        ("zenodo", lambda: fetch_zenodo_records(args.limit)),
+        ("dataverse", lambda: fetch_dataverse_datasets(args.limit)),
+        ("datacite", lambda: fetch_datacite_records(args.limit)),
         ("arxiv", lambda: fetch_arxiv(args.limit)),
         ("semantic-scholar", lambda: fetch_semantic_scholar(args.limit)),
     ]

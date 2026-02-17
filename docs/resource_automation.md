@@ -13,7 +13,11 @@ This repository uses a semi-automated process to keep Pashto resources current w
 - Hugging Face models
 - Hugging Face Spaces (projects)
 - GitHub repositories (projects and code)
-- Research-paper endpoints
+- GitLab repositories (projects and code)
+- Zenodo records
+- Dataverse datasets
+- DataCite DOI records
+- Research-paper endpoints (arXiv, Semantic Scholar, OpenAlex, Crossref)
 
 ## Files involved
 - Canonical verified catalog: [../resources/catalog/resources.json](../resources/catalog/resources.json)

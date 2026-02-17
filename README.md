@@ -11,8 +11,6 @@ Use this first to find Pashto datasets, models, projects, code, papers, and tool
 ![Pukhto Pashto Repository Banner](Repository_banner_Image.png)
 
 ## Project Links
-- GitHub: [Pukhto_Pashto](https://github.com/Musawer1214/Pukhto_Pashto)
-- Hugging Face: [Musawer14/Pukhto_Pashto](https://huggingface.co/Musawer14/Pukhto_Pashto)
 - GitHub Pages (About): [Pukhto_Pashto Site](https://musawer1214.github.io/Pukhto_Pashto/)
 - GitHub Pages (Resource Search): [Pashto Resource Search](https://musawer1214.github.io/Pukhto_Pashto/search/)
 

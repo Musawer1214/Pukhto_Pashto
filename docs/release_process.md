@@ -18,8 +18,18 @@
 
 ## Versioning
 
-- Use semantic version tags: `vMAJOR.MINOR.PATCH`.
-- Example: `v1.0.0`, `v1.0.1`, `v1.1.0`, `v2.0.0`.
+Use three-figure tags with fixed meaning:
+
+- `vMAJOR.CODE.RESOURCE`
+- `MAJOR`: major milestones and large project-level changes.
+- `CODE`: code fixes, implementation changes, and internal patch updates.
+- `RESOURCE`: resource-catalog updates after candidate discovery and review.
+
+Examples:
+
+- `v1.0.1`: resource update release.
+- `v1.1.1`: code-fix release.
+- `v2.0.0`: next major milestone.
 
 ## Release Notes Location
 

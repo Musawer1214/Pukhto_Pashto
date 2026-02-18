@@ -73,7 +73,7 @@ python -m pytest -q
 ## Releases
 
 - Release notes index: [docs/releases/README.md](docs/releases/README.md)
-- Latest release notes: [v1.0.0](docs/releases/v1.0.0.md)
+- Latest release notes: [v1.0.1](docs/releases/v1.0.1.md)
 - Changelog: [CHANGELOG.md](CHANGELOG.md)
 
 ## Contributing
@@ -81,3 +81,4 @@ python -m pytest -q
 - Contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Community communication: [community/COMMUNICATION.md](community/COMMUNICATION.md)
 - Resource guidelines: [docs/dataset_guidelines.md](docs/dataset_guidelines.md)
+

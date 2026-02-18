@@ -3,7 +3,12 @@
 All notable changes to this project will be documented in this file.
 
 The format is inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
-and this project uses semantic version tags (for example `v1.0.0`, `v1.0.1`).
+and this project uses semantic version tags with a fixed role per figure:
+
+- `vMAJOR.CODE.RESOURCE`
+- `MAJOR`: major project milestones.
+- `CODE`: code fixes and implementation updates.
+- `RESOURCE`: resource-catalog updates.
 
 ## [Unreleased]
 ### Added
@@ -14,6 +19,24 @@ and this project uses semantic version tags (for example `v1.0.0`, `v1.0.1`).
 
 ### Fixed
 - None yet.
+
+## [v1.0.1] - 2026-02-18
+### Added
+- Promoted 6 high-confidence, non-duplicate Hugging Face resources to verified catalog:
+  - `ihanif/pashto_speech_2k`
+  - `ihanif/pashto_speech_3k`
+  - `koochikoo25/Pashto-Concatenated`
+  - `koochikoo25/Whisper-medium-pashto`
+  - `afaaaak/urdu_pashto_translator`
+  - `DrSaqlainHassan/PashtoTokenixer`
+
+### Changed
+- Updated `resources/catalog/resources.json` to version `1.0.1` with `updated_on: 2026-02-18`.
+- Regenerated resource indexes and search payload from the updated catalog.
+- Refreshed pending candidate feed from full discovery sync.
+
+### Fixed
+- Kept only high-confidence Pashto-centric resources in promotion scope for this cycle.
 
 ## [v1.0.0] - 2026-02-18
 ### Added
@@ -37,4 +60,3 @@ and this project uses semantic version tags (for example `v1.0.0`, `v1.0.1`).
 - Structured `resources/` folder for datasets, models, benchmarks, and tools.
 - Link-check script and normalization-validator tests.
 - Documentation hub and model/release/process guidance.
-

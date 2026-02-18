@@ -3,9 +3,7 @@
 Open-source repository for Pashto language technology resources: datasets, models, benchmarks, ASR, TTS, NLP, and machine translation (MT).
 
 This project curates verified Pashto resources and maintains reproducible tooling for discovery, validation, and documentation.
-
-![Pukhto Pashto Repository Banner](Repository_banner_Image.png)
-
+`r`n
 ## Start Here
 
 - Main resource search: [Pashto Resource Search](https://musawer1214.github.io/pashto-language-resources/search/)

@@ -20,6 +20,16 @@ and this project uses semantic version tags with a fixed role per figure:
 ### Fixed
 - None yet.
 
+## [v1.1.1] - 2026-02-18
+### Changed
+- Improved search-page readability and usability in `docs/search/index.html`.
+- Expanded short task labels into clearer full-form labels in UI controls and resource cards.
+- Standardized title casing for key UI labels and actions.
+
+### Fixed
+- Prevented long resource titles and long unbroken strings from overflowing card boundaries.
+- Improved capitalization and display formatting for source and task text in search results.
+
 ## [v1.0.1] - 2026-02-18
 ### Added
 - Promoted 6 high-confidence, non-duplicate Hugging Face resources to verified catalog:

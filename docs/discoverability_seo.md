@@ -3,7 +3,7 @@
 This playbook focuses on making the repository easier to find in:
 
 - GitHub search
-- Google/Bing search
+- Google and Bing search
 - Academic and resource discovery channels
 
 ## 1) Repository Slug Status
@@ -28,7 +28,7 @@ Set these in repository `Settings -> General` and About panel:
 - Description:
   - `Open-source Pashto (Pukhto/Pashto) datasets, ASR, TTS, NLP, MT, models, and benchmark resources.`
 - Website:
-  - [GitHub Pages home](https://musawer1214.github.io/pashto-language-resources/) (final slug)
+  - [GitHub Pages home](https://musawer1214.github.io/pashto-language-resources/)
 - Topics:
   - `pashto`
   - `pukhto`
@@ -45,7 +45,7 @@ Set these in repository `Settings -> General` and About panel:
 
 - Keep the first 160 characters of `README.md` keyword clear.
 - Use consistent terminology across pages: `Pashto (Pukhto/Pushto)`.
-- Publish regular updates in `CHANGELOG.md` and GitHub Releases.
+- Publish updates through `CHANGELOG.md` and release notes in `docs/releases/`.
 - Keep `CITATION.cff` updated for scholarly reuse and citation.
 
 ## 4) Pages SEO and Crawlability
@@ -61,19 +61,21 @@ Keep these updated when renaming slug or domain.
 ## 5) External Discovery Boost
 
 - Add the GitHub Pages search URL to:
-  - Hugging Face model/dataset cards
+  - Hugging Face model and dataset cards
   - Relevant community profiles and README links
-  - Conference/demo pages for Pashto language technology
+  - Conference or demo pages for Pashto language technology
 - Ask contributors to link specific resource pages in blog posts or papers.
 
-## SEO Operation Assets
+## 6) SEO Operation Assets
 
 - GitHub topics checklist: [github_topics_checklist.md](github_topics_checklist.md)
 - Backlink strategy: [backlink_strategy.md](backlink_strategy.md)
 - Intent page: [Pashto datasets](pashto_datasets.md)
 - Intent page: [Pashto ASR](pashto_asr.md)
 - Intent page: [Pashto TTS](pashto_tts.md)
-## 6) Indexing Checklist (After Push)
+- Release notes index: [releases/README.md](releases/README.md)
+
+## 7) Indexing Checklist (After Push)
 
 1. Push all changes to `main`.
 2. Verify GitHub Pages is serving:
@@ -88,5 +90,3 @@ Keep these updated when renaming slug or domain.
    - Home page
    - Search page
 6. Recheck search visibility after 1 to 3 weeks.
-
-

@@ -28,11 +28,18 @@ Use a lowest-common-denominator style in shared docs:
 - Relative links for internal files whenever possible.
 - YAML front matter only where needed (`README.md` for HF metadata, docs pages for Jekyll SEO).
 - Avoid GitHub-only HTML widgets and avoid HF-specific custom blocks in shared files.
+
 ## Known Platform Differences
 
 - GitHub accepts regular Git binary blobs in many repos.
-- Hugging Face may reject binary blobs unless stored with Xet/LFS-compatible flow.
+- Hugging Face may reject binary blobs unless stored with Xet or LFS-compatible flow.
 - Hugging Face may warn about missing model-card metadata in README; this is a warning, not a push blocker.
+
+## Tagging Strategy
+
+- Create annotated tags on GitHub release commits.
+- If Hugging Face rejects a tag because of blocked binary history, create the same tag name on the HF-safe `hf/main` commit.
+- Keep release notes content identical even when commit hashes differ across platforms.
 
 ## Safe Update Checklist
 
@@ -57,4 +64,3 @@ If GitHub and Hugging Face histories diverge:
 - Keep GitHub `main` as canonical source history.
 - Sync Hugging Face using a content snapshot commit based on `hf/main`.
 - Do not rewrite remote history unless explicitly required.
-

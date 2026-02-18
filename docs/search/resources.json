@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-02-17T00:00:00Z",
-  "count": 95,
+  "generated_on": "2026-02-18T00:00:00Z",
+  "count": 101,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -2356,6 +2356,171 @@
       "evidence_url": "https://doi.org/10.21437/interspeech.2005-723",
       "markers": [
         "pashto"
+      ]
+    },
+    {
+      "id": "dataset-hf-ihanif-pashto-speech-2k",
+      "title": "ihanif/pashto_speech_2k",
+      "url": "https://huggingface.co/datasets/ihanif/pashto_speech_2k",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto synthetic speech dataset with paired audio-text samples for low-resource ASR baselines.",
+      "primary_use": "ASR training and controlled synthetic-speech evaluation",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "speech",
+        "dataset",
+        "asr",
+        "huggingface"
+      ],
+      "evidence_text": "Dataset metadata includes language:ps and Pashto speech dataset card details.",
+      "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_2k",
+      "markers": [
+        "language:ps",
+        "pashto",
+        "speech"
+      ]
+    },
+    {
+      "id": "dataset-hf-ihanif-pashto-speech-3k",
+      "title": "ihanif/pashto_speech_3k",
+      "url": "https://huggingface.co/datasets/ihanif/pashto_speech_3k",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto synthetic speech parquet dataset with audio-text pairs and language metadata.",
+      "primary_use": "ASR training and reproducible speech-data experimentation",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "speech",
+        "dataset",
+        "asr",
+        "huggingface",
+        "parquet"
+      ],
+      "evidence_text": "Dataset metadata includes language:ps and task category automatic speech recognition.",
+      "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_3k",
+      "markers": [
+        "language:ps",
+        "automatic-speech-recognition",
+        "pashto"
+      ]
+    },
+    {
+      "id": "dataset-hf-koochikoo25-pashto-concatenated",
+      "title": "koochikoo25/Pashto-Concatenated",
+      "url": "https://huggingface.co/datasets/koochikoo25/Pashto-Concatenated",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto concatenated audio-text dataset with predefined train-validation-test splits.",
+      "primary_use": "ASR dataset preparation and split-based benchmark experiments",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "speech",
+        "dataset",
+        "asr",
+        "huggingface"
+      ],
+      "evidence_text": "Dataset title explicitly states Pashto and card metadata exposes audio-text features and splits.",
+      "evidence_url": "https://huggingface.co/datasets/koochikoo25/Pashto-Concatenated",
+      "markers": [
+        "Pashto",
+        "audio",
+        "transcription"
+      ]
+    },
+    {
+      "id": "model-hf-koochikoo25-whisper-medium-pashto",
+      "title": "koochikoo25/Whisper-medium-pashto",
+      "url": "https://huggingface.co/koochikoo25/Whisper-medium-pashto",
+      "category": "model",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Whisper medium fine-tuned checkpoint for Pashto automatic speech recognition.",
+      "primary_use": "Pashto ASR baseline modeling and transcription comparison",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "asr",
+        "model",
+        "whisper",
+        "huggingface"
+      ],
+      "evidence_text": "Model tags include ps and automatic-speech-recognition with a Pashto model name.",
+      "evidence_url": "https://huggingface.co/koochikoo25/Whisper-medium-pashto",
+      "markers": [
+        "ps",
+        "automatic-speech-recognition",
+        "pashto"
+      ]
+    },
+    {
+      "id": "project-hf-space-afaaaak-urdu-pashto-translator",
+      "title": "afaaaak/urdu_pashto_translator",
+      "url": "https://huggingface.co/spaces/afaaaak/urdu_pashto_translator",
+      "category": "project",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Interactive Urdu-to-Pashto translation Space with a runnable web demo.",
+      "primary_use": "Translation demo and bilingual usability testing",
+      "tasks": [
+        "mt",
+        "translation",
+        "demo"
+      ],
+      "tags": [
+        "pashto",
+        "project",
+        "huggingface-space",
+        "translation",
+        "demo"
+      ],
+      "evidence_text": "Space metadata title is Urdu Pashto Translator and the slug includes pashto.",
+      "evidence_url": "https://huggingface.co/spaces/afaaaak/urdu_pashto_translator",
+      "markers": [
+        "Pashto",
+        "translator"
+      ]
+    },
+    {
+      "id": "project-hf-space-drsaqlainhassan-pashto-tokenixer",
+      "title": "DrSaqlainHassan/PashtoTokenixer",
+      "url": "https://huggingface.co/spaces/DrSaqlainHassan/PashtoTokenixer",
+      "category": "project",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Pashto parts-of-speech identification Space for interactive NLP exploration.",
+      "primary_use": "Pashto NLP demo for token and part-of-speech analysis",
+      "tasks": [
+        "nlp",
+        "pos-tagging",
+        "demo"
+      ],
+      "tags": [
+        "pashto",
+        "project",
+        "huggingface-space",
+        "nlp",
+        "demo"
+      ],
+      "evidence_text": "Space card title states Pashto Parts of Speech Identifier and the slug contains Pashto.",
+      "evidence_url": "https://huggingface.co/spaces/DrSaqlainHassan/PashtoTokenixer",
+      "markers": [
+        "Pashto",
+        "parts-of-speech"
       ]
     }
   ]

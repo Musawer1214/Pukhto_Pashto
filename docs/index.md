@@ -43,7 +43,7 @@ description: Open-source Pashto (Pukhto/Pashto) datasets, models, benchmarks, AS
 ## Releases
 
 - Release notes index: [releases/README.md](releases/README.md)
-- Current release notes: [v1.0.0](releases/v1.0.0.md)
+- Current release notes: [v1.0.1](releases/v1.0.1.md)
 - Changelog: [../CHANGELOG.md](../CHANGELOG.md)
 
 ## Contribution
@@ -57,3 +57,4 @@ Start here:
 ## License
 
 This project is released under Apache 2.0. See [LICENSE](../LICENSE).
+

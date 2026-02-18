@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pukhto-pashto"
+name = "pashto-language-resources"
 version = "0.1.0"
 description = "Open Pashto language resources for ASR, TTS, NLP, and benchmarks"
 requires-python = ">=3.10"
@@ -33,4 +33,5 @@ python_files = ["test_*.py"]
 
 [tool.setuptools]
 packages = []
+
 

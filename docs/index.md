@@ -30,6 +30,12 @@ description: Open-source Pashto (Pukhto/Pashto) datasets, models, benchmarks, AS
 - Resource index docs: [resource_catalog.md](resource_catalog.md)
 - Machine-readable catalog (GitHub): [resources.json source](https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/catalog/resources.json)
 
+## Intent Pages
+
+- Pashto datasets: [pashto_datasets.md](pashto_datasets.md)
+- Pashto ASR resources: [pashto_asr.md](pashto_asr.md)
+- Pashto TTS resources: [pashto_tts.md](pashto_tts.md)
+
 ## Project References
 
 - Repository: [Musawer1214/pashto-language-resources](https://github.com/Musawer1214/pashto-language-resources)
@@ -37,6 +43,13 @@ description: Open-source Pashto (Pukhto/Pashto) datasets, models, benchmarks, AS
 - Purpose: [PROJECT_PURPOSE.md](../PROJECT_PURPOSE.md)
 - Roadmap: [ROADMAP.md](../ROADMAP.md)
 - Contributing: [CONTRIBUTING.md](../CONTRIBUTING.md)
+
+## SEO Operations
+
+- GitHub topics checklist: [github_topics_checklist.md](github_topics_checklist.md)
+- Backlink strategy: [backlink_strategy.md](backlink_strategy.md)
+- Release notes v0.1.1: [release_v0.1.1.md](release_v0.1.1.md)
+- Release notes v0.1.2: [release_v0.1.2.md](release_v0.1.2.md)
 
 ## Contributing
 
@@ -60,5 +73,3 @@ This project is relevant to searches like:
 ## License
 
 This project is released under Apache 2.0. See [LICENSE](../LICENSE).
-
-

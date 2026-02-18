@@ -7,13 +7,17 @@ and this project uses milestone-style tags (for example `v0.1`, `v0.2`).
 
 ## [Unreleased]
 ### Added
-- Placeholder for upcoming additions.
+- Hugging Face model-card metadata at the top of `README.md`.
+- GitHub topics checklist (`docs/github_topics_checklist.md`).
+- Backlink strategy plan (`docs/backlink_strategy.md`).
+- SEO intent landing pages for Pashto datasets, ASR, and TTS.
+- Release note drafts for `v0.1.1` and `v0.1.2`.
 
 ### Changed
-- Placeholder for upcoming changes.
+- Expanded documentation map to include SEO operations and intent pages.
 
 ### Fixed
-- Placeholder for upcoming fixes.
+- Finalized hardcoded URL coverage for the `pashto-language-resources` slug across docs and release notes.
 
 ## [v0.1] - 2026-02-14
 ### Added

@@ -17,12 +17,23 @@ This folder is the main documentation entry point for contributors.
 - Common Voice Pashto integration: [common_voice_pashto_24.md](common_voice_pashto_24.md)
 - Discoverability and SEO playbook: [discoverability_seo.md](discoverability_seo.md)
 - Platform sync policy: [platform_sync_policy.md](platform_sync_policy.md)
+- GitHub topics checklist: [github_topics_checklist.md](github_topics_checklist.md)
+- Backlink strategy: [backlink_strategy.md](backlink_strategy.md)
 - Release process: [release_process.md](release_process.md)
 - Release checklist: [release_checklist.md](release_checklist.md)
 - Platforms and publish flow: [platforms.md](platforms.md)
 - GitHub operations: [github_operations.md](github_operations.md)
 - Resource automation: [resource_automation.md](resource_automation.md)
 - Resource cycle runbook: [resource_cycle_runbook.md](resource_cycle_runbook.md)
+
+## Intent landing pages
+- Pashto datasets page: [pashto_datasets.md](pashto_datasets.md)
+- Pashto ASR page: [pashto_asr.md](pashto_asr.md)
+- Pashto TTS page: [pashto_tts.md](pashto_tts.md)
+
+## Release notes
+- v0.1.1 draft notes: [release_v0.1.1.md](release_v0.1.1.md)
+- v0.1.2 draft notes: [release_v0.1.2.md](release_v0.1.2.md)
 
 ## Resource tracking
 - Master resource index: [resource_catalog.md](resource_catalog.md)

@@ -66,6 +66,13 @@ Keep these updated when renaming slug or domain.
   - Conference/demo pages for Pashto language technology
 - Ask contributors to link specific resource pages in blog posts or papers.
 
+## SEO Operation Assets
+
+- GitHub topics checklist: [github_topics_checklist.md](github_topics_checklist.md)
+- Backlink strategy: [backlink_strategy.md](backlink_strategy.md)
+- Intent page: [Pashto datasets](pashto_datasets.md)
+- Intent page: [Pashto ASR](pashto_asr.md)
+- Intent page: [Pashto TTS](pashto_tts.md)
 ## 6) Indexing Checklist (After Push)
 
 1. Push all changes to `main`.
@@ -81,4 +88,5 @@ Keep these updated when renaming slug or domain.
    - Home page
    - Search page
 6. Recheck search visibility after 1 to 3 weeks.
+
 

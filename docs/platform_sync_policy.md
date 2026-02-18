@@ -20,6 +20,14 @@ The goal is to keep content equivalent while respecting platform differences.
 - Keep absolute links pinned to the final slug `pashto-language-resources`.
 - Keep one shared `README.md` that is valid on both platforms.
 
+## Shared Markdown Subset (GitHub + Hugging Face)
+
+Use a lowest-common-denominator style in shared docs:
+
+- Standard Markdown headings, bullet lists, links, and fenced code blocks.
+- Relative links for internal files whenever possible.
+- YAML front matter only where needed (`README.md` for HF metadata, docs pages for Jekyll SEO).
+- Avoid GitHub-only HTML widgets and avoid HF-specific custom blocks in shared files.
 ## Known Platform Differences
 
 - GitHub accepts regular Git binary blobs in many repos.
@@ -49,3 +57,4 @@ If GitHub and Hugging Face histories diverge:
 - Keep GitHub `main` as canonical source history.
 - Sync Hugging Face using a content snapshot commit based on `hf/main`.
 - Do not rewrite remote history unless explicitly required.
+

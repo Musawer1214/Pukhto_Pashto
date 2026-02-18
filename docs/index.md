@@ -8,27 +8,17 @@ description: Open-source Pashto (Pukhto/Pashto) datasets, models, benchmarks, AS
 
 `pashto-language-resources` is a community-led open-source project focused on making Pashto (also written as Pukhto/Pushto) a first-class language in speech and language AI.
 
+## Quick Actions
+
+- Search resources: [Pashto Resource Search](search/)
+- Browse all docs: [Documentation Hub](README.md)
+- Browse verified resource catalog: [resource_catalog.md](resource_catalog.md)
+
 ## Mission
 
 - Build open Pashto datasets and resource indexes for ASR, TTS, NLP, and MT.
 - Publish reproducible baseline models, benchmark schemas, and evaluation workflows.
 - Keep progress transparent, contributor-friendly, and public-benefit oriented.
-
-## What Is In This Repository
-
-- `data/`: dataset workflows, metadata, and normalization seeds.
-- `asr/`: ASR baselines and experiment notes.
-- `tts/`: TTS baselines and quality tracking.
-- `benchmarks/`: benchmark schema, result format, and metric guidance.
-- `experiments/`: reproducible run cards and experiment records.
-- `docs/`: policies, roadmap, release process, and operating guides.
-- `resources/`: verified external Pashto datasets, models, tools, benchmarks, and papers.
-
-## Search Pashto Resources
-
-- Search UI: [Pashto Resource Search](search/)
-- Resource index docs: [resource_catalog.md](resource_catalog.md)
-- Machine-readable catalog (GitHub): [resources.json source](https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/catalog/resources.json)
 
 ## Intent Pages
 
@@ -36,7 +26,7 @@ description: Open-source Pashto (Pukhto/Pashto) datasets, models, benchmarks, AS
 - Pashto ASR resources: [pashto_asr.md](pashto_asr.md)
 - Pashto TTS resources: [pashto_tts.md](pashto_tts.md)
 
-## Project References
+## Repository References
 
 - Repository: [Musawer1214/pashto-language-resources](https://github.com/Musawer1214/pashto-language-resources)
 - Hugging Face: [Musawer14/pashto-language-resources](https://huggingface.co/Musawer14/pashto-language-resources)
@@ -46,29 +36,23 @@ description: Open-source Pashto (Pukhto/Pashto) datasets, models, benchmarks, AS
 
 ## SEO Operations
 
+- Discoverability playbook: [discoverability_seo.md](discoverability_seo.md)
 - GitHub topics checklist: [github_topics_checklist.md](github_topics_checklist.md)
 - Backlink strategy: [backlink_strategy.md](backlink_strategy.md)
-- Release notes v0.1.1: [release_v0.1.1.md](release_v0.1.1.md)
-- Release notes v0.1.2: [release_v0.1.2.md](release_v0.1.2.md)
 
-## Contributing
+## Releases
+
+- Release notes index: [releases/README.md](releases/README.md)
+- Current release notes: [v1.0.0](releases/v1.0.0.md)
+- Changelog: [../CHANGELOG.md](../CHANGELOG.md)
+
+## Contribution
 
 You can help by improving documentation, validating normalization rows, sharing verified resources, or contributing data, model, and evaluation workflows.
 
-For contributor workflow and standards, start at:
+Start here:
 - [docs/README.md](README.md)
 - [community/COMMUNICATION.md](../community/COMMUNICATION.md)
-
-## Search Terms
-
-This project is relevant to searches like:
-
-- Pashto datasets
-- Pashto ASR model
-- Pashto TTS resources
-- Pashto NLP benchmark
-- Pashto language technology
-- Pukhto language resources
 
 ## License
 

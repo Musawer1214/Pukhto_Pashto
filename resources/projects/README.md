@@ -5,6 +5,7 @@
 | Resource | Link | Pashto Evidence | Primary Use |
 |---|---|---|---|
 | afaqalinagra/PASHTO-ASR-MODEL | [huggingface](https://huggingface.co/spaces/afaqalinagra/PASHTO-ASR-MODEL) | [Matched by Pashto keyword in Hugging Face Spaces search. (`pashto`)](https://huggingface.co/spaces/afaqalinagra/PASHTO-ASR-MODEL) | Interactive Pashto demo and quick qualitative validation |
+| Aizazayyubi/pashto_asr | [huggingface](https://huggingface.co/spaces/Aizazayyubi/pashto_asr) | [Matched by Pashto keyword in Hugging Face Spaces search. (`pashto`)](https://huggingface.co/spaces/Aizazayyubi/pashto_asr) | Interactive Pashto ASR demo for qualitative evaluation |
 | Fazlullahmamond/Pashto-Typing | [github](https://github.com/Fazlullahmamond/Pashto-Typing) | [Repository metadata (name/description/topics) includes Pashto markers. (`pashto`)](https://github.com/Fazlullahmamond/Pashto-Typing) | Interactive Pashto demo and quick qualitative validation |
 | ihanif/wav2vec-pashto-asr | [huggingface](https://huggingface.co/spaces/ihanif/wav2vec-pashto-asr) | [Matched by Pashto keyword in Hugging Face Spaces search. (`pashto`)](https://huggingface.co/spaces/ihanif/wav2vec-pashto-asr) | Interactive Pashto demo and quick qualitative validation |
 | ihanif/wav2vec2-bert-pashto-asr | [huggingface](https://huggingface.co/spaces/ihanif/wav2vec2-bert-pashto-asr) | [Matched by Pashto keyword in Hugging Face Spaces search. (`pashto`)](https://huggingface.co/spaces/ihanif/wav2vec2-bert-pashto-asr) | Interactive Pashto demo and quick qualitative validation |

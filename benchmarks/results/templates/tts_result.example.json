@@ -4,7 +4,7 @@
     "name": "internal_prompt_set",
     "version": "v1",
     "split": "eval",
-    "source_url": "https://github.com/Musawer1214/Pukhto_Pashto"
+    "source_url": "https://github.com/Musawer1214/pashto-language-resources"
   },
   "model": {
     "name": "facebook/mms-tts",
@@ -26,3 +26,4 @@
     "config_ref": "tts/configs/mms_tts_eval.yaml"
   }
 }
+

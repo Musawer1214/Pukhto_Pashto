@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://musawer1214.github.io/pashto-language-resources/sitemap.xml
+

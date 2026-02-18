@@ -1,4 +1,21 @@
-title: Pukhto Pashto
-description: Community-led open Pashto AI language project
+title: Pashto Language Resources Hub
+description: Open Pashto (Pukhto/Pashto) datasets, models, ASR, TTS, NLP, MT, and benchmark resources.
 theme: minima
 markdown: kramdown
+url: "https://musawer1214.github.io"
+baseurl: "/pashto-language-resources"
+lang: en
+locale: en_US
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+logo: "https://raw.githubusercontent.com/Musawer1214/pashto-language-resources/main/Repository_banner_Image.png"
+
+social:
+  name: Pashto Language Resources Hub
+  links:
+    - https://github.com/Musawer1214/pashto-language-resources
+    - https://huggingface.co/Musawer14/pashto-language-resources
+
+

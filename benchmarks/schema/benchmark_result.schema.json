@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Musawer1214/Pukhto_Pashto/benchmarks/schema/benchmark_result.schema.json",
+  "$id": "https://github.com/Musawer1214/pashto-language-resources/benchmarks/schema/benchmark_result.schema.json",
   "title": "Pashto Benchmark Result",
   "type": "object",
   "required": [
@@ -67,3 +67,4 @@
   },
   "additionalProperties": false
 }
+

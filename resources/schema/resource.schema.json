@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://musawer1214.github.io/Pukhto_Pashto/resources/schema/resource.schema.json",
+  "$id": "https://musawer1214.github.io/pashto-language-resources/resources/schema/resource.schema.json",
   "title": "Pashto Resource Catalog",
   "type": "object",
   "additionalProperties": false,
@@ -74,7 +74,13 @@
             "mozilla",
             "kaggle",
             "github",
+            "gitlab",
             "arxiv",
+            "openalex",
+            "crossref",
+            "zenodo",
+            "dataverse",
+            "datacite",
             "meta",
             "other"
           ]
@@ -142,3 +148,4 @@
     }
   }
 }
+

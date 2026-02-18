@@ -1,63 +1,57 @@
-﻿---
-license: apache-2.0
-language:
-- ps
-tags:
-- pashto
-- asr
-- tts
-- nlp
----
+﻿# Pashto Language Resources Hub (Pukhto/Pashto)
 
-![Pukhto Pashto Repository Banner](Repository_banner_Image.png)
+Open-source repository for Pashto language technology resources: datasets, models, benchmarks, ASR, TTS, NLP, and machine translation (MT).
 
-# Pukhto/Pashto Open Language Project
+This project curates verified Pashto resources and maintains reproducible tooling for discovery, validation, and documentation.
 
-Community-led open-source project to make Pashto a first-class language in speech and language technology.
+![Pukhto Pashto Repository Banner](https://raw.githubusercontent.com/Musawer1214/pashto-language-resources/main/Repository_banner_Image.png)
 
-## Project Links
-- GitHub Pages (About): [Pukhto_Pashto Site](https://musawer1214.github.io/Pukhto_Pashto/)
-- GitHub Pages (Resource Search): [Pashto Resource Search](https://musawer1214.github.io/Pukhto_Pashto/search/)
+## Start Here
+
+- Main resource search: [Pashto Resource Search](https://musawer1214.github.io/pashto-language-resources/search/)
+- Project site: [Pashto Language Resources Hub](https://musawer1214.github.io/pashto-language-resources/)
+- GitHub repository: [Musawer1214/pashto-language-resources](https://github.com/Musawer1214/pashto-language-resources)
+- Hugging Face mirror: [Musawer14/pashto-language-resources](https://huggingface.co/Musawer14/pashto-language-resources)
+
+## If You Searched For
+
+This repository is relevant to these search intents:
+
+- Pashto datasets
+- Pashto ASR model
+- Pashto TTS resources
+- Pashto NLP benchmark
+- Pashto machine translation resources
+- Pukhto language technology
+- Pushto AI resources
 
 ## Current Scope
+
 - Build open Pashto datasets, benchmarks, and model references for ASR, TTS, NLP, and MT.
-- Track practical tools, apps, and academic papers relevant to Pashto integration in technology.
+- Track practical tools, apps, and academic papers for Pashto integration in technology.
 - Keep everything transparent, reproducible, and contribution-friendly.
 
-## Resource System (Current)
+## Resource System
 
-This repository now has a machine-readable and searchable resource pipeline:
+Machine-readable and searchable resource pipeline:
 
 - Canonical catalog: [resources/catalog/resources.json](resources/catalog/resources.json)
 - Catalog schema: [resources/schema/resource.schema.json](resources/schema/resource.schema.json)
 - Candidate feed (auto-generated): [resources/catalog/pending_candidates.json](resources/catalog/pending_candidates.json)
-- Search UI: [docs/search/index.html](docs/search/index.html)
+- Search UI source: [docs/search/index.html](docs/search/index.html)
 - Search data export: [docs/search/resources.json](docs/search/resources.json)
-- Full index docs: [docs/resource_catalog.md](docs/resource_catalog.md)
+- Resource index docs: [docs/resource_catalog.md](docs/resource_catalog.md)
 - Automation docs: [docs/resource_automation.md](docs/resource_automation.md)
-- Repeatable runbook: [docs/resource_cycle_runbook.md](docs/resource_cycle_runbook.md)
+- Cycle runbook: [docs/resource_cycle_runbook.md](docs/resource_cycle_runbook.md)
 
 ## How New Resources Are Added
 
-The process is semi-automatic:
-
-1. Auto discovery:
-- Daily GitHub Action runs `.github/workflows/resource_sync.yml`.
-- It updates `resources/catalog/pending_candidates.json` and opens a review PR.
-
-2. Manual review and promotion:
-- Maintainers inspect candidate quality, Pashto evidence, and license/usage compatibility.
-- Approved entries are moved into `resources/catalog/resources.json` with `status: verified`.
-
-3. Regeneration and validation:
-- Run `python scripts/validate_resource_catalog.py`
-- Run `python scripts/generate_resource_views.py`
-- Commit generated updates (`resources/*/README.md` and `docs/search/resources.json`).
+1. Auto discovery runs daily from `.github/workflows/resource_sync.yml` and updates `resources/catalog/pending_candidates.json` in a review PR.
+2. Manual review checks quality, Pashto evidence, and license compatibility before promoting entries into `resources/catalog/resources.json` with `status: verified`.
+3. Regeneration and validation runs `python scripts/validate_resource_catalog.py` and `python scripts/generate_resource_views.py`, then commits generated updates.
 
 Shortcut wrapper:
-- Run `python scripts/run_resource_cycle.py --limit 25`
-
-This prevents low-confidence links from being merged directly while still automating discovery.
+- `python scripts/run_resource_cycle.py --limit 25`
 
 ## Quickstart
 
@@ -69,7 +63,15 @@ python scripts/check_links.py
 python -m pytest -q
 ```
 
+## Discoverability And SEO
+
+- Playbook: [docs/discoverability_seo.md](docs/discoverability_seo.md)
+- Docs hub: [docs/README.md](docs/README.md)
+- Resource search page: [docs/search/index.html](docs/search/index.html)
+- Citation metadata: [CITATION.cff](CITATION.cff)
+
 ## Documentation Map
+
 - Purpose: [PROJECT_PURPOSE.md](PROJECT_PURPOSE.md)
 - Contributing: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Roadmap: [ROADMAP.md](ROADMAP.md)
@@ -82,6 +84,7 @@ python -m pytest -q
 - Resource automation: [docs/resource_automation.md](docs/resource_automation.md)
 
 ## Resource Sections
+
 - Datasets: [resources/datasets/README.md](resources/datasets/README.md)
 - Models: [resources/models/README.md](resources/models/README.md)
 - Benchmarks: [resources/benchmarks/README.md](resources/benchmarks/README.md)
@@ -91,6 +94,7 @@ python -m pytest -q
 - Code: [resources/codes/README.md](resources/codes/README.md)
 
 ## Workspaces
+
 - [data/](data/README.md): datasets, curation, metadata, quality
 - [asr/](asr/README.md): ASR baselines and experiments
 - [tts/](tts/README.md): TTS baselines and experiments
@@ -98,3 +102,6 @@ python -m pytest -q
 - [experiments/](experiments/README.md): reproducible run cards
 - [apps/desktop/](apps/desktop/README.md): user-facing integration references
 - [models/](models/README.md): model layout and release conventions
+
+
+

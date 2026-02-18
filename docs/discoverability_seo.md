@@ -6,25 +6,20 @@ This playbook focuses on making the repository easier to find in:
 - Google/Bing search
 - Academic and resource discovery channels
 
-## 1) Repository Rename Recommendation
+## 1) Repository Slug Status
 
-Current slug is `pashto-language-resources`.
+Current and final slug:
 
-Previous slug was `Pukhto_Pashto`, which was less search-friendly due to underscore and mixed spelling.
+- `pashto-language-resources`
 
-Recommended slug options:
+Previous slug:
 
-1. `pashto-language-resources`
-2. `pashto-ai-resources`
-3. `pashto-language-tech`
+- `Pukhto_Pashto` (legacy slug with underscore)
 
-Selection rule:
-- Prefer the name that starts with `pashto` and includes a clear intent word like `resources`.
+If slug changes again in future, update:
 
-After rename:
-- Update `docs/_config.yml` `baseurl`.
-- Update hardcoded URLs in `README.md`, `docs/index.md`, and `docs/search/index.html`.
-- Keep old links alive via GitHub redirect behavior, but still update links in-repo.
+- `docs/_config.yml` `baseurl`
+- Hardcoded URLs in `README.md`, `docs/index.md`, and `docs/search/index.html`
 
 ## 2) GitHub About Section (Manual UI)
 
@@ -33,7 +28,7 @@ Set these in repository `Settings -> General` and About panel:
 - Description:
   - `Open-source Pashto (Pukhto/Pashto) datasets, ASR, TTS, NLP, MT, models, and benchmark resources.`
 - Website:
-  - [GitHub Pages home](https://musawer1214.github.io/pashto-language-resources/) (or new slug after rename)
+  - [GitHub Pages home](https://musawer1214.github.io/pashto-language-resources/) (final slug)
 - Topics:
   - `pashto`
   - `pukhto`

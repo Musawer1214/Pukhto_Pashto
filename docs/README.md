@@ -16,6 +16,7 @@ This folder is the main documentation entry point for contributors.
 - Pashto normalization policy: [pashto_normalization_v0.1.md](pashto_normalization_v0.1.md)
 - Common Voice Pashto integration: [common_voice_pashto_24.md](common_voice_pashto_24.md)
 - Discoverability and SEO playbook: [discoverability_seo.md](discoverability_seo.md)
+- Platform sync policy: [platform_sync_policy.md](platform_sync_policy.md)
 - Release process: [release_process.md](release_process.md)
 - Release checklist: [release_checklist.md](release_checklist.md)
 - Platforms and publish flow: [platforms.md](platforms.md)

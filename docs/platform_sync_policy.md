@@ -1,0 +1,51 @@
+# Platform Sync Policy (GitHub and Hugging Face)
+
+This project is mirrored on two platforms:
+
+- GitHub: `Musawer1214/pashto-language-resources`
+- Hugging Face: `Musawer14/pashto-language-resources`
+
+The goal is to keep content equivalent while respecting platform differences.
+
+## Canonical Flow
+
+1. Make and validate changes locally.
+2. Push to GitHub `main` first.
+3. Sync the resulting content snapshot to Hugging Face `main`.
+
+## Compatibility Rules
+
+- Avoid committing large binary files directly when syncing to Hugging Face.
+- Prefer URL-hosted images in docs when possible.
+- Keep absolute links pinned to the final slug `pashto-language-resources`.
+- Keep one shared `README.md` that is valid on both platforms.
+
+## Known Platform Differences
+
+- GitHub accepts regular Git binary blobs in many repos.
+- Hugging Face may reject binary blobs unless stored with Xet/LFS-compatible flow.
+- Hugging Face may warn about missing model-card metadata in README; this is a warning, not a push blocker.
+
+## Safe Update Checklist
+
+1. Run checks:
+   - `python scripts/check_links.py`
+   - `python scripts/validate_resource_catalog.py`
+   - `python -m pytest -q`
+2. Confirm slug links:
+   - `rg -n "pashto-language-resources" README.md docs pyproject.toml`
+3. Push GitHub:
+   - `git push origin main`
+4. Push Hugging Face:
+   - `git push hf <sync-branch>:main`
+5. Verify both remotes:
+   - `git ls-remote origin refs/heads/main`
+   - `git ls-remote hf refs/heads/main`
+
+## Conflict Handling
+
+If GitHub and Hugging Face histories diverge:
+
+- Keep GitHub `main` as canonical source history.
+- Sync Hugging Face using a content snapshot commit based on `hf/main`.
+- Do not rewrite remote history unless explicitly required.

@@ -1,4 +1,4 @@
-# ✅ Release Checklist
+# Release Checklist
 
 Use this checklist before tagging a new release.
 
@@ -13,3 +13,4 @@ Use this checklist before tagging a new release.
 - [ ] Run tests (`python -m pytest -q`).
 - [ ] Re-check key external resource links in [resource_catalog.md](resource_catalog.md).
 - [ ] Verify README rendering on GitHub and Hugging Face after push.
+

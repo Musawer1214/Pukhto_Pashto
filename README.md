@@ -1,3 +1,21 @@
+---
+license: apache-2.0
+language:
+- ps
+- en
+tags:
+- pashto
+- pukhto
+- pushto
+- asr
+- tts
+- nlp
+- machine-translation
+- language-resources
+- low-resource-languages
+- speech-recognition
+---
+
 # Pashto Language Resources Hub (Pukhto/Pashto)
 
 Open-source repository for Pashto language technology resources: datasets, models, benchmarks, ASR, TTS, NLP, and machine translation (MT).
@@ -68,6 +86,13 @@ python -m pytest -q
 - Resource search page: [docs/search/index.html](docs/search/index.html)
 - Citation metadata: [CITATION.cff](CITATION.cff)
 - Platform sync policy: [docs/platform_sync_policy.md](docs/platform_sync_policy.md)
+- GitHub topics checklist: [docs/github_topics_checklist.md](docs/github_topics_checklist.md)
+- Backlink strategy: [docs/backlink_strategy.md](docs/backlink_strategy.md)
+- Intent page: [Pashto datasets](docs/pashto_datasets.md)
+- Intent page: [Pashto ASR](docs/pashto_asr.md)
+- Intent page: [Pashto TTS](docs/pashto_tts.md)
+- Release notes: [v0.1.1](docs/release_v0.1.1.md)
+- Release notes: [v0.1.2](docs/release_v0.1.2.md)
 
 ## Documentation Map
 
@@ -101,5 +126,3 @@ python -m pytest -q
 - [experiments/](experiments/README.md): reproducible run cards
 - [apps/desktop/](apps/desktop/README.md): user-facing integration references
 - [models/](models/README.md): model layout and release conventions
-
-

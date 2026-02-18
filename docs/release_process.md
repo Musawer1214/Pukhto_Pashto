@@ -31,6 +31,11 @@ Examples:
 - `v1.1.1`: code-fix release.
 - `v2.0.0`: next major milestone.
 
+Daily bot rule:
+
+- Daily GitHub Actions bot sync updates (`resource_sync.yml`) are resource updates.
+- If only bot-driven resource catalog changes are shipped, use the next `vMAJOR.CODE.RESOURCE+1` tag.
+
 ## Release Notes Location
 
 - Store release notes in [releases/README.md](releases/README.md).

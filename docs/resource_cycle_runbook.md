@@ -43,5 +43,11 @@ After discovery, promote only approved resources:
 - Do not auto-promote candidates without evidence and license review.
 - Keep `status: verified` only for reviewed entries.
 - Do not promote "reference-only" resources where Pashto is incidental; only Pashto-centric resources are eligible.
-- Treat spelling variants as valid Pashto markers during review (`pashto`, `pukhto`, `pushto`, `pakhto`, `پښتو`).
+- Treat spelling variants as valid Pashto markers during review (`pashto`, `pukhto`, `pushto`, `pakhto`, `pashto-script`).
 - Generated files must be committed after catalog updates.
+
+## Versioning for Daily Bot Updates
+
+- Daily candidate-sync updates from GitHub Actions (`resource_sync.yml`) are resource updates.
+- When those updates are reviewed and released, increment the third figure in `vMAJOR.CODE.RESOURCE`.
+- Example sequence: `v1.1.1` (code fix) -> `v1.1.2` (bot resource release).

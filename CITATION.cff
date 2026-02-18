@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it."
+title: "Pashto Language Resources Hub (Pukhto/Pashto)"
+type: software
+version: 0.1.0
+license: Apache-2.0
+repository-code: "https://github.com/Musawer1214/pashto-language-resources"
+url: "https://github.com/Musawer1214/pashto-language-resources"
+authors:
+  - family-names: "Musawer"
+    given-names: "Musawer"
+keywords:
+  - Pashto
+  - Pukhto
+  - Pushto
+  - ASR
+  - TTS
+  - NLP
+  - machine translation
+  - language resources
+

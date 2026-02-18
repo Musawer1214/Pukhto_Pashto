@@ -7,6 +7,22 @@ name = "pukhto-pashto"
 version = "0.1.0"
 description = "Open Pashto language resources for ASR, TTS, NLP, and benchmarks"
 requires-python = ">=3.10"
+readme = "README.md"
+keywords = [
+  "pashto",
+  "pukhto",
+  "pushto",
+  "asr",
+  "tts",
+  "nlp",
+  "machine-translation",
+  "language-resources",
+]
+
+[project.urls]
+Homepage = "https://github.com/Musawer1214/pashto-language-resources"
+Documentation = "https://musawer1214.github.io/pashto-language-resources/"
+Repository = "https://github.com/Musawer1214/pashto-language-resources"
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0.0"]
@@ -17,3 +33,4 @@ python_files = ["test_*.py"]
 
 [tool.setuptools]
 packages = []
+

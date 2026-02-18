@@ -1752,8 +1752,8 @@
     },
     {
       "id": "candidate-hf-model-musawer14-pukhto-pashto",
-      "title": "Musawer14/Pukhto_Pashto",
-      "url": "https://huggingface.co/Musawer14/Pukhto_Pashto",
+      "title": "Musawer14/pashto-language-resources",
+      "url": "https://huggingface.co/Musawer14/pashto-language-resources",
       "category": "model",
       "source": "huggingface",
       "status": "candidate",
@@ -1762,7 +1762,7 @@
       "tasks": [],
       "pashto_evidence": {
         "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
-        "evidence_url": "https://huggingface.co/Musawer14/Pukhto_Pashto",
+        "evidence_url": "https://huggingface.co/Musawer14/pashto-language-resources",
         "markers": [
           "pashto"
         ]
@@ -3296,3 +3296,5 @@
     }
   ]
 }
+
+

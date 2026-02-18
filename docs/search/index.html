@@ -1,9 +1,46 @@
+---
+layout: null
+title: Pashto Resource Search
+description: Search verified Pashto (Pukhto/Pashto) datasets, models, tools, benchmarks, papers, and projects.
+permalink: /search/
+---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pashto Resource Search</title>
+  <meta name="description" content="Search verified Pashto (Pukhto/Pashto) resources for ASR, TTS, NLP, machine translation, tools, datasets, models, and benchmarks.">
+  <meta name="keywords" content="Pashto resources, Pukhto resources, Pashto datasets, Pashto ASR, Pashto TTS, Pashto NLP, Pashto machine translation, Pashto benchmarks">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://musawer1214.github.io/pashto-language-resources/search/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pashto Language Resources Hub">
+  <meta property="og:title" content="Pashto Resource Search">
+  <meta property="og:description" content="Discover verified Pashto datasets, models, tools, benchmarks, projects, and papers.">
+  <meta property="og:url" content="https://musawer1214.github.io/pashto-language-resources/search/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Musawer1214/pashto-language-resources/main/Repository_banner_Image.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pashto Resource Search">
+  <meta name="twitter:description" content="Search and filter verified Pashto language technology resources.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Musawer1214/pashto-language-resources/main/Repository_banner_Image.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Pashto Resource Search",
+      "url": "https://musawer1214.github.io/pashto-language-resources/search/",
+      "description": "Search verified and candidate Pashto resources for ASR, TTS, NLP, MT, tools, datasets, and benchmarks.",
+      "inLanguage": "en",
+      "about": [
+        "Pashto datasets",
+        "Pashto ASR",
+        "Pashto TTS",
+        "Pashto NLP",
+        "Pashto machine translation"
+      ]
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -129,6 +166,26 @@
       padding: 3px 9px;
       border-radius: 999px;
       font-weight: 600;
+    }
+
+    .crawl {
+      margin: 8px 2px 16px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .crawl p {
+      margin: 6px 0;
+    }
+
+    .crawl-links {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+
+    .crawl-links li {
+      margin: 3px 0;
     }
 
     .grid {
@@ -273,6 +330,26 @@
       <span class="badge" id="generatedAt">Catalog timestamp: -</span>
     </div>
 
+    <section class="crawl" aria-label="Pashto resource categories">
+      <p>
+        Browse or search resource entries covering Pashto datasets, speech recognition (ASR), text-to-speech (TTS), NLP, translation, tools, and benchmarks.
+      </p>
+      <p>
+        Project overview: <a href="https://github.com/Musawer1214/pashto-language-resources">Musawer1214/pashto-language-resources</a>
+      </p>
+      <ul class="crawl-links">
+        <li><a href="https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/datasets/README.md">Pashto datasets</a></li>
+        <li><a href="https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/models/README.md">Pashto models</a></li>
+        <li><a href="https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/benchmarks/README.md">Pashto benchmarks</a></li>
+        <li><a href="https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/tools/README.md">Pashto tools</a></li>
+        <li><a href="https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/papers/README.md">Pashto papers</a></li>
+      </ul>
+    </section>
+
+    <noscript>
+      JavaScript is needed for filtering, but the linked category pages above remain accessible.
+    </noscript>
+
     <ul id="results" class="grid"></ul>
   </main>
 
@@ -416,3 +493,4 @@
   </script>
 </body>
 </html>
+

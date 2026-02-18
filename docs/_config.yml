@@ -10,8 +10,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-logo: "https://raw.githubusercontent.com/Musawer1214/pashto-language-resources/main/Repository_banner_Image.png"
-
 social:
   name: Pashto Language Resources Hub
   links:

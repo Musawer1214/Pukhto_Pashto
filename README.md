@@ -1,11 +1,9 @@
-﻿# Pashto Language Resources Hub (Pukhto/Pashto)
+# Pashto Language Resources Hub (Pukhto/Pashto)
 
 Open-source repository for Pashto language technology resources: datasets, models, benchmarks, ASR, TTS, NLP, and machine translation (MT).
 
 This project curates verified Pashto resources and maintains reproducible tooling for discovery, validation, and documentation.
-
-![Pukhto Pashto Repository Banner](https://raw.githubusercontent.com/Musawer1214/pashto-language-resources/main/Repository_banner_Image.png)
-
+`r`n
 ## Start Here
 
 - Main resource search: [Pashto Resource Search](https://musawer1214.github.io/pashto-language-resources/search/)
@@ -102,6 +100,5 @@ python -m pytest -q
 - [experiments/](experiments/README.md): reproducible run cards
 - [apps/desktop/](apps/desktop/README.md): user-facing integration references
 - [models/](models/README.md): model layout and release conventions
-
 
 

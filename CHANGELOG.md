@@ -25,10 +25,12 @@ and this project uses semantic version tags with a fixed role per figure:
 - Improved search-page readability and usability in `docs/search/index.html`.
 - Expanded short task labels into clearer full-form labels in UI controls and resource cards.
 - Standardized title casing for key UI labels and actions.
+- Documented that daily GitHub Actions bot resource sync updates are released as third-figure resource versions.
 
 ### Fixed
 - Prevented long resource titles and long unbroken strings from overflowing card boundaries.
 - Improved capitalization and display formatting for source and task text in search results.
+- Fixed quick-link paths from search page to dataset, ASR, and TTS pages to avoid 404 errors.
 
 ## [v1.0.1] - 2026-02-18
 ### Added

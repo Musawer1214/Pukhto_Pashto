@@ -12,10 +12,11 @@ and this project uses semantic version tags with a fixed role per figure:
 
 ## [Unreleased]
 ### Added
-- None yet.
+- Added `scripts/promote_candidates.py` to auto-promote valid non-duplicate candidates into the verified catalog.
 
 ### Changed
-- None yet.
+- Updated `.github/workflows/resource_sync.yml` to auto-promote valid candidates, regenerate resource views, and include verified catalog changes in bot PRs.
+- Updated resource workflow docs and runbook to reflect automated promotion behavior.
 
 ### Fixed
 - None yet.

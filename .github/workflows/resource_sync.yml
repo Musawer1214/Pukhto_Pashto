@@ -29,8 +29,14 @@ jobs:
       - name: Sync candidate resources
         run: python scripts/sync_resources.py --limit 20
 
+      - name: Auto-promote valid candidates
+        run: python scripts/promote_candidates.py
+
       - name: Validate catalog
         run: python scripts/validate_resource_catalog.py
+
+      - name: Generate resource views
+        run: python scripts/generate_resource_views.py
 
       - name: Ensure labels exist
         uses: actions/github-script@v7
@@ -67,16 +73,27 @@ jobs:
         with:
           branch: bot/resource-sync
           delete-branch: true
-          commit-message: "chore(resources): sync candidate feed"
-          title: "chore(resources): sync Pashto resource candidates"
+          commit-message: "chore(resources): sync candidate feed and auto-promote valid entries"
+          title: "chore(resources): sync and auto-promote Pashto resources"
           body: |
-            Automated daily candidate sync.
+            Automated daily resource sync.
 
             Scope:
             - Updates `resources/catalog/pending_candidates.json`
-            - Leaves verified catalog unchanged for maintainer review
+            - Auto-promotes valid non-duplicate candidates into `resources/catalog/resources.json`
+            - Regenerates resource indexes and search payload
           labels: |
             resource-update
             needs-review
           add-paths: |
             resources/catalog/pending_candidates.json
+            resources/catalog/resources.json
+            resources/README.md
+            resources/datasets/README.md
+            resources/models/README.md
+            resources/benchmarks/README.md
+            resources/tools/README.md
+            resources/papers/README.md
+            resources/projects/README.md
+            resources/codes/README.md
+            docs/search/resources.json

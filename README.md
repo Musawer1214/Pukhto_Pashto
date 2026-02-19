@@ -49,8 +49,8 @@ This repository curates verified Pashto resources and keeps validation and publi
 ## Resource Workflow
 
 1. Discovery job (`.github/workflows/resource_sync.yml`) updates candidate feed.
-2. Maintainer review promotes high-quality entries to `resources/catalog/resources.json`.
-3. Regeneration and validation updates derived views and search index.
+2. Automation promotes valid non-duplicate candidates into `resources/catalog/resources.json`.
+3. Regeneration and validation update derived views and search index.
 
 Core commands:
 
@@ -81,5 +81,4 @@ python -m pytest -q
 - Contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Community communication: [community/COMMUNICATION.md](community/COMMUNICATION.md)
 - Resource guidelines: [docs/dataset_guidelines.md](docs/dataset_guidelines.md)
-
 

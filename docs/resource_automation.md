@@ -1,11 +1,11 @@
 # Resource Automation
 
-This repository uses a semi-automated process to keep Pashto resources current while preserving human review.
+This repository uses automated discovery and promotion to keep Pashto resources current while preserving validation guardrails.
 
 ## Goals
 - Discover new Pashto-relevant resources from trusted public endpoints.
 - Keep a machine-readable canonical catalog.
-- Prevent unreviewed low-confidence resources from directly entering verified lists.
+- Auto-promote only candidates that pass strict validation and deduplication checks.
 
 ## Covered source types
 - Kaggle datasets
@@ -29,6 +29,7 @@ This repository uses a semi-automated process to keep Pashto resources current w
 - Validate catalog: `python scripts/validate_resource_catalog.py`
 - Generate markdown and search index: `python scripts/generate_resource_views.py`
 - Sync new candidates: `python scripts/sync_resources.py --limit 20`
+- Auto-promote valid candidates: `python scripts/promote_candidates.py`
 - Full run wrapper: `python scripts/run_resource_cycle.py --limit 25`
 
 ## GitHub Actions
@@ -37,16 +38,15 @@ This repository uses a semi-automated process to keep Pashto resources current w
   - generated file consistency
   - markdown link checks
   - tests
-- Resource Sync (`.github/workflows/resource_sync.yml`) runs daily and opens a PR with candidate updates.
+- Resource Sync (`.github/workflows/resource_sync.yml`) runs daily, syncs candidates, auto-promotes valid non-duplicate entries, regenerates views, and opens a PR.
 
-## Review flow
-1. Inspect candidate entries in `resources/catalog/pending_candidates.json`.
-2. Select useful items and move them into `resources/catalog/resources.json`.
-3. Set `status` to `verified` only after checking evidence and license.
-4. Run:
+## Promotion flow
+1. Sync candidates into `resources/catalog/pending_candidates.json`.
+2. Auto-promote valid, non-duplicate entries into `resources/catalog/resources.json`.
+3. Run:
    - `python scripts/validate_resource_catalog.py`
    - `python scripts/generate_resource_views.py`
-5. Commit and open PR.
+4. Review PR and merge.
 
 ## Runbook
 - Reusable process guide: [resource_cycle_runbook.md](resource_cycle_runbook.md)

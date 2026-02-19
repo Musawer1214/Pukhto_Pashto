@@ -8,6 +8,7 @@ Usage:
     python scripts/run_resource_cycle.py --limit 30
     python scripts/run_resource_cycle.py --skip-pytest
     python scripts/run_resource_cycle.py --discover-only
+    python scripts/run_resource_cycle.py --max-promotions 10
 """
 
 from __future__ import annotations
@@ -30,6 +31,12 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=25, help="Candidate fetch limit per source")
     parser.add_argument("--skip-pytest", action="store_true", help="Skip pytest step")
     parser.add_argument("--discover-only", action="store_true", help="Only sync candidates and stop")
+    parser.add_argument(
+        "--max-promotions",
+        type=int,
+        default=None,
+        help="Optional cap for auto-promotion count from pending candidates",
+    )
     args = parser.parse_args()
 
     repo_root = Path(__file__).resolve().parents[1]
@@ -38,8 +45,12 @@ def main() -> int:
     ]
 
     if not args.discover_only:
+        promote_step = ["python", "scripts/promote_candidates.py"]
+        if args.max_promotions is not None:
+            promote_step.extend(["--max-promotions", str(args.max_promotions)])
         steps.extend(
             [
+                promote_step,
                 ["python", "scripts/validate_resource_catalog.py"],
                 ["python", "scripts/generate_resource_views.py"],
                 ["python", "scripts/check_links.py"],

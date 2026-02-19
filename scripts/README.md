@@ -8,6 +8,7 @@ Automation scripts for quality checks, resource catalog validation, and search i
 - `validate_resource_catalog.py`: validate `resources/catalog/resources.json`.
 - `generate_resource_views.py`: generate `resources/*/README.md`, `resources/README.md`, and `docs/search/resources.json` from the catalog.
 - `sync_resources.py`: collect new candidate Pashto resources from Kaggle, Hugging Face (datasets/models/spaces), GitHub, GitLab, OpenAlex, Crossref, Zenodo, Dataverse, DataCite, arXiv, and Semantic Scholar into `resources/catalog/pending_candidates.json`.
+- `promote_candidates.py`: auto-promote valid non-duplicate entries from `pending_candidates.json` into `resources/catalog/resources.json`.
 - `run_resource_cycle.py`: run the full repeatable resource cycle with one command.
 
 ## Usage
@@ -30,6 +31,11 @@ python scripts/generate_resource_views.py
 Sync candidate resources for maintainer review:
 ```bash
 python scripts/sync_resources.py --limit 20
+```
+
+Auto-promote valid candidates into verified catalog:
+```bash
+python scripts/promote_candidates.py
 ```
 
 Run full repeatable cycle:

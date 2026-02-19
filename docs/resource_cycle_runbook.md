@@ -5,7 +5,7 @@ Use this runbook whenever you want to repeat the resource update process without
 ## Daily automation (already enabled)
 - Workflow: [../.github/workflows/resource_sync.yml](../.github/workflows/resource_sync.yml)
 - Schedule: every day at 04:00 UTC via GitHub Actions cron.
-- Output: updates [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json) and opens a review PR.
+- Output: updates [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json), auto-promotes valid non-duplicate entries into [../resources/catalog/resources.json](../resources/catalog/resources.json), regenerates views, and opens a review PR.
 
 ## Manual run (single command)
 Run from repository root:
@@ -16,32 +16,25 @@ python scripts/run_resource_cycle.py --limit 25
 
 What it executes:
 1. `python scripts/sync_resources.py --limit 25`
-2. `python scripts/validate_resource_catalog.py`
-3. `python scripts/generate_resource_views.py`
-4. `python scripts/check_links.py`
-5. `python -m pytest -q`
+2. `python scripts/promote_candidates.py`
+3. `python scripts/validate_resource_catalog.py`
+4. `python scripts/generate_resource_views.py`
+5. `python scripts/check_links.py`
+6. `python -m pytest -q`
 
 Candidate sources in the sync step include Kaggle datasets, Hugging Face datasets/models/spaces, GitHub repositories, GitLab repositories, Zenodo records, Dataverse datasets, DataCite DOI records, and paper endpoints (arXiv, Semantic Scholar, OpenAlex, Crossref).
 
-## Discovery-only mode
-If you only want fresh candidates:
-
-```bash
-python scripts/run_resource_cycle.py --discover-only --limit 25
-```
-
-## Promotion step (manual review)
-After discovery, promote only approved resources:
-1. Open [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json).
-2. Copy selected entries into [../resources/catalog/resources.json](../resources/catalog/resources.json).
-3. Ensure unique `id` and valid evidence fields.
-4. Re-run:
-   - `python scripts/run_resource_cycle.py --skip-pytest`
+## Discovery-only mode + manual promotion
+If you want fresh candidates without auto-promotion:
+1. Run `python scripts/run_resource_cycle.py --discover-only --limit 25`.
+2. Review [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json).
+3. Manually move selected entries into [../resources/catalog/resources.json](../resources/catalog/resources.json).
+4. Re-run `python scripts/run_resource_cycle.py --skip-pytest`.
 5. Commit and push.
 
 ## Guardrails
-- Do not auto-promote candidates without evidence and license review.
-- Keep `status: verified` only for reviewed entries.
+- Auto-promotion accepts only entries that pass dedupe and catalog validation checks.
+- Keep `status: verified` for entries that pass automation checks and repository review.
 - Do not promote "reference-only" resources where Pashto is incidental; only Pashto-centric resources are eligible.
 - Treat spelling variants as valid Pashto markers during review (`pashto`, `pukhto`, `pushto`, `pakhto`, `pashto-script`).
 - Generated files must be committed after catalog updates.

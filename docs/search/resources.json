@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-02-18T00:00:00Z",
-  "count": 101,
+  "generated_on": "2026-02-20T00:00:00Z",
+  "count": 112,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -2521,6 +2521,243 @@
       "markers": [
         "Pashto",
         "parts-of-speech"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-aamirhs-pashto",
+      "title": "aamirhs/pashto",
+      "url": "https://huggingface.co/datasets/aamirhs/pashto",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/datasets/aamirhs/pashto",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-arsalagrey-pashto",
+      "title": "arsalagrey/pashto",
+      "url": "https://huggingface.co/datasets/arsalagrey/pashto",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/datasets/arsalagrey/pashto",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-arsalagrey-pashto-books",
+      "title": "arsalagrey/pashto-books",
+      "url": "https://huggingface.co/datasets/arsalagrey/pashto-books",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/datasets/arsalagrey/pashto-books",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-hf-dataset-arsalagrey-pashto-books-json",
+      "title": "arsalagrey/pashto-books-json",
+      "url": "https://huggingface.co/datasets/arsalagrey/pashto-books-json",
+      "category": "dataset",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/datasets/arsalagrey/pashto-books-json",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-jawaria-wav2vec2-large-xls-r-300m-pashto-colab-final-1",
+      "title": "Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-final-1",
+      "url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-final-1",
+      "category": "model",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-final-1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-dataset-oped-open-pashto-english-dictionary-preliminary-version-30-october-2025",
+      "title": "OPED (Open Pashto-English Dictionary): Preliminary version, 30 October 2025",
+      "url": "https://zenodo.org/records/17487678",
+      "category": "dataset",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Candidate resource returned from Zenodo search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/17487678",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-kaggle-dataset-abdulbasitkh-pashto-isolated-alphabets-and-numerals",
+      "title": "Pashto Isolated Alphabets and Numerals",
+      "url": "https://www.kaggle.com/datasets/abdulbasitkh/pashto-isolated-alphabetss-and-numerals",
+      "category": "dataset",
+      "source": "kaggle",
+      "status": "verified",
+      "summary": "Pashto Islated Alphabets and Numerals Handwritten and Printed",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset",
+        "kaggle"
+      ],
+      "evidence_text": "Kaggle dataset title/subtitle includes Pashto keyword.",
+      "evidence_url": "https://www.kaggle.com/datasets/abdulbasitkh/pashto-isolated-alphabetss-and-numerals",
+      "markers": [
+        "Pashto"
+      ]
+    },
+    {
+      "id": "candidate-kaggle-dataset-alimuhammadasad-pashto-poetry",
+      "title": "Pashto Poetry",
+      "url": "https://www.kaggle.com/datasets/alimuhammadasad/pashto-poetry",
+      "category": "dataset",
+      "source": "kaggle",
+      "status": "verified",
+      "summary": "Candidate Kaggle dataset returned from Pashto search.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset",
+        "kaggle"
+      ],
+      "evidence_text": "Kaggle dataset title/subtitle includes Pashto keyword.",
+      "evidence_url": "https://www.kaggle.com/datasets/alimuhammadasad/pashto-poetry",
+      "markers": [
+        "Pashto"
+      ]
+    },
+    {
+      "id": "candidate-kaggle-dataset-mahibullahmudaser-pashto-text-characters-sample",
+      "title": "Pashto text characters sample",
+      "url": "https://www.kaggle.com/datasets/mahibullahmudaser/pashtochracterssample",
+      "category": "dataset",
+      "source": "kaggle",
+      "status": "verified",
+      "summary": "Pashto text characters sample",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset",
+        "kaggle"
+      ],
+      "evidence_text": "Kaggle dataset title/subtitle includes Pashto keyword.",
+      "evidence_url": "https://www.kaggle.com/datasets/mahibullahmudaser/pashtochracterssample",
+      "markers": [
+        "Pashto"
+      ]
+    },
+    {
+      "id": "candidate-kaggle-dataset-ahmadferozafshar-pashto-language-alphabets",
+      "title": "pashto_language_alphabets",
+      "url": "https://www.kaggle.com/datasets/ahmadferozafshar/pashto-language-alphabets",
+      "category": "dataset",
+      "source": "kaggle",
+      "status": "verified",
+      "summary": "Candidate Kaggle dataset returned from Pashto search.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset",
+        "kaggle"
+      ],
+      "evidence_text": "Kaggle dataset title/subtitle includes Pashto keyword.",
+      "evidence_url": "https://www.kaggle.com/datasets/ahmadferozafshar/pashto-language-alphabets",
+      "markers": [
+        "Pashto"
+      ]
+    },
+    {
+      "id": "candidate-kaggle-dataset-aimalrezvan-pashto-language-characters",
+      "title": "Pashto_language_characters",
+      "url": "https://www.kaggle.com/datasets/aimalrezvan/pashto-language-characters",
+      "category": "dataset",
+      "source": "kaggle",
+      "status": "verified",
+      "summary": "Pashto_language_characters are Pashto lanugage full and semi characters.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset",
+        "kaggle"
+      ],
+      "evidence_text": "Kaggle dataset title/subtitle includes Pashto keyword.",
+      "evidence_url": "https://www.kaggle.com/datasets/aimalrezvan/pashto-language-characters",
+      "markers": [
+        "Pashto"
       ]
     }
   ]

@@ -1,0 +1,965 @@
+{
+  "updated_on": "2026-02-22",
+  "entries": [
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "dataset-kaggle-pashto-isolated-words",
+      "title": "Pashto Isolated Words Speech Dataset",
+      "url": "https://www.kaggle.com/datasets/engrirf/pashto-isolated-words-speech-dataset",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/engrirf/pashto-isolated-words-speech-dataset",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "dataset-kaggle-pashto-word-embeddings",
+      "title": "Pashto Word Embeddings",
+      "url": "https://www.kaggle.com/datasets/drijaz/pashto-word-embeddings",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/drijaz/pashto-word-embeddings",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "dataset-kaggle-pold-pashto-offensive",
+      "title": "POLD - Pashto Offensive Language Dataset",
+      "url": "https://www.kaggle.com/datasets/drijaz/pold-pashto-offensive-language-dataset",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/drijaz/pold-pashto-offensive-language-dataset",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "dataset-kaggle-pashto-english-sentiment-corpus",
+      "title": "Pashto English Bilingual Sentiment Corpus",
+      "url": "https://www.kaggle.com/datasets/farhadkhan66/pashto-translated-corpus",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/farhadkhan66/pashto-translated-corpus",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "dataset-kaggle-urdu-pashto-lexicon",
+      "title": "Urdu-Pashto Lexicon Dataset",
+      "url": "https://www.kaggle.com/datasets/shafeeqgigyani/urdu-pashto-lexicon-dataset",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/shafeeqgigyani/urdu-pashto-lexicon-dataset",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "dataset-kaggle-drijaz-pashtoocr",
+      "title": "PashtoOCR (Kaggle)",
+      "url": "https://www.kaggle.com/datasets/drijaz/pashtoocr",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/drijaz/pashtoocr",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "dataset-kaggle-english-pashto-language-dataset-epld",
+      "title": "English-Pashto Language Dataset (EPLD)",
+      "url": "https://www.kaggle.com/datasets/rabiakhan827/english-pashto-language-dataset-epld",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/rabiakhan827/english-pashto-language-dataset-epld",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "dataset-kaggle-katib-s-pashto-text-imagebase-kpti",
+      "title": "Katib's Pashto Text Imagebase (KPTI)",
+      "url": "https://www.kaggle.com/datasets/hassanamin/katibs-pashto-text-imagebase-kpti",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/hassanamin/katibs-pashto-text-imagebase-kpti",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "dataset-kaggle-pashto-ocr",
+      "title": "Pashto OCR",
+      "url": "https://www.kaggle.com/datasets/hassanamin/pashto-ocr",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/hassanamin/pashto-ocr",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "dataset-kaggle-common-voice-24-0-pashto-speech-dataset",
+      "title": "Common Voice 24.0: Pashto Speech Dataset",
+      "url": "https://www.kaggle.com/datasets/ataullahaali/common-voice-scripted-speech-24-0-pashto",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/ataullahaali/common-voice-scripted-speech-24-0-pashto",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "candidate-kaggle-dataset-abdulbasitkh-pashto-isolated-alphabets-and-numerals",
+      "title": "Pashto Isolated Alphabets and Numerals",
+      "url": "https://www.kaggle.com/datasets/abdulbasitkh/pashto-isolated-alphabetss-and-numerals",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/abdulbasitkh/pashto-isolated-alphabetss-and-numerals",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "candidate-kaggle-dataset-alimuhammadasad-pashto-poetry",
+      "title": "Pashto Poetry",
+      "url": "https://www.kaggle.com/datasets/alimuhammadasad/pashto-poetry",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/alimuhammadasad/pashto-poetry",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "candidate-kaggle-dataset-mahibullahmudaser-pashto-text-characters-sample",
+      "title": "Pashto text characters sample",
+      "url": "https://www.kaggle.com/datasets/mahibullahmudaser/pashtochracterssample",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/mahibullahmudaser/pashtochracterssample",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "candidate-kaggle-dataset-ahmadferozafshar-pashto-language-alphabets",
+      "title": "pashto_language_alphabets",
+      "url": "https://www.kaggle.com/datasets/ahmadferozafshar/pashto-language-alphabets",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/ahmadferozafshar/pashto-language-alphabets",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:47:22.435531+00:00",
+      "id": "candidate-kaggle-dataset-aimalrezvan-pashto-language-characters",
+      "title": "Pashto_language_characters",
+      "url": "https://www.kaggle.com/datasets/aimalrezvan/pashto-language-characters",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/aimalrezvan/pashto-language-characters",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
+      "title": "Common Voice 24.0: Pashto Speech Dataset",
+      "url": "https://www.kaggle.com/datasets/ataullahaali/common-voice-scripted-speech-24-0-pashto",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/ataullahaali/common-voice-scripted-speech-24-0-pashto",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-rabiakhan827-english-pashto-language-dataset-epld",
+      "title": "English-Pashto Language Dataset (EPLD)",
+      "url": "https://www.kaggle.com/datasets/rabiakhan827/english-pashto-language-dataset-epld",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/rabiakhan827/english-pashto-language-dataset-epld",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-hassanamin-katib-s-pashto-text-imagebase-kpti",
+      "title": "Katib's Pashto Text Imagebase (KPTI)",
+      "url": "https://www.kaggle.com/datasets/hassanamin/katibs-pashto-text-imagebase-kpti",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/hassanamin/katibs-pashto-text-imagebase-kpti",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-farhadkhan66-pashto-english-bilingual-sentiment-corpus",
+      "title": "Pashto English Bilingual Sentiment Corpus",
+      "url": "https://www.kaggle.com/datasets/farhadkhan66/pashto-translated-corpus",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/farhadkhan66/pashto-translated-corpus",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-abdulbasitkh-pashto-isolated-alphabets-and-numerals",
+      "title": "Pashto Isolated Alphabets and Numerals",
+      "url": "https://www.kaggle.com/datasets/abdulbasitkh/pashto-isolated-alphabetss-and-numerals",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/abdulbasitkh/pashto-isolated-alphabetss-and-numerals",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-engrirf-pashto-isolated-words-speech-dataset",
+      "title": "Pashto Isolated Words Speech Dataset",
+      "url": "https://www.kaggle.com/datasets/engrirf/pashto-isolated-words-speech-dataset",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/engrirf/pashto-isolated-words-speech-dataset",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-hassanamin-pashto-ocr",
+      "title": "Pashto OCR",
+      "url": "https://www.kaggle.com/datasets/hassanamin/pashto-ocr",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/hassanamin/pashto-ocr",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-alimuhammadasad-pashto-poetry",
+      "title": "Pashto Poetry",
+      "url": "https://www.kaggle.com/datasets/alimuhammadasad/pashto-poetry",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/alimuhammadasad/pashto-poetry",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-mahibullahmudaser-pashto-text-characters-sample",
+      "title": "Pashto text characters sample",
+      "url": "https://www.kaggle.com/datasets/mahibullahmudaser/pashtochracterssample",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/mahibullahmudaser/pashtochracterssample",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-drijaz-pashto-word-embeddings",
+      "title": "Pashto Word Embeddings",
+      "url": "https://www.kaggle.com/datasets/drijaz/pashto-word-embeddings",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/drijaz/pashto-word-embeddings",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-ahmadferozafshar-pashto-language-alphabets",
+      "title": "pashto_language_alphabets",
+      "url": "https://www.kaggle.com/datasets/ahmadferozafshar/pashto-language-alphabets",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/ahmadferozafshar/pashto-language-alphabets",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-aimalrezvan-pashto-language-characters",
+      "title": "Pashto_language_characters",
+      "url": "https://www.kaggle.com/datasets/aimalrezvan/pashto-language-characters",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/aimalrezvan/pashto-language-characters",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-drijaz-pashtoocr",
+      "title": "PashtoOCR",
+      "url": "https://www.kaggle.com/datasets/drijaz/pashtoocr",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/drijaz/pashtoocr",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-drijaz-pold-pashto-offensive-language-dataset",
+      "title": "POLD - Pashto Offensive Language Dataset",
+      "url": "https://www.kaggle.com/datasets/drijaz/pold-pashto-offensive-language-dataset",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/drijaz/pold-pashto-offensive-language-dataset",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T19:59:50.593781+00:00",
+      "id": "candidate-kaggle-dataset-shafeeqgigyani-urdu-pashto-lexicon-dataset",
+      "title": "Urdu-Pashto Lexicon Dataset",
+      "url": "https://www.kaggle.com/datasets/shafeeqgigyani/urdu-pashto-lexicon-dataset",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/shafeeqgigyani/urdu-pashto-lexicon-dataset",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
+      "title": "Common Voice 24.0: Pashto Speech Dataset",
+      "url": "https://www.kaggle.com/datasets/ataullahaali/common-voice-scripted-speech-24-0-pashto",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/ataullahaali/common-voice-scripted-speech-24-0-pashto",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-rabiakhan827-english-pashto-language-dataset-epld",
+      "title": "English-Pashto Language Dataset (EPLD)",
+      "url": "https://www.kaggle.com/datasets/rabiakhan827/english-pashto-language-dataset-epld",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/rabiakhan827/english-pashto-language-dataset-epld",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-hassanamin-katib-s-pashto-text-imagebase-kpti",
+      "title": "Katib's Pashto Text Imagebase (KPTI)",
+      "url": "https://www.kaggle.com/datasets/hassanamin/katibs-pashto-text-imagebase-kpti",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/hassanamin/katibs-pashto-text-imagebase-kpti",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-farhadkhan66-pashto-english-bilingual-sentiment-corpus",
+      "title": "Pashto English Bilingual Sentiment Corpus",
+      "url": "https://www.kaggle.com/datasets/farhadkhan66/pashto-translated-corpus",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/farhadkhan66/pashto-translated-corpus",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-abdulbasitkh-pashto-isolated-alphabets-and-numerals",
+      "title": "Pashto Isolated Alphabets and Numerals",
+      "url": "https://www.kaggle.com/datasets/abdulbasitkh/pashto-isolated-alphabetss-and-numerals",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/abdulbasitkh/pashto-isolated-alphabetss-and-numerals",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-engrirf-pashto-isolated-words-speech-dataset",
+      "title": "Pashto Isolated Words Speech Dataset",
+      "url": "https://www.kaggle.com/datasets/engrirf/pashto-isolated-words-speech-dataset",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/engrirf/pashto-isolated-words-speech-dataset",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-hassanamin-pashto-ocr",
+      "title": "Pashto OCR",
+      "url": "https://www.kaggle.com/datasets/hassanamin/pashto-ocr",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/hassanamin/pashto-ocr",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-alimuhammadasad-pashto-poetry",
+      "title": "Pashto Poetry",
+      "url": "https://www.kaggle.com/datasets/alimuhammadasad/pashto-poetry",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/alimuhammadasad/pashto-poetry",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-mahibullahmudaser-pashto-text-characters-sample",
+      "title": "Pashto text characters sample",
+      "url": "https://www.kaggle.com/datasets/mahibullahmudaser/pashtochracterssample",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/mahibullahmudaser/pashtochracterssample",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-drijaz-pashto-word-embeddings",
+      "title": "Pashto Word Embeddings",
+      "url": "https://www.kaggle.com/datasets/drijaz/pashto-word-embeddings",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/drijaz/pashto-word-embeddings",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-ahmadferozafshar-pashto-language-alphabets",
+      "title": "pashto_language_alphabets",
+      "url": "https://www.kaggle.com/datasets/ahmadferozafshar/pashto-language-alphabets",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/ahmadferozafshar/pashto-language-alphabets",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-aimalrezvan-pashto-language-characters",
+      "title": "Pashto_language_characters",
+      "url": "https://www.kaggle.com/datasets/aimalrezvan/pashto-language-characters",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/aimalrezvan/pashto-language-characters",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-drijaz-pashtoocr",
+      "title": "PashtoOCR",
+      "url": "https://www.kaggle.com/datasets/drijaz/pashtoocr",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/drijaz/pashtoocr",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-drijaz-pold-pashto-offensive-language-dataset",
+      "title": "POLD - Pashto Offensive Language Dataset",
+      "url": "https://www.kaggle.com/datasets/drijaz/pold-pashto-offensive-language-dataset",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/drijaz/pold-pashto-offensive-language-dataset",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:13:47.457104+00:00",
+      "id": "candidate-kaggle-dataset-shafeeqgigyani-urdu-pashto-lexicon-dataset",
+      "title": "Urdu-Pashto Lexicon Dataset",
+      "url": "https://www.kaggle.com/datasets/shafeeqgigyani/urdu-pashto-lexicon-dataset",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/shafeeqgigyani/urdu-pashto-lexicon-dataset",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
+      "title": "Common Voice 24.0: Pashto Speech Dataset",
+      "url": "https://www.kaggle.com/datasets/ataullahaali/common-voice-scripted-speech-24-0-pashto",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/ataullahaali/common-voice-scripted-speech-24-0-pashto",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-rabiakhan827-english-pashto-language-dataset-epld",
+      "title": "English-Pashto Language Dataset (EPLD)",
+      "url": "https://www.kaggle.com/datasets/rabiakhan827/english-pashto-language-dataset-epld",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/rabiakhan827/english-pashto-language-dataset-epld",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-hassanamin-katib-s-pashto-text-imagebase-kpti",
+      "title": "Katib's Pashto Text Imagebase (KPTI)",
+      "url": "https://www.kaggle.com/datasets/hassanamin/katibs-pashto-text-imagebase-kpti",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/hassanamin/katibs-pashto-text-imagebase-kpti",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-farhadkhan66-pashto-english-bilingual-sentiment-corpus",
+      "title": "Pashto English Bilingual Sentiment Corpus",
+      "url": "https://www.kaggle.com/datasets/farhadkhan66/pashto-translated-corpus",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/farhadkhan66/pashto-translated-corpus",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-abdulbasitkh-pashto-isolated-alphabets-and-numerals",
+      "title": "Pashto Isolated Alphabets and Numerals",
+      "url": "https://www.kaggle.com/datasets/abdulbasitkh/pashto-isolated-alphabetss-and-numerals",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/abdulbasitkh/pashto-isolated-alphabetss-and-numerals",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-engrirf-pashto-isolated-words-speech-dataset",
+      "title": "Pashto Isolated Words Speech Dataset",
+      "url": "https://www.kaggle.com/datasets/engrirf/pashto-isolated-words-speech-dataset",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/engrirf/pashto-isolated-words-speech-dataset",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-hassanamin-pashto-ocr",
+      "title": "Pashto OCR",
+      "url": "https://www.kaggle.com/datasets/hassanamin/pashto-ocr",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/hassanamin/pashto-ocr",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-alimuhammadasad-pashto-poetry",
+      "title": "Pashto Poetry",
+      "url": "https://www.kaggle.com/datasets/alimuhammadasad/pashto-poetry",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/alimuhammadasad/pashto-poetry",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-mahibullahmudaser-pashto-text-characters-sample",
+      "title": "Pashto text characters sample",
+      "url": "https://www.kaggle.com/datasets/mahibullahmudaser/pashtochracterssample",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/mahibullahmudaser/pashtochracterssample",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-drijaz-pashto-word-embeddings",
+      "title": "Pashto Word Embeddings",
+      "url": "https://www.kaggle.com/datasets/drijaz/pashto-word-embeddings",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/drijaz/pashto-word-embeddings",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-ahmadferozafshar-pashto-language-alphabets",
+      "title": "pashto_language_alphabets",
+      "url": "https://www.kaggle.com/datasets/ahmadferozafshar/pashto-language-alphabets",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/ahmadferozafshar/pashto-language-alphabets",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-aimalrezvan-pashto-language-characters",
+      "title": "Pashto_language_characters",
+      "url": "https://www.kaggle.com/datasets/aimalrezvan/pashto-language-characters",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/aimalrezvan/pashto-language-characters",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-drijaz-pashtoocr",
+      "title": "PashtoOCR",
+      "url": "https://www.kaggle.com/datasets/drijaz/pashtoocr",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/drijaz/pashtoocr",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-drijaz-pold-pashto-offensive-language-dataset",
+      "title": "POLD - Pashto Offensive Language Dataset",
+      "url": "https://www.kaggle.com/datasets/drijaz/pold-pashto-offensive-language-dataset",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/drijaz/pold-pashto-offensive-language-dataset",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-02-21T20:27:10.672699+00:00",
+      "id": "candidate-kaggle-dataset-shafeeqgigyani-urdu-pashto-lexicon-dataset",
+      "title": "Urdu-Pashto Lexicon Dataset",
+      "url": "https://www.kaggle.com/datasets/shafeeqgigyani/urdu-pashto-lexicon-dataset",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.kaggle.com/datasets/shafeeqgigyani/urdu-pashto-lexicon-dataset",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    }
+  ]
+}

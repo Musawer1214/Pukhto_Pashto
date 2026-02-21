@@ -1,5 +1,6 @@
 from datetime import date
 
+import scripts.promote_candidates as promote_module
 from scripts.promote_candidates import PLACEHOLDER_PRIMARY_USE, promote_candidates
 
 
@@ -132,3 +133,29 @@ def test_promote_candidates_respects_max_promotions() -> None:
     assert len(promoted) == 1
     assert stats["promoted"] == 1
     assert len(catalog["resources"]) == 2
+
+
+def test_promote_candidates_skips_unavailable_when_url_check_enabled(monkeypatch) -> None:
+    catalog = _catalog()
+    pending = {
+        "candidate_count": 1,
+        "candidates": [
+            _candidate(
+                rid="dataset-unavailable",
+                title="Pashto Unavailable Dataset",
+                url="https://example.org/pashto-unavailable",
+            )
+        ],
+    }
+
+    monkeypatch.setattr(
+        promote_module,
+        "_candidate_url_unavailable",
+        lambda *_args, **_kwargs: True,
+    )
+
+    promoted, stats = promote_candidates(catalog, pending, verify_urls=True)
+
+    assert promoted == []
+    assert stats["promoted"] == 0
+    assert stats["unavailable"] == 1

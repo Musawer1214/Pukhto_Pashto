@@ -1,0 +1,114 @@
+from scripts.review_existing_resources import UrlProbe, review_resources
+
+
+def _resource(*, rid: str, title: str, url: str) -> dict:
+    return {
+        "id": rid,
+        "title": title,
+        "url": url,
+        "category": "dataset",
+        "source": "other",
+        "status": "verified",
+        "summary": "Resource summary used for catalog review tests.",
+        "primary_use": "Testing",
+        "tasks": ["nlp"],
+        "pashto_evidence": {
+            "evidence_text": "Contains Pashto signal in metadata.",
+            "evidence_url": url,
+            "markers": ["Pashto"],
+        },
+        "tags": ["pashto", "dataset"],
+    }
+
+
+def test_review_resources_removes_hard_missing_urls() -> None:
+    catalog = {
+        "version": "1.0.0",
+        "updated_on": "2026-02-20",
+        "resources": [_resource(rid="dataset-a", title="Pashto A", url="https://example.org/a")],
+    }
+
+    def probe(_: str, __: float) -> UrlProbe:
+        return UrlProbe(status_code=404, hard_missing=True)
+
+    updated, report = review_resources(catalog, probe_fn=probe)
+
+    assert report["removed"] == 1
+    assert updated["resources"] == []
+    assert any("hard-missing HTTP status 404" in reason for reason in report["removals"][0]["reasons"])
+
+
+def test_review_resources_keeps_resource_when_probe_is_inconclusive() -> None:
+    catalog = {
+        "version": "1.0.0",
+        "updated_on": "2026-02-20",
+        "resources": [_resource(rid="dataset-a", title="Pashto A", url="https://example.org/a")],
+    }
+
+    def probe(_: str, __: float) -> UrlProbe:
+        return UrlProbe(uncertain_error="timed out")
+
+    updated, report = review_resources(catalog, probe_fn=probe)
+
+    assert report["removed"] == 0
+    assert len(updated["resources"]) == 1
+    assert len(report["warnings"]) == 1
+
+
+def test_review_resources_removes_duplicate_urls() -> None:
+    catalog = {
+        "version": "1.0.0",
+        "updated_on": "2026-02-20",
+        "resources": [
+            _resource(rid="dataset-a", title="Pashto A", url="https://example.org/shared"),
+            _resource(rid="dataset-b", title="Pashto B", url="https://example.org/shared"),
+        ],
+    }
+
+    def probe(_: str, __: float) -> UrlProbe:
+        return UrlProbe(status_code=200, content_sample="Pashto")
+
+    updated, report = review_resources(catalog, probe_fn=probe)
+
+    assert report["removed"] == 1
+    assert len(updated["resources"]) == 1
+    assert any("Duplicate canonical URL" in reason for reason in report["removals"][0]["reasons"])
+
+
+def test_review_resources_allows_same_url_across_different_categories() -> None:
+    dataset = _resource(rid="dataset-a", title="Pashto A", url="https://example.org/shared")
+    benchmark = _resource(rid="benchmark-a", title="Pashto A Benchmark", url="https://example.org/shared")
+    benchmark["category"] = "benchmark"
+    benchmark["tags"] = ["pashto", "benchmark"]
+    catalog = {
+        "version": "1.0.0",
+        "updated_on": "2026-02-20",
+        "resources": [dataset, benchmark],
+    }
+
+    def probe(_: str, __: float) -> UrlProbe:
+        return UrlProbe(status_code=200, content_sample="Pashto")
+
+    updated, report = review_resources(catalog, probe_fn=probe)
+
+    assert report["removed"] == 0
+    assert len(updated["resources"]) == 2
+
+
+def test_review_resources_enforces_pashto_relevance_only_when_enabled() -> None:
+    non_pashto = _resource(rid="dataset-x", title="General Dataset", url="https://example.org/general")
+    non_pashto["pashto_evidence"]["evidence_text"] = "Generic metadata note."
+    non_pashto["pashto_evidence"]["markers"] = ["generic"]
+    non_pashto["tags"] = ["dataset", "general"]
+    catalog = {"version": "1.0.0", "updated_on": "2026-02-20", "resources": [non_pashto]}
+
+    def probe(_: str, __: float) -> UrlProbe:
+        return UrlProbe(status_code=200, content_sample="General language resource")
+
+    updated_relaxed, report_relaxed = review_resources(catalog, probe_fn=probe, enforce_pashto_relevance=False)
+    updated_strict, report_strict = review_resources(catalog, probe_fn=probe, enforce_pashto_relevance=True)
+
+    assert report_relaxed["removed"] == 0
+    assert len(updated_relaxed["resources"]) == 1
+    assert report_strict["removed"] == 1
+    assert updated_strict["resources"] == []

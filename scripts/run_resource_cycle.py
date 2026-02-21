@@ -9,6 +9,8 @@ Usage:
     python scripts/run_resource_cycle.py --skip-pytest
     python scripts/run_resource_cycle.py --discover-only
     python scripts/run_resource_cycle.py --max-promotions 10
+    python scripts/run_resource_cycle.py --skip-existing-review
+    python scripts/run_resource_cycle.py --skip-pashto-relevance-check
 """
 
 from __future__ import annotations
@@ -37,12 +39,38 @@ def main() -> int:
         default=None,
         help="Optional cap for auto-promotion count from pending candidates",
     )
+    parser.add_argument(
+        "--skip-existing-review",
+        action="store_true",
+        help="Skip review/removal of stale existing resources before syncing candidates.",
+    )
+    parser.add_argument(
+        "--resource-timeout",
+        type=float,
+        default=12.0,
+        help="Timeout in seconds for existing-resource URL probes.",
+    )
+    parser.add_argument(
+        "--skip-pashto-relevance-check",
+        action="store_true",
+        help="Disable Pashto relevance filtering in existing-resource review.",
+    )
     args = parser.parse_args()
 
     repo_root = Path(__file__).resolve().parents[1]
-    steps: list[list[str]] = [
-        ["python", "scripts/sync_resources.py", "--limit", str(args.limit)],
-    ]
+    steps: list[list[str]] = []
+    if not args.skip_existing_review:
+        review_step = [
+            "python",
+            "scripts/review_existing_resources.py",
+            "--timeout",
+            str(args.resource_timeout),
+        ]
+        if not args.skip_pashto_relevance_check:
+            review_step.append("--enforce-pashto-relevance")
+        steps.append(review_step)
+
+    steps.append(["python", "scripts/sync_resources.py", "--limit", str(args.limit)])
 
     if not args.discover_only:
         promote_step = ["python", "scripts/promote_candidates.py"]

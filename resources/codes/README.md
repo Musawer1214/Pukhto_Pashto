@@ -4,7 +4,10 @@
 
 | Resource | Link | Pashto Evidence | Primary Use |
 |---|---|---|---|
+| LGUG2Z/tashkil | [github](https://github.com/LGUG2Z/tashkil) | [Repository metadata (name/description/topics) includes Pashto markers. (`pashto`)](https://github.com/LGUG2Z/tashkil) | Automated discovery entry for Pashto resource tracking. |
+| mrychlik/worldly-ocr | [github](https://github.com/mrychlik/worldly-ocr) | [Repository metadata (name/description/topics) includes Pashto markers. (`pashto`)](https://github.com/mrychlik/worldly-ocr) | Automated discovery entry for Pashto resource tracking. |
 | nlpashto Toolkit | [github](https://github.com/ijazul-haq/nlpashto) | [Repository name and description explicitly identify a Pashto NLP toolkit. (`Pashto`, `NLP`)](https://api.github.com/repos/ijazul-haq/nlpashto) | Pashto NLP code integration and experimentation |
+| sinaahmadi/PersoArabicLID | [github](https://github.com/sinaahmadi/PersoArabicLID) | [Repository metadata (name/description/topics) includes Pashto markers. (`pashto`)](https://github.com/sinaahmadi/PersoArabicLID) | Automated discovery entry for Pashto resource tracking. |
 
 ## Maintenance
 - Source of truth: [../catalog/resources.json](../catalog/resources.json)

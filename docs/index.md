@@ -11,6 +11,7 @@ description: Open-source Pashto (Pukhto/Pashto) datasets, models, benchmarks, AS
 ## Quick Actions
 
 - Search resources: [Pashto Resource Search](search/)
+- Search papers: [Pashto Papers Search](papers/)
 - Browse all docs: [Documentation Hub](README.md)
 - Browse verified resource catalog: [resource_catalog.md](resource_catalog.md)
 
@@ -43,7 +44,7 @@ description: Open-source Pashto (Pukhto/Pashto) datasets, models, benchmarks, AS
 ## Releases
 
 - Release notes index: [releases/README.md](releases/README.md)
-- Current release notes: [v1.1.1](releases/v1.1.1.md)
+- Current release notes: [v1.2.1](releases/v1.2.1.md)
 - Changelog: [../CHANGELOG.md](../CHANGELOG.md)
 
 ## Contribution
@@ -57,5 +58,3 @@ Start here:
 ## License
 
 This project is released under Apache 2.0. See [LICENSE](../LICENSE).
-
-

@@ -19,7 +19,7 @@ Previous slug:
 If slug changes again in future, update:
 
 - `docs/_config.yml` `baseurl`
-- Hardcoded URLs in `README.md`, `docs/index.md`, and `docs/search/index.html`
+- Hardcoded URLs in `README.md`, `docs/index.md`, `docs/search/index.html`, and `docs/papers/index.html`
 
 ## 2) GitHub About Section (Manual UI)
 
@@ -81,6 +81,7 @@ Keep these updated when renaming slug or domain.
 2. Verify GitHub Pages is serving:
    - `/`
    - `/search/`
+   - `/papers/`
    - `/robots.txt`
    - `/sitemap.xml`
 3. Add site property in Google Search Console.
@@ -89,4 +90,5 @@ Keep these updated when renaming slug or domain.
 5. Run URL Inspection and request indexing for:
    - Home page
    - Search page
+   - Papers page
 6. Recheck search visibility after 1 to 3 weeks.

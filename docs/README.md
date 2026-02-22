@@ -16,7 +16,8 @@ This folder is the main documentation entry point for contributors and maintaine
 - Discoverability playbook: [discoverability_seo.md](discoverability_seo.md)
 - GitHub topics checklist: [github_topics_checklist.md](github_topics_checklist.md)
 - Backlink strategy: [backlink_strategy.md](backlink_strategy.md)
-- Search UI: [search/index.html](search/index.html)
+- Technical search UI: [search/index.html](search/index.html)
+- Papers search UI: [papers/index.html](papers/index.html)
 - Resource catalog docs: [resource_catalog.md](resource_catalog.md)
 
 ## Intent Landing Pages

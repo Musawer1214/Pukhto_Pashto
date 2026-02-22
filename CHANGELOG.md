@@ -12,14 +12,33 @@ and this project uses semantic version tags with a fixed role per figure:
 
 ## [Unreleased]
 ### Added
-- Added `scripts/promote_candidates.py` to auto-promote valid non-duplicate candidates into the verified catalog.
+- None yet.
 
 ### Changed
-- Updated `.github/workflows/resource_sync.yml` to auto-promote valid candidates, regenerate resource views, and include verified catalog changes in bot PRs.
-- Updated resource workflow docs and runbook to reflect automated promotion behavior.
+- None yet.
 
 ### Fixed
 - None yet.
+
+## [v1.2.1] - 2026-02-22
+### Added
+- Added dedicated papers search page and payload:
+  - `docs/papers/index.html`
+  - `docs/papers/resources.json`
+- Added generation-split tests in `tests/test_generate_resource_views.py`.
+- Added release notes for this version at `docs/releases/v1.2.1.md`.
+
+### Changed
+- Updated `scripts/generate_resource_views.py` to partition outputs by category:
+  - non-paper resources -> `docs/search/resources.json`
+  - paper resources -> `docs/papers/resources.json`
+- Updated `docs/search/index.html` to focus on technical resources and link to the separate papers page.
+- Updated `.github/workflows/resource_sync.yml` to include papers search payload in bot PR output paths.
+- Updated docs and release pointers for `v1.2.1` and middle-figure code-version progression.
+- Bumped package version in `pyproject.toml` from `1.1.1` to `1.2.1`.
+
+### Fixed
+- Prevented papers from mixing into the main technical search payload while preserving category-based routing in both manual and automated runs.
 
 ## [v1.1.1] - 2026-02-18
 ### Changed

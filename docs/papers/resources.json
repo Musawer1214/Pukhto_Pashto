@@ -1,0 +1,2340 @@
+{
+  "generated_on": "2026-02-22T00:00:00Z",
+  "count": 104,
+  "resources": [
+    {
+      "id": "paper-s2-psocr-lmm-pashto",
+      "title": "PsOCR: Benchmarking Large Multimodal Models for Optical Character Recognition in Low-resource Pashto Language",
+      "url": "https://www.semanticscholar.org/paper/d2743c0dcdbc65f5b46fcec2f0ba7cb379c4134f",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Research paper benchmarking multimodal OCR models on low-resource Pashto OCR tasks.",
+      "primary_use": "Pashto OCR research baseline and evaluation reference",
+      "tasks": [
+        "ocr",
+        "research"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "ocr",
+        "multimodal"
+      ],
+      "evidence_text": "Paper title explicitly references low-resource Pashto language OCR benchmarking.",
+      "evidence_url": "https://www.semanticscholar.org/paper/d2743c0dcdbc65f5b46fcec2f0ba7cb379c4134f",
+      "markers": [
+        "Pashto",
+        "OCR"
+      ]
+    },
+    {
+      "id": "paper-s2-benchmarking-whisper-for-low-resource-speech-recognition-an-n-shot-evaluation-on-pashto-pu",
+      "title": "Benchmarking Whisper for Low-Resource Speech Recognition: An N-Shot Evaluation on Pashto, Punjabi, and Urdu",
+      "url": "https://www.semanticscholar.org/paper/13104eddc785756132a19242ac7e74442b145693",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Pashto language technology paper discovered from other for research reference.",
+      "primary_use": "Pashto research reference for methods and benchmarking",
+      "tasks": [
+        "asr",
+        "mt"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "other",
+        "asr",
+        "mt"
+      ],
+      "evidence_text": "Matched by Semantic Scholar query: pashto.",
+      "evidence_url": "https://www.semanticscholar.org/paper/13104eddc785756132a19242ac7e74442b145693",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-s2-deep-learning-based-detection-of-one-and-two-column-textual-blocks-in-camera-captured-pash",
+      "title": "Deep Learning-Based Detection of One and Two-Column Textual Blocks in Camera-Captured Pashto Documents Images",
+      "url": "https://www.semanticscholar.org/paper/8c9d2628e23d5c27edc656071f11f0e78124d182",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Pashto language technology paper discovered from other for research reference.",
+      "primary_use": "Pashto research reference for methods and benchmarking",
+      "tasks": [
+        "ocr"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "other",
+        "ocr"
+      ],
+      "evidence_text": "Matched by Semantic Scholar query: pashto.",
+      "evidence_url": "https://www.semanticscholar.org/paper/8c9d2628e23d5c27edc656071f11f0e78124d182",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-s2-out-of-vocabulary-pashto-spell-checker-using-morphological-operations",
+      "title": "Out-of-Vocabulary Pashto Spell Checker using Morphological Operations",
+      "url": "https://www.semanticscholar.org/paper/802aae68a6a7fdfb29d51be03fb2b09e29311fa7",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Pashto language technology paper discovered from other for research reference.",
+      "primary_use": "Pashto research reference for methods and benchmarking",
+      "tasks": [
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "other",
+        "nlp"
+      ],
+      "evidence_text": "Matched by Semantic Scholar query: pashto.",
+      "evidence_url": "https://www.semanticscholar.org/paper/802aae68a6a7fdfb29d51be03fb2b09e29311fa7",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-s2-pashto-shallow-parsing-a-deep-learning-approach",
+      "title": "Pashto Shallow Parsing: A Deep Learning Approach",
+      "url": "https://www.semanticscholar.org/paper/be36455bb4eca60accb3e6866f345132f0dac1e5",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Pashto language technology paper discovered from other for research reference.",
+      "primary_use": "Pashto research reference for methods and benchmarking",
+      "tasks": [
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "other",
+        "nlp"
+      ],
+      "evidence_text": "Matched by Semantic Scholar query: pashto.",
+      "evidence_url": "https://www.semanticscholar.org/paper/be36455bb4eca60accb3e6866f345132f0dac1e5",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-s2-pos-tagging-of-low-resource-pashto-language-annotated-corpus-and-bert-based-model",
+      "title": "POS tagging of low-resource Pashto language: annotated corpus and BERT-based model",
+      "url": "https://www.semanticscholar.org/paper/1b2d5c896fec735483e8c8fb0a75e13125e08769",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Pashto language technology paper discovered from other for research reference.",
+      "primary_use": "Pashto research reference for methods and benchmarking",
+      "tasks": [
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "other",
+        "nlp"
+      ],
+      "evidence_text": "Matched by Semantic Scholar query: pashto.",
+      "evidence_url": "https://www.semanticscholar.org/paper/1b2d5c896fec735483e8c8fb0a75e13125e08769",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-arxiv-enhancing-pashto-text-classification-using-language-processing-techniques-for-single-and-m",
+      "title": "Enhancing Pashto Text Classification using Language Processing Techniques for Single And Multi-Label Analysis",
+      "url": "http://arxiv.org/abs/2305.03201v1",
+      "category": "paper",
+      "source": "arxiv",
+      "status": "verified",
+      "summary": "Pashto language technology paper discovered from arxiv for research reference.",
+      "primary_use": "Pashto research reference for methods and benchmarking",
+      "tasks": [
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "arxiv",
+        "nlp"
+      ],
+      "evidence_text": "Matched by arXiv query: all:pashto.",
+      "evidence_url": "http://arxiv.org/abs/2305.03201v1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-arxiv-knn-and-ann-based-recognition-of-handwritten-pashto-letters-using-zoning-features",
+      "title": "KNN and ANN-based Recognition of Handwritten Pashto Letters using Zoning Features",
+      "url": "http://arxiv.org/abs/1904.03391v2",
+      "category": "paper",
+      "source": "arxiv",
+      "status": "verified",
+      "summary": "Pashto language technology paper discovered from arxiv for research reference.",
+      "primary_use": "Pashto research reference for methods and benchmarking",
+      "tasks": [
+        "ocr"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "arxiv",
+        "ocr"
+      ],
+      "evidence_text": "Matched by arXiv query: all:pashto.",
+      "evidence_url": "http://arxiv.org/abs/1904.03391v2",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-s2-enhancing-pashto-ner-using-machine-labeled-data-and-transformer-based-models",
+      "title": "Enhancing Pashto NER Using Machine-Labeled Data and Transformer-Based Models",
+      "url": "https://www.semanticscholar.org/paper/be851ecf9197ef9bb8bf764abf4db0dda95cd9da",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Pashto language technology paper discovered from other for research reference.",
+      "primary_use": "Pashto research reference for methods and benchmarking",
+      "tasks": [
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "other",
+        "nlp"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/be851ecf9197ef9bb8bf764abf4db0dda95cd9da",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-arxiv-from-scarcity-to-scale-pashto-common-voice",
+      "title": "From Scarcity to Scale: A Release-Level Analysis of the Pashto Common Voice Dataset",
+      "url": "http://arxiv.org/abs/2602.14062v1",
+      "category": "paper",
+      "source": "arxiv",
+      "status": "verified",
+      "summary": "Research paper analyzing Pashto Common Voice releases and dataset scaling characteristics.",
+      "primary_use": "ASR data quality and release trend reference",
+      "tasks": [
+        "asr",
+        "benchmarking"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "arxiv",
+        "asr",
+        "common-voice"
+      ],
+      "evidence_text": "Matched by Pashto marker in paper title from arXiv query results.",
+      "evidence_url": "http://arxiv.org/abs/2602.14062v1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-arxiv-tuning-traditional-pashto-text-classification",
+      "title": "Tuning Traditional Language Processing Approaches for Pashto Text Classification",
+      "url": "http://arxiv.org/abs/2305.03737v1",
+      "category": "paper",
+      "source": "arxiv",
+      "status": "verified",
+      "summary": "Research paper focused on Pashto text classification using traditional NLP approaches.",
+      "primary_use": "Pashto text classification method reference",
+      "tasks": [
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "arxiv",
+        "nlp",
+        "classification"
+      ],
+      "evidence_text": "Matched by Pashto marker in paper title from arXiv query results.",
+      "evidence_url": "http://arxiv.org/abs/2305.03737v1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-arxiv-image-to-text-pashto-farsi-traditional-chinese",
+      "title": "Development of a New Image-to-text Conversion System for Pashto, Farsi and Traditional Chinese",
+      "url": "http://arxiv.org/abs/2005.08650v1",
+      "category": "paper",
+      "source": "arxiv",
+      "status": "verified",
+      "summary": "Research paper on image-to-text conversion including Pashto OCR.",
+      "primary_use": "Pashto OCR method reference",
+      "tasks": [
+        "ocr",
+        "nlp"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "arxiv",
+        "ocr"
+      ],
+      "evidence_text": "Matched by Pashto marker in paper title from arXiv query results.",
+      "evidence_url": "http://arxiv.org/abs/2005.08650v1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-benchmark-pashto-handwritten-character-dataset-ocr",
+      "title": "Benchmark Pashto Handwritten Character Dataset and Pashto Object Character Recognition (OCR) Using Deep Neural Network with Rule Activation Function",
+      "url": "https://doi.org/10.1155/2021/6669672",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper introducing a benchmark dataset and OCR approach for Pashto handwritten characters.",
+      "primary_use": "Pashto handwritten OCR benchmark and methodology reference",
+      "tasks": [
+        "ocr",
+        "benchmarking"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "benchmark"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1155/2021/6669672",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-asr-isolated-pashto-spoken-digits-mfcc-knn",
+      "title": "Database development and automatic speech recognition of isolated Pashto spoken digits using MFCC and K-NN",
+      "url": "https://doi.org/10.1007/s10772-014-9267-z",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on isolated Pashto spoken-digit ASR with MFCC and K-NN.",
+      "primary_use": "Pashto ASR baseline method reference for digit recognition",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "asr",
+        "speech"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1007/s10772-014-9267-z",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-pashto-isolated-digits-recognition-dcnn",
+      "title": "Pashto isolated digits recognition using deep convolutional neural network",
+      "url": "https://doi.org/10.1016/j.heliyon.2020.e03372",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on Pashto isolated-digit recognition using deep convolutional neural networks.",
+      "primary_use": "Pashto speech recognition research reference",
+      "tasks": [
+        "asr"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "asr",
+        "deep-learning"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1016/j.heliyon.2020.e03372",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-pashto-offensive-language-detection-benchmark-bert",
+      "title": "Pashto offensive language detection: a benchmark dataset and monolingual Pashto BERT",
+      "url": "https://doi.org/10.7717/peerj-cs.1617",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on Pashto offensive language detection with benchmark dataset and monolingual BERT model.",
+      "primary_use": "Pashto NLP toxicity detection benchmark and model reference",
+      "tasks": [
+        "nlp",
+        "benchmarking"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "nlp",
+        "bert",
+        "benchmark"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.7717/peerj-cs.1617",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-phti-pashto-handwritten-text-imagebase",
+      "title": "PHTI: Pashto Handwritten Text Imagebase for Deep Learning Applications",
+      "url": "https://doi.org/10.1109/access.2022.3216881",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper describing PHTI, a Pashto handwritten text imagebase for deep learning.",
+      "primary_use": "Pashto OCR dataset and benchmark reference",
+      "tasks": [
+        "ocr",
+        "benchmarking"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "dataset"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1109/access.2022.3216881",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-recognition-of-pashto-handwritten-characters-deep-learning",
+      "title": "Recognition of Pashto Handwritten Characters Based on Deep Learning",
+      "url": "https://doi.org/10.3390/s20205884",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on deep-learning-based recognition of Pashto handwritten characters.",
+      "primary_use": "Pashto OCR model reference for handwritten character recognition",
+      "tasks": [
+        "ocr"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "deep-learning"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.3390/s20205884",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-kpti-katib-pashto-text-imagebase-benchmark",
+      "title": "KPTI: Katib's Pashto Text Imagebase and Deep Learning Benchmark",
+      "url": "https://doi.org/10.1109/icfhr.2016.0090",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper introducing KPTI, a Pashto text imagebase and benchmark for handwritten recognition.",
+      "primary_use": "Pashto OCR dataset and benchmarking reference",
+      "tasks": [
+        "ocr",
+        "benchmarking"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "benchmark"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1109/icfhr.2016.0090",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-pioneer-dataset-handwritten-pashto-cnn",
+      "title": "Pioneer dataset and recognition of Handwritten Pashto characters using Convolution Neural Networks",
+      "url": "https://doi.org/10.1177/0020294020964826",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on a pioneer handwritten Pashto character dataset with CNN-based recognition.",
+      "primary_use": "Pashto handwritten character recognition reference",
+      "tasks": [
+        "ocr",
+        "benchmarking"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "deep-learning"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1177/0020294020964826",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-scale-rotation-invariant-ocr-pashto-mdlstm",
+      "title": "Scale and rotation invariant OCR for Pashto cursive script using MDLSTM network",
+      "url": "https://doi.org/10.1109/icdar.2015.7333931",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on scale- and rotation-invariant OCR for cursive Pashto using MDLSTM.",
+      "primary_use": "Pashto OCR model architecture reference",
+      "tasks": [
+        "ocr"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "mdlstm"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1109/icdar.2015.7333931",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-recognizable-units-pashto-ocr",
+      "title": "Recognizable units in Pashto language for OCR",
+      "url": "https://doi.org/10.1109/icdar.2015.7333963",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper defining recognizable units in Pashto for OCR workflows.",
+      "primary_use": "Pashto OCR preprocessing and unit-design reference",
+      "tasks": [
+        "ocr"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1109/icdar.2015.7333963",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-shape-analysis-pashto-script-image-database-ocr",
+      "title": "Shape analysis of Pashto script and creation of image database for OCR",
+      "url": "https://doi.org/10.1109/icet.2009.5353160",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on Pashto script shape analysis and image database creation for OCR.",
+      "primary_use": "Pashto OCR dataset design and feature reference",
+      "tasks": [
+        "ocr",
+        "benchmarking"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "ocr",
+        "dataset"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1109/icet.2009.5353160",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "paper-openalex-speech-translation-low-resource-case-pashto",
+      "title": "Speech translation for low-resource languages: the case of Pashto",
+      "url": "https://doi.org/10.21437/interspeech.2005-723",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Research paper on speech translation for low-resource languages, including Pashto.",
+      "primary_use": "Pashto speech translation and low-resource MT reference",
+      "tasks": [
+        "asr",
+        "mt"
+      ],
+      "tags": [
+        "pashto",
+        "paper",
+        "openalex",
+        "speech",
+        "translation"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.21437/interspeech.2005-723",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-pushto-pakhto-nasar-kay-da-matbooa-tarjumo-yova-tanqeedi-mutala-jaiza",
+      "title": "(Pushto) Pakhto Nasar Kay Da Matbooa Tarjumo Yova Tanqeedi Mutala/Jaiza.",
+      "url": "https://www.semanticscholar.org/paper/0da0e8535262d1f26f04dd6bc2f091474cab4150",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/0da0e8535262d1f26f04dd6bc2f091474cab4150",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-a-dictionary-of-the-pukhto-pushto-or-language-of-the-afghans",
+      "title": "A Dictionary of the Pukhto, Pushto, or Language of the Afghans",
+      "url": "https://www.semanticscholar.org/paper/777c0aa56991f55826339915363de2ceb8dd7141",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/777c0aa56991f55826339915363de2ceb8dd7141",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-a-dictionary-of-the-pukhto-pushto-or-language-of-the-afghans-with-remarks-on-the",
+      "title": "A dictionary of the Pukhto, Pushto, or language of the Afghans; with remarks on the originality of the language, and its affinity to the Semitic and other Oriental tongues, etc.",
+      "url": "https://www.semanticscholar.org/paper/d12502a6c245ff6f537bf68d9db4b449dca827bb",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/d12502a6c245ff6f537bf68d9db4b449dca827bb",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-a-grammar-of-the-puk-h-to-or-pus-h-to-language",
+      "title": "A grammar of the Puk̲h̲to or Pus̲'h̲to language",
+      "url": "https://www.semanticscholar.org/paper/99c46409a55ac0bf68e2c530a377becfcb46dd47",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/99c46409a55ac0bf68e2c530a377becfcb46dd47",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-a-new-etymological-vocabulary-of-pashto",
+      "title": "A New Etymological Vocabulary of Pashto",
+      "url": "https://openalex.org/W2071464713",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://openalex.org/W2071464713",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-a-reference-grammar-of-pashto",
+      "title": "A reference grammar of Pashto",
+      "url": "http://wals.info/refdb/record/7189",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "http://wals.info/refdb/record/7189",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-cer-hv-a-cer-based-human-in-the-loop-framework-for-cleaning-datasets-applied-to-",
+      "title": "CER-HV: A CER-Based Human-in-the-Loop Framework for Cleaning Datasets Applied to Arabic-Script HTR",
+      "url": "https://arxiv.org/abs/2601.16713",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Handwritten text recognition (HTR) for Arabic-script languages still lags behind Latin-script HTR, despite recent advances in model architectures, datasets, and benchmarks. We show that data quality is a significant limiting factor in many",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://arxiv.org/abs/2601.16713",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-critical-study-of-the-travelogues-of-dr-altaf-yousafzai-in-the-context-of-thaila",
+      "title": "Critical study of the travelogues of Dr Altaf Yousafzai (In The Context of \"Thailand kay Rang\", \"Nile kay Sang\" and  \"Bakhal-e-Hinduwush Bakhsham\")",
+      "url": "https://zenodo.org/records/13937101",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Dr. Muhammad Altaf Yusufzai, is an Associate Professor in the Department of Urdu (Hazara University Mansehra). Dr Muhammad Altaf Yusufzai is a well-known Personality of Urdu literature, \"Mukhtar Masood ka Asloob\", \"Urdu Nazam or Nine Eleven",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/13937101",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-depiction-of-women-s-cries-in-pashto-landai-poetry",
+      "title": "Depiction of Women's Cries in Pashto Landai Poetry",
+      "url": "https://zenodo.org/records/15524281",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Pashto folk literature represents various social realities through poetic expressions, with Landai being a crucial form. This article explores the representation of women’s grief and protest in Pashto Landai. Through qualitative and analyti",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/15524281",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-descriptive-grammar-of-pashto-and-its-dialects",
+      "title": "Descriptive Grammar of Pashto and its Dialects",
+      "url": "https://doi.org/10.1515/9781614512318",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1515/9781614512318",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-divorce-and-women-s-rights-should-women-have-equal-rights-pashto",
+      "title": "Divorce And Women’s Rights: Should Women have Equal Rights? (Pashto)",
+      "url": "https://opendata.uni-halle.de//handle/1981185920/123991",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "This article looks at the fiqhi formulations of the divorce law through the lense of the Qur’anic verse (al-Baqarah, 2:228). Whereas the leading schools of fiqh have articulated a regime of divorce law that is decidedly onesided and generat",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://opendata.uni-halle.de//handle/1981185920/123991",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-crossref-doing-pashto",
+      "title": "Doing Pashto",
+      "url": "https://doi.org/10.1080/02690055.2015.1068987",
+      "category": "paper",
+      "source": "crossref",
+      "status": "verified",
+      "summary": "Candidate paper returned from Crossref search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+      "evidence_url": "https://doi.org/10.1080/02690055.2015.1068987",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-editorial-note-dari",
+      "title": "Editorial Note (Dari)",
+      "url": "https://opendata.uni-halle.de//handle/1981185920/123994",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "The Journal of Afghan Legal Studies (JALS) is the first peer-reviewed, trilingual scientific law journal in Afghanistan. It provides a unique intellectual venue for national and international scholars and researchers in the field of Afghan",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://opendata.uni-halle.de//handle/1981185920/123994",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-editorial-note-english",
+      "title": "Editorial Note (English)",
+      "url": "https://opendata.uni-halle.de//handle/1981185920/123993",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "The Journal of Afghan Legal Studies (JALS) is the first peer-reviewed, trilingual scientific law journal in Afghanistan. It provides a unique intellectual venue for national and international scholars and researchers in the field of Afghan",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://opendata.uni-halle.de//handle/1981185920/123993",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-editorial-note-pashto",
+      "title": "Editorial Note (Pashto)",
+      "url": "https://opendata.uni-halle.de//handle/1981185920/123995",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "The Journal of Afghan Legal Studies (JALS) is the first peer-reviewed, trilingual scientific law journal in Afghanistan. It provides a unique intellectual venue for national and international scholars and researchers in the field of Afghan",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://opendata.uni-halle.de//handle/1981185920/123995",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-educational-and-linguistic-aspects-of-text-preprocessing-in-pashto",
+      "title": "EDUCATIONAL AND LINGUISTIC ASPECTS OF TEXT PREPROCESSING IN PASHTO",
+      "url": "https://zenodo.org/records/15917449",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Abstract : This paper introduces foundational text preprocessing strategies designed for the Pashto language, focusing on linguistic structure, educational adaptation, and syntactic modeling. Given Pashto's complex morphology, diverse diale",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/15917449",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-embedding-elements-from-foreign-language-into-the-native-language-through-pashto",
+      "title": "Embedding Elements from Foreign Language into The Native Language Through Pashto-English Code-Mixed Speech",
+      "url": "https://zenodo.org/records/14756994",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "An individual's language style may undergo changes based on factors such as the topic of conversation, the passage of time, the interlocutors involved, and the social context or setting of the conversation. During this shift in speech style",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/14756994",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-evaluation-of-antibacterial-activity-of-zizyphus-jujuba",
+      "title": "EVALUATION OF ANTIBACTERIAL ACTIVITY OF ZIZYPHUS JUJUBA",
+      "url": "https://zenodo.org/records/3595881",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Objective: The objective of the study was to evaluate in-vitro efficacy of antibacterial activity of crude methanol, n-hexane, chloroform, ethyl acetate and aqueous extracts of Zizyphus jujuba against some human pathogenic bacterial strains",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/3595881",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-evaluation-of-antipyretic-activity-of-zizyphus-jujuba-lam-leaves-on-albino-rats",
+      "title": "EVALUATION OF ANTIPYRETIC ACTIVITY OF ZIZYPHUS JUJUBA LAM. LEAVES ON ALBINO RATS",
+      "url": "https://zenodo.org/records/4269214",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Objective : The objective of the study was to evaluate antipyretic activity of crude methanol extract of Zizyphus jujuba leaves. Z.jujuba commonly called, Red date or Chinese date or Bera (Pushto), belonging to family Rhamnaceae, is used pr",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/4269214",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-exploring-hospitality-as-a-cultural-tradition-a-qualitative-study-of-pashto-and-",
+      "title": "Exploring Hospitality as a Cultural Tradition: A Qualitative Study of Pashto and Hindko Customs",
+      "url": "https://zenodo.org/records/14872725",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Candidate resource returned from Zenodo search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/14872725",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-fairness-evaluation-and-inference-level-mitigation-in-llms",
+      "title": "Fairness Evaluation and Inference Level Mitigation in LLMs",
+      "url": "https://figshare.mq.edu.au/articles/thesis/Fairness_Evaluation_and_Inference_Level_Mitigation_in_LLMs/31093552/1",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Recent advances in Large Language Models (LLMs) have shown remarkable capability and now sit at the center of this revolution, delivering strong performance across diverse Natural Language Processing (NLP) and multilingualism tasks. LLMs sh",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://figshare.mq.edu.au/articles/thesis/Fairness_Evaluation_and_Inference_Level_Mitigation_in_LLMs/31093552/1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-framing-political-bias-in-multilingual-llms-across-pakistani-languages",
+      "title": "Framing Political Bias in Multilingual LLMs Across Pakistani Languages",
+      "url": "https://arxiv.org/abs/2506.00068",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Large Language Models (LLMs) increasingly shape public discourse, yet most evaluations of political and economic bias have focused on high-resource, Western languages and contexts. This leaves critical blind spots in low-resource, multiling",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://arxiv.org/abs/2506.00068",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-from-scarcity-to-scale-a-release-level-analysis-of-the-pashto-common-voice-datas",
+      "title": "From Scarcity to Scale: A Release-Level Analysis of the Pashto Common Voice Dataset",
+      "url": "https://arxiv.org/abs/2602.14062",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Large, openly licensed speech datasets are essential for building automatic speech recognition (ASR) systems, yet many widely spoken languages remain underrepresented in public resources. Pashto, spoken by more than 60 million people, has h",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://arxiv.org/abs/2602.14062",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-crossref-gemination-in-pashto",
+      "title": "Gemination in Pashto",
+      "url": "https://doi.org/10.24312/ucp-jll.02.02.405",
+      "category": "paper",
+      "source": "crossref",
+      "status": "verified",
+      "summary": "The purpose of the present study was to analyze gemination in Pashto. For this purpose, first, data was collected generally from elder native speakers who speak the Yousafzai dialect. The collected data then was verified and discussed sever",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+      "evidence_url": "https://doi.org/10.24312/ucp-jll.02.02.405",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-is-the-pushto-a-semitic-language",
+      "title": "Is the Pushto a Semitic Language",
+      "url": "https://zenodo.org/records/16001185",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "(Uploaded by Plazi from the Biodiversity Heritage Library) No abstract provided.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/16001185",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-knn-and-ann-based-recognition-of-handwritten-pashto-letters-using-zoning-feature",
+      "title": "KNN and ANN-based Recognition of Handwritten Pashto Letters using Zoning Features",
+      "url": "https://doi.org/10.14569/ijacsa.2018.091069",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.14569/ijacsa.2018.091069",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-language-barrier-and-its-effect-on-learning-at-the-public-primary-school-level-i",
+      "title": "Language Barrier and its Effect on Learning at the Public Primary School Level in Lahore",
+      "url": "https://zenodo.org/records/17728944",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Context and Purpose: Linguistic shift in general education and the use of English as a medium of instruction (EMI) at the primary level poses a large language barrier to the learners of other languages. This paper particularly examined the",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/17728944",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-morphology-of-pashto-adverbs-word-and-paradigm-approach",
+      "title": "Morphology of Pashto Adverbs: Word and Paradigm Approach",
+      "url": "https://zenodo.org/records/16211508",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Candidate resource returned from Zenodo search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/16211508",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-negation-in-pashto",
+      "title": "Negation in Pashto",
+      "url": "https://zenodo.org/records/18233956",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "In this paper, we explore negation in Pashto – an Eastern Iranian language spoken mainly in Pakistan and Afghanistan. Based on the Yousafzai dialect of Pashto, with the questionnaire provided by the editors as our main instrument, we invest",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/18233956",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-negotiating-pakhto-proverbs-islam-and-the-construction-of-identity-among-pashtun",
+      "title": "Negotiating Pakhto: Proverbs, Islam and the Construction of Identity among Pashtuns",
+      "url": "https://www.semanticscholar.org/paper/8a503f164e0c1f5be13866dad00539c7e5b1cabc",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/8a503f164e0c1f5be13866dad00539c7e5b1cabc",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-only-2-of-141-global-languages-employ-a-labial-for-tongue-in-1st-position-challe",
+      "title": "Only 2 of 141 Global Languages Employ a Labial for \"Tongue\" in 1st position Challenging Saussure's Arbitrariness With Near Universal Embodied Iconicity for Tongue Vs Mouth in \"inverse\" Control",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.17807676",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "141 (now 154) of most spoken languages - the word \"Tongue\" provides statistical significant evidence for \"Embodied Iconicity\" Please note that the list was expanded to 154 languages, the additional 13 languages - all with more than 1 millio",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.17807676",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-crossref-pashto",
+      "title": "Pashto",
+      "url": "https://doi.org/10.4324/9780203301524-34",
+      "category": "paper",
+      "source": "crossref",
+      "status": "verified",
+      "summary": "Candidate paper returned from Crossref search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+      "evidence_url": "https://doi.org/10.4324/9780203301524-34",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-pashto-endo-clitics-in-a-parallel-architecture",
+      "title": "Pashto (Endo-)clitics in a Parallel Architecture",
+      "url": "http://nbn-resolving.de/urn:nbn:de:bsz:352-0-278290",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "http://nbn-resolving.de/urn:nbn:de:bsz:352-0-278290",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-pashto-pashto-english-english-pashto-dictionary-phrasebook",
+      "title": "Pashto : Pashto-English, English-Pashto dictionary & phrasebook",
+      "url": "https://www.semanticscholar.org/paper/8ff77d35396d17225d97772e577e472a2ab1c47a",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/8ff77d35396d17225d97772e577e472a2ab1c47a",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-crossref-pashto-handwritten-books",
+      "title": "Pashto Handwritten Books",
+      "url": "https://doi.org/10.1163/9789004737358_003",
+      "category": "paper",
+      "source": "crossref",
+      "status": "verified",
+      "summary": "Candidate paper returned from Crossref search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+      "evidence_url": "https://doi.org/10.1163/9789004737358_003",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-crossref-pashto-language",
+      "title": "Pashto Language",
+      "url": "https://doi.org/10.32388/pxbtfv",
+      "category": "paper",
+      "source": "crossref",
+      "status": "verified",
+      "summary": "Candidate paper returned from Crossref search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+      "evidence_url": "https://doi.org/10.32388/pxbtfv",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-pashto-poetry-and-militancy-in-khyber-pakhtunkhwa-after-9-11-thematic-analysis-o",
+      "title": "PASHTO POETRY AND MILITANCY IN KHYBER PAKHTUNKHWA AFTER 9/11: THEMATIC ANALYSIS OF PASHTO POETRY IN RESISTING MILITANCY",
+      "url": "https://www.semanticscholar.org/paper/e81d4e7ac6cd7519643bf5d5c0bdfd9be554a8f2",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "The present study sheds light on Pashto or Pakhto Poetry and Militancy in Khyber Pakhtunkhwa after 9/11. The fieldwork for this study was conducted in the Peshawar district of Khyber Pakhtunkhwa, Pakistan, from December 2020 to April 2021.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/e81d4e7ac6cd7519643bf5d5c0bdfd9be554a8f2",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-crossref-pashto-tappa",
+      "title": "Pashto Tappa",
+      "url": "https://doi.org/10.4324/9781003604877-9",
+      "category": "paper",
+      "source": "crossref",
+      "status": "verified",
+      "summary": "Candidate paper returned from Crossref search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+      "evidence_url": "https://doi.org/10.4324/9781003604877-9",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-crossref-pashto-verse",
+      "title": "Pashto Verse",
+      "url": "https://doi.org/10.1017/s0041977x00072700",
+      "category": "paper",
+      "source": "crossref",
+      "status": "verified",
+      "summary": "In , and since, the nineteenth century a more than passing interest inPashto verse, both literary and popular, has been shown in Europe, as thefollowing titles (not to mention a number of chrestomathies) testify:",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+      "evidence_url": "https://doi.org/10.1017/s0041977x00072700",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-persian-loanwords-and-calques-in-pashto",
+      "title": "Persian loanwords and calques in Pashto",
+      "url": "https://www.semanticscholar.org/paper/ed232f1c2abd6e6f8a49f04de8ac76bf922521ea",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/ed232f1c2abd6e6f8a49f04de8ac76bf922521ea",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-persian-urdu-and-pashto-a-comparative-orthographic-analysis",
+      "title": "Persian, Urdu, and Pashto: A comparative orthographic analysis",
+      "url": "https://doi.org/10.1093/wsr/wsq005",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1093/wsr/wsq005",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-portrayal-of-death-in-the-selected-poems-of-abdul-ghani-khan-and-emily-dickinson",
+      "title": "Portrayal of Death in the Selected Poems of Abdul Ghani Khan and Emily Dickinson: A Comparative Thematic Analysis",
+      "url": "https://zenodo.org/records/15046502",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "This article studies the theme of death in the works of two poets for whom death is the most resonant, mysterious, moving and fascinating of all possible poetic themes that is connected to an awareness of human finitude: Ghani khan and Emil",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/15046502",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-separating-phonology-from-syntax-a-reanalysis-of-pashto-cliticization",
+      "title": "Separating phonology from syntax: a reanalysis of Pashto cliticization",
+      "url": "https://doi.org/10.1017/s0022226700006952",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1017/s0022226700006952",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-some-remarks-on-the-origin-of-the-afgh-n-people-and-dialect-and-on-the-connexion",
+      "title": "Some Remarks on the Origin of the Afghán People and Dialect and on the Connexion of the Pushto Language with the Zend and Pehlavi and the Hebrew",
+      "url": "https://zenodo.org/records/16191315",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "(Uploaded by Plazi from the Biodiversity Heritage Library) No abstract provided.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/16191315",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-crossref-summaries-in-pashto",
+      "title": "Summaries in Pashto",
+      "url": "https://doi.org/10.1097/01.wtf.0000437933.40809.39",
+      "category": "paper",
+      "source": "crossref",
+      "status": "verified",
+      "summary": "Candidate paper returned from Crossref search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+      "evidence_url": "https://doi.org/10.1097/01.wtf.0000437933.40809.39",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-the-bbn-byblos-pashto-ocr-system",
+      "title": "The BBN Byblos Pashto OCR system",
+      "url": "https://doi.org/10.1145/1031442.1031447",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1145/1031442.1031447",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-the-grammar-of-clitics-evidence-from-pashto-and-other-languages",
+      "title": "The grammar of clitics : evidence from Pashto and other languages",
+      "url": "http://hdl.handle.net/11858/00-001M-0000-0012-7447-0",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "http://hdl.handle.net/11858/00-001M-0000-0012-7447-0",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-the-influence-of-the-arabic-language-on-the-pashto-language-the-abdur-rahman-bab",
+      "title": "The Influence of the Arabic Language on the Pashto Language: The Abdur-Rahman Baba as a Model (A Case Study Analysis)",
+      "url": "https://zenodo.org/records/18174368",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "The mixing of languages shows how deeply they are connected and how they influence each other,s culture and language. Many Urdu and Persian words have been absorbed into the Pashto language. Likewise, Arabic words entered Pashto through Isl",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/18174368",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-the-pashto-language-and-identity-formation-in-pakistan",
+      "title": "The Pashto language and identity‐formation in Pakistan",
+      "url": "https://doi.org/10.1080/09584939508719759",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1080/09584939508719759",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-the-regional-criminal-law-framework-for-the-combat-of-organized-crime-pashto",
+      "title": "The Regional Criminal Law Framework for the Combat of Organized Crime (Pashto)",
+      "url": "https://opendata.uni-halle.de//handle/1981185920/123975",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Today, powerful networks of criminal organizations with a range of coordinated activities in the form of organized crimes around the world with a great deal of impact in different fields are considered one of the most significant concerns i",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://opendata.uni-halle.de//handle/1981185920/123975",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-the-social-structure-and-organization-of-a-pakhto-speaking-community-in-afghanis",
+      "title": "The Social Structure and Organization of A Pakhto Speaking Community in Afghanistan.",
+      "url": "https://www.semanticscholar.org/paper/306e9a04b8835de6e906303b5e27d43a6994cb1d",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/306e9a04b8835de6e906303b5e27d43a6994cb1d",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-resource",
+      "title": "بلوچستان میں \" فقہ اسلامی \"   کے فروغ و ارتقا٫ کا تحقیقی جائزہ",
+      "url": "https://zenodo.org/records/18049233",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "ABSTRACT Research-based review of the development and promotion of Islamic jurisprudence (Ilm al-Fiqh) in Balochistan during the twentieth century reveals that this century was truly a golden era for the growth and advancement of Islamic Fi",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/18049233",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-a-comparative-analysis-of-pashto-ghazals-and-english-sonnets-in-17th-century",
+      "title": "A Comparative Analysis of Pashto Ghazals and English Sonnets in 17th Century",
+      "url": "https://www.semanticscholar.org/paper/55b044485b2f134c69c9b9b6dfeaa7e71e704b3d",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "This study conducts a comparative analysis of Pashto ghazals and English sonnets in 17th century  to explore their unique structures, themes, and cultural significance. Utilizing descriptive and comparative methods, the study examines how t",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/55b044485b2f134c69c9b9b6dfeaa7e71e704b3d",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-an-acoustic-analysis-of-consonants-of-khattak-dialect-of-pashto",
+      "title": "An Acoustic Analysis of consonants of Khattak Dialect of Pashto",
+      "url": "https://www.semanticscholar.org/paper/ed06d206e60a62c2bebdd487b4f8dea253a9a0a8",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Pashto, an ancient language written in Perso-Arabic script, is predominantly spoken in Pakistan's Khyber Pakhtunkhwa Province and Afghanistan. Despite its wide usage, more research is needed on the consonantal sounds of the Khattak dialect.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/ed06d206e60a62c2bebdd487b4f8dea253a9a0a8",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-an-analysis-of-freudian-concept-of-mourning-in-pashto-tappas-on-the-theme-of-mig",
+      "title": "AN ANALYSIS OF FREUDIAN CONCEPT OF MOURNING IN PASHTO TAPPAS ON THE THEME OF MIGRATION",
+      "url": "https://zenodo.org/records/11124039",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Folk literature of any nation is its collective asset and is the preserver of its social history and culture. The most important genre of Pashto folk poetry is tappa. Tappa is composed of a couplet. It covers all aspects of the Pashtuns’ wa",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/11124039",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-an-analysis-of-the-syntactic-and-pragmatic-effects-on-word-order-flexibility-in-",
+      "title": "An Analysis of the Syntactic and Pragmatic Effects on Word Order Flexibility in Pashto and English",
+      "url": "https://www.semanticscholar.org/paper/136c23f176399f7dfc45e6ae990a975aafd7da1d",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "This research explores the syntactic and pragmatic aspects that condition word order flexibility in Pashto and English, comparing how the two languages communicate emphasis, focus, and topicalization. This paper compares the flexibility of",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/136c23f176399f7dfc45e6ae990a975aafd7da1d",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-analysing-deep-meaning-of-proverbs-in-pashto-language",
+      "title": "Analysing Deep Meaning of Proverbs in Pashto Language",
+      "url": "https://www.semanticscholar.org/paper/1a804a9701c5103ed38df3350da61abdf5df2b57",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "As other ancient languages of the world, Pashto is one of them having  rich folkloric literature. One of the most important part of this literature is proverbs, which makes a special part of history of this language. These proverbs shows  d",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/1a804a9701c5103ed38df3350da61abdf5df2b57",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-challenging-gender-roles-a-feminist-analysis-of-ghani-khan-s-the-pathans",
+      "title": "CHALLENGING GENDER ROLES: A FEMINIST ANALYSIS OF GHANI KHAN'S THE PATHANS",
+      "url": "https://zenodo.org/records/11216862",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "The present research aims to analyse the representation of gender dynamics in Ghani Khan’s The Pathans who is also known as Lewanai Phalsafi (The Lunatic Philosopher), is a towering literary figure in Pashto literature. He is commonly known",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/11216862",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-cinematic-misnomers-examining-the-effects-of-pashto-movie-titles-on-the-percepti",
+      "title": "Cinematic Misnomers: Examining the Effects of Pashto Movie Titles on the Perception of Pashtun Identity",
+      "url": "https://www.semanticscholar.org/paper/1b4c38ce4ceb6ac7846062bb589351cc88a36617",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "The current research is a critical study of the impacts of inappropriate and misleading titles of Pashtu movies on the perception of Pashtun identity. Because most of the titles are abusive and immoral in nature and do not conform to the st",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/1b4c38ce4ceb6ac7846062bb589351cc88a36617",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-comparative-study-of-adjectives-in-pashto-and-dari-as-cognate-languages",
+      "title": "Comparative Study of Adjectives in Pashto and Dari as Cognate Languages",
+      "url": "https://www.semanticscholar.org/paper/558e9dd7d4027be391a39f5e5ef988cf05039dc7",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "In Pashto, adjectives align with nouns in terms of number, gender, and case, which distinguishthem from adjectives in Modern Persian-Dari. In both Old and Modern Persian, unlike in Pashto, adjectives are divided into two categories: attribu",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/558e9dd7d4027be391a39f5e5ef988cf05039dc7",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-comprehensive-socio-phonetic-study-of-the-plosive-p-and-fricative-f-merger-among",
+      "title": "Comprehensive Socio-phonetic Study of the Plosive /p/ and Fricative /f/ Merger among Pashto Speakers in Khyber Pakhtunkhwa",
+      "url": "https://www.semanticscholar.org/paper/4f01f2250c897dc53099f76a2455471b480f22cf",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Introduction: The phonological systems of a first language (L1) can fundamentally constrain the acquisition of a second language (L2), particularly in speech sound perception and production. In Pashto-English bilinguals, the absence of the",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/4f01f2250c897dc53099f76a2455471b480f22cf",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-essential-skills-for-a-lexicographer-based-on-pashto-lexicography",
+      "title": "Essential Skills for a Lexicographer: Based on Pashto Lexicography",
+      "url": "https://www.semanticscholar.org/paper/8fc45aa567cb78713e2fef41d5e748e8ee1d8470",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "How Pashto dictionaries meet rules of modern lexicography? Lexicography is a division of linguistic working on recording and developing data of languages. Pashto is one of the languages which do not have many resources in lexicography. Most",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/8fc45aa567cb78713e2fef41d5e748e8ee1d8470",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-exploring-the-impacts-of-emotion-through-language-learning-on-pashto-speakers-yo",
+      "title": "Exploring the Impacts of Emotion through Language Learning on Pashto Speakers Young Adulthood in District Peshawar",
+      "url": "https://www.semanticscholar.org/paper/4549649112553aabccfac8b918c7e98cdbdd0f09",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "The current study explores the emotional experiences of Pashto speakers learning a second language, with a focus on how emotions are expressed, understood, and influenced by cultural and linguistic factors. While language learning is often",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/4549649112553aabccfac8b918c7e98cdbdd0f09",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-fragments-of-life-in-death-world-an-analysis-of-pashto-poetry-as-a-non-violent-r",
+      "title": "Fragments of life in ‘death world’: an analysis of Pashto poetry as a non-violent resistance to necropolitics",
+      "url": "https://www.semanticscholar.org/paper/9726f372b07f677fad23e2ee27a7f50f985e8ed8",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/9726f372b07f677fad23e2ee27a7f50f985e8ed8",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-gender-classification-from-pashto-handwritten-text-images",
+      "title": "Gender Classification From Pashto Handwritten Text Images",
+      "url": "https://www.semanticscholar.org/paper/2d70fffa9224d71f67ad3c1943b8a71b18164eeb",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Computer vision (CV) is a subfield of computer science that enables machines to perceive, interpret, and understand visual data. It combines image processing, analysis, and machine learning to extract meaningful insights from images and vid",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/2d70fffa9224d71f67ad3c1943b8a71b18164eeb",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-introduction-to-pashto-word-s-characteristics",
+      "title": "Introduction to Pashto Word’s Characteristics",
+      "url": "https://www.semanticscholar.org/paper/6eb3febbb368a7eaccc6290bcd77683ed3d624aa",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "This study investigates the distinctive characteristics of Pashto words, focusing on their phonological, morphological, and semantic features. Pashto, an Eastern Iranian language spoken primarily in Afghanistan and Pakistan, exhibits a rich",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/6eb3febbb368a7eaccc6290bcd77683ed3d624aa",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-isolated-handwritten-pashto-character-recognition-using-a-i-k-i-nn-classificatio",
+      "title": "Isolated Handwritten Pashto Character Recognition Using a <i>K</i>‐NN Classification Tool based on Zoning and HOG Feature Extraction Techniques",
+      "url": "https://doi.org/10.1155/2021/5558373",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1155/2021/5558373",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-crossref-le-verbe-pashto",
+      "title": "Le verbe pashto",
+      "url": "https://doi.org/10.29091/9783954907083",
+      "category": "paper",
+      "source": "crossref",
+      "status": "verified",
+      "summary": "Candidate paper returned from Crossref search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+      "evidence_url": "https://doi.org/10.29091/9783954907083",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-pashto-free-relatives-and-triply-filled-comp-evidence-for-a-headed-analysis",
+      "title": "Pashto free relatives and triply-filled Comp: Evidence for a headed analysis",
+      "url": "https://doi.org/10.1016/s0024-3841(96)00032-0",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1016/s0024-3841(96)00032-0",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-pashto-preverbs-v",
+      "title": "Pashto preverbs V",
+      "url": "https://www.semanticscholar.org/paper/1f59f22ae99379106b417186f3053c00b5fe391f",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Abstract This article deals with the perfective preverb wə́-. Pashto wə́- cannot be studied separately from aspectual oppositions: in fact, wə́- characterizes the “perfective” of simple verbs. Therefore, a quick review of aspect in Pashto w",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/1f59f22ae99379106b417186f3053c00b5fe391f",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-pashto-preverbs-iii-compound-verbs-with-preverb",
+      "title": "Pashto preverbs, III. Compound verbs with preverb",
+      "url": "https://www.semanticscholar.org/paper/53eeae3a973d6bb72839e9304be13a0362c92242",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Abstract This article, the third in a series, focuses on the “living” preverbs used in the verbal system of contemporary Pashto. The verbs treated here belong to the “compound verbs with preverb” class or to the “mixed verbs with preverb” c",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/53eeae3a973d6bb72839e9304be13a0362c92242",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-psocr-benchmarking-large-multimodal-models-for-optical-character-recognition-in-",
+      "title": "PsOCR: Benchmarking Large Multimodal Models for Optical Character Recognition in Low-resource Pashto Language",
+      "url": "https://arxiv.org/abs/2505.10055",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "This paper evaluates the performance of Large Multimodal Models (LMMs) on Optical Character Recognition (OCR) in the low-resource Pashto language. Natural Language Processing (NLP) in Pashto faces several challenges due to the cursive natur",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://arxiv.org/abs/2505.10055",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-arxiv-psocr-benchmarking-large-multimodal-models-for-optical-character-recognition-in-",
+      "title": "PsOCR: Benchmarking Large Multimodal Models for Optical Character Recognition in Low-resource Pashto Language",
+      "url": "http://arxiv.org/abs/2505.10055v2",
+      "category": "paper",
+      "source": "arxiv",
+      "status": "verified",
+      "summary": "This paper evaluates the performance of Large Multimodal Models (LMMs) on Optical Character Recognition (OCR) in the low-resource Pashto language. Natural Language Processing (NLP) in Pashto faces several challenges due to the cursive natur",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by Pashto marker in paper title from arXiv query results.",
+      "evidence_url": "http://arxiv.org/abs/2505.10055v2",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-scale-and-rotation-invariant-recognition-of-cursive-pashto-script-using-sift-fea",
+      "title": "Scale and rotation invariant recognition of cursive Pashto script using SIFT features",
+      "url": "https://doi.org/10.1109/icet.2010.5638470",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1109/icet.2010.5638470",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-switching-selves-online-pashto-english-bilingualism-identity-and-expression-in-p",
+      "title": "SWITCHING SELVES ONLINE:PASHTO-ENGLISH BILINGUALISM,IDENTITY, AND EXPRESSION IN PAKISTAN’S DIGITAL DISCOURSE",
+      "url": "https://www.semanticscholar.org/paper/7a330c5fb416a1105866a895748b4336f8ef8100",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "The language in modern digital realms goes beyond its message carrying center; it serves as a mirror of itself in identity, emotion, and cultural location. The current paper examines what happens when Pashto-English bilinguals in Pakistan n",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/7a330c5fb416a1105866a895748b4336f8ef8100",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-syntax-and-morphology-of-baniswola-pashto-investigating-universal-and-dialectal-",
+      "title": "Syntax and morphology of Baniswola Pashto: investigating universal and dialectal variations",
+      "url": "https://www.semanticscholar.org/paper/9f725b3b282cf05f9089002d474010c6021001f9",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/9f725b3b282cf05f9089002d474010c6021001f9",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-the-development-and-evaluation-of-an-automatic-clitic-generator-for-pashto-langu",
+      "title": "The development and evaluation of an automatic clitic generator for Pashto language",
+      "url": "https://www.semanticscholar.org/paper/3d95449d67799fcac83f855984cb0c29cc500d7b",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/3d95449d67799fcac83f855984cb0c29cc500d7b",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-the-role-of-early-literary-biographies-tazkiri-in-the-ancient-history-of-pashto-",
+      "title": "The Role of Early Literary Biographies (Tazkiri) in the Ancient History of Pashto Literature",
+      "url": "https://www.semanticscholar.org/paper/4938170077d3430c2e3f9fadc161ed7b79242917",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "The role of early literary biographies in the ancient history of Pashto literature is a significant and fundamental subject, as these biographies have transmitted to us the thoughts, styles, and contributions of early poets, writers, and Su",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/4938170077d3430c2e3f9fadc161ed7b79242917",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-the-roshani-movement-literary-services-and-the-contribution-of-this-movement-in-",
+      "title": "The Roshani Movement literary services and the contribution of this Movement in the development of Pashto Literature",
+      "url": "https://www.semanticscholar.org/paper/88a3cd1ec497844c5997ae1795f8e72bbb314112",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Literature is the mirror of society. The purpose of this article was to review the achievements and literary services of the Roshani Movement, in order to use their positive points in the development of Pashto language and literature. The r",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/88a3cd1ec497844c5997ae1795f8e72bbb314112",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-crossref-topicalization-in-pashto",
+      "title": "Topicalization in Pashto",
+      "url": "https://doi.org/10.31703/gssr.2020(v-i).17",
+      "category": "paper",
+      "source": "crossref",
+      "status": "verified",
+      "summary": "Candidate paper returned from Crossref search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+      "evidence_url": "https://doi.org/10.31703/gssr.2020(v-i).17",
+      "markers": [
+        "pashto"
+      ]
+    }
+  ]
+}

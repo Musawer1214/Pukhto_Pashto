@@ -6,7 +6,7 @@ Automation scripts for quality checks, resource catalog validation, and search i
 - `validate_normalization.py`: validate normalization seed TSV format and rules.
 - `check_links.py`: ensure markdown links are clickable (optional online reachability check).
 - `validate_resource_catalog.py`: validate `resources/catalog/resources.json`.
-- `generate_resource_views.py`: generate `resources/*/README.md`, `resources/README.md`, and `docs/search/resources.json` from the catalog.
+- `generate_resource_views.py`: generate `resources/*/README.md`, `resources/README.md`, `docs/search/resources.json` (non-paper technical resources), and `docs/papers/resources.json` (papers) from the catalog.
 - `sync_resources.py`: collect new candidate Pashto resources from Kaggle, Hugging Face (datasets/models/spaces), GitHub, GitLab, OpenAlex, Crossref, Zenodo, Dataverse, DataCite, arXiv, and Semantic Scholar into `resources/catalog/pending_candidates.json`.
 - `promote_candidates.py`: auto-promote valid non-duplicate entries from `pending_candidates.json` into `resources/catalog/resources.json`.
 - `review_existing_resources.py`: review current catalog resources, remove stale/removed entries only with strong reasons, and log removals in `resources/catalog/removal_log.json`.
@@ -24,7 +24,7 @@ Validate resource catalog:
 python scripts/validate_resource_catalog.py
 ```
 
-Generate markdown and search index from catalog:
+Generate markdown and search indexes from catalog:
 ```bash
 python scripts/generate_resource_views.py
 ```

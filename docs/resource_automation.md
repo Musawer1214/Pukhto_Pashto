@@ -23,11 +23,12 @@ This repository uses automated discovery and promotion to keep Pashto resources 
 - Canonical verified catalog: [../resources/catalog/resources.json](../resources/catalog/resources.json)
 - Candidate feed: [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json)
 - Catalog schema: [../resources/schema/resource.schema.json](../resources/schema/resource.schema.json)
-- Search export: [search/resources.json](search/resources.json)
+- Technical search export: [search/resources.json](search/resources.json)
+- Papers search export: [papers/resources.json](papers/resources.json)
 
 ## Scripts
 - Validate catalog: `python scripts/validate_resource_catalog.py`
-- Generate markdown and search index: `python scripts/generate_resource_views.py`
+- Generate markdown and search indexes: `python scripts/generate_resource_views.py`
 - Review existing resources for stale/deleted entries: `python scripts/review_existing_resources.py`
 - Sync new candidates: `python scripts/sync_resources.py --limit 20`
 - Auto-promote valid candidates: `python scripts/promote_candidates.py`
@@ -39,7 +40,7 @@ This repository uses automated discovery and promotion to keep Pashto resources 
   - generated file consistency
   - markdown link checks
   - tests
-- Resource Sync (`.github/workflows/resource_sync.yml`) runs daily, syncs candidates, auto-promotes valid non-duplicate entries, regenerates views, and opens a PR.
+- Resource Sync (`.github/workflows/resource_sync.yml`) runs daily, syncs candidates, auto-promotes valid non-duplicate entries, regenerates views and both search payloads, and opens a PR.
   - Before candidate sync, it reviews existing entries and removes stale/deleted or non-Pashto/low-value entries only with strong logged reasons.
 
 ## Promotion flow

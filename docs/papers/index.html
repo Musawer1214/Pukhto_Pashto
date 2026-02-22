@@ -1,41 +1,42 @@
 ---
 layout: null
-title: Pashto Resource Search
-description: Search verified Pashto (Pukhto/Pashto) technical resources: datasets, models, tools, benchmarks, code, and projects.
-permalink: /search/
+title: Pashto Papers Search
+description: Search Pashto (Pukhto/Pashto) papers and documentation-focused resources.
+permalink: /papers/
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pashto Resource Search</title>
-  <meta name="description" content="Search verified Pashto (Pukhto/Pashto) resources for Automatic Speech Recognition (ASR), Text-to-Speech (TTS), Natural Language Processing (NLP), machine translation, tools, datasets, models, and benchmarks.">
-  <meta name="keywords" content="Pashto resources, Pukhto resources, Pashto datasets, Pashto ASR, Pashto TTS, Pashto NLP, Pashto machine translation, Pashto benchmarks">
+  <title>Pashto Papers Search</title>
+  <meta name="description" content="Search Pashto (Pukhto/Pashto) papers and documentation resources for ASR, TTS, NLP, translation, and OCR work.">
+  <meta name="keywords" content="Pashto papers, Pukhto papers, Pashto research, Pashto NLP papers, Pashto ASR papers, Pashto TTS papers">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://musawer1214.github.io/pashto-language-resources/search/">
+  <link rel="canonical" href="https://musawer1214.github.io/pashto-language-resources/papers/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Pashto Language Resources Hub">
-  <meta property="og:title" content="Pashto Resource Search">
-  <meta property="og:description" content="Discover verified Pashto datasets, models, tools, benchmarks, code, and projects.">
-  <meta property="og:url" content="https://musawer1214.github.io/pashto-language-resources/search/">
+  <meta property="og:title" content="Pashto Papers Search">
+  <meta property="og:description" content="Discover Pashto papers and documentation-focused resources.">
+  <meta property="og:url" content="https://musawer1214.github.io/pashto-language-resources/papers/">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Pashto Resource Search">
-  <meta name="twitter:description" content="Search and filter verified Pashto language technology resources.">
+  <meta name="twitter:title" content="Pashto Papers Search">
+  <meta name="twitter:description" content="Search and filter Pashto papers and documentation resources.">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": "Pashto Resource Search",
-      "url": "https://musawer1214.github.io/pashto-language-resources/search/",
-      "description": "Search verified and candidate Pashto resources for Automatic Speech Recognition (ASR), Text-to-Speech (TTS), Natural Language Processing (NLP), machine translation, tools, datasets, and benchmarks.",
+      "name": "Pashto Papers Search",
+      "url": "https://musawer1214.github.io/pashto-language-resources/papers/",
+      "description": "Search Pashto papers and documentation resources for ASR, TTS, NLP, translation, and OCR.",
       "inLanguage": "en",
       "about": [
-        "Pashto datasets",
+        "Pashto papers",
         "Pashto ASR",
         "Pashto TTS",
         "Pashto NLP",
-        "Pashto machine translation"
+        "Pashto machine translation",
+        "Pashto OCR"
       ]
     }
   </script>
@@ -458,10 +459,10 @@ permalink: /search/
       <div class="hero-top">
         <div>
           <p class="eyebrow">Pukhto / Pashto Resources</p>
-          <h1>Pashto Technology Resource Search</h1>
+          <h1>Pashto Papers Search</h1>
           <p class="subtitle">
-            Filter verified and candidate resources for Automatic Speech Recognition (ASR), Text-to-Speech (TTS), Natural Language Processing (NLP), translation, tools, and benchmark work.
-            Share search states with URL parameters and jump quickly to high-intent pages.
+            Filter Pashto papers and documentation-focused resources for Automatic Speech Recognition (ASR), Text-to-Speech (TTS), Natural Language Processing (NLP), translation, and OCR.
+            Share paper-search states with URL parameters and jump back to technical resources when needed.
           </p>
         </div>
         <div class="stat-row" aria-label="Catalog metrics">
@@ -472,7 +473,7 @@ permalink: /search/
       </div>
       <nav class="quick-links" aria-label="Quick links">
         <a class="pill-link" href="../">Docs Home</a>
-        <a class="pill-link" href="../papers/">Papers Search</a>
+        <a class="pill-link" href="../search/">Technical Search</a>
         <a class="pill-link" href="../pashto_datasets.html">Datasets Page</a>
         <a class="pill-link" href="../pashto_asr.html">ASR Page</a>
         <a class="pill-link" href="../pashto_tts.html">TTS Page</a>
@@ -485,7 +486,7 @@ permalink: /search/
       <div class="controls">
         <div class="field search">
           <label for="q">Search</label>
-          <input id="q" type="search" placeholder="Try: Automatic Speech Recognition, PBT_Arab, Translation, Speech, Benchmark" autocomplete="off">
+          <input id="q" type="search" placeholder="Try: OCR, ASR, translation, benchmark, corpus, language model" autocomplete="off">
         </div>
         <div class="field">
           <label for="category">Category</label>
@@ -526,11 +527,11 @@ permalink: /search/
       </div>
 
       <div class="intent-row" aria-label="Quick intent filters">
-        <button type="button" class="intent" data-intent="datasets">Datasets</button>
         <button type="button" class="intent" data-intent="asr">ASR</button>
         <button type="button" class="intent" data-intent="tts">TTS</button>
         <button type="button" class="intent" data-intent="nlp">NLP</button>
         <button type="button" class="intent" data-intent="mt">Translation</button>
+        <button type="button" class="intent" data-intent="ocr">OCR</button>
         <button type="button" class="intent" data-intent="verified">Verified Only</button>
       </div>
     </section>
@@ -540,19 +541,16 @@ permalink: /search/
       <span class="badge" id="generatedAt">Catalog timestamp: -</span>
     </div>
 
-    <section class="crawl" aria-label="Resource categories and crawlable links">
-      Browse Pashto resource categories directly:
+    <section class="crawl" aria-label="Paper resources and crawlable links">
+      Browse Pashto paper resources directly:
       <ul>
-        <li><a href="https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/datasets/README.md">Pashto datasets</a></li>
-        <li><a href="https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/models/README.md">Pashto models</a></li>
-        <li><a href="https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/benchmarks/README.md">Pashto benchmarks</a></li>
-        <li><a href="https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/tools/README.md">Pashto tools</a></li>
-        <li><a href="https://musawer1214.github.io/pashto-language-resources/papers/">Pashto papers (separate page)</a></li>
+        <li><a href="https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/papers/README.md">Pashto papers</a></li>
+        <li><a href="https://musawer1214.github.io/pashto-language-resources/search/">Technical resource search (non-paper)</a></li>
       </ul>
     </section>
 
     <noscript>
-      JavaScript is needed for filtering. Category links above remain fully accessible.
+      JavaScript is needed for filtering. Paper links above remain fully accessible.
     </noscript>
 
     <ul id="results" class="results grid"></ul>
@@ -604,12 +602,7 @@ permalink: /search/
     };
 
     const CATEGORY_LABELS = {
-      "dataset": "Dataset",
-      "model": "Model",
-      "benchmark": "Benchmark",
-      "tool": "Tool",
-      "project": "Project",
-      "code": "Code"
+      "paper": "Paper",
     };
 
     const SOURCE_LABELS = {
@@ -871,11 +864,7 @@ permalink: /search/
     }
 
     function applyIntent(intent) {
-      if (intent === "datasets") {
-        els.category.value = "dataset";
-        els.task.value = "";
-        els.q.value = "";
-      } else if (intent === "asr") {
+      if (intent === "asr") {
         els.task.value = "asr";
       } else if (intent === "tts") {
         els.task.value = "tts";
@@ -884,6 +873,8 @@ permalink: /search/
       } else if (intent === "mt") {
         els.task.value = "";
         els.q.value = "translation";
+      } else if (intent === "ocr") {
+        els.task.value = "ocr";
       } else if (intent === "verified") {
         els.status.value = "verified";
       }

@@ -113,7 +113,7 @@ jobs:
             - Reviews existing catalog entries and removes stale ones only with strong logged reasons
             - Updates `resources/catalog/pending_candidates.json`
             - Auto-promotes valid non-duplicate candidates into `resources/catalog/resources.json`
-            - Regenerates resource indexes and search payload
+            - Regenerates resource indexes plus technical and papers search payloads
           labels: |
             resource-update
             needs-review
@@ -130,3 +130,4 @@ jobs:
             resources/projects/README.md
             resources/codes/README.md
             docs/search/resources.json
+            docs/papers/resources.json

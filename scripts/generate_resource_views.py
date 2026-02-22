@@ -20,6 +20,9 @@ CATEGORY_CONFIG = {
     "project": ("resources/projects/README.md", "Projects"),
     "code": ("resources/codes/README.md", "Code"),
 }
+PAPER_CATEGORY = "paper"
+TECHNICAL_SEARCH_OUTPUT = Path("docs/search/resources.json")
+PAPERS_SEARCH_OUTPUT = Path("docs/papers/resources.json")
 
 
 def _load_catalog(path: Path) -> dict[str, Any]:
@@ -137,6 +140,19 @@ def _build_search_payload(resources: list[dict[str, Any]], updated_on: str) -> d
     }
 
 
+def _partition_search_resources(
+    resources: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    technical: list[dict[str, Any]] = []
+    papers: list[dict[str, Any]] = []
+    for resource in resources:
+        if resource.get("category") == PAPER_CATEGORY:
+            papers.append(resource)
+        else:
+            technical.append(resource)
+    return technical, papers
+
+
 def main() -> int:
     catalog_path = Path("resources/catalog/resources.json")
     catalog = _load_catalog(catalog_path)
@@ -159,17 +175,26 @@ def main() -> int:
     counts = {category: len(items) for category, items in grouped.items()}
     _write_resources_home(Path("resources/README.md"), counts, len(verified))
 
-    search_payload = _build_search_payload(resources, updated_on)
-    search_json_path = Path("docs/search/resources.json")
-    search_json_path.parent.mkdir(parents=True, exist_ok=True)
-    search_json_path.write_text(
-        json.dumps(search_payload, ensure_ascii=False, indent=2) + "\n",
+    technical_resources, papers = _partition_search_resources(resources)
+
+    technical_search_payload = _build_search_payload(technical_resources, updated_on)
+    TECHNICAL_SEARCH_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    TECHNICAL_SEARCH_OUTPUT.write_text(
+        json.dumps(technical_search_payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+    papers_search_payload = _build_search_payload(papers, updated_on)
+    PAPERS_SEARCH_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    PAPERS_SEARCH_OUTPUT.write_text(
+        json.dumps(papers_search_payload, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
 
     print(
-        "Generated resources markdown and search index: "
-        f"{len(verified)} verified resources, {len(resources)} total resources"
+        "Generated resources markdown and search indexes: "
+        f"{len(verified)} verified resources, {len(resources)} total resources, "
+        f"{len(technical_resources)} technical search resources, {len(papers)} paper search resources"
     )
     return 0
 

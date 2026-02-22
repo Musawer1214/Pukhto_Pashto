@@ -25,6 +25,7 @@ This repository curates verified Pashto resources and keeps validation and publi
 ## Quick Links
 
 - Search page: [Pashto Resource Search](https://musawer1214.github.io/pashto-language-resources/search/)
+- Papers page: [Pashto Papers Search](https://musawer1214.github.io/pashto-language-resources/papers/)
 - Project site: [Pashto Language Resources Hub](https://musawer1214.github.io/pashto-language-resources/)
 - Documentation hub: [docs/README.md](docs/README.md)
 - GitHub: [Musawer1214/pashto-language-resources](https://github.com/Musawer1214/pashto-language-resources)
@@ -68,12 +69,13 @@ python -m pytest -q
 - Backlink strategy: [docs/backlink_strategy.md](docs/backlink_strategy.md)
 - Platform sync policy: [docs/platform_sync_policy.md](docs/platform_sync_policy.md)
 - Search UI source: [docs/search/index.html](docs/search/index.html)
+- Papers UI source: [docs/papers/index.html](docs/papers/index.html)
 - Citation metadata: [CITATION.cff](CITATION.cff)
 
 ## Releases
 
 - Release notes index: [docs/releases/README.md](docs/releases/README.md)
-- Latest release notes: [v1.1.1](docs/releases/v1.1.1.md)
+- Latest release notes: [v1.2.1](docs/releases/v1.2.1.md)
 - Changelog: [CHANGELOG.md](CHANGELOG.md)
 
 ## Contributing
@@ -81,4 +83,3 @@ python -m pytest -q
 - Contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Community communication: [community/COMMUNICATION.md](community/COMMUNICATION.md)
 - Resource guidelines: [docs/dataset_guidelines.md](docs/dataset_guidelines.md)
-

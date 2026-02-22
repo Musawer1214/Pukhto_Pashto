@@ -26,8 +26,10 @@ This index points to validated Pashto-related resources tracked in structured fi
 - Code: [../resources/codes/README.md](../resources/codes/README.md)
 
 ## Search page
-- GitHub Pages search UI: [search/index.html](search/index.html)
-- Search data export: [search/resources.json](search/resources.json)
+- Technical search UI (non-paper): [search/index.html](search/index.html)
+- Technical search data export: [search/resources.json](search/resources.json)
+- Papers search UI: [papers/index.html](papers/index.html)
+- Papers search data export: [papers/resources.json](papers/resources.json)
 - Automation guide: [resource_automation.md](resource_automation.md)
 
 ## Workspace mapping

@@ -1,56 +1,55 @@
-# Resource Automation
+# 🤖 Resource Automation
 
-This repository uses automated discovery and promotion to keep Pashto resources current while preserving validation guardrails.
+This project uses automation to keep Pashto, Pukhto, and Pushto AI resources current without lowering quality.
 
-## Goals
-- Discover new Pashto-relevant resources from trusted public endpoints.
-- Keep a machine-readable canonical catalog.
-- Auto-promote only candidates that pass strict validation and deduplication checks.
+## 🎯 What This Automation Does
 
-## Covered source types
-- Kaggle datasets
-- Hugging Face datasets
-- Hugging Face models
-- Hugging Face Spaces (projects)
-- GitHub repositories (projects and code)
-- GitLab repositories (projects and code)
-- Zenodo records
-- Dataverse datasets
-- DataCite DOI records
-- Research-paper endpoints (arXiv, Semantic Scholar, OpenAlex, Crossref)
+- Finds new Pashto-relevant resources from trusted public endpoints.
+- Keeps one canonical machine-readable catalog.
+- Promotes only candidates that pass validation + deduplication.
+- Generates two search payloads:
+  - technical resources (non-paper)
+  - papers/documentation resources
 
-## Files involved
+## 📁 Core Files
+
 - Canonical verified catalog: [../resources/catalog/resources.json](../resources/catalog/resources.json)
 - Candidate feed: [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json)
 - Catalog schema: [../resources/schema/resource.schema.json](../resources/schema/resource.schema.json)
 - Technical search export: [search/resources.json](search/resources.json)
 - Papers search export: [papers/resources.json](papers/resources.json)
 
-## Scripts
+## 🧰 Scripts (Manual Use)
+
 - Validate catalog: `python scripts/validate_resource_catalog.py`
-- Generate markdown and search indexes: `python scripts/generate_resource_views.py`
-- Review existing resources for stale/deleted entries: `python scripts/review_existing_resources.py`
-- Sync new candidates: `python scripts/sync_resources.py --limit 20`
-- Auto-promote valid candidates: `python scripts/promote_candidates.py`
-- Full run wrapper: `python scripts/run_resource_cycle.py --limit 25`
+- Generate README + search outputs: `python scripts/generate_resource_views.py`
+- Review existing resources: `python scripts/review_existing_resources.py`
+- Discover new candidates: `python scripts/sync_resources.py --limit 20`
+- Promote valid candidates: `python scripts/promote_candidates.py`
+- Full cycle wrapper: `python scripts/run_resource_cycle.py --limit 25`
 
-## GitHub Actions
-- CI (`.github/workflows/ci.yml`) enforces:
-  - catalog validation
-  - generated file consistency
-  - markdown link checks
-  - tests
-- Resource Sync (`.github/workflows/resource_sync.yml`) runs daily, syncs candidates, auto-promotes valid non-duplicate entries, regenerates views and both search payloads, and opens a PR.
-  - Before candidate sync, it reviews existing entries and removes stale/deleted or non-Pashto/low-value entries only with strong logged reasons.
+## ⚙️ GitHub Actions (Automatic Use)
 
-## Promotion flow
-1. Review existing resources and remove stale entries with strong reasons.
-2. Sync candidates into `resources/catalog/pending_candidates.json`.
-3. Auto-promote valid, non-duplicate, URL-available entries into `resources/catalog/resources.json`.
-4. Run:
-   - `python scripts/validate_resource_catalog.py`
-   - `python scripts/generate_resource_views.py`
-5. Review PR and merge.
+- CI workflow: `.github/workflows/ci.yml`
+  - validates catalog
+  - checks generated files
+  - checks markdown links
+  - runs tests
+- Daily resource workflow: `.github/workflows/resource_sync.yml`
+  - audits existing entries
+  - discovers candidates
+  - auto-promotes valid entries
+  - regenerates views/search payloads
+  - opens a PR for review
 
-## Runbook
-- Reusable process guide: [resource_cycle_runbook.md](resource_cycle_runbook.md)
+## 🔄 Promotion Flow (Simple)
+
+1. Review current resources for stale links.
+2. Sync candidates into `pending_candidates.json`.
+3. Promote only valid, non-duplicate, reachable candidates.
+4. Regenerate outputs and validate.
+5. Review and merge.
+
+## 📚 Related Guide
+
+- Full runbook: [resource_cycle_runbook.md](resource_cycle_runbook.md)

@@ -1,20 +1,28 @@
-# Resource Cycle Runbook
+# 🔁 Resource Cycle Runbook
 
-Use this runbook whenever you want to repeat the resource update process without re-explaining it.
+Use this runbook when you want a repeatable, safe update process for Pashto resources.
 
-## Daily automation (already enabled)
+## 🤖 Daily Automation (Already Enabled)
+
 - Workflow: [../.github/workflows/resource_sync.yml](../.github/workflows/resource_sync.yml)
-- Schedule: every day at 04:00 UTC via GitHub Actions cron.
-- Output: reviews existing resources for stale/deleted links and non-Pashto/low-value entries (removing only with strong logged reasons), updates [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json), auto-promotes valid non-duplicate entries into [../resources/catalog/resources.json](../resources/catalog/resources.json), regenerates views, and opens a review PR.
+- Schedule: every day at 04:00 UTC
+- Automation output:
+  - reviews existing resources for stale or low-signal entries
+  - updates [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json)
+  - auto-promotes valid non-duplicate entries into [../resources/catalog/resources.json](../resources/catalog/resources.json)
+  - regenerates views and search payloads
+  - opens a review PR
 
-## Manual run (single command)
+## 🧭 Manual Run (One Command)
+
 Run from repository root:
 
 ```bash
 python scripts/run_resource_cycle.py --limit 25
 ```
 
-What it executes:
+This executes:
+
 1. `python scripts/review_existing_resources.py`
 2. `python scripts/sync_resources.py --limit 25`
 3. `python scripts/promote_candidates.py`
@@ -23,26 +31,28 @@ What it executes:
 6. `python scripts/check_links.py`
 7. `python -m pytest -q`
 
-Candidate sources in the sync step include Kaggle datasets, Hugging Face datasets/models/spaces, GitHub repositories, GitLab repositories, Zenodo records, Dataverse datasets, DataCite DOI records, and paper endpoints (arXiv, Semantic Scholar, OpenAlex, Crossref).
+## 🔎 Discovery-Only Mode
 
-## Discovery-only mode + manual promotion
-If you want fresh candidates without auto-promotion:
-1. Run `python scripts/run_resource_cycle.py --discover-only --limit 25`.
-2. Review [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json).
-3. Manually move selected entries into [../resources/catalog/resources.json](../resources/catalog/resources.json).
-4. Re-run `python scripts/run_resource_cycle.py --skip-pytest`.
+Use this when you want candidates without immediate promotion:
+
+1. `python scripts/run_resource_cycle.py --discover-only --limit 25`
+2. Review [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json)
+3. Promote selected entries with:
+   - `python scripts/promote_candidates.py --max-promotions <N>`
+4. Regenerate and validate:
+   - `python scripts/run_resource_cycle.py --skip-pytest`
 5. Commit and push.
 
-## Guardrails
-- Auto-promotion accepts only entries that pass dedupe, URL-availability checks, and catalog validation checks.
-- Existing resources are auto-removed only for strong reasons (for example confirmed hard-missing links, duplicates, or missing Pashto relevance), with reasons stored in `resources/catalog/removal_log.json`.
-- Keep `status: verified` for entries that pass automation checks and repository review.
-- Do not promote "reference-only" resources where Pashto is incidental; only Pashto-centric resources are eligible.
-- Treat spelling variants as valid Pashto markers during review (`pashto`, `pukhto`, `pushto`, `pakhto`, `pashto-script`).
-- Generated files must be committed after catalog updates.
+## ✅ Guardrails
 
-## Versioning for Daily Bot Updates
+- Auto-promotion requires dedupe + URL availability + catalog validation.
+- Existing entries are removed only for strong reasons, logged in `resources/catalog/removal_log.json`.
+- Keep only Pashto-centric resources.
+- Generated files must always be committed after catalog changes.
 
-- Daily candidate-sync updates from GitHub Actions (`resource_sync.yml`) are resource updates.
-- When those updates are reviewed and released, increment the third figure in `vMAJOR.CODE.RESOURCE`.
-- Example sequence: `v1.1.1` (code fix) -> `v1.1.2` (bot resource release).
+## 🧾 Versioning Reminder
+
+- Version format: `vMAJOR.CODE.RESOURCE`
+- Daily bot sync updates are **resource updates**.
+- Code or implementation changes increment the **middle figure**.
+- Example: `v1.1.1` (code release) -> `v1.1.2` (resource release)

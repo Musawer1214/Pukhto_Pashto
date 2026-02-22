@@ -1,22 +1,24 @@
-# Verified Pashto Resource Catalog
+# 📦 Verified Pashto Resource Catalog
 
-Last updated: `2026-02-15`
+Last updated: `2026-02-22`
 
-This index points to validated Pashto-related resources tracked in structured files.
+This page explains how Pashto resources are stored, validated, and published.
 
-## Validation method
-- Verify source URL resolves to official page or canonical repository.
-- Verify explicit Pashto support markers (`Pashto`, `Pukhto`, `Pushto`, `Pakhto`, `پښتو`, `ps`, `ps_af`, `pus`, `pbt_Arab`) where possible.
-- Reject resources where Pashto is only mentioned in passing and the primary work is focused on another language.
-- Multilingual resources are allowed when `pashto_evidence` clearly proves Pashto support (for example language table, split code, or model language code).
-- Include only resources with practical use for this repository.
+## 👀 What Counts as a Valid Resource?
 
-## Structured catalog
+- URL must resolve to the official page or canonical repository.
+- Pashto support must be explicit (`Pashto`, `Pukhto`, `Pushto`, `Pakhto`, `ps`, `ps_af`, `pus`, `pbt_Arab`, `پښتو`).
+- Resources where Pashto is only a side mention are rejected.
+- Multilingual resources are accepted only when `pashto_evidence` is clear and strong.
+
+## 🧱 Structured Data Files
+
 - Canonical JSON: [../resources/catalog/resources.json](../resources/catalog/resources.json)
 - Candidate feed: [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json)
 - JSON schema: [../resources/schema/resource.schema.json](../resources/schema/resource.schema.json)
 
-## Generated markdown views
+## 📚 Generated Resource Views
+
 - Datasets: [../resources/datasets/README.md](../resources/datasets/README.md)
 - Models: [../resources/models/README.md](../resources/models/README.md)
 - Benchmarks: [../resources/benchmarks/README.md](../resources/benchmarks/README.md)
@@ -25,25 +27,29 @@ This index points to validated Pashto-related resources tracked in structured fi
 - Projects: [../resources/projects/README.md](../resources/projects/README.md)
 - Code: [../resources/codes/README.md](../resources/codes/README.md)
 
-## Search page
+## 🔎 Search Pages
+
 - Technical search UI (non-paper): [search/index.html](search/index.html)
-- Technical search data export: [search/resources.json](search/resources.json)
+- Technical search payload: [search/resources.json](search/resources.json)
 - Papers search UI: [papers/index.html](papers/index.html)
-- Papers search data export: [papers/resources.json](papers/resources.json)
+- Papers search payload: [papers/resources.json](papers/resources.json)
 - Automation guide: [resource_automation.md](resource_automation.md)
 
-## Workspace mapping
+## 🗂️ Workspace Mapping
+
 - Data workspace: [../data/README.md](../data/README.md)
 - ASR workspace: [../asr/README.md](../asr/README.md)
 - TTS workspace: [../tts/README.md](../tts/README.md)
 - Benchmarks workspace: [../benchmarks/README.md](../benchmarks/README.md)
 - Applications workspace: [../apps/desktop/README.md](../apps/desktop/README.md)
 
-## Maintenance rule
+## 🛠️ Maintenance Checklist
+
 Before each release:
+
 - Confirm links still resolve.
-- Confirm Pashto support markers remain valid.
-- Confirm license or usage terms are still compatible.
+- Confirm Pashto support markers are still valid.
+- Confirm license/usage terms remain compatible.
 - Run:
   - `python scripts/validate_resource_catalog.py`
   - `python scripts/generate_resource_views.py`

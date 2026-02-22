@@ -1,75 +1,99 @@
-# Scripts
+# 🧰 Scripts
 
-Automation scripts for quality checks, resource catalog validation, and search index generation.
+Use these scripts to keep the Pashto resource catalog clean, verified, and searchable.
 
-## Available scripts
-- `validate_normalization.py`: validate normalization seed TSV format and rules.
-- `check_links.py`: ensure markdown links are clickable (optional online reachability check).
-- `validate_resource_catalog.py`: validate `resources/catalog/resources.json`.
-- `generate_resource_views.py`: generate `resources/*/README.md`, `resources/README.md`, `docs/search/resources.json` (non-paper technical resources), and `docs/papers/resources.json` (papers) from the catalog.
-- `sync_resources.py`: collect new candidate Pashto resources from Kaggle, Hugging Face (datasets/models/spaces), GitHub, GitLab, OpenAlex, Crossref, Zenodo, Dataverse, DataCite, arXiv, and Semantic Scholar into `resources/catalog/pending_candidates.json`.
-- `promote_candidates.py`: auto-promote valid non-duplicate entries from `pending_candidates.json` into `resources/catalog/resources.json`.
-- `review_existing_resources.py`: review current catalog resources, remove stale/removed entries only with strong reasons, and log removals in `resources/catalog/removal_log.json`.
-- `run_resource_cycle.py`: run the full repeatable resource cycle with one command.
+## 👶 If You Are New, Start Here
 
-## Usage
+Run this safe checklist from repo root:
 
-Validate normalization seed file:
+```bash
+python scripts/validate_resource_catalog.py
+python scripts/generate_resource_views.py
+python scripts/check_links.py
+python -m pytest -q
+```
+
+## 🧭 Which Script Should I Run?
+
+- `validate_normalization.py`  
+  Validate normalization TSV format and rules.
+- `check_links.py`  
+  Check markdown links for formatting (and optionally live URL reachability).
+- `validate_resource_catalog.py`  
+  Validate `resources/catalog/resources.json`.
+- `generate_resource_views.py`  
+  Generate:
+  - `resources/*/README.md`
+  - `resources/README.md`
+  - `docs/search/resources.json` (technical, non-paper)
+  - `docs/papers/resources.json` (papers)
+- `sync_resources.py`  
+  Discover new candidates from public sources into `resources/catalog/pending_candidates.json`.
+- `promote_candidates.py`  
+  Promote valid, non-duplicate candidates into `resources/catalog/resources.json`.
+- `review_existing_resources.py`  
+  Audit existing catalog entries and remove stale/low-signal ones with logged reasons.
+- `run_resource_cycle.py`  
+  Run the full repeatable cycle in one command.
+
+## ▶️ Common Commands
+
+Validate normalization seed:
 ```bash
 python scripts/validate_normalization.py data/processed/normalization_seed_v0.1.tsv
 ```
 
-Validate resource catalog:
+Validate catalog:
 ```bash
 python scripts/validate_resource_catalog.py
 ```
 
-Generate markdown and search indexes from catalog:
+Generate markdown + search payloads:
 ```bash
 python scripts/generate_resource_views.py
 ```
 
-Sync candidate resources for maintainer review:
+Discover new candidates:
 ```bash
 python scripts/sync_resources.py --limit 20
 ```
 
-Review existing resources and remove stale entries before discovery:
+Review existing resources:
 ```bash
 python scripts/review_existing_resources.py
 ```
 
-Run stricter relevance cleanup mode:
+Stricter relevance audit:
 ```bash
 python scripts/review_existing_resources.py --enforce-pashto-relevance
 ```
 
-Auto-promote valid candidates into verified catalog:
+Promote candidates:
 ```bash
 python scripts/promote_candidates.py
 ```
 
-Auto-promote while skipping online URL availability checks:
+Promote without live URL checks:
 ```bash
 python scripts/promote_candidates.py --skip-url-check
 ```
 
-Run full repeatable cycle:
+Run full cycle:
 ```bash
 python scripts/run_resource_cycle.py --limit 25
 ```
 
-Run discovery only:
+Discovery-only run:
 ```bash
 python scripts/run_resource_cycle.py --discover-only --limit 25
 ```
 
-Check markdown links format:
+Check links:
 ```bash
 python scripts/check_links.py
 ```
 
-Check markdown links and verify URLs online:
+Check links with online validation:
 ```bash
 python scripts/check_links.py --online
 ```

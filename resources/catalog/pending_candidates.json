@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-02-22T18:01:54.604020+00:00",
+  "generated_on": "2026-02-23T05:22:39.001709+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
@@ -15,7 +15,7 @@
     "arxiv",
     "semantic-scholar"
   ],
-  "candidate_count": 17,
+  "candidate_count": 15,
   "candidates": [
     {
       "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
@@ -63,29 +63,6 @@
         "candidate",
         "dataset",
         "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-s2-identifying-cultural-and-semantic-translation-errors-in-pashto-english-proverbs-",
-      "title": "Identifying Cultural and Semantic Translation Errors in Pashto–English Proverbs Translation: A Comparative Study of ChatGPT, Gemini, and Google Translations",
-      "url": "https://www.semanticscholar.org/paper/dfd31f726fb5b8be2c457d4b73f904196deae0a3",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Machine Translation (MT) has advanced rapidly with the emergence of neural and AI- powered systems, yet translating culturally embedded figurative language particularly proverbs continue to pose significant challenges, especially in low-res",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
-        "evidence_url": "https://www.semanticscholar.org/paper/dfd31f726fb5b8be2c457d4b73f904196deae0a3",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
       ]
     },
     {
@@ -230,29 +207,6 @@
         "candidate",
         "dataset",
         "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-s2-pashto-poetry-attribution-using-deep-learning-techniques",
-      "title": "Pashto Poetry Attribution using Deep Learning Techniques",
-      "url": "https://www.semanticscholar.org/paper/e08cbd095d80dea85b91e31f4d6d81e96bc556a1",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Pashto poetry, a rich tradition dating back to the 8th century, has been a cornerstone of cultural and literary heritage in the region. However, Pashto remains a low-resource language in computational linguistics, with limited annotated dat",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
-        "evidence_url": "https://www.semanticscholar.org/paper/e08cbd095d80dea85b91e31f4d6d81e96bc556a1",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
       ]
     },
     {

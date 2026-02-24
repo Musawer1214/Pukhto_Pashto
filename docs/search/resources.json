@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-02-22T00:00:00Z",
-  "count": 121,
+  "generated_on": "2026-02-24T00:00:00Z",
+  "count": 123,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -2898,6 +2898,50 @@
       ],
       "evidence_text": "Repository metadata (name/description/topics) includes Pashto markers.",
       "evidence_url": "https://github.com/ShahZamanPatan/Pashto-Baran",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-project-comparative-linguistic-analysis-of-german-and-pashto-exploring-structural-phonol",
+      "title": "Comparative Linguistic Analysis of German and Pashto: Exploring Structural, Phonological, and Historical Similarities Between Two Indo-European Languages",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18752070",
+      "category": "project",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Abstract German and Pashto are members of the Indo-European language family, yet they belong to different branches—Germanic and Indo-Iranian, respectively. Despite their geographical separation and independent development, both languages re",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "project",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18752070",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-project-similarities-between-pashtun-and-german-populations-a-genetic-perspective",
+      "title": "Similarities Between Pashtun and German Populations: A genetic Perspective",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18751992",
+      "category": "project",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Similarities Between Pashtun and German Populations: A genetic Perspective A Comparative Population Study Abstract The Pashtun people of Afghanistan and Pakistan and the German population of Central Europe belong to geographically distant a",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "project",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18751992",
       "markers": [
         "pashto"
       ]

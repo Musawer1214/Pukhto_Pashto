@@ -1,6 +1,6 @@
 {
   "version": "1.1.1",
-  "updated_on": "2026-02-24",
+  "updated_on": "2026-02-25",
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -6070,6 +6070,123 @@
         "candidate",
         "project",
         "datacite"
+      ]
+    },
+    {
+      "id": "candidate-s2-a-lexical-analysis-of-pashto-language",
+      "title": "A Lexical Analysis of Pashto Language",
+      "url": "https://www.semanticscholar.org/paper/6a1422eaca906a6657aa667b30dcb5575d25f8f8",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Language changes over time. Apart from many other reasons, some words become dormant and remain no more in use. In this research, an attempt has been made to show language change in Pashto language. For this purpose, images of different cul",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/6a1422eaca906a6657aa667b30dcb5575d25f8f8",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
+      "id": "candidate-s2-english-in-contact-with-pashto-and-other-pakistani-languages-a-review-of-studies",
+      "title": "English in contact with Pashto and other Pakistani languages: A review of studies on the language interplay",
+      "url": "https://www.semanticscholar.org/paper/9f96ab1e1d09d1a78874e9fa6e5a76401f4c481c",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Languages in contact impact each other in multiple ways. Various studies have been conducted to report how the official and the regional languages in Pakistan affect each other. However, they are too scarce to cover the multitude of the lan",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/9f96ab1e1d09d1a78874e9fa6e5a76401f4c481c",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-hindko-language-historical-origin-linguistic-structure-sociolinguistic-role-and-",
+      "title": "Hindko Language: Historical Origin, Linguistic Structure, Sociolinguistic Role, and Preservation Challenges",
+      "url": "https://zenodo.org/records/18765319",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Abstract Hindko is a northwestern Indo-Aryan language spoken primarily in Pakistan, especially in Khyber Pakhtunkhwa, northern Punjab, and Azad Jammu and Kashmir. It belongs to the Lahnda subgroup and shares linguistic similarities with Pun",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://zenodo.org/records/18765319",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ]
+    },
+    {
+      "id": "candidate-datacite-project-hindko-language-historical-origin-linguistic-structure-sociolinguistic-role-and-",
+      "title": "Hindko Language: Historical Origin, Linguistic Structure, Sociolinguistic Role, and Preservation Challenges",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18765319",
+      "category": "project",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Abstract Hindko is a northwestern Indo-Aryan language spoken primarily in Pakistan, especially in Khyber Pakhtunkhwa, northern Punjab, and Azad Jammu and Kashmir. It belongs to the Lahnda subgroup and shares linguistic similarities with Pun",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18765319",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "project",
+        "datacite"
+      ]
+    },
+    {
+      "id": "candidate-s2-language-of-resistance-in-pashto-poetry-during-the-war-on-terror",
+      "title": "Language of Resistance in Pashto Poetry during the War on Terror",
+      "url": "https://www.semanticscholar.org/paper/23dbf301cdadbb3e1e309ed232baf5cfb2b6414b",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "The paper explores the compelling nature of Pashto poetry as a weapon of resistance in the War on Terror, how it has been used to reveal Pashtun identity, political protest, and cultural strength. With military activities dismantling the Pa",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/23dbf301cdadbb3e1e309ed232baf5cfb2b6414b",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
       ]
     }
   ]

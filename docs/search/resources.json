@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-02-24T00:00:00Z",
-  "count": 123,
+  "generated_on": "2026-02-25T00:00:00Z",
+  "count": 124,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -2942,6 +2942,28 @@
       ],
       "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18751992",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-project-hindko-language-historical-origin-linguistic-structure-sociolinguistic-role-and-",
+      "title": "Hindko Language: Historical Origin, Linguistic Structure, Sociolinguistic Role, and Preservation Challenges",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18765319",
+      "category": "project",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Abstract Hindko is a northwestern Indo-Aryan language spoken primarily in Pakistan, especially in Khyber Pakhtunkhwa, northern Punjab, and Azad Jammu and Kashmir. It belongs to the Lahnda subgroup and shares linguistic similarities with Pun",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "project",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18765319",
       "markers": [
         "pashto"
       ]

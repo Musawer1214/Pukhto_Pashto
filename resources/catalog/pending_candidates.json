@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-02-24T05:18:47.099275+00:00",
+  "generated_on": "2026-02-25T05:20:35.734907+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
@@ -15,8 +15,31 @@
     "arxiv",
     "semantic-scholar"
   ],
-  "candidate_count": 19,
+  "candidate_count": 20,
   "candidates": [
+    {
+      "id": "candidate-s2-a-lexical-analysis-of-pashto-language",
+      "title": "A Lexical Analysis of Pashto Language",
+      "url": "https://www.semanticscholar.org/paper/6a1422eaca906a6657aa667b30dcb5575d25f8f8",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Language changes over time. Apart from many other reasons, some words become dormant and remain no more in use. In this research, an attempt has been made to show language change in Pashto language. For this purpose, images of different cul",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/6a1422eaca906a6657aa667b30dcb5575d25f8f8",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
     {
       "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
       "title": "Common Voice 24.0: Pashto Speech Dataset",
@@ -42,18 +65,18 @@
       ]
     },
     {
-      "id": "candidate-zenodo-paper-comparative-linguistic-analysis-of-german-and-pashto-exploring-structural-phonol",
-      "title": "Comparative Linguistic Analysis of German and Pashto: Exploring Structural, Phonological, and Historical Similarities Between Two Indo-European Languages",
-      "url": "https://zenodo.org/records/18752071",
+      "id": "candidate-s2-english-in-contact-with-pashto-and-other-pakistani-languages-a-review-of-studies",
+      "title": "English in contact with Pashto and other Pakistani languages: A review of studies on the language interplay",
+      "url": "https://www.semanticscholar.org/paper/9f96ab1e1d09d1a78874e9fa6e5a76401f4c481c",
       "category": "paper",
-      "source": "zenodo",
+      "source": "other",
       "status": "candidate",
-      "summary": "Abstract German and Pashto are members of the Indo-European language family, yet they belong to different branches—Germanic and Indo-Iranian, respectively. Despite their geographical separation and independent development, both languages re",
+      "summary": "Languages in contact impact each other in multiple ways. Various studies have been conducted to report how the official and the regional languages in Pakistan affect each other. However, they are too scarce to cover the multitude of the lan",
       "primary_use": "Needs maintainer review before promotion to verified catalog.",
       "tasks": [],
       "pashto_evidence": {
-        "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://zenodo.org/records/18752071",
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/9f96ab1e1d09d1a78874e9fa6e5a76401f4c481c",
         "markers": [
           "pashto"
         ]
@@ -61,32 +84,7 @@
       "tags": [
         "pashto",
         "candidate",
-        "paper",
-        "zenodo"
-      ]
-    },
-    {
-      "id": "candidate-datacite-project-comparative-linguistic-analysis-of-german-and-pashto-exploring-structural-phonol",
-      "title": "Comparative Linguistic Analysis of German and Pashto: Exploring Structural, Phonological, and Historical Similarities Between Two Indo-European Languages",
-      "url": "https://zenodo.org/doi/10.5281/zenodo.18752070",
-      "category": "project",
-      "source": "datacite",
-      "status": "candidate",
-      "summary": "Abstract German and Pashto are members of the Indo-European language family, yet they belong to different branches—Germanic and Indo-Iranian, respectively. Despite their geographical separation and independent development, both languages re",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18752070",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "datacite"
+        "paper"
       ]
     },
     {
@@ -114,6 +112,54 @@
       ]
     },
     {
+      "id": "candidate-zenodo-paper-hindko-language-historical-origin-linguistic-structure-sociolinguistic-role-and-",
+      "title": "Hindko Language: Historical Origin, Linguistic Structure, Sociolinguistic Role, and Preservation Challenges",
+      "url": "https://zenodo.org/records/18765319",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "candidate",
+      "summary": "Abstract Hindko is a northwestern Indo-Aryan language spoken primarily in Pakistan, especially in Khyber Pakhtunkhwa, northern Punjab, and Azad Jammu and Kashmir. It belongs to the Lahnda subgroup and shares linguistic similarities with Pun",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://zenodo.org/records/18765319",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ]
+    },
+    {
+      "id": "candidate-datacite-project-hindko-language-historical-origin-linguistic-structure-sociolinguistic-role-and-",
+      "title": "Hindko Language: Historical Origin, Linguistic Structure, Sociolinguistic Role, and Preservation Challenges",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18765319",
+      "category": "project",
+      "source": "datacite",
+      "status": "candidate",
+      "summary": "Abstract Hindko is a northwestern Indo-Aryan language spoken primarily in Pakistan, especially in Khyber Pakhtunkhwa, northern Punjab, and Azad Jammu and Kashmir. It belongs to the Lahnda subgroup and shares linguistic similarities with Pun",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18765319",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "project",
+        "datacite"
+      ]
+    },
+    {
       "id": "candidate-kaggle-dataset-hassanamin-katib-s-pashto-text-imagebase-kpti",
       "title": "Katib's Pashto Text Imagebase (KPTI)",
       "url": "https://www.kaggle.com/datasets/hassanamin/katibs-pashto-text-imagebase-kpti",
@@ -135,6 +181,29 @@
         "candidate",
         "dataset",
         "kaggle"
+      ]
+    },
+    {
+      "id": "candidate-s2-language-of-resistance-in-pashto-poetry-during-the-war-on-terror",
+      "title": "Language of Resistance in Pashto Poetry during the War on Terror",
+      "url": "https://www.semanticscholar.org/paper/23dbf301cdadbb3e1e309ed232baf5cfb2b6414b",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "The paper explores the compelling nature of Pashto poetry as a weapon of resistance in the War on Terror, how it has been used to reveal Pashtun identity, political protest, and cultural strength. With military activities dismantling the Pa",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/23dbf301cdadbb3e1e309ed232baf5cfb2b6414b",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
       ]
     },
     {
@@ -399,54 +468,6 @@
         "candidate",
         "dataset",
         "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-zenodo-paper-similarities-between-pashtun-and-german-populations-a-genetic-perspective",
-      "title": "Similarities Between Pashtun and German Populations: A genetic Perspective",
-      "url": "https://zenodo.org/records/18751993",
-      "category": "paper",
-      "source": "zenodo",
-      "status": "candidate",
-      "summary": "Similarities Between Pashtun and German Populations: A genetic Perspective A Comparative Population Study Abstract The Pashtun people of Afghanistan and Pakistan and the German population of Central Europe belong to geographically distant a",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://zenodo.org/records/18751993",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "zenodo"
-      ]
-    },
-    {
-      "id": "candidate-datacite-project-similarities-between-pashtun-and-german-populations-a-genetic-perspective",
-      "title": "Similarities Between Pashtun and German Populations: A genetic Perspective",
-      "url": "https://zenodo.org/doi/10.5281/zenodo.18751992",
-      "category": "project",
-      "source": "datacite",
-      "status": "candidate",
-      "summary": "Similarities Between Pashtun and German Populations: A genetic Perspective A Comparative Population Study Abstract The Pashtun people of Afghanistan and Pakistan and the German population of Central Europe belong to geographically distant a",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18751992",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "datacite"
       ]
     },
     {

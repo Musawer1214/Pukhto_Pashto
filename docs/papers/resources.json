@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-02-25T00:00:00Z",
-  "count": 122,
+  "generated_on": "2026-02-26T00:00:00Z",
+  "count": 135,
   "resources": [
     {
       "id": "paper-s2-psocr-lmm-pashto",
@@ -2713,6 +2713,280 @@
       ],
       "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
       "evidence_url": "https://www.semanticscholar.org/paper/23dbf301cdadbb3e1e309ed232baf5cfb2b6414b",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-afghan-dictionary-persian-into-persian-and-pashto-afgh-n-q-m-s-f-ris-pu-hto",
+      "title": "Afghan dictionary Persian into Persian and Pashto = Afghān qāmūs fārisī Puṣhto",
+      "url": "https://www.semanticscholar.org/paper/987a0baee7540ca0136b2105658ce7c8c78e55d9",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/987a0baee7540ca0136b2105658ce7c8c78e55d9",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-bibliography-of-dari-and-pushto-titles-arthur-paul-afghanistan-collection-uno-li",
+      "title": "Bibliography of Dari and Pushto titles : Arthur Paul Afghanistan collection UNO library, Special Collections Dept. / by Shaista Wahab.",
+      "url": "https://www.semanticscholar.org/paper/a4c0e19f4096eff8c17edb465ddbef60c5a1fa32",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/a4c0e19f4096eff8c17edb465ddbef60c5a1fa32",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-english-urdu-pushto-persian-conversation",
+      "title": "English-Urdu Pushto-Persian conversation",
+      "url": "https://www.semanticscholar.org/paper/678b61bda45269fd63a6afa1ad3ce6dd20179901",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/678b61bda45269fd63a6afa1ad3ce6dd20179901",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-fifty-lessons-to-learn-pushto-english-pashtu-by-q-a-khaliq",
+      "title": "Fifty lessons to learn Pushto [English, Pashtu] / by Q. A. Khaliq",
+      "url": "https://www.semanticscholar.org/paper/9942b41ce7c1bbd4b2bf42e6fd271bf4bff2c2de",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/9942b41ce7c1bbd4b2bf42e6fd271bf4bff2c2de",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-on-pushto-principles-and-passion-just-what-is-an-advance-in-psychiatric-treatmen",
+      "title": "On Pushto, principles and passion: just what is an advance in psychiatric treatment?",
+      "url": "https://www.semanticscholar.org/paper/3f73c4dbaf29bb4de8f4f7576c3d2cc54009b12d",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/3f73c4dbaf29bb4de8f4f7576c3d2cc54009b12d",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-persian-anser-farsi-der-zuban-pushto-o-humerishaha-o-waza-hai-pushto-dar-zuban-o",
+      "title": "Persian) Anser Farsi Der Zuban Pushto O Humerishaha O Waza Hai Pushto Dar Zuban O Goveshai Irani.",
+      "url": "https://www.semanticscholar.org/paper/c8ab3ffb6fc5079a4fce77c8ab3ce1bb4e4bc187",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/c8ab3ffb6fc5079a4fce77c8ab3ce1bb4e4bc187",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-pushtu-rozmarra-or-every-day-pushto-for-elementary-and-higher-standard-examinati",
+      "title": "Pushtu rozmarra : or \"every-day Pushto\" for elementary and higher standard examinations in Pushtu : a complete, concise, self aid to Pushtu",
+      "url": "https://www.semanticscholar.org/paper/d80513a6482aa638d62be50f219a3069f7d9645d",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/d80513a6482aa638d62be50f219a3069f7d9645d",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-pu-hto-h-d-pashto-teacher",
+      "title": "Puṣhto ṣhūd : Pashto teacher",
+      "url": "https://www.semanticscholar.org/paper/fae4eae3a250aa2ba35ba1f34ab78b4036edd8e1",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/fae4eae3a250aa2ba35ba1f34ab78b4036edd8e1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-p-x-to-sindgay-nawezuna-sapi-s-center-for-pushto-research-and-developpement-pesh",
+      "title": "Pǝx˚to sindgay, nawezuna. Sapi’s Center for Pushto Research and Developpement, Peshawar, 2000, 794 p. [Petit dictionnaire pachto : néologismes]",
+      "url": "https://www.semanticscholar.org/paper/1588d795eae2fd818e1ef702ab070f09dd9f6f68",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/1588d795eae2fd818e1ef702ab070f09dd9f6f68",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-quantitative-modeling-of-saqez-yield-prediction-in-pistacia-atlantica-and-its-co",
+      "title": "Quantitative Modeling of Saqez Yield Prediction in Pistacia atlantica and Its Contribution to Sustainable Livelihoods of Local Communities in the Forests of Sardasht County in Northern Zagros",
+      "url": "https://sanad.iau.ir/Journal/jrnr/Article/1226583",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Journal of Renewable Natural Resources Research,16(1), این پژوهش با هدف مدل‌سازی کمّی تولید سقز در درختان بنه و ارزیابی سهم آن در معیشت جوامع جنگل‌نشین در سال ۱۴۰۳ بر روی پنج رویشگاه در جنگل‌های شهرستان سردشت (زاگرس شمالی) اجرا شد. برای این",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://sanad.iau.ir/Journal/jrnr/Article/1226583",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-slovak-spanish-tigrinya-russian-pushto",
+      "title": "Slovak, Spanish, Tigrinya, Russian & Pushto",
+      "url": "https://www.semanticscholar.org/paper/7acfeeaa3b3812aae67ba1481df960aea7afda34",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/7acfeeaa3b3812aae67ba1481df960aea7afda34",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-the-k-lid-i-afgh-ni-being-selections-of-pushto-prose-and-poetry-for-the-use-of-s",
+      "title": "The Kálid-i-afgháni, being selections of Pushto prose and poetry for the use of students",
+      "url": "https://www.semanticscholar.org/paper/cb67fd30e1b17f8034004f8cfb62dd33e11854e9",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/cb67fd30e1b17f8034004f8cfb62dd33e11854e9",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-sabaa-mualaqat-and-their-impact-on-pushto-poetry",
+      "title": "المعلقات السبع وأثرها على الشعر البشتوي = Sabaa Mualaqat and Their Impact on Pushto Poetry",
+      "url": "https://www.semanticscholar.org/paper/7cece9c446ccd99b46d262e8518ea2c73b2f15ed",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/7cece9c446ccd99b46d262e8518ea2c73b2f15ed",
       "markers": [
         "pashto"
       ]

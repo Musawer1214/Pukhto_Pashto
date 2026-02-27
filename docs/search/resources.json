@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-02-26T00:00:00Z",
-  "count": 124,
+  "generated_on": "2026-02-27T00:00:00Z",
+  "count": 125,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -2964,6 +2964,28 @@
       ],
       "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18765319",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-project-hindko-language-a-mother-or-sister-of-local-languages-a-linguistic-perspective",
+      "title": "Hindko Language: A Mother or Sister of Local Languages? A Linguistic Perspective",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18795440",
+      "category": "project",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Abstract Hindko is an important Indo-Aryan language spoken in northern Pakistan. Its relationship with neighboring languages such as Punjabi, Saraiki, Pahari, and Potohari has led to debate about whether Hindko should be considered a “mothe",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "project",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18795440",
       "markers": [
         "pashto"
       ]

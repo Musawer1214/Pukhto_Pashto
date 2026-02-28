@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-02-27T05:11:23.590291+00:00",
+  "generated_on": "2026-02-28T04:49:21.533391+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
@@ -15,8 +15,31 @@
     "arxiv",
     "semantic-scholar"
   ],
-  "candidate_count": 16,
+  "candidate_count": 18,
   "candidates": [
+    {
+      "id": "candidate-s2-child-marriage-as-a-major-concern-in-pashto-poetry",
+      "title": "Child Marriage As A Major Concern in Pashto Poetry",
+      "url": "https://www.semanticscholar.org/paper/87fea719c6b5e4a7c65ad552fffa6b2bffef2580",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Child marriage is a major concern we read in Pashto poetry. They believe fewer financial resources left people in desperate need to survive, and it has caused both girls and boys to pay the price. Poor parents give away their girls to wealt",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/87fea719c6b5e4a7c65ad552fffa6b2bffef2580",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
     {
       "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
       "title": "Common Voice 24.0: Pashto Speech Dataset",
@@ -66,30 +89,6 @@
       ]
     },
     {
-      "id": "candidate-datacite-project-hindko-language-a-mother-or-sister-of-local-languages-a-linguistic-perspective",
-      "title": "Hindko Language: A Mother or Sister of Local Languages? A Linguistic Perspective",
-      "url": "https://zenodo.org/doi/10.5281/zenodo.18795440",
-      "category": "project",
-      "source": "datacite",
-      "status": "candidate",
-      "summary": "Abstract Hindko is an important Indo-Aryan language spoken in northern Pakistan. Its relationship with neighboring languages such as Punjabi, Saraiki, Pahari, and Potohari has led to debate about whether Hindko should be considered a “mothe",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18795440",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "project",
-        "datacite"
-      ]
-    },
-    {
       "id": "candidate-kaggle-dataset-hassanamin-katib-s-pashto-text-imagebase-kpti",
       "title": "Katib's Pashto Text Imagebase (KPTI)",
       "url": "https://www.kaggle.com/datasets/hassanamin/katibs-pashto-text-imagebase-kpti",
@@ -111,6 +110,54 @@
         "candidate",
         "dataset",
         "kaggle"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-linguistics-imperialism-and-the-hegemonic-influence-english-on-modern-pashto-lan",
+      "title": "Linguistics Imperialism and The Hegemonic Influence English On Modern Pashto Language",
+      "url": "https://zenodo.org/records/18809719",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "candidate",
+      "summary": "Candidate resource returned from Zenodo search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://zenodo.org/records/18809719",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-linguistics-imperialism-and-the-hegemonic-influence-english-on-modern-pashto-lan",
+      "title": "Linguistics Imperialism and The Hegemonic Influence English On Modern Pashto Language",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18809719",
+      "category": "paper",
+      "source": "datacite",
+      "status": "candidate",
+      "summary": "Candidate record returned from DataCite DOI search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18809719",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
       ]
     },
     {

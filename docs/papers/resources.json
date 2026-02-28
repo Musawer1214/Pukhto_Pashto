@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-02-27T00:00:00Z",
-  "count": 135,
+  "generated_on": "2026-02-28T00:00:00Z",
+  "count": 138,
   "resources": [
     {
       "id": "paper-s2-psocr-lmm-pashto",
@@ -2987,6 +2987,71 @@
       ],
       "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
       "evidence_url": "https://www.semanticscholar.org/paper/7cece9c446ccd99b46d262e8518ea2c73b2f15ed",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-child-marriage-as-a-major-concern-in-pashto-poetry",
+      "title": "Child Marriage As A Major Concern in Pashto Poetry",
+      "url": "https://www.semanticscholar.org/paper/87fea719c6b5e4a7c65ad552fffa6b2bffef2580",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Child marriage is a major concern we read in Pashto poetry. They believe fewer financial resources left people in desperate need to survive, and it has caused both girls and boys to pay the price. Poor parents give away their girls to wealt",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/87fea719c6b5e4a7c65ad552fffa6b2bffef2580",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-linguistics-imperialism-and-the-hegemonic-influence-english-on-modern-pashto-lan",
+      "title": "Linguistics Imperialism and The Hegemonic Influence English On Modern Pashto Language",
+      "url": "https://zenodo.org/records/18809719",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Candidate resource returned from Zenodo search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/18809719",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-linguistics-imperialism-and-the-hegemonic-influence-english-on-modern-pashto-lan",
+      "title": "Linguistics Imperialism and The Hegemonic Influence English On Modern Pashto Language",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18809719",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Candidate record returned from DataCite DOI search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18809719",
       "markers": [
         "pashto"
       ]

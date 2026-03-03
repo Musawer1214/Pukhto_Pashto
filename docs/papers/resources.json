@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-02-28T00:00:00Z",
-  "count": 138,
+  "generated_on": "2026-03-03T00:00:00Z",
+  "count": 140,
   "resources": [
     {
       "id": "paper-s2-psocr-lmm-pashto",
@@ -3052,6 +3052,50 @@
       ],
       "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18809719",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-exploring-the-phonetic-variation-of-english-loanwords-in-the-pashto-language-a-p",
+      "title": "EXPLORING THE PHONETIC VARIATION OF ENGLISH LOANWORDS IN THE PASHTO LANGUAGE: A PRAAT-BASED ANALYSIS",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18826045",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Candidate record returned from DataCite DOI search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18826045",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-phonological-variations-in-regional-accents-a-case-study-of-pashto-dialect",
+      "title": "PHONOLOGICAL VARIATIONS IN REGIONAL ACCENTS: A CASE STUDY OF PASHTO DIALECT",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18831951",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Candidate record returned from DataCite DOI search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18831951",
       "markers": [
         "pashto"
       ]

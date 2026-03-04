@@ -1,6 +1,6 @@
 {
   "version": "1.1.1",
-  "updated_on": "2026-03-03",
+  "updated_on": "2026-03-04",
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -6630,6 +6630,75 @@
         "candidate",
         "paper",
         "datacite"
+      ]
+    },
+    {
+      "id": "candidate-s2-a-decision-tree-based-approach-for-pashto-coreference-resolution-the-case-of-per",
+      "title": "A Decision Tree Based Approach for Pashto Coreference Resolution: The Case of Person Name Aliases",
+      "url": "https://www.semanticscholar.org/paper/9319db62208264af846610ecd874adbb43ace5f2",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Coreference resolution is an important problem in fields such as natural language understanding, natural language generation, named entity recognition, text summarization, and anaphora resolution. Determining whether or not two proper nouns",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/9319db62208264af846610ecd874adbb43ace5f2",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
+      "id": "candidate-s2-identifying-cultural-and-semantic-translation-errors-in-pashto-english-proverbs-",
+      "title": "Identifying Cultural and Semantic Translation Errors in Pashto–English Proverbs Translation: A Comparative Study of ChatGPT, Gemini, and Google Translations",
+      "url": "https://www.semanticscholar.org/paper/dfd31f726fb5b8be2c457d4b73f904196deae0a3",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Machine Translation (MT) has advanced rapidly with the emergence of neural and AI- powered systems, yet translating culturally embedded figurative language particularly proverbs continue to pose significant challenges, especially in low-res",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/dfd31f726fb5b8be2c457d4b73f904196deae0a3",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
+      "id": "candidate-s2-transformer-based-title-generation-for-pashto-texts-using-topic-modeling-techniq",
+      "title": "Transformer-Based Title Generation for Pashto Texts Using Topic Modeling Techniques",
+      "url": "https://www.semanticscholar.org/paper/1b675f8b6e3683677cfa3bf3fec40ae9649d8d8c",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "This study proposes a transformer-assisted framework for automatic title generation in Pashto, a low-resource language with limited NLP resources. The approach combines topic modeling techniques with a generative transformer to produce cohe",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/1b675f8b6e3683677cfa3bf3fec40ae9649d8d8c",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-03-04T00:00:00Z",
-  "count": 143,
+  "generated_on": "2026-03-06T00:00:00Z",
+  "count": 145,
   "resources": [
     {
       "id": "paper-s2-psocr-lmm-pashto",
@@ -3159,6 +3159,48 @@
       ],
       "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
       "evidence_url": "https://www.semanticscholar.org/paper/1b675f8b6e3683677cfa3bf3fec40ae9649d8d8c",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-pashto-poetry-attribution-using-deep-learning-techniques",
+      "title": "Pashto Poetry Attribution using Deep Learning Techniques",
+      "url": "https://www.semanticscholar.org/paper/e08cbd095d80dea85b91e31f4d6d81e96bc556a1",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Pashto poetry, a rich tradition dating back to the 8th century, has been a cornerstone of cultural and literary heritage in the region. However, Pashto remains a low-resource language in computational linguistics, with limited annotated dat",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/e08cbd095d80dea85b91e31f4d6d81e96bc556a1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-validation-of-the-pashto-version-of-the-premature-ejaculation-diagnostic-tool-pe",
+      "title": "Validation of the Pashto Version of the Premature Ejaculation Diagnostic Tool (PEDT)",
+      "url": "https://www.semanticscholar.org/paper/4ecd042988e98a5fe82dce2f9c6c179bf635559b",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Objective: The research goal involved evaluating the validity of the Pashto version of the Premature Ejaculation Diagnostic Tool (PEDT) by assessing its relationship with clinical premature ejaculation (PE) diagnosis and intravaginal ejacul",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/4ecd042988e98a5fe82dce2f9c6c179bf635559b",
       "markers": [
         "pashto"
       ]

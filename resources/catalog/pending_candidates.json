@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-03-05T05:10:26.975065+00:00",
+  "generated_on": "2026-03-06T05:06:54.302305+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
@@ -15,7 +15,7 @@
     "arxiv",
     "semantic-scholar"
   ],
-  "candidate_count": 15,
+  "candidate_count": 18,
   "candidates": [
     {
       "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
@@ -54,6 +54,30 @@
       "pashto_evidence": {
         "evidence_text": "Kaggle dataset title/subtitle includes Pashto keyword.",
         "evidence_url": "https://www.kaggle.com/datasets/rabiakhan827/english-pashto-language-dataset-epld",
+        "markers": [
+          "Pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset",
+        "kaggle"
+      ]
+    },
+    {
+      "id": "candidate-kaggle-dataset-areebaakhtar-english-pashto-parallel-translation-dataset",
+      "title": "English–Pashto Parallel Translation Dataset",
+      "url": "https://www.kaggle.com/datasets/areebaakhtar/englishpashto-parallel-translation-dataset",
+      "category": "dataset",
+      "source": "kaggle",
+      "status": "candidate",
+      "summary": "Candidate Kaggle dataset returned from Pashto search.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Kaggle dataset title/subtitle includes Pashto keyword.",
+        "evidence_url": "https://www.kaggle.com/datasets/areebaakhtar/englishpashto-parallel-translation-dataset",
         "markers": [
           "Pashto"
         ]
@@ -207,6 +231,29 @@
         "candidate",
         "dataset",
         "kaggle"
+      ]
+    },
+    {
+      "id": "candidate-s2-pashto-poetry-attribution-using-deep-learning-techniques",
+      "title": "Pashto Poetry Attribution using Deep Learning Techniques",
+      "url": "https://www.semanticscholar.org/paper/e08cbd095d80dea85b91e31f4d6d81e96bc556a1",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Pashto poetry, a rich tradition dating back to the 8th century, has been a cornerstone of cultural and literary heritage in the region. However, Pashto remains a low-resource language in computational linguistics, with limited annotated dat",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/e08cbd095d80dea85b91e31f4d6d81e96bc556a1",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
       ]
     },
     {
@@ -375,6 +422,29 @@
         "candidate",
         "dataset",
         "kaggle"
+      ]
+    },
+    {
+      "id": "candidate-s2-validation-of-the-pashto-version-of-the-premature-ejaculation-diagnostic-tool-pe",
+      "title": "Validation of the Pashto Version of the Premature Ejaculation Diagnostic Tool (PEDT)",
+      "url": "https://www.semanticscholar.org/paper/4ecd042988e98a5fe82dce2f9c6c179bf635559b",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Objective: The research goal involved evaluating the validity of the Pashto version of the Premature Ejaculation Diagnostic Tool (PEDT) by assessing its relationship with clinical premature ejaculation (PE) diagnosis and intravaginal ejacul",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/4ecd042988e98a5fe82dce2f9c6c179bf635559b",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
       ]
     }
   ]

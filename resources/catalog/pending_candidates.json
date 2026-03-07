@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-03-06T05:06:54.302305+00:00",
+  "generated_on": "2026-03-07T04:58:26.376506+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
@@ -15,8 +15,54 @@
     "arxiv",
     "semantic-scholar"
   ],
-  "candidate_count": 18,
+  "candidate_count": 25,
   "candidates": [
+    {
+      "id": "candidate-s2-urdu-pushto-may-ilme-fiqa-ka-sarmaya-vol-i-ii",
+      "title": "(Urdu) Pushto May Ilme Fiqa Ka Sarmaya (Vol I, II)",
+      "url": "https://www.semanticscholar.org/paper/6ef7073a997e01794fd2dd359b850bff7c49507e",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/6ef7073a997e01794fd2dd359b850bff7c49507e",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
+      "id": "candidate-s2-abdul-ghani-khan-s-pushto-poetry-evaluation-of-themes-and-implications-for-cross",
+      "title": "Abdul Ghani Khan’s Pushto Poetry: Evaluation of Themes and Implications for Cross-Linguistic Literary Studies",
+      "url": "https://www.semanticscholar.org/paper/ef7cfec2968a8b06a772533cd507fea153999a10",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Abdul Ghani Khan is a revered poet of Pashto, but he is widely unknown to both Pashto and non-Pashto readers in Pakistan. This study is an attempt to introduce Ghani Khan as a poet to Pashto and non-Pashto readers both nationally and intern",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/ef7cfec2968a8b06a772533cd507fea153999a10",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
     {
       "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
       "title": "Common Voice 24.0: Pashto Speech Dataset",
@@ -39,6 +85,29 @@
         "candidate",
         "dataset",
         "kaggle"
+      ]
+    },
+    {
+      "id": "candidate-s2-design-and-implementation-for-sip-based-pushto-talk-services-over-802-11-network",
+      "title": "Design and Implementation for SIP-based Pushto-Talk Services over 802 . 11 Networks",
+      "url": "https://www.semanticscholar.org/paper/7fd98a22fd3e31db1ca6107d2b35e97cebf6ac8d",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/7fd98a22fd3e31db1ca6107d2b35e97cebf6ac8d",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
       ]
     },
     {
@@ -66,6 +135,29 @@
       ]
     },
     {
+      "id": "candidate-s2-english-pushto-pushto-english-combined-dictionary",
+      "title": "English-Pushto, Pushto-English combined dictionary",
+      "url": "https://www.semanticscholar.org/paper/b1fc6fef2a2632cf0c32ab7ef7c456c6917901e8",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/b1fc6fef2a2632cf0c32ab7ef7c456c6917901e8",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
       "id": "candidate-kaggle-dataset-areebaakhtar-english-pashto-parallel-translation-dataset",
       "title": "English–Pashto Parallel Translation Dataset",
       "url": "https://www.kaggle.com/datasets/areebaakhtar/englishpashto-parallel-translation-dataset",
@@ -87,6 +179,29 @@
         "candidate",
         "dataset",
         "kaggle"
+      ]
+    },
+    {
+      "id": "candidate-s2-gazebosim-pushto-talk-microphone-google-chrome-client-npceditor-google-asr-autom",
+      "title": "GazeboSim Pushto-Talk Microphone Google Chrome Client NPCEditor Google ASR Automated Robot Navigator Jackal Simulator Environment Simulator Commander Display Map & Pose Photo Utterances ros 2 vhmsg",
+      "url": "https://www.semanticscholar.org/paper/f8c4a1719400a5701e1428683fddd5a258350177",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/f8c4a1719400a5701e1428683fddd5a258350177",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
       ]
     },
     {
@@ -234,29 +349,6 @@
       ]
     },
     {
-      "id": "candidate-s2-pashto-poetry-attribution-using-deep-learning-techniques",
-      "title": "Pashto Poetry Attribution using Deep Learning Techniques",
-      "url": "https://www.semanticscholar.org/paper/e08cbd095d80dea85b91e31f4d6d81e96bc556a1",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Pashto poetry, a rich tradition dating back to the 8th century, has been a cornerstone of cultural and literary heritage in the region. However, Pashto remains a low-resource language in computational linguistics, with limited annotated dat",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
-        "evidence_url": "https://www.semanticscholar.org/paper/e08cbd095d80dea85b91e31f4d6d81e96bc556a1",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
-      ]
-    },
-    {
       "id": "candidate-kaggle-dataset-mahibullahmudaser-pashto-text-characters-sample",
       "title": "Pashto text characters sample",
       "url": "https://www.kaggle.com/datasets/mahibullahmudaser/pashtochracterssample",
@@ -377,6 +469,29 @@
       ]
     },
     {
+      "id": "candidate-s2-performance-estimation-of-a-sip-based-pushto-talk-service-for-3-g-networks",
+      "title": "Performance Estimation of a SIP based Pushto-Talk Service for 3 G Networks",
+      "url": "https://www.semanticscholar.org/paper/7281f1eaa17138962a562201c446c02d8b1e93a1",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/7281f1eaa17138962a562201c446c02d8b1e93a1",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
       "id": "candidate-kaggle-dataset-drijaz-pold-pashto-offensive-language-dataset",
       "title": "POLD - Pashto Offensive Language Dataset",
       "url": "https://www.kaggle.com/datasets/drijaz/pold-pashto-offensive-language-dataset",
@@ -401,6 +516,75 @@
       ]
     },
     {
+      "id": "candidate-s2-selections-from-pushto-poetry",
+      "title": "Selections from Pushto poetry",
+      "url": "https://www.semanticscholar.org/paper/08f12664f35eba23cfce810af6137fdc196e7acb",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/08f12664f35eba23cfce810af6137fdc196e7acb",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
+      "id": "candidate-s2-translating-metaphors-idioms-and-proverbs-from-english-into-pushto-a-cultural-li",
+      "title": "Translating Metaphors, Idioms, and Proverbs from English into Pushto: A Cultural Linguistic Analysis within Translation Studies",
+      "url": "https://www.semanticscholar.org/paper/11318c3b9bbe42d09e5a6e43156a7da68c52a2e5",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "The translation of figurative language especially metaphors, idioms, and proverbs poses significant challenges for translators working between culturally distant languages such as English and Pashto. This study investigates the linguistic a",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/11318c3b9bbe42d09e5a6e43156a7da68c52a2e5",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
+      "id": "candidate-s2-urdu-pushto-may-ilme-fiqa-ka-sarmaya",
+      "title": "Urdu) Pushto May Ilme Fiqa Ka Sarmaya.",
+      "url": "https://www.semanticscholar.org/paper/563f1aa5d55cd0223e5c1d0e3cec582ca382b410",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/563f1aa5d55cd0223e5c1d0e3cec582ca382b410",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
       "id": "candidate-kaggle-dataset-shafeeqgigyani-urdu-pashto-lexicon-dataset",
       "title": "Urdu-Pashto Lexicon Dataset",
       "url": "https://www.kaggle.com/datasets/shafeeqgigyani/urdu-pashto-lexicon-dataset",
@@ -422,29 +606,6 @@
         "candidate",
         "dataset",
         "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-s2-validation-of-the-pashto-version-of-the-premature-ejaculation-diagnostic-tool-pe",
-      "title": "Validation of the Pashto Version of the Premature Ejaculation Diagnostic Tool (PEDT)",
-      "url": "https://www.semanticscholar.org/paper/4ecd042988e98a5fe82dce2f9c6c179bf635559b",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Objective: The research goal involved evaluating the validity of the Pashto version of the Premature Ejaculation Diagnostic Tool (PEDT) by assessing its relationship with clinical premature ejaculation (PE) diagnosis and intravaginal ejacul",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
-        "evidence_url": "https://www.semanticscholar.org/paper/4ecd042988e98a5fe82dce2f9c6c179bf635559b",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
       ]
     }
   ]

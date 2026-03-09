@@ -1,6 +1,6 @@
 {
   "version": "1.1.1",
-  "updated_on": "2026-03-07",
+  "updated_on": "2026-03-09",
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -6952,6 +6952,30 @@
         "pashto",
         "candidate",
         "paper"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-language-technologies-for-humanitarian-aid",
+      "title": "Language Technologies for Humanitarian Aid",
+      "url": "https://kilthub.cmu.edu/articles/journal_contribution/Language_Technologies_for_Humanitarian_Aid/6606755/1",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Humanitarian aid missions, whether emergency famine relief, establishment of medical clinics, or missions in conjunction with peace-keeping operations, require on-demand communication with the indigenous population. If such operations take",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://kilthub.cmu.edu/articles/journal_contribution/Language_Technologies_for_Humanitarian_Aid/6606755/1",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
       ]
     }
   ]

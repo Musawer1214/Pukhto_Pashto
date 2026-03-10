@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-03-09T00:00:00Z",
-  "count": 155,
+  "generated_on": "2026-03-10T00:00:00Z",
+  "count": 157,
   "resources": [
     {
       "id": "paper-s2-psocr-lmm-pashto",
@@ -3412,6 +3412,49 @@
       ],
       "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
       "evidence_url": "https://kilthub.cmu.edu/articles/journal_contribution/Language_Technologies_for_Humanitarian_Aid/6606755/1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-dnn-acoustic-modeling-with-modular-multi-lingual-feature-extraction-networks",
+      "title": "DNN acoustic modeling with modular multi-lingual feature extraction networks",
+      "url": "https://kilthub.cmu.edu/articles/journal_contribution/DNN_acoustic_modeling_with_modular_multi-lingual_feature_extraction_networks/6473330/1",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "In this work, we propose several deep neural network architectures that are able to leverage data from multiple languages. Modularity is achieved by training networks for extracting high-level features and for estimating phoneme state poste",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://kilthub.cmu.edu/articles/journal_contribution/DNN_acoustic_modeling_with_modular_multi-lingual_feature_extraction_networks/6473330/1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-survey-of-the-contents-of-pushto-textbooks-for-primary-classes-in-peshawar-regio",
+      "title": "Survey of the contents of Pushto textbooks for primary classes in Peshawar region of West Pakistan",
+      "url": "https://www.semanticscholar.org/paper/9f5bebac07e1eae093183afeb62925a17f7bb689",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/9f5bebac07e1eae093183afeb62925a17f7bb689",
       "markers": [
         "pashto"
       ]

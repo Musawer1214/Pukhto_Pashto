@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-03-09T00:00:00Z",
-  "count": 125,
+  "generated_on": "2026-03-10T00:00:00Z",
+  "count": 126,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -2986,6 +2986,28 @@
       ],
       "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18795440",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-dataset-a-bilingual-pashto-speech-and-text-dataset-for-low-resource-language-research-bp",
+      "title": "A Bilingual Pashto Speech and Text Dataset for Low-Resource Language Research (BPSTD)",
+      "url": "https://data.mendeley.com/datasets/x64drybfw4/1",
+      "category": "dataset",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "We introduce the Bilingual Pashtu Speech and Text Dataset (BPSTD) for low-resource language research. BPSTD is a bilingual speech-text dataset created to facilitate research in Pashto voice processing, speech recognition, and text-to-speech",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://data.mendeley.com/datasets/x64drybfw4/1",
       "markers": [
         "pashto"
       ]

@@ -25,7 +25,10 @@ Documentation = "https://musawer1214.github.io/pashto-language-resources/"
 Repository = "https://github.com/Musawer1214/pashto-language-resources"
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0.0"]
+dev = [
+  "jsonschema>=4.0.0",
+  "pytest>=8.0.0",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

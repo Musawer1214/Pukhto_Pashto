@@ -15,6 +15,12 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
+try:
+    from jsonschema import Draft202012Validator, FormatChecker
+except ModuleNotFoundError:
+    Draft202012Validator = None
+    FormatChecker = None
+
 
 ALLOWED_CATEGORIES = {"dataset", "model", "benchmark", "tool", "paper", "project", "code"}
 ALLOWED_SOURCES = {
@@ -33,6 +39,22 @@ ALLOWED_SOURCES = {
     "other",
 }
 ALLOWED_STATUS = {"verified", "candidate"}
+ALLOWED_CATALOG_FIELDS = {"version", "updated_on", "resources"}
+OPTIONAL_RESOURCE_FIELDS = {"license", "tasks"}
+ALLOWED_RESOURCE_FIELDS = {
+    "id",
+    "title",
+    "url",
+    "category",
+    "source",
+    "status",
+    "summary",
+    "primary_use",
+    "pashto_evidence",
+    "tags",
+    *OPTIONAL_RESOURCE_FIELDS,
+}
+ALLOWED_EVIDENCE_FIELDS = {"evidence_text", "evidence_url", "markers"}
 RESOURCE_ID_RE = re.compile(r"^[a-z0-9][a-z0-9._-]*$")
 STRICT_PASHTO_CATEGORIES = {"model", "paper", "tool", "code", "project"}
 PASHTO_PUSHTO_WORD_RE = re.compile(r"(?<![a-z0-9])pushto(?![a-z0-9])")
@@ -41,6 +63,16 @@ PASHTO_CODE_RE = re.compile(r"\b(ps(_af)?|pus|pbt[_-]?arab)\b")
 
 def _load_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _format_schema_error_path(path: list[Any]) -> str:
+    rendered = "catalog"
+    for item in path:
+        if isinstance(item, int):
+            rendered += f"[{item}]"
+        else:
+            rendered += f".{item}"
+    return rendered
 
 
 def _is_valid_http_url(value: str) -> bool:
@@ -106,6 +138,9 @@ def validate_resource(resource: dict[str, Any], index: int) -> list[str]:
     if missing:
         errors.append(f"{prefix} missing required fields: {', '.join(missing)}")
         return errors
+    extra_fields = sorted(resource.keys() - ALLOWED_RESOURCE_FIELDS)
+    if extra_fields:
+        errors.append(f"{prefix} has unexpected fields: {', '.join(extra_fields)}")
 
     rid = resource["id"]
     if not isinstance(rid, str) or not RESOURCE_ID_RE.fullmatch(rid):
@@ -157,6 +192,11 @@ def validate_resource(resource: dict[str, Any], index: int) -> list[str]:
     for key in ("evidence_text", "evidence_url", "markers"):
         if key not in evidence:
             errors.append(f"{prefix}.pashto_evidence missing '{key}'")
+    extra_evidence_fields = sorted(evidence.keys() - ALLOWED_EVIDENCE_FIELDS)
+    if extra_evidence_fields:
+        errors.append(
+            f"{prefix}.pashto_evidence has unexpected fields: {', '.join(extra_evidence_fields)}"
+        )
 
     evidence_text = evidence.get("evidence_text")
     if not isinstance(evidence_text, str) or len(evidence_text.strip()) < 3:
@@ -193,6 +233,10 @@ def validate_catalog(catalog: dict[str, Any]) -> list[str]:
     if errors:
         return errors
 
+    extra_fields = sorted(catalog.keys() - ALLOWED_CATALOG_FIELDS)
+    if extra_fields:
+        errors.append(f"catalog has unexpected top-level fields: {', '.join(extra_fields)}")
+
     version = catalog["version"]
     if not isinstance(version, str) or not re.fullmatch(r"^\d+\.\d+\.\d+$", version):
         errors.append("catalog.version must look like '1.0.0'")
@@ -221,10 +265,33 @@ def validate_catalog(catalog: dict[str, Any]) -> list[str]:
     return errors
 
 
+def validate_catalog_against_schema(
+    schema: dict[str, Any],
+    catalog: dict[str, Any],
+    *,
+    require_jsonschema: bool = False,
+) -> list[str]:
+    if Draft202012Validator is None or FormatChecker is None:
+        if require_jsonschema:
+            return ["jsonschema dependency is required; install with `pip install -e \".[dev]\"`"]
+        return []
+
+    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    errors = sorted(
+        validator.iter_errors(catalog),
+        key=lambda error: (list(error.absolute_path), error.message),
+    )
+    return [
+        f"{_format_schema_error_path(list(error.absolute_path))}: {error.message}"
+        for error in errors
+    ]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--catalog", default="resources/catalog/resources.json")
     parser.add_argument("--schema", default="resources/schema/resource.schema.json")
+    parser.add_argument("--require-jsonschema", action="store_true")
     args = parser.parse_args()
 
     catalog_path = Path(args.catalog)
@@ -249,7 +316,13 @@ def main() -> int:
         print("Schema file must be a JSON object with a '$schema' key")
         return 1
 
-    errors = validate_catalog(catalog)
+    errors = validate_catalog_against_schema(
+        schema,
+        catalog,
+        require_jsonschema=args.require_jsonschema,
+    )
+    errors.extend(validate_catalog(catalog))
+    errors = list(dict.fromkeys(errors))
     if errors:
         print("Resource catalog validation failed:")
         for error in errors:

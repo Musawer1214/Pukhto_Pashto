@@ -29,6 +29,10 @@ def _load_catalog(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _write_text_file(path: Path, content: str) -> None:
+    path.write_text(content, encoding="utf-8", newline="\n")
+
+
 def _escape_cell(value: str) -> str:
     return value.replace("|", "\\|").strip()
 
@@ -78,7 +82,7 @@ def _write_markdown_table(path: Path, title: str, resources: list[dict[str, Any]
             "",
         ]
     )
-    path.write_text("\n".join(lines), encoding="utf-8")
+    _write_text_file(path, "\n".join(lines))
 
 
 def _write_resources_home(path: Path, counts: dict[str, int], total_verified: int) -> None:
@@ -110,7 +114,7 @@ def _write_resources_home(path: Path, counts: dict[str, int], total_verified: in
         f"✅ Verified resource count: `{total_verified}`",
         "",
     ]
-    path.write_text("\n".join(lines), encoding="utf-8")
+    _write_text_file(path, "\n".join(lines))
 
 
 def _build_search_payload(resources: list[dict[str, Any]], updated_on: str) -> dict[str, Any]:
@@ -177,20 +181,20 @@ def main() -> int:
     counts = {category: len(items) for category, items in grouped.items()}
     _write_resources_home(Path("resources/README.md"), counts, len(verified))
 
-    technical_resources, papers = _partition_search_resources(resources)
+    technical_resources, papers = _partition_search_resources(verified)
 
     technical_search_payload = _build_search_payload(technical_resources, updated_on)
     TECHNICAL_SEARCH_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    TECHNICAL_SEARCH_OUTPUT.write_text(
+    _write_text_file(
+        TECHNICAL_SEARCH_OUTPUT,
         json.dumps(technical_search_payload, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
     )
 
     papers_search_payload = _build_search_payload(papers, updated_on)
     PAPERS_SEARCH_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    PAPERS_SEARCH_OUTPUT.write_text(
+    _write_text_file(
+        PAPERS_SEARCH_OUTPUT,
         json.dumps(papers_search_payload, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
     )
 
     print(

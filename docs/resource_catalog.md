@@ -1,6 +1,7 @@
 # 📦 Verified Pashto Resource Catalog
 
-Last updated: `2026-02-22`
+Catalog freshness is tracked in [../resources/catalog/resources.json](../resources/catalog/resources.json)
+via the `updated_on` field.
 
 This page explains how Pashto resources are stored, validated, and published.
 

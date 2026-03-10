@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "id": "10.1234/pashto-dataset",
+      "attributes": {
+        "doi": "10.1234/pashto-dataset",
+        "titles": [
+          {
+            "title": "Pashto Speech Dataset"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "<p>Curated Pashto speech corpus.</p>"
+          }
+        ],
+        "types": {
+          "resourceTypeGeneral": "Dataset"
+        },
+        "url": ""
+      }
+    },
+    {
+      "id": "10.1234/pashto-software",
+      "attributes": {
+        "titles": [
+          {
+            "title": "Pashto OCR Toolkit"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "Pashto OCR toolkit for researchers."
+          }
+        ],
+        "types": {
+          "resourceTypeGeneral": "Software"
+        },
+        "url": "https://example.org/pashto-ocr"
+      }
+    },
+    {
+      "id": "10.1234/pashto-paper",
+      "attributes": {
+        "titles": [
+          {
+            "title": "Pashto Acoustic Modeling"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "Paper about Pashto ASR."
+          }
+        ],
+        "types": {
+          "resourceTypeGeneral": "JournalArticle"
+        },
+        "url": "https://example.org/pashto-paper"
+      }
+    },
+    {
+      "id": "10.1234/general",
+      "attributes": {
+        "titles": [
+          {
+            "title": "Generic Speech Dataset"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "No language marker."
+          }
+        ],
+        "types": {
+          "resourceTypeGeneral": "Dataset"
+        },
+        "url": "https://example.org/general"
+      }
+    }
+  ]
+}

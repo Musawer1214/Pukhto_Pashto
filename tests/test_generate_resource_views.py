@@ -1,58 +1,104 @@
-from scripts.generate_resource_views import _build_search_payload, _partition_search_resources
+import json
+
+from scripts.generate_resource_views import main
 
 
-def _resource(*, rid: str, category: str, status: str = "verified") -> dict:
+def _catalog() -> dict:
     return {
-        "id": rid,
-        "title": f"{rid} title",
-        "url": f"https://example.org/{rid}",
-        "category": category,
-        "source": "other",
-        "status": status,
-        "summary": "Pashto-focused resource summary for search payload tests.",
-        "primary_use": "Testing payload generation",
-        "tasks": ["nlp"],
-        "pashto_evidence": {
-            "evidence_text": "Contains explicit Pashto marker in title.",
-            "evidence_url": f"https://example.org/{rid}",
-            "markers": ["pashto"],
-        },
-        "tags": ["pashto", category],
+        "version": "1.0.0",
+        "updated_on": "2026-03-10",
+        "resources": [
+            {
+                "id": "dataset-verified",
+                "title": "Pashto Verified Dataset",
+                "url": "https://example.org/pashto-dataset",
+                "category": "dataset",
+                "source": "other",
+                "status": "verified",
+                "summary": "Verified Pashto dataset for generator coverage.",
+                "primary_use": "Testing",
+                "tasks": ["asr"],
+                "pashto_evidence": {
+                    "evidence_text": "Explicit Pashto support is listed.",
+                    "evidence_url": "https://example.org/pashto-dataset",
+                    "markers": ["Pashto"],
+                },
+                "tags": ["pashto", "dataset"],
+            },
+            {
+                "id": "dataset-candidate",
+                "title": "Pashto Candidate Dataset",
+                "url": "https://example.org/pashto-candidate",
+                "category": "dataset",
+                "source": "other",
+                "status": "candidate",
+                "summary": "Candidate Pashto dataset that should stay out of public search.",
+                "primary_use": "Testing",
+                "tasks": ["asr"],
+                "pashto_evidence": {
+                    "evidence_text": "Explicit Pashto support is listed.",
+                    "evidence_url": "https://example.org/pashto-candidate",
+                    "markers": ["Pashto"],
+                },
+                "tags": ["pashto", "dataset"],
+            },
+            {
+                "id": "paper-verified",
+                "title": "Pashto Verified Paper",
+                "url": "https://example.org/pashto-paper",
+                "category": "paper",
+                "source": "other",
+                "status": "verified",
+                "summary": "Verified Pashto paper for search payload partition coverage.",
+                "primary_use": "Testing",
+                "tasks": ["nlp"],
+                "pashto_evidence": {
+                    "evidence_text": "Paper title contains Pashto.",
+                    "evidence_url": "https://example.org/pashto-paper",
+                    "markers": ["Pashto"],
+                },
+                "tags": ["pashto", "paper"],
+            },
+            {
+                "id": "paper-candidate",
+                "title": "Pashto Candidate Paper",
+                "url": "https://example.org/pashto-paper-candidate",
+                "category": "paper",
+                "source": "other",
+                "status": "candidate",
+                "summary": "Candidate Pashto paper that should stay out of public search.",
+                "primary_use": "Testing",
+                "tasks": ["nlp"],
+                "pashto_evidence": {
+                    "evidence_text": "Paper title contains Pashto.",
+                    "evidence_url": "https://example.org/pashto-paper-candidate",
+                    "markers": ["Pashto"],
+                },
+                "tags": ["pashto", "paper"],
+            },
+        ],
     }
 
 
-def test_partition_search_resources_routes_papers_to_papers_payload() -> None:
-    resources = [
-        _resource(rid="dataset-a", category="dataset"),
-        _resource(rid="paper-a", category="paper"),
-        _resource(rid="project-a", category="project"),
-        _resource(rid="paper-b", category="paper"),
-    ]
+def test_generate_resource_views_uses_verified_resources_and_lf_line_endings(
+    monkeypatch,
+    tmp_path,
+) -> None:
+    catalog_path = tmp_path / "resources" / "catalog" / "resources.json"
+    catalog_path.parent.mkdir(parents=True)
+    catalog_path.write_text(json.dumps(_catalog(), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    technical, papers = _partition_search_resources(resources)
+    monkeypatch.chdir(tmp_path)
 
-    assert [item["id"] for item in technical] == ["dataset-a", "project-a"]
-    assert [item["id"] for item in papers] == ["paper-a", "paper-b"]
+    assert main() == 0
 
+    technical_payload = json.loads((tmp_path / "docs" / "search" / "resources.json").read_text(encoding="utf-8"))
+    papers_payload = json.loads((tmp_path / "docs" / "papers" / "resources.json").read_text(encoding="utf-8"))
 
-def test_partition_search_resources_keeps_non_paper_categories_in_technical_payload() -> None:
-    resources = [
-        _resource(rid="code-a", category="code"),
-        _resource(rid="tool-a", category="tool"),
-    ]
+    assert technical_payload["count"] == 1
+    assert [item["id"] for item in technical_payload["resources"]] == ["dataset-verified"]
+    assert papers_payload["count"] == 1
+    assert [item["id"] for item in papers_payload["resources"]] == ["paper-verified"]
 
-    technical, papers = _partition_search_resources(resources)
-
-    assert len(technical) == 2
-    assert papers == []
-
-
-def test_build_search_payload_includes_expected_fields() -> None:
-    payload = _build_search_payload([_resource(rid="paper-a", category="paper")], "2026-02-22")
-
-    assert payload["generated_on"] == "2026-02-22T00:00:00Z"
-    assert payload["count"] == 1
-    item = payload["resources"][0]
-    assert item["id"] == "paper-a"
-    assert item["category"] == "paper"
-    assert item["markers"] == ["pashto"]
+    assert b"\r\n" not in (tmp_path / "resources" / "README.md").read_bytes()
+    assert b"\r\n" not in (tmp_path / "resources" / "papers" / "README.md").read_bytes()

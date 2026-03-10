@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "full_name": "pashto-org/pashto-asr-toolkit",
+      "name": "pashto-asr-toolkit",
+      "description": "Pashto ASR toolkit and CLI",
+      "topics": ["pashto", "asr", "toolkit"],
+      "html_url": "https://github.com/pashto-org/pashto-asr-toolkit",
+      "stargazers_count": 50
+    },
+    {
+      "full_name": "pashto-org/pashto-education-hub",
+      "name": "pashto-education-hub",
+      "description": "Pashto language learning project",
+      "topics": ["pashto", "education"],
+      "html_url": "https://github.com/pashto-org/pashto-education-hub",
+      "stargazers_count": 20
+    },
+    {
+      "full_name": "pashto-org/pashto-test-repo",
+      "name": "pashto-test-repo",
+      "description": "Pashto scratch repo",
+      "topics": ["pashto"],
+      "html_url": "https://github.com/pashto-org/pashto-test-repo",
+      "stargazers_count": 100
+    }
+  ]
+}

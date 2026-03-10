@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-03-07T00:00:00Z",
-  "count": 154,
+  "generated_on": "2026-03-09T00:00:00Z",
+  "count": 155,
   "resources": [
     {
       "id": "paper-s2-psocr-lmm-pashto",
@@ -3390,6 +3390,28 @@
       ],
       "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
       "evidence_url": "https://www.semanticscholar.org/paper/563f1aa5d55cd0223e5c1d0e3cec582ca382b410",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-language-technologies-for-humanitarian-aid",
+      "title": "Language Technologies for Humanitarian Aid",
+      "url": "https://kilthub.cmu.edu/articles/journal_contribution/Language_Technologies_for_Humanitarian_Aid/6606755/1",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Humanitarian aid missions, whether emergency famine relief, establishment of medical clinics, or missions in conjunction with peace-keeping operations, require on-demand communication with the indigenous population. If such operations take",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://kilthub.cmu.edu/articles/journal_contribution/Language_Technologies_for_Humanitarian_Aid/6606755/1",
       "markers": [
         "pashto"
       ]

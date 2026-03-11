@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-03-10T05:07:24.380350+00:00",
+  "generated_on": "2026-03-11T05:08:26.454913+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
@@ -15,32 +15,8 @@
     "arxiv",
     "semantic-scholar"
   ],
-  "candidate_count": 19,
+  "candidate_count": 16,
   "candidates": [
-    {
-      "id": "candidate-datacite-dataset-a-bilingual-pashto-speech-and-text-dataset-for-low-resource-language-research-bp",
-      "title": "A Bilingual Pashto Speech and Text Dataset for Low-Resource Language Research (BPSTD)",
-      "url": "https://data.mendeley.com/datasets/x64drybfw4/1",
-      "category": "dataset",
-      "source": "datacite",
-      "status": "candidate",
-      "summary": "We introduce the Bilingual Pashtu Speech and Text Dataset (BPSTD) for low-resource language research. BPSTD is a bilingual speech-text dataset created to facilitate research in Pashto voice processing, speech recognition, and text-to-speech",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://data.mendeley.com/datasets/x64drybfw4/1",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "dataset",
-        "datacite"
-      ]
-    },
     {
       "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
       "title": "Common Voice 24.0: Pashto Speech Dataset",
@@ -63,30 +39,6 @@
         "candidate",
         "dataset",
         "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-datacite-paper-dnn-acoustic-modeling-with-modular-multi-lingual-feature-extraction-networks",
-      "title": "DNN acoustic modeling with modular multi-lingual feature extraction networks",
-      "url": "https://kilthub.cmu.edu/articles/journal_contribution/DNN_acoustic_modeling_with_modular_multi-lingual_feature_extraction_networks/6473330/1",
-      "category": "paper",
-      "source": "datacite",
-      "status": "candidate",
-      "summary": "In this work, we propose several deep neural network architectures that are able to leverage data from multiple languages. Modularity is achieved by training networks for extracting high-level features and for estimating phoneme state poste",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://kilthub.cmu.edu/articles/journal_contribution/DNN_acoustic_modeling_with_modular_multi-lingual_feature_extraction_networks/6473330/1",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "datacite"
       ]
     },
     {
@@ -423,29 +375,6 @@
         "candidate",
         "dataset",
         "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-s2-survey-of-the-contents-of-pushto-textbooks-for-primary-classes-in-peshawar-regio",
-      "title": "Survey of the contents of Pushto textbooks for primary classes in Peshawar region of West Pakistan",
-      "url": "https://www.semanticscholar.org/paper/9f5bebac07e1eae093183afeb62925a17f7bb689",
-      "category": "paper",
-      "source": "other",
-      "status": "candidate",
-      "summary": "Candidate paper returned from Semantic Scholar search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
-        "evidence_url": "https://www.semanticscholar.org/paper/9f5bebac07e1eae093183afeb62925a17f7bb689",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper"
       ]
     },
     {

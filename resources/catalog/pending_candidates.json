@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-03-11T05:08:26.454913+00:00",
+  "generated_on": "2026-03-12T05:13:04.148117+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
@@ -12,8 +12,7 @@
     "zenodo",
     "dataverse",
     "datacite",
-    "arxiv",
-    "semantic-scholar"
+    "arxiv"
   ],
   "candidate_count": 16,
   "candidates": [
@@ -401,5 +400,8 @@
         "kaggle"
       ]
     }
+  ],
+  "errors": [
+    "semantic-scholar: pashto: HTTP Error 429: ; pukhto: HTTP Error 429: ; pushto: HTTP Error 429: ; pakhto: HTTP Error 429: "
   ]
 }

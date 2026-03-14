@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-03-12T05:13:04.148117+00:00",
+  "generated_on": "2026-03-14T05:07:31.097961+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
@@ -14,7 +14,7 @@
     "datacite",
     "arxiv"
   ],
-  "candidate_count": 16,
+  "candidate_count": 18,
   "candidates": [
     {
       "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
@@ -86,6 +86,30 @@
         "candidate",
         "dataset",
         "kaggle"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-exploring-gender-specific-plural-markers-in-the-pashto-language",
+      "title": "Exploring Gender-Specific Plural Markers in the Pashto Language",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18977159",
+      "category": "paper",
+      "source": "datacite",
+      "status": "candidate",
+      "summary": "Candidate record returned from DataCite DOI search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18977159",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
       ]
     },
     {
@@ -230,6 +254,30 @@
         "candidate",
         "dataset",
         "kaggle"
+      ]
+    },
+    {
+      "id": "candidate-crossref-pashto-preverbs-v",
+      "title": "Pashto preverbs V",
+      "url": "https://doi.org/10.1515/if-2025-0007",
+      "category": "paper",
+      "source": "crossref",
+      "status": "candidate",
+      "summary": "Abstract This article deals with the perfective preverb wə́-. Pashto wə́- cannot be studied separately from aspectual oppositions: in fact, wə́- characterizes the “perfective” of simple verbs. Therefore, a quick review of aspect in Pashto w",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+        "evidence_url": "https://doi.org/10.1515/if-2025-0007",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
       ]
     },
     {

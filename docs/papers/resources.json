@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-03-10T00:00:00Z",
-  "count": 157,
+  "generated_on": "2026-03-14T00:00:00Z",
+  "count": 159,
   "resources": [
     {
       "id": "paper-s2-psocr-lmm-pashto",
@@ -3455,6 +3455,50 @@
       ],
       "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
       "evidence_url": "https://www.semanticscholar.org/paper/9f5bebac07e1eae093183afeb62925a17f7bb689",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-exploring-gender-specific-plural-markers-in-the-pashto-language",
+      "title": "Exploring Gender-Specific Plural Markers in the Pashto Language",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18977159",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Candidate record returned from DataCite DOI search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18977159",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-crossref-pashto-preverbs-v",
+      "title": "Pashto preverbs V",
+      "url": "https://doi.org/10.1515/if-2025-0007",
+      "category": "paper",
+      "source": "crossref",
+      "status": "verified",
+      "summary": "Abstract This article deals with the perfective preverb wə́-. Pashto wə́- cannot be studied separately from aspectual oppositions: in fact, wə́- characterizes the “perfective” of simple verbs. Therefore, a quick review of aspect in Pashto w",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+      "evidence_url": "https://doi.org/10.1515/if-2025-0007",
       "markers": [
         "pashto"
       ]

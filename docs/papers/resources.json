@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-03-14T00:00:00Z",
-  "count": 159,
+  "generated_on": "2026-03-15T00:00:00Z",
+  "count": 160,
   "resources": [
     {
       "id": "paper-s2-psocr-lmm-pashto",
@@ -3499,6 +3499,28 @@
       ],
       "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
       "evidence_url": "https://doi.org/10.1515/if-2025-0007",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-voices-of-displaced-a-vader-based-sentiment-analysis-of-afghan-repatriates-long-",
+      "title": "VOICES OF DISPLACED: A VADER-BASED SENTIMENT ANALYSIS OF AFGHAN REPATRIATES' LONG-TERM LIVED EXPERIENCES IN PAKISTAN",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.19017470",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Afghanistan's protracted displacement crisis has produced millions of long-term refugees in Pakistan, many of whom now face forced repatriation under the government's Illegal Foreigners' Repatriation Plan announced in October 2023. While ex",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.19017470",
       "markers": [
         "pashto"
       ]

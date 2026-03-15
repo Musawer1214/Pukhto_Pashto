@@ -1,6 +1,6 @@
 {
   "version": "1.1.1",
-  "updated_on": "2026-03-14",
+  "updated_on": "2026-03-15",
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -7095,6 +7095,53 @@
         "candidate",
         "paper",
         "crossref"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-junaid008-qehwa-pashto-llm",
+      "title": "junaid008/qehwa-pashto-llm",
+      "url": "https://huggingface.co/junaid008/qehwa-pashto-llm",
+      "category": "model",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/junaid008/qehwa-pashto-llm",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-voices-of-displaced-a-vader-based-sentiment-analysis-of-afghan-repatriates-long-",
+      "title": "VOICES OF DISPLACED: A VADER-BASED SENTIMENT ANALYSIS OF AFGHAN REPATRIATES' LONG-TERM LIVED EXPERIENCES IN PAKISTAN",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.19017470",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Afghanistan's protracted displacement crisis has produced millions of long-term refugees in Pakistan, many of whom now face forced repatriation under the government's Illegal Foreigners' Repatriation Plan announced in October 2023. While ex",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.19017470",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
       ]
     }
   ]

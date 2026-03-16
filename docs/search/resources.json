@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-03-14T00:00:00Z",
-  "count": 126,
+  "generated_on": "2026-03-16T00:00:00Z",
+  "count": 127,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -3008,6 +3008,27 @@
       ],
       "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
       "evidence_url": "https://data.mendeley.com/datasets/x64drybfw4/1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-junaid008-qehwa-pashto-llm",
+      "title": "junaid008/qehwa-pashto-llm",
+      "url": "https://huggingface.co/junaid008/qehwa-pashto-llm",
+      "category": "model",
+      "source": "huggingface",
+      "status": "verified",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
+      ],
+      "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+      "evidence_url": "https://huggingface.co/junaid008/qehwa-pashto-llm",
       "markers": [
         "pashto"
       ]

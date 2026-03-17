@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-02-22",
+  "updated_on": "2026-03-16",
   "entries": [
     {
       "removed_on": "2026-02-21T19:47:22.435531+00:00",
@@ -1196,6 +1196,22 @@
       "evidence": {
         "status_code": 404,
         "final_url": "https://www.kaggle.com/datasets/aimalrezvan/pashto-language-characters",
+        "metadata_pashto": true,
+        "direct_pashto": true,
+        "page_pashto": false
+      }
+    },
+    {
+      "removed_on": "2026-03-16T05:46:00.819594+00:00",
+      "id": "candidate-openalex-descriptive-grammar-of-pashto-and-its-dialects",
+      "title": "Descriptive Grammar of Pashto and its Dialects",
+      "url": "https://doi.org/10.1515/9781614512318",
+      "reasons": [
+        "URL returned hard-missing HTTP status 404."
+      ],
+      "evidence": {
+        "status_code": 404,
+        "final_url": "https://www.degruyterbrill.com/document/doi/10.1515/9781614512318/html",
         "metadata_pashto": true,
         "direct_pashto": true,
         "page_pashto": false

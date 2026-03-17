@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-03-14T00:00:00Z",
-  "count": 159,
+  "generated_on": "2026-03-16T00:00:00Z",
+  "count": 162,
   "resources": [
     {
       "id": "paper-s2-psocr-lmm-pashto",
@@ -795,28 +795,6 @@
       ],
       "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
       "evidence_url": "https://zenodo.org/records/15524281",
-      "markers": [
-        "pashto"
-      ]
-    },
-    {
-      "id": "candidate-openalex-descriptive-grammar-of-pashto-and-its-dialects",
-      "title": "Descriptive Grammar of Pashto and its Dialects",
-      "url": "https://doi.org/10.1515/9781614512318",
-      "category": "paper",
-      "source": "openalex",
-      "status": "verified",
-      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
-      "primary_use": "Automated discovery entry for Pashto resource tracking.",
-      "tasks": [],
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "openalex"
-      ],
-      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
-      "evidence_url": "https://doi.org/10.1515/9781614512318",
       "markers": [
         "pashto"
       ]
@@ -3499,6 +3477,94 @@
       ],
       "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
       "evidence_url": "https://doi.org/10.1515/if-2025-0007",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-openalex-descriptive-grammar-of-pashto-and-its-dialects",
+      "title": "Descriptive Grammar of Pashto and its Dialects",
+      "url": "https://doi.org/10.1515/9781614512318",
+      "category": "paper",
+      "source": "openalex",
+      "status": "verified",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+      "evidence_url": "https://doi.org/10.1515/9781614512318",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-zenodo-paper-hindko-as-a-means-of-prosperity-lingua-franca-in-united-india",
+      "title": "Hindko as a Means of Prosperity (Lingua Franca) in United India",
+      "url": "https://zenodo.org/records/19027925",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "verified",
+      "summary": "Abstract Language has historically played a central role in shaping economic integration, cultural exchange, and social cohesion. Hindko, an Indo-Aryan language spoken in northwestern regions of the Indian subcontinent, served as an importa",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ],
+      "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/records/19027925",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-hindko-as-a-means-of-prosperity-lingua-franca-in-united-india",
+      "title": "Hindko as a Means of Prosperity (Lingua Franca) in United India",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.19027924",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Abstract Language has historically played a central role in shaping economic integration, cultural exchange, and social cohesion. Hindko, an Indo-Aryan language spoken in northwestern regions of the Indian subcontinent, served as an importa",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.19027924",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-voices-of-displaced-a-vader-based-sentiment-analysis-of-afghan-repatriates-long-",
+      "title": "VOICES OF DISPLACED: A VADER-BASED SENTIMENT ANALYSIS OF AFGHAN REPATRIATES' LONG-TERM LIVED EXPERIENCES IN PAKISTAN",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.19017470",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Afghanistan's protracted displacement crisis has produced millions of long-term refugees in Pakistan, many of whom now face forced repatriation under the government's Illegal Foreigners' Repatriation Plan announced in October 2023. While ex",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.19017470",
       "markers": [
         "pashto"
       ]

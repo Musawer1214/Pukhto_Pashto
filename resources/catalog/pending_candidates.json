@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-03-14T05:07:31.097961+00:00",
+  "generated_on": "2026-03-16T05:46:51.808802+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
@@ -12,9 +12,10 @@
     "zenodo",
     "dataverse",
     "datacite",
-    "arxiv"
+    "arxiv",
+    "semantic-scholar"
   ],
-  "candidate_count": 18,
+  "candidate_count": 21,
   "candidates": [
     {
       "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
@@ -38,6 +39,30 @@
         "candidate",
         "dataset",
         "kaggle"
+      ]
+    },
+    {
+      "id": "candidate-openalex-descriptive-grammar-of-pashto-and-its-dialects",
+      "title": "Descriptive Grammar of Pashto and its Dialects",
+      "url": "https://doi.org/10.1515/9781614512318",
+      "category": "paper",
+      "source": "openalex",
+      "status": "candidate",
+      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
+        "evidence_url": "https://doi.org/10.1515/9781614512318",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "openalex"
       ]
     },
     {
@@ -89,18 +114,42 @@
       ]
     },
     {
-      "id": "candidate-datacite-paper-exploring-gender-specific-plural-markers-in-the-pashto-language",
-      "title": "Exploring Gender-Specific Plural Markers in the Pashto Language",
-      "url": "https://zenodo.org/doi/10.5281/zenodo.18977159",
+      "id": "candidate-zenodo-paper-hindko-as-a-means-of-prosperity-lingua-franca-in-united-india",
+      "title": "Hindko as a Means of Prosperity (Lingua Franca) in United India",
+      "url": "https://zenodo.org/records/19027925",
+      "category": "paper",
+      "source": "zenodo",
+      "status": "candidate",
+      "summary": "Abstract Language has historically played a central role in shaping economic integration, cultural exchange, and social cohesion. Hindko, an Indo-Aryan language spoken in northwestern regions of the Indian subcontinent, served as an importa",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://zenodo.org/records/19027925",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "zenodo"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-hindko-as-a-means-of-prosperity-lingua-franca-in-united-india",
+      "title": "Hindko as a Means of Prosperity (Lingua Franca) in United India",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.19027924",
       "category": "paper",
       "source": "datacite",
       "status": "candidate",
-      "summary": "Candidate record returned from DataCite DOI search for Pashto.",
+      "summary": "Abstract Language has historically played a central role in shaping economic integration, cultural exchange, and social cohesion. Hindko, an Indo-Aryan language spoken in northwestern regions of the Indian subcontinent, served as an importa",
       "primary_use": "Needs maintainer review before promotion to verified catalog.",
       "tasks": [],
       "pashto_evidence": {
         "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18977159",
+        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.19027924",
         "markers": [
           "pashto"
         ]
@@ -110,6 +159,29 @@
         "candidate",
         "paper",
         "datacite"
+      ]
+    },
+    {
+      "id": "candidate-hf-model-junaid008-qehwa-pashto-llm",
+      "title": "junaid008/qehwa-pashto-llm",
+      "url": "https://huggingface.co/junaid008/qehwa-pashto-llm",
+      "category": "model",
+      "source": "huggingface",
+      "status": "candidate",
+      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
+        "evidence_url": "https://huggingface.co/junaid008/qehwa-pashto-llm",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "model"
       ]
     },
     {
@@ -254,30 +326,6 @@
         "candidate",
         "dataset",
         "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-crossref-pashto-preverbs-v",
-      "title": "Pashto preverbs V",
-      "url": "https://doi.org/10.1515/if-2025-0007",
-      "category": "paper",
-      "source": "crossref",
-      "status": "candidate",
-      "summary": "Abstract This article deals with the perfective preverb wə́-. Pashto wə́- cannot be studied separately from aspectual oppositions: in fact, wə́- characterizes the “perfective” of simple verbs. Therefore, a quick review of aspect in Pashto w",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
-        "evidence_url": "https://doi.org/10.1515/if-2025-0007",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "crossref"
       ]
     },
     {
@@ -447,9 +495,30 @@
         "dataset",
         "kaggle"
       ]
+    },
+    {
+      "id": "candidate-datacite-paper-voices-of-displaced-a-vader-based-sentiment-analysis-of-afghan-repatriates-long-",
+      "title": "VOICES OF DISPLACED: A VADER-BASED SENTIMENT ANALYSIS OF AFGHAN REPATRIATES' LONG-TERM LIVED EXPERIENCES IN PAKISTAN",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.19017470",
+      "category": "paper",
+      "source": "datacite",
+      "status": "candidate",
+      "summary": "Afghanistan's protracted displacement crisis has produced millions of long-term refugees in Pakistan, many of whom now face forced repatriation under the government's Illegal Foreigners' Repatriation Plan announced in October 2023. While ex",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.19017470",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ]
     }
-  ],
-  "errors": [
-    "semantic-scholar: pashto: HTTP Error 429: ; pukhto: HTTP Error 429: ; pushto: HTTP Error 429: ; pakhto: HTTP Error 429: "
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-03-16T00:00:00Z",
-  "count": 162,
+  "generated_on": "2026-03-18T00:00:00Z",
+  "count": 168,
   "resources": [
     {
       "id": "paper-s2-psocr-lmm-pashto",
@@ -1256,28 +1256,6 @@
       ],
       "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.17807676",
-      "markers": [
-        "pashto"
-      ]
-    },
-    {
-      "id": "candidate-crossref-pashto",
-      "title": "Pashto",
-      "url": "https://doi.org/10.4324/9780203301524-34",
-      "category": "paper",
-      "source": "crossref",
-      "status": "verified",
-      "summary": "Candidate paper returned from Crossref search for Pashto.",
-      "primary_use": "Automated discovery entry for Pashto resource tracking.",
-      "tasks": [],
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "crossref"
-      ],
-      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
-      "evidence_url": "https://doi.org/10.4324/9780203301524-34",
       "markers": [
         "pashto"
       ]
@@ -3565,6 +3543,158 @@
       ],
       "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.19017470",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-abstracts-and-authors-in-pashto",
+      "title": "Abstracts and Authors in Pashto",
+      "url": "https://opendata.uni-halle.de//handle/1981185920/124611",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Candidate record returned from DataCite DOI search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://opendata.uni-halle.de//handle/1981185920/124611",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-abstracts-and-authors-of-dari-and-pashto-articles",
+      "title": "Abstracts and Authors of Dari and Pashto Articles",
+      "url": "https://opendata.uni-halle.de//handle/1981185920/124609",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Candidate record returned from DataCite DOI search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://opendata.uni-halle.de//handle/1981185920/124609",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-oasissimp-an-open-source-asian-english-sentence-simplification-dataset",
+      "title": "OasisSimp: An Open-source Asian-English Sentence Simplification Dataset",
+      "url": "https://arxiv.org/abs/2603.14111",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Sentence simplification aims to make complex text more accessible by reducing linguistic complexity while preserving the original meaning. However, progress in this area remains limited for mid-resource and low-resource languages due to the",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://arxiv.org/abs/2603.14111",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-crossref-pashto",
+      "title": "Pashto",
+      "url": "https://doi.org/10.4324/9780203301524-34",
+      "category": "paper",
+      "source": "crossref",
+      "status": "verified",
+      "summary": "Candidate paper returned from Crossref search for Pashto.",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+      "evidence_url": "https://doi.org/10.4324/9780203301524-34",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-pashtocorp-a-1-25-billion-word-corpus-evaluation-suite-and-reproducible-pipeline",
+      "title": "PashtoCorp: A 1.25-Billion-Word Corpus, Evaluation Suite, and Reproducible Pipeline for Low-Resource Language Development",
+      "url": "https://arxiv.org/abs/2603.16354",
+      "category": "paper",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "We present PashtoCorp, a 1.25-billion-word corpus for Pashto, a language spoken by 60 million people that remains severely underrepresented in NLP. The corpus is assembled from 39 sources spanning seven HuggingFace datasets and 32 purpose-b",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://arxiv.org/abs/2603.16354",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-arxiv-pashtocorp-a-1-25-billion-word-corpus-evaluation-suite-and-reproducible-pipeline",
+      "title": "PashtoCorp: A 1.25-Billion-Word Corpus, Evaluation Suite, and Reproducible Pipeline for Low-Resource Language Development",
+      "url": "http://arxiv.org/abs/2603.16354v1",
+      "category": "paper",
+      "source": "arxiv",
+      "status": "verified",
+      "summary": "We present PashtoCorp, a 1.25-billion-word corpus for Pashto, a language spoken by 60 million people that remains severely underrepresented in NLP. The corpus is assembled from 39 sources spanning seven HuggingFace datasets and 32 purpose-b",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by Pashto marker in paper title from arXiv query results.",
+      "evidence_url": "http://arxiv.org/abs/2603.16354v1",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-resolving-the-dual-y-orthographic-variation-in-pashto-an-interdisciplinary-appro",
+      "title": "Resolving the Dual Yā Orthographic Variation in Pashto: An Interdisciplinary Approach Integrating Linguistic, Technological, and Educational Perspectives in Afghanistan and Pakistan",
+      "url": "https://www.semanticscholar.org/paper/3741ccd390216a00431606d85f6c21a174244ccb",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "Pashto, a major language in Afghanistan and Pakistan, faces persistent orthographic inconsistencies regarding the dual graphemes Yā (\"ی\", U+06CC and \"ې\", U+06D0). These graphemes represent distinct phonological and morphological functions b",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/3741ccd390216a00431606d85f6c21a174244ccb",
       "markers": [
         "pashto"
       ]

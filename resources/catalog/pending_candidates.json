@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-03-16T05:46:51.808802+00:00",
+  "generated_on": "2026-03-18T05:23:29.437042+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
@@ -15,8 +15,56 @@
     "arxiv",
     "semantic-scholar"
   ],
-  "candidate_count": 21,
+  "candidate_count": 25,
   "candidates": [
+    {
+      "id": "candidate-datacite-paper-abstracts-and-authors-in-pashto",
+      "title": "Abstracts and Authors in Pashto",
+      "url": "https://opendata.uni-halle.de//handle/1981185920/124611",
+      "category": "paper",
+      "source": "datacite",
+      "status": "candidate",
+      "summary": "Candidate record returned from DataCite DOI search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://opendata.uni-halle.de//handle/1981185920/124611",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-abstracts-and-authors-of-dari-and-pashto-articles",
+      "title": "Abstracts and Authors of Dari and Pashto Articles",
+      "url": "https://opendata.uni-halle.de//handle/1981185920/124609",
+      "category": "paper",
+      "source": "datacite",
+      "status": "candidate",
+      "summary": "Candidate record returned from DataCite DOI search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://opendata.uni-halle.de//handle/1981185920/124609",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ]
+    },
     {
       "id": "candidate-kaggle-dataset-ataullahaali-common-voice-24-0-pashto-speech-dataset",
       "title": "Common Voice 24.0: Pashto Speech Dataset",
@@ -39,30 +87,6 @@
         "candidate",
         "dataset",
         "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-openalex-descriptive-grammar-of-pashto-and-its-dialects",
-      "title": "Descriptive Grammar of Pashto and its Dialects",
-      "url": "https://doi.org/10.1515/9781614512318",
-      "category": "paper",
-      "source": "openalex",
-      "status": "candidate",
-      "summary": "Candidate paper returned from OpenAlex works search for Pashto.",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Matched by explicit Pashto marker in title from OpenAlex works search.",
-        "evidence_url": "https://doi.org/10.1515/9781614512318",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "openalex"
       ]
     },
     {
@@ -114,42 +138,18 @@
       ]
     },
     {
-      "id": "candidate-zenodo-paper-hindko-as-a-means-of-prosperity-lingua-franca-in-united-india",
-      "title": "Hindko as a Means of Prosperity (Lingua Franca) in United India",
-      "url": "https://zenodo.org/records/19027925",
-      "category": "paper",
-      "source": "zenodo",
-      "status": "candidate",
-      "summary": "Abstract Language has historically played a central role in shaping economic integration, cultural exchange, and social cohesion. Hindko, an Indo-Aryan language spoken in northwestern regions of the Indian subcontinent, served as an importa",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://zenodo.org/records/19027925",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "zenodo"
-      ]
-    },
-    {
-      "id": "candidate-datacite-paper-hindko-as-a-means-of-prosperity-lingua-franca-in-united-india",
-      "title": "Hindko as a Means of Prosperity (Lingua Franca) in United India",
-      "url": "https://zenodo.org/doi/10.5281/zenodo.19027924",
-      "category": "paper",
+      "id": "candidate-datacite-project-improving-machine-translation-with-phrase-pair-injection-and-corpus-filtering",
+      "title": "Improving Machine Translation with Phrase Pair Injection and Corpus Filtering",
+      "url": "https://underline.io/lecture/65314-improving-machine-translation-with-phrase-pair-injection-and-corpus-filtering",
+      "category": "project",
       "source": "datacite",
       "status": "candidate",
-      "summary": "Abstract Language has historically played a central role in shaping economic integration, cultural exchange, and social cohesion. Hindko, an Indo-Aryan language spoken in northwestern regions of the Indian subcontinent, served as an importa",
+      "summary": "In this paper, we show that the combination of Phrase Pair Injection and Corpus Filtering boosts the performance of Neural Machine Translation (NMT) systems. We extract parallel phrases and sentences from the pseudo-parallel corpus and augm",
       "primary_use": "Needs maintainer review before promotion to verified catalog.",
       "tasks": [],
       "pashto_evidence": {
         "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.19027924",
+        "evidence_url": "https://underline.io/lecture/65314-improving-machine-translation-with-phrase-pair-injection-and-corpus-filtering",
         "markers": [
           "pashto"
         ]
@@ -157,23 +157,23 @@
       "tags": [
         "pashto",
         "candidate",
-        "paper",
+        "project",
         "datacite"
       ]
     },
     {
-      "id": "candidate-hf-model-junaid008-qehwa-pashto-llm",
-      "title": "junaid008/qehwa-pashto-llm",
-      "url": "https://huggingface.co/junaid008/qehwa-pashto-llm",
-      "category": "model",
+      "id": "candidate-hf-dataset-junaid008-pashtoeval-150",
+      "title": "junaid008/PashtoEval-150",
+      "url": "https://huggingface.co/datasets/junaid008/PashtoEval-150",
+      "category": "dataset",
       "source": "huggingface",
       "status": "candidate",
-      "summary": "Candidate model returned from Hugging Face search for Pashto.",
+      "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
       "primary_use": "Needs maintainer review before promotion to verified catalog.",
       "tasks": [],
       "pashto_evidence": {
         "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
-        "evidence_url": "https://huggingface.co/junaid008/qehwa-pashto-llm",
+        "evidence_url": "https://huggingface.co/datasets/junaid008/PashtoEval-150",
         "markers": [
           "pashto"
         ]
@@ -181,7 +181,7 @@
       "tags": [
         "pashto",
         "candidate",
-        "model"
+        "dataset"
       ]
     },
     {
@@ -206,6 +206,54 @@
         "candidate",
         "dataset",
         "kaggle"
+      ]
+    },
+    {
+      "id": "candidate-datacite-paper-oasissimp-an-open-source-asian-english-sentence-simplification-dataset",
+      "title": "OasisSimp: An Open-source Asian-English Sentence Simplification Dataset",
+      "url": "https://arxiv.org/abs/2603.14111",
+      "category": "paper",
+      "source": "datacite",
+      "status": "candidate",
+      "summary": "Sentence simplification aims to make complex text more accessible by reducing linguistic complexity while preserving the original meaning. However, progress in this area remains limited for mid-resource and low-resource languages due to the",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://arxiv.org/abs/2603.14111",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ]
+    },
+    {
+      "id": "candidate-crossref-pashto",
+      "title": "Pashto",
+      "url": "https://doi.org/10.4324/9780203301524-34",
+      "category": "paper",
+      "source": "crossref",
+      "status": "candidate",
+      "summary": "Candidate paper returned from Crossref search for Pashto.",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in title from Crossref search.",
+        "evidence_url": "https://doi.org/10.4324/9780203301524-34",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "crossref"
       ]
     },
     {
@@ -425,6 +473,53 @@
       ]
     },
     {
+      "id": "candidate-datacite-paper-pashtocorp-a-1-25-billion-word-corpus-evaluation-suite-and-reproducible-pipeline",
+      "title": "PashtoCorp: A 1.25-Billion-Word Corpus, Evaluation Suite, and Reproducible Pipeline for Low-Resource Language Development",
+      "url": "https://arxiv.org/abs/2603.16354",
+      "category": "paper",
+      "source": "datacite",
+      "status": "candidate",
+      "summary": "We present PashtoCorp, a 1.25-billion-word corpus for Pashto, a language spoken by 60 million people that remains severely underrepresented in NLP. The corpus is assembled from 39 sources spanning seven HuggingFace datasets and 32 purpose-b",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://arxiv.org/abs/2603.16354",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper",
+        "datacite"
+      ]
+    },
+    {
+      "id": "candidate-arxiv-pashtocorp-a-1-25-billion-word-corpus-evaluation-suite-and-reproducible-pipeline",
+      "title": "PashtoCorp: A 1.25-Billion-Word Corpus, Evaluation Suite, and Reproducible Pipeline for Low-Resource Language Development",
+      "url": "http://arxiv.org/abs/2603.16354v1",
+      "category": "paper",
+      "source": "arxiv",
+      "status": "candidate",
+      "summary": "We present PashtoCorp, a 1.25-billion-word corpus for Pashto, a language spoken by 60 million people that remains severely underrepresented in NLP. The corpus is assembled from 39 sources spanning seven HuggingFace datasets and 32 purpose-b",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by Pashto marker in paper title from arXiv query results.",
+        "evidence_url": "http://arxiv.org/abs/2603.16354v1",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
       "id": "candidate-kaggle-dataset-drijaz-pashtoocr",
       "title": "PashtoOCR",
       "url": "https://www.kaggle.com/datasets/drijaz/pashtoocr",
@@ -473,6 +568,29 @@
       ]
     },
     {
+      "id": "candidate-s2-resolving-the-dual-y-orthographic-variation-in-pashto-an-interdisciplinary-appro",
+      "title": "Resolving the Dual Yā Orthographic Variation in Pashto: An Interdisciplinary Approach Integrating Linguistic, Technological, and Educational Perspectives in Afghanistan and Pakistan",
+      "url": "https://www.semanticscholar.org/paper/3741ccd390216a00431606d85f6c21a174244ccb",
+      "category": "paper",
+      "source": "other",
+      "status": "candidate",
+      "summary": "Pashto, a major language in Afghanistan and Pakistan, faces persistent orthographic inconsistencies regarding the dual graphemes Yā (\"ی\", U+06CC and \"ې\", U+06D0). These graphemes represent distinct phonological and morphological functions b",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/3741ccd390216a00431606d85f6c21a174244ccb",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
       "id": "candidate-kaggle-dataset-shafeeqgigyani-urdu-pashto-lexicon-dataset",
       "title": "Urdu-Pashto Lexicon Dataset",
       "url": "https://www.kaggle.com/datasets/shafeeqgigyani/urdu-pashto-lexicon-dataset",
@@ -494,30 +612,6 @@
         "candidate",
         "dataset",
         "kaggle"
-      ]
-    },
-    {
-      "id": "candidate-datacite-paper-voices-of-displaced-a-vader-based-sentiment-analysis-of-afghan-repatriates-long-",
-      "title": "VOICES OF DISPLACED: A VADER-BASED SENTIMENT ANALYSIS OF AFGHAN REPATRIATES' LONG-TERM LIVED EXPERIENCES IN PAKISTAN",
-      "url": "https://zenodo.org/doi/10.5281/zenodo.19017470",
-      "category": "paper",
-      "source": "datacite",
-      "status": "candidate",
-      "summary": "Afghanistan's protracted displacement crisis has produced millions of long-term refugees in Pakistan, many of whom now face forced repatriation under the government's Illegal Foreigners' Repatriation Plan announced in October 2023. While ex",
-      "primary_use": "Needs maintainer review before promotion to verified catalog.",
-      "tasks": [],
-      "pashto_evidence": {
-        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.19017470",
-        "markers": [
-          "pashto"
-        ]
-      },
-      "tags": [
-        "pashto",
-        "candidate",
-        "paper",
-        "datacite"
       ]
     }
   ]

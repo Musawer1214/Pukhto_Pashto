@@ -22,8 +22,8 @@
   },
   "reproducibility": {
     "normalization_policy": "docs/pashto_normalization_v0.1.md",
-    "command": "python tts/eval.py --model mms-tts --prompts data/processed/prompts_v1.tsv",
-    "config_ref": "tts/configs/mms_tts_eval.yaml"
+    "command": "TODO: replace with the exact TTS evaluation command used for this run.",
+    "config_ref": "TODO: point to the committed config, prompt set, or run card used for this run."
   }
 }
 

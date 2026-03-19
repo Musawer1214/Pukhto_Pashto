@@ -22,7 +22,7 @@
   },
   "reproducibility": {
     "normalization_policy": "docs/pashto_normalization_v0.1.md",
-    "command": "python asr/eval.py --dataset fleurs_ps_af --model whisper-large-v3",
-    "config_ref": "asr/configs/whisper_large_v3_eval.yaml"
+    "command": "TODO: replace with the exact ASR evaluation command used for this run.",
+    "config_ref": "TODO: point to the committed config, notebook, or run card used for this run."
   }
 }

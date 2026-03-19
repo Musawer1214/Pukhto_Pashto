@@ -31,9 +31,9 @@ description: Open-source Pashto (Pukhto/Pashto) datasets, models, benchmarks, AS
 
 - Repository: [Musawer1214/pashto-language-resources](https://github.com/Musawer1214/pashto-language-resources)
 - Hugging Face: [Musawer14/pashto-language-resources](https://huggingface.co/Musawer14/pashto-language-resources)
-- Purpose: [PROJECT_PURPOSE.md](../PROJECT_PURPOSE.md)
-- Roadmap: [ROADMAP.md](../ROADMAP.md)
-- Contributing: [CONTRIBUTING.md](../CONTRIBUTING.md)
+- Purpose: [PROJECT_PURPOSE.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/PROJECT_PURPOSE.md)
+- Roadmap: [ROADMAP.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/ROADMAP.md)
+- Contributing: [CONTRIBUTING.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/CONTRIBUTING.md)
 
 ## 📈 SEO Operations
 
@@ -45,7 +45,7 @@ description: Open-source Pashto (Pukhto/Pashto) datasets, models, benchmarks, AS
 
 - Release notes index: [releases/README.md](releases/README.md)
 - Current release notes: [v1.2.1](releases/v1.2.1.md)
-- Changelog: [../CHANGELOG.md](../CHANGELOG.md)
+- Changelog: [CHANGELOG.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/CHANGELOG.md)
 
 ## 🤝 Contribution
 
@@ -53,8 +53,8 @@ You can help by improving documentation, validating normalization rows, sharing 
 
 Start here:
 - [docs/README.md](README.md)
-- [community/COMMUNICATION.md](../community/COMMUNICATION.md)
+- [Community communication guide on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/community/COMMUNICATION.md)
 
 ## ⚖️ License
 
-This project is released under Apache 2.0. See [LICENSE](../LICENSE).
+This project is released under Apache 2.0. See [LICENSE on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/LICENSE).

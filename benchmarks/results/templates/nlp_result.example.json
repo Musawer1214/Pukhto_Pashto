@@ -22,7 +22,7 @@
   },
   "reproducibility": {
     "normalization_policy": "docs/pashto_normalization_v0.1.md",
-    "command": "python benchmarks/eval_nlp.py --dataset belebele_pbt_arab --model nllb-600m",
-    "config_ref": "benchmarks/configs/nlp_belebele_baseline.yaml"
+    "command": "TODO: replace with the exact NLP evaluation command used for this run.",
+    "config_ref": "TODO: point to the committed config, notebook, or run card used for this run."
   }
 }

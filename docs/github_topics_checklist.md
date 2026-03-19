@@ -30,7 +30,8 @@ Use this checklist to keep repository topics aligned with search intent and disc
 - [ ] Synonyms are present (pashto, pukhto, pushto).
 - [ ] No stale or misleading topics remain.
 - [ ] README keywords and topics are still consistent.
-- [ ] GitHub Pages home and search links are present in About website/docs.
+- [ ] GitHub Pages home is present in the About website field.
+- [ ] GitHub Pages search link is discoverable from the README and docs.
 
 ## Validation Commands
 

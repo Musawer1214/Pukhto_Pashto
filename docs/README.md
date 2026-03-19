@@ -9,10 +9,21 @@ This is the main guide area for contributors, beginners, and maintainers.
    - Papers search: [papers/index.html](papers/index.html)
 2. Understand the catalog:
    - [resource_catalog.md](resource_catalog.md)
-   - [../resources/README.md](../resources/README.md)
+   - [Repository resource index](https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/README.md)
 3. Learn contribution flow:
-   - [../CONTRIBUTING.md](../CONTRIBUTING.md)
+   - [Contribution guide](https://github.com/Musawer1214/pashto-language-resources/blob/main/CONTRIBUTING.md)
    - [resource_automation.md](resource_automation.md)
+
+## Local Setup
+
+Before using the validation or generation commands locally:
+
+```bash
+python -m venv .venv
+. .venv/bin/activate
+pip install --upgrade pip
+pip install -e ".[dev]"
+```
 
 ## 🎯 Pashto AI Pages
 
@@ -24,7 +35,7 @@ This is the main guide area for contributors, beginners, and maintainers.
 
 - Resource automation: [resource_automation.md](resource_automation.md)
 - Resource cycle runbook: [resource_cycle_runbook.md](resource_cycle_runbook.md)
-- Scripts overview: [../scripts/README.md](../scripts/README.md)
+- Scripts overview: [Scripts README on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/scripts/README.md)
 
 ## 🚀 Release and Platform
 
@@ -42,8 +53,8 @@ This is the main guide area for contributors, beginners, and maintainers.
 
 ## 🧾 Project Basics
 
-- Project purpose: [../PROJECT_PURPOSE.md](../PROJECT_PURPOSE.md)
-- Governance: [../GOVERNANCE.md](../GOVERNANCE.md)
-- License policy: [../LICENSE_POLICY.md](../LICENSE_POLICY.md)
-- Roadmap: [../ROADMAP.md](../ROADMAP.md)
-- Changelog: [../CHANGELOG.md](../CHANGELOG.md)
+- Project purpose: [PROJECT_PURPOSE.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/PROJECT_PURPOSE.md)
+- Governance: [GOVERNANCE.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/GOVERNANCE.md)
+- License policy: [LICENSE_POLICY.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/LICENSE_POLICY.md)
+- Roadmap: [ROADMAP.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/ROADMAP.md)
+- Changelog: [CHANGELOG.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/CHANGELOG.md)

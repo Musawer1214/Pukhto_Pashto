@@ -444,6 +444,7 @@ permalink: /papers/
       .controls .field.search { grid-column: span 2; }
       .summary { flex-direction: column; align-items: flex-start; }
       .stat-row { width: 100%; }
+      .crawl { display: none; }
     }
 
     @media (max-width: 520px) {
@@ -501,7 +502,7 @@ permalink: /papers/
           <select id="task"></select>
         </div>
         <div class="field">
-          <label for="status">Status</label>
+          <label for="status">Review State</label>
           <select id="status"></select>
         </div>
         <div class="field">
@@ -515,11 +516,11 @@ permalink: /papers/
         </div>
       </div>
 
-      <div class="action-row">
-        <div class="group" role="group" aria-label="Result view mode">
-          <button type="button" class="btn active" id="viewGrid">Grid View</button>
-          <button type="button" class="btn" id="viewList">List View</button>
-        </div>
+        <div class="action-row">
+          <div class="group" role="group" aria-label="Result view mode">
+          <button type="button" class="btn active" id="viewGrid" aria-pressed="true">Grid View</button>
+          <button type="button" class="btn" id="viewList" aria-pressed="false">List View</button>
+          </div>
         <div class="group">
           <button type="button" class="btn light" id="clearFilters">Clear Filters</button>
           <button type="button" class="btn brand" id="copyLink">Copy Search Link</button>
@@ -532,7 +533,7 @@ permalink: /papers/
         <button type="button" class="intent" data-intent="nlp">NLP</button>
         <button type="button" class="intent" data-intent="mt">Translation</button>
         <button type="button" class="intent" data-intent="ocr">OCR</button>
-        <button type="button" class="intent" data-intent="verified">Verified Only</button>
+        <button type="button" class="intent" data-intent="verified">Curated Only</button>
       </div>
     </section>
 
@@ -622,7 +623,8 @@ permalink: /papers/
     };
 
     const STATUS_LABELS = {
-      "verified": "Verified",
+      "verified": "Curated Verified",
+      "automated_verified": "Automated Verified",
       "candidate": "Candidate"
     };
 
@@ -709,6 +711,10 @@ permalink: /papers/
         entry.textContent = labelFormatter(opt);
         select.appendChild(entry);
       }
+      const field = select.closest(".field");
+      if (field) {
+        field.hidden = options.length <= 1;
+      }
     }
 
     function updateMetrics() {
@@ -725,7 +731,13 @@ permalink: /papers/
       els.results.classList.toggle("list", state.view === "list");
       els.viewGrid.classList.toggle("active", state.view === "grid");
       els.viewList.classList.toggle("active", state.view === "list");
+      els.viewGrid.setAttribute("aria-pressed", state.view === "grid" ? "true" : "false");
+      els.viewList.setAttribute("aria-pressed", state.view === "list" ? "true" : "false");
       syncUrl();
+    }
+
+    function reviewState(resource) {
+      return resource.review_state || resource.status || "unknown";
     }
 
     function matchesQuery(resource, query) {
@@ -756,8 +768,8 @@ permalink: /papers/
         sorted.sort((a, b) => (a.source || "").localeCompare(b.source || "") || (a.title || "").localeCompare(b.title || ""));
       } else {
         sorted.sort((a, b) => {
-          const av = a.status === "verified" ? 0 : 1;
-          const bv = b.status === "verified" ? 0 : 1;
+          const av = reviewState(a) === "verified" ? 0 : 1;
+          const bv = reviewState(b) === "verified" ? 0 : 1;
           if (av !== bv) return av - bv;
           return (a.title || "").localeCompare(b.title || "");
         });
@@ -776,7 +788,7 @@ permalink: /papers/
         if (!matchesQuery(resource, q)) return false;
         if (category && resource.category !== category) return false;
         if (source && resource.source !== source) return false;
-        if (status && resource.status !== status) return false;
+        if (status && reviewState(resource) !== status) return false;
         if (task && !(resource.tasks || []).includes(task)) return false;
         return true;
       }));
@@ -789,12 +801,26 @@ permalink: /papers/
       return `<span class="chip ${cls}">${esc(label)}</span>`;
     }
 
+    function activeFilterLabels() {
+      const labels = [];
+      if (els.q.value.trim()) labels.push(`Search: ${els.q.value.trim()}`);
+      if (els.category.value) labels.push(`Category: ${formatCategoryLabel(els.category.value)}`);
+      if (els.source.value) labels.push(`Source: ${formatSourceLabel(els.source.value)}`);
+      if (els.task.value) labels.push(`Task: ${formatTaskLabel(els.task.value)}`);
+      if (els.status.value) labels.push(`Review State: ${formatStatusLabel(els.status.value)}`);
+      return labels;
+    }
+
     function renderResults() {
       const items = state.filtered;
       els.countText.textContent = `${items.length} result${items.length === 1 ? "" : "s"} of ${state.all.length}`;
 
       if (!items.length) {
-        els.results.innerHTML = '<li class="empty">No Matches. Try Broadening Filters or Clearing One Filter at a Time.</li>';
+        const filters = activeFilterLabels();
+        const detail = filters.length
+          ? `<p>Active filters: ${esc(filters.join(" | "))}</p>`
+          : "<p>No active filters are applied.</p>";
+        els.results.innerHTML = `<li class="empty"><strong>No matches.</strong>${detail}<button type="button" class="btn light" data-empty-clear>Clear Filters</button></li>`;
         return;
       }
 
@@ -806,17 +832,22 @@ permalink: /papers/
         const evidenceText = esc(formatDisplayText(resource.evidence_text || "Evidence link"));
         const evidenceUrl = esc(resource.evidence_url || resource.url || "#");
         const tasks = (resource.tasks || []).map((t) => esc(formatTaskLabel(t))).join(", ") || "Not available";
+        const review = reviewState(resource);
+        const reviewNote = review === "automated_verified"
+          ? '<p class="text"><strong>Review Note:</strong> Automated intake entry. Confirm tasks and primary use before treating it as curated.</p>'
+          : "";
 
         return `
           <li class="card">
             <div class="chips">
               ${chip(formatCategoryLabel(resource.category || "unknown"), "category")}
               ${chip(formatSourceLabel(resource.source || "unknown"), "source")}
-              ${chip(formatStatusLabel(resource.status || "unknown"), "status")}
+              ${chip(formatStatusLabel(review), "status")}
             </div>
             <h2 class="title"><a href="${url}" target="_blank" rel="noreferrer">${title}</a></h2>
             <p class="text">${summary}</p>
             <p class="text"><strong>Primary Use:</strong> ${primaryUse}</p>
+            ${reviewNote}
             <p class="tasks"><strong>Tasks:</strong> ${tasks}</p>
             <div class="meta-links">
               <a class="mini-link" href="${url}" target="_blank" rel="noreferrer">Open Resource</a>
@@ -871,8 +902,8 @@ permalink: /papers/
       } else if (intent === "nlp") {
         els.task.value = "nlp";
       } else if (intent === "mt") {
-        els.task.value = "";
-        els.q.value = "translation";
+        els.task.value = "mt";
+        els.q.value = "";
       } else if (intent === "ocr") {
         els.task.value = "ocr";
       } else if (intent === "verified") {
@@ -902,7 +933,7 @@ permalink: /papers/
 
         fillSelect(els.category, uniqSorted(state.all.map((r) => r.category)), "All Categories", formatCategoryLabel);
         fillSelect(els.source, uniqSorted(state.all.map((r) => r.source)), "All Sources", formatSourceLabel);
-        fillSelect(els.status, uniqSorted(state.all.map((r) => r.status)), "All Statuses", formatStatusLabel);
+        fillSelect(els.status, uniqSorted(state.all.map((r) => reviewState(r))), "All Review States", formatStatusLabel);
         fillSelect(els.task, uniqSorted(state.all.flatMap((r) => r.tasks || [])), "All Tasks", formatTaskLabel);
 
         updateMetrics();
@@ -928,6 +959,11 @@ permalink: /papers/
     els.viewGrid.addEventListener("click", () => setView("grid"));
     els.viewList.addEventListener("click", () => setView("list"));
     els.clearFilters.addEventListener("click", clearFilters);
+    els.results.addEventListener("click", (event) => {
+      if (event.target instanceof HTMLElement && event.target.matches("[data-empty-clear]")) {
+        clearFilters();
+      }
+    });
     els.copyLink.addEventListener("click", copySearchLink);
     els.intents.forEach((button) => {
       button.addEventListener("click", () => applyIntent(button.dataset.intent));

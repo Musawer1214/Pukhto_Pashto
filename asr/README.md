@@ -1,6 +1,6 @@
 # 🎙️ ASR Workspace
 
-Place ASR baselines, training configs, and evaluation scripts here.
+This workspace tracks ASR baseline candidates and evaluation planning. It does not yet ship a committed local ASR evaluation script or benchmark result snapshot.
 
 ## ✅ Verified Pashto-Relevant ASR Models
 
@@ -27,3 +27,8 @@ Place ASR baselines, training configs, and evaluation scripts here.
 - Keep all model/eval runs reproducible with command logs and commit hashes.
 - Store evaluation outputs under [benchmarks/](../benchmarks/README.md) with model/version labels.
 - Track WER/CER with dataset split and normalization policy references.
+
+## Current Repo Status
+- Shipped today: verified external ASR references, search/catalog indexing, benchmark schema, run-card templates
+- Not shipped yet: checked-in local ASR eval command, config, and benchmark result JSON
+- Next artifact expected here: one reproducible run card plus one matching benchmark result entry

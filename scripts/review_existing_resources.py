@@ -111,10 +111,6 @@ def _resource_has_direct_pashto_signal(resource: dict[str, Any]) -> bool:
         if isinstance(markers, list):
             values.extend(marker for marker in markers if isinstance(marker, str))
 
-    tags = resource.get("tags")
-    if isinstance(tags, list):
-        values.extend(tag for tag in tags if isinstance(tag, str))
-
     return any(_contains_pashto_marker(value) for value in values)
 
 
@@ -272,6 +268,7 @@ def review_resources(
         metadata_pashto = _resource_metadata_has_pashto_signal(resource)
         direct_pashto = _resource_has_direct_pashto_signal(resource)
         page_pashto = _contains_pashto_marker(probe.content_sample)
+        signal_origin = "direct" if direct_pashto else "metadata" if metadata_pashto else "none"
         page_not_found = any(pattern in probe.content_sample.casefold() for pattern in NOT_FOUND_PATTERNS)
 
         if page_not_found and not page_pashto:
@@ -296,6 +293,7 @@ def review_resources(
                         "metadata_pashto": metadata_pashto,
                         "direct_pashto": direct_pashto,
                         "page_pashto": page_pashto,
+                        "signal_origin": signal_origin,
                     },
                 }
             )

@@ -15,11 +15,12 @@
 - Link check: `python scripts/check_links.py`
 - Normalization check: `python scripts/validate_normalization.py data/processed/normalization_seed_v0.1.tsv`
 - Resource catalog check: `python scripts/validate_resource_catalog.py`
+- Contract check: `python scripts/validate_repo_contracts.py --require-jsonschema`
 - Tests: `python -m pytest -q` (if available)
 
 ## Known Limitations
 
-- List current caveats.
+- List current caveats, or write `N/A` with a short explanation.
 
 ## References
 

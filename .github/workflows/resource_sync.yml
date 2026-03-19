@@ -18,6 +18,10 @@ on:
         required: false
         default: "true"
 
+concurrency:
+  group: resource-sync
+  cancel-in-progress: false
+
 permissions:
   contents: write
   pull-requests: write
@@ -30,6 +34,7 @@ env:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -64,10 +69,66 @@ jobs:
           fi
 
       - name: Validate catalog
-        run: python scripts/validate_resource_catalog.py
+        run: python scripts/validate_resource_catalog.py --require-jsonschema
 
       - name: Generate resource views
         run: python scripts/generate_resource_views.py
+
+      - name: Validate repository contracts
+        run: python scripts/validate_repo_contracts.py --require-jsonschema
+
+      - name: Audit resource pipeline
+        run: python scripts/audit_resource_pipeline.py --output .resource_audit.json
+
+      - name: Build review summary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          catalog = json.loads(Path("resources/catalog/resources.json").read_text(encoding="utf-8"))
+          pending = json.loads(Path("resources/catalog/pending_candidates.json").read_text(encoding="utf-8"))
+          technical = json.loads(Path("docs/search/resources.json").read_text(encoding="utf-8"))
+          papers = json.loads(Path("docs/papers/resources.json").read_text(encoding="utf-8"))
+          audit = json.loads(Path(".resource_audit.json").read_text(encoding="utf-8"))
+
+          source_errors = pending.get("errors", [])
+          prior_removals = pending.get("skipped_prior_removals", [])
+          warning_lines = []
+          if source_errors:
+              warning_lines.append(f"- Source errors: {len(source_errors)}")
+          if prior_removals:
+              warning_lines.append(f"- Skipped prior hard removals: {len(prior_removals)}")
+          if not warning_lines:
+              warning_lines.append("- No source errors or prior-removal skips recorded")
+
+          body = "\n".join(
+              [
+                  "Automated daily resource sync.",
+                  "",
+                  "Summary",
+                  f"- Catalog resources: {len(catalog.get('resources', []))}",
+                  f"- Pending candidates: {pending.get('candidate_count', 0)}",
+                  f"- Technical search rows: {technical.get('count', 0)}",
+                  f"- Papers search rows: {papers.get('count', 0)}",
+                  "",
+                  "Pipeline audit",
+                  f"- Candidate-like verified rows: {len(audit.get('candidate_like_verified', []))}",
+                  f"- Metadata-only verified rows: {len(audit.get('metadata_only_verified', []))}",
+                  f"- Duplicate title groups: {len(audit.get('duplicate_title_groups', []))}",
+                  f"- DataCite project collisions: {len(audit.get('datacite_project_collisions', []))}",
+                  "",
+                  "Warnings",
+                  *warning_lines,
+                  "",
+                  "Review checklist",
+                  "- Confirm high-confidence auto-promotions look correct",
+                  "- Review any pending candidates left for manual enrichment",
+                  "- Assign a review owner and backup reviewer before merge if this change is part of a release",
+              ]
+          )
+          Path(".resource_sync_pr_body.md").write_text(body + "\n", encoding="utf-8")
+          PY
 
       - name: Ensure labels exist
         uses: actions/github-script@v7
@@ -106,14 +167,7 @@ jobs:
           delete-branch: true
           commit-message: "chore(resources): sync candidate feed and auto-promote valid entries"
           title: "chore(resources): sync and auto-promote Pashto resources"
-          body: |
-            Automated daily resource sync.
-
-            Scope:
-            - Reviews existing catalog entries and removes stale ones only with strong logged reasons
-            - Updates `resources/catalog/pending_candidates.json`
-            - Auto-promotes valid non-duplicate candidates into `resources/catalog/resources.json`
-            - Regenerates resource indexes plus technical and papers search payloads
+          body-path: .resource_sync_pr_body.md
           labels: |
             resource-update
             needs-review

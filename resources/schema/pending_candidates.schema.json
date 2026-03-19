@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://musawer1214.github.io/pashto-language-resources/resources/schema/pending_candidates.schema.json",
+  "title": "Pashto Pending Candidates Payload",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "generated_on",
+    "sources",
+    "candidate_count",
+    "candidates"
+  ],
+  "properties": {
+    "generated_on": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "candidate_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/candidate"
+      }
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "skipped_prior_removals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "url",
+          "reason",
+          "previous_removed_on"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "previous_removed_on": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "url",
+        "category",
+        "source",
+        "status",
+        "summary",
+        "primary_use",
+        "pashto_evidence",
+        "tags"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "dataset",
+            "model",
+            "benchmark",
+            "tool",
+            "paper",
+            "project",
+            "code"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "huggingface",
+            "mozilla",
+            "kaggle",
+            "github",
+            "gitlab",
+            "arxiv",
+            "openalex",
+            "crossref",
+            "zenodo",
+            "dataverse",
+            "datacite",
+            "meta",
+            "other"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "const": "candidate"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 10
+        },
+        "primary_use": {
+          "type": "string",
+          "minLength": 3
+        },
+        "license": {
+          "type": "string"
+        },
+        "tasks": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "pashto_evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "evidence_text",
+            "evidence_url",
+            "markers"
+          ],
+          "properties": {
+            "evidence_text": {
+              "type": "string",
+              "minLength": 3
+            },
+            "evidence_url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https?://"
+            },
+            "markers": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

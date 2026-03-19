@@ -7,10 +7,10 @@ This project follows the release scheme `vMAJOR.CODE.RESOURCE`.
 | Version Line | Security Updates |
 | --- | --- |
 | `main` | Yes |
-| `v1.x.x` | Yes |
+| Latest published `v1` release | Fixes ship through the next `main`-based release |
 | `v0.x` and older | No |
 
-Only the latest `main` branch and current major release line receive active security fixes.
+Only `main` receives direct code fixes. For the active `v1` line, fixes are published through the next tagged release cut from `main` rather than a long-lived maintenance branch.
 
 ## Reporting a Vulnerability
 

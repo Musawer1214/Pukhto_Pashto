@@ -1,6 +1,6 @@
 {
   "version": "1.1.1",
-  "updated_on": "2026-03-18",
+  "updated_on": "2026-03-19",
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -7379,6 +7379,53 @@
         "pashto",
         "candidate",
         "paper"
+      ]
+    },
+    {
+      "id": "candidate-s2-cultural-identity-and-pragmatic-competence-a-cross-cultural-analysis-of-punjabi-",
+      "title": "Cultural Identity and Pragmatic Competence: A Cross-Cultural Analysis of Punjabi and Pashto Learners of English in Pakistan",
+      "url": "https://www.semanticscholar.org/paper/85c80a8f97b12a1e3238126cbee321a219ff87e4",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "This study examines the influence of cultural identity on pragmatic competence among Punjabi and Pashto speakers learning English in Pakistan. It explores how learners perform speech acts such as requests, refusals, and apologies, focusing",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+        "evidence_url": "https://www.semanticscholar.org/paper/85c80a8f97b12a1e3238126cbee321a219ff87e4",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ]
+    },
+    {
+      "id": "candidate-datacite-project-fairness-evaluation-and-inference-level-mitigation-in-llms",
+      "title": "Fairness Evaluation and Inference Level Mitigation in LLMs",
+      "url": "https://figshare.mq.edu.au/articles/thesis/Fairness_Evaluation_and_Inference_Level_Mitigation_in_LLMs/31093552",
+      "category": "project",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Recent advances in Large Language Models (LLMs) have shown remarkable capability and now sit at the center of this revolution, delivering strong performance across diverse Natural Language Processing (NLP) and multilingualism tasks. LLMs sh",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://figshare.mq.edu.au/articles/thesis/Fairness_Evaluation_and_Inference_Level_Mitigation_in_LLMs/31093552",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "project",
+        "datacite"
       ]
     }
   ]

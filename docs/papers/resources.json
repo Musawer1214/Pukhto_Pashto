@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-03-18T00:00:00Z",
-  "count": 168,
+  "generated_on": "2026-03-19T00:00:00Z",
+  "count": 169,
   "resources": [
     {
       "id": "paper-s2-psocr-lmm-pashto",
@@ -3695,6 +3695,27 @@
       ],
       "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
       "evidence_url": "https://www.semanticscholar.org/paper/3741ccd390216a00431606d85f6c21a174244ccb",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-s2-cultural-identity-and-pragmatic-competence-a-cross-cultural-analysis-of-punjabi-",
+      "title": "Cultural Identity and Pragmatic Competence: A Cross-Cultural Analysis of Punjabi and Pashto Learners of English in Pakistan",
+      "url": "https://www.semanticscholar.org/paper/85c80a8f97b12a1e3238126cbee321a219ff87e4",
+      "category": "paper",
+      "source": "other",
+      "status": "verified",
+      "summary": "This study examines the influence of cultural identity on pragmatic competence among Punjabi and Pashto speakers learning English in Pakistan. It explores how learners perform speech acts such as requests, refusals, and apologies, focusing",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "paper"
+      ],
+      "evidence_text": "Matched by explicit Pashto marker in paper title from Semantic Scholar search.",
+      "evidence_url": "https://www.semanticscholar.org/paper/85c80a8f97b12a1e3238126cbee321a219ff87e4",
       "markers": [
         "pashto"
       ]

@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-03-18T00:00:00Z",
-  "count": 129,
+  "generated_on": "2026-03-19T00:00:00Z",
+  "count": 130,
   "resources": [
     {
       "id": "dataset-common-voice-ps-v24",
@@ -3072,6 +3072,28 @@
       ],
       "evidence_text": "Matched by Pashto keyword in Hugging Face search results.",
       "evidence_url": "https://huggingface.co/datasets/junaid008/PashtoEval-150",
+      "markers": [
+        "pashto"
+      ]
+    },
+    {
+      "id": "candidate-datacite-project-fairness-evaluation-and-inference-level-mitigation-in-llms",
+      "title": "Fairness Evaluation and Inference Level Mitigation in LLMs",
+      "url": "https://figshare.mq.edu.au/articles/thesis/Fairness_Evaluation_and_Inference_Level_Mitigation_in_LLMs/31093552",
+      "category": "project",
+      "source": "datacite",
+      "status": "verified",
+      "summary": "Recent advances in Large Language Models (LLMs) have shown remarkable capability and now sit at the center of this revolution, delivering strong performance across diverse Natural Language Processing (NLP) and multilingualism tasks. LLMs sh",
+      "primary_use": "Automated discovery entry for Pashto resource tracking.",
+      "tasks": [],
+      "tags": [
+        "pashto",
+        "candidate",
+        "project",
+        "datacite"
+      ],
+      "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+      "evidence_url": "https://figshare.mq.edu.au/articles/thesis/Fairness_Evaluation_and_Inference_Level_Mitigation_in_LLMs/31093552",
       "markers": [
         "pashto"
       ]

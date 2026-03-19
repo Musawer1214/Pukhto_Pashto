@@ -59,3 +59,43 @@ def test_fetch_datacite_records_maps_resource_types_and_strips_html(monkeypatch)
     assert [item["category"] for item in results] == ["dataset", "code", "paper"]
     assert results[0]["url"] == "https://doi.org/10.1234/pashto-dataset"
     assert results[0]["summary"] == "Curated Pashto speech corpus."
+
+
+def test_sync_skips_candidates_that_match_prior_hard_removals(tmp_path) -> None:
+    removal_log = {
+        "updated_on": "2026-03-20",
+        "entries": [
+            {
+                "removed_on": "2026-03-19T00:00:00Z",
+                "id": "candidate-kaggle-pashto-dead",
+                "title": "Dead candidate",
+                "url": "https://example.org/dead",
+                "reasons": ["URL returned hard-missing HTTP status 404."],
+                "evidence": {"status_code": 404},
+            }
+        ],
+    }
+    path = tmp_path / "removal_log.json"
+    path.write_text(json.dumps(removal_log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    blocked_ids, blocked_urls, lookup = sync_module._load_prior_hard_removals(path)
+    kept, skipped = sync_module._filter_prior_hard_removals(
+        [
+            {
+                "id": "candidate-kaggle-pashto-dead",
+                "title": "Dead candidate",
+                "url": "https://example.org/dead",
+            },
+            {
+                "id": "candidate-hf-dataset-live",
+                "title": "Pashto Live Dataset",
+                "url": "https://example.org/live",
+            },
+        ],
+        blocked_ids,
+        blocked_urls,
+        lookup,
+    )
+
+    assert [item["id"] for item in kept] == ["candidate-hf-dataset-live"]
+    assert skipped[0]["id"] == "candidate-kaggle-pashto-dead"

@@ -61,10 +61,35 @@ This project helps contributors find, verify, and improve Pashto AI resources in
 - Run scripts locally to discover, validate, and regenerate outputs.
 
 ```bash
+python -m venv .venv
+. .venv/bin/activate
+pip install -e ".[dev]"
 python scripts/validate_resource_catalog.py
 python scripts/generate_resource_views.py
+python scripts/validate_repo_contracts.py --require-jsonschema
+python scripts/audit_resource_pipeline.py
 python scripts/check_links.py
 python -m pytest -q
+```
+
+## Local Setup
+
+Use one supported local setup path from repo root:
+
+```bash
+python -m venv .venv
+. .venv/bin/activate
+pip install --upgrade pip
+pip install -e ".[dev]"
+```
+
+Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -e ".[dev]"
 ```
 
 ## 🚀 Contributing

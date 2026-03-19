@@ -34,6 +34,9 @@ jobs:
       - name: Generate resource views
         run: python scripts/generate_resource_views.py
 
+      - name: Validate repository contracts
+        run: python scripts/validate_repo_contracts.py --require-jsonschema
+
       - name: Ensure generated files are committed
         run: git diff --exit-code
 

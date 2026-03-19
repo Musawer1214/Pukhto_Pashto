@@ -41,18 +41,6 @@
 - Why useful: parallel Pashto-English bitext for translation baselines and text normalization cross-checks.
 - How to use here: keep in external eval/training split plans and log subset/version in run cards.
 
-### 🎤 Pashto Isolated Words Speech Dataset (Kaggle)
-- Link: [kaggle.com/datasets/engrirf/pashto-isolated-words-speech-dataset](https://www.kaggle.com/datasets/engrirf/pashto-isolated-words-speech-dataset)
-- Pashto validation: dataset title is explicitly Pashto isolated-word speech.
-- Why useful: useful for small-footprint ASR or keyword-spotting experiments.
-- How to use here: treat as task-specific speech data and document licensing/collection assumptions before use.
-
-### 🧠 Pashto Word Embeddings (Kaggle)
-- Link: [kaggle.com/datasets/drijaz/pashto-word-embeddings](https://www.kaggle.com/datasets/drijaz/pashto-word-embeddings)
-- Pashto validation: dataset description states pretrained Pashto embeddings.
-- Why useful: quick-start lexical semantics baseline for NLP experiments.
-- How to use here: benchmark against transformer encoders in downstream Pashto tasks.
-
 ## First Contribution (Normalization Starter)
 - [processed/normalization_seed_v0.1.tsv](processed/normalization_seed_v0.1.tsv) starter normalization examples
 - [docs/pashto_normalization_v0.1.md](../docs/pashto_normalization_v0.1.md) baseline normalization policy

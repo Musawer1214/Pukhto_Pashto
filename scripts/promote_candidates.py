@@ -23,8 +23,13 @@ try:
 except ModuleNotFoundError:
     from review_existing_resources import probe_resource_url
 
+try:
+    from scripts.resource_quality import PLACEHOLDER_PRIMARY_USE, assess_candidate_confidence
+except ModuleNotFoundError:
+    from resource_quality import PLACEHOLDER_PRIMARY_USE, assess_candidate_confidence
 
-PLACEHOLDER_PRIMARY_USE = "Needs maintainer review before promotion to verified catalog."
+
+AUTO_PROMOTED_PRIMARY_USE = "Cataloged Pashto resource discovered through the automated intake pipeline."
 NOT_FOUND_PATTERNS = (
     "repository not found",
     "model not found",
@@ -51,10 +56,14 @@ def _prepare_candidate(candidate: dict[str, Any]) -> dict[str, Any]:
     promoted = dict(candidate)
     promoted["status"] = "verified"
     promoted["tasks"] = _normalized_tasks(promoted.get("tasks"))
+    if isinstance(promoted.get("tags"), list):
+        promoted["tags"] = [
+            tag for tag in promoted["tags"] if isinstance(tag, str) and tag.strip() and tag != "candidate"
+        ]
 
     primary_use = str(promoted.get("primary_use", "")).strip()
     if primary_use == PLACEHOLDER_PRIMARY_USE:
-        promoted["primary_use"] = "Automated discovery entry for Pashto resource tracking."
+        promoted["primary_use"] = AUTO_PROMOTED_PRIMARY_USE
     return promoted
 
 
@@ -74,6 +83,7 @@ def promote_candidates(
     pending_payload: dict[str, Any],
     *,
     max_promotions: int | None = None,
+    allow_review_confidence: bool = False,
     verify_urls: bool = False,
     url_timeout: float = 10.0,
 ) -> tuple[list[dict[str, Any]], dict[str, int]]:
@@ -97,7 +107,14 @@ def promote_candidates(
     }
 
     promoted: list[dict[str, Any]] = []
-    stats = {"total": len(candidates), "promoted": 0, "duplicate": 0, "invalid": 0, "unavailable": 0}
+    stats = {
+        "total": len(candidates),
+        "promoted": 0,
+        "duplicate": 0,
+        "invalid": 0,
+        "unavailable": 0,
+        "needs_review": 0,
+    }
 
     for candidate in candidates:
         if max_promotions is not None and len(promoted) >= max_promotions:
@@ -122,6 +139,11 @@ def promote_candidates(
             stats["unavailable"] += 1
             continue
 
+        confidence, _reasons = assess_candidate_confidence(candidate)
+        if confidence == "low" or (confidence == "review" and not allow_review_confidence):
+            stats["needs_review"] += 1
+            continue
+
         errors = validate_resource(resource, len(resources) + len(promoted))
         if errors:
             stats["invalid"] += 1
@@ -144,6 +166,11 @@ def main() -> int:
     parser.add_argument("--catalog", default="resources/catalog/resources.json")
     parser.add_argument("--candidates", default="resources/catalog/pending_candidates.json")
     parser.add_argument("--max-promotions", type=int, default=None)
+    parser.add_argument(
+        "--allow-review-confidence",
+        action="store_true",
+        help="Also promote borderline direct-signal candidates that still need deeper maintainer enrichment.",
+    )
     parser.add_argument("--skip-url-check", action="store_true")
     parser.add_argument("--url-timeout", type=float, default=10.0)
     args = parser.parse_args()
@@ -169,13 +196,15 @@ def main() -> int:
         catalog,
         pending_payload,
         max_promotions=args.max_promotions,
+        allow_review_confidence=args.allow_review_confidence,
         verify_urls=not args.skip_url_check,
         url_timeout=args.url_timeout,
     )
     if not promoted:
         print(
             "Promotion complete: no new verified resources "
-            f"(duplicates={stats['duplicate']}, invalid={stats['invalid']}, unavailable={stats['unavailable']})"
+            f"(duplicates={stats['duplicate']}, invalid={stats['invalid']}, "
+            f"unavailable={stats['unavailable']}, needs_review={stats['needs_review']})"
         )
         return 0
 
@@ -184,7 +213,7 @@ def main() -> int:
         "Promotion complete: "
         "promoted="
         f"{stats['promoted']} duplicate={stats['duplicate']} invalid={stats['invalid']} "
-        f"unavailable={stats['unavailable']}"
+        f"unavailable={stats['unavailable']} needs_review={stats['needs_review']}"
     )
     return 0
 

@@ -9,12 +9,14 @@
 
 - Changelog summary in [../CHANGELOG.md](../CHANGELOG.md)
 - Benchmark snapshot in [../benchmarks/results/README.md](../benchmarks/results/README.md) format
-- Known limitations section in release notes
+- Known limitations section in release notes (use `N/A` only when explicitly justified)
 - Reproducible commands or scripts
+- Named release owner and backup reviewer in the release task
 - Validation checks:
   - `python scripts/check_links.py`
   - `python scripts/validate_normalization.py data/processed/normalization_seed_v0.1.tsv`
   - `python scripts/validate_resource_catalog.py`
+  - `python scripts/validate_repo_contracts.py --require-jsonschema`
 
 ## Versioning
 

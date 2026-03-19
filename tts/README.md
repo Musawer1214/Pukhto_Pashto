@@ -1,6 +1,6 @@
 # 🔊 TTS Workspace
 
-Place TTS baselines, training configs, and quality-evaluation scripts here.
+This workspace tracks TTS baseline candidates and evaluation planning. It does not yet ship a committed local TTS evaluation script, prompt set, or benchmark result snapshot.
 
 ## ✅ Verified Pashto-Relevant TTS Resources
 
@@ -24,3 +24,8 @@ Place TTS baselines, training configs, and quality-evaluation scripts here.
 - Keep text normalization consistent between ASR and TTS experiments.
 - Pair objective metrics with human listening checks in benchmark notes.
 - Document voice style, speaker metadata, and license provenance for every release.
+
+## Current Repo Status
+- Shipped today: verified external TTS references, benchmark schema/templates, and experiment run-card templates
+- Not shipped yet: checked-in prompt set, local evaluation command, config, and benchmark result JSON
+- Next artifact expected here: one reproducible prompt set or run card tied to a real benchmark result

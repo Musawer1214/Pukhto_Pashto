@@ -4,10 +4,10 @@ This guide covers repository operations that can be versioned in code and manual
 
 ## In-Repo Operations (Versioned)
 
-- Issue templates: [../.github/ISSUE_TEMPLATE/](../.github/ISSUE_TEMPLATE/)
-- PR template: [../.github/PULL_REQUEST_TEMPLATE.md](../.github/PULL_REQUEST_TEMPLATE.md)
-- CI workflow: [../.github/workflows/ci.yml](../.github/workflows/ci.yml)
-- Release template: [../.github/release_template.md](../.github/release_template.md)
+- Issue templates: [Issue templates on GitHub](https://github.com/Musawer1214/pashto-language-resources/tree/main/.github/ISSUE_TEMPLATE)
+- PR template: [PULL_REQUEST_TEMPLATE.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/.github/PULL_REQUEST_TEMPLATE.md)
+- CI workflow: [ci.yml on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/.github/workflows/ci.yml)
+- Release template: [release_template.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/.github/release_template.md)
 
 ## Manual GitHub UI Steps (Not Stored in Repo)
 
@@ -22,7 +22,7 @@ This guide covers repository operations that can be versioned in code and manual
 
 - About description should include: `Pashto`, `ASR`, `TTS`, `NLP`, and `machine translation`.
 - Topics should include at least: `pashto`, `pukhto`, `pushto`, `asr`, `tts`, `nlp`, `language-resources`.
-- Website should point to GitHub Pages search or docs home.
+- Website should point to [the GitHub Pages home](https://musawer1214.github.io/pashto-language-resources/).
 - After renaming the repository, update pinned repositories and profile links.
 
 ## Recommended Project Board Columns

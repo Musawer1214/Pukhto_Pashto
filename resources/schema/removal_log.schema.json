@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://musawer1214.github.io/pashto-language-resources/resources/schema/removal_log.schema.json",
+  "title": "Pashto Removal Log",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "updated_on",
+    "entries"
+  ],
+  "properties": {
+    "updated_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "removed_on",
+          "id",
+          "title",
+          "url",
+          "reasons",
+          "evidence"
+        ],
+        "properties": {
+          "removed_on": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "reasons": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "evidence": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "status_code": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "final_url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "metadata_pashto": {
+                "type": "boolean"
+              },
+              "direct_pashto": {
+                "type": "boolean"
+              },
+              "page_pashto": {
+                "type": "boolean"
+              },
+              "signal_origin": {
+                "type": "string",
+                "enum": [
+                  "direct",
+                  "metadata",
+                  "none"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

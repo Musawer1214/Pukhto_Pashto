@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://musawer1214.github.io/pashto-language-resources/resources/schema/search_payload.schema.json",
+  "title": "Pashto Search Payload",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "generated_on",
+    "count",
+    "resources"
+  ],
+  "properties": {
+    "generated_on": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/searchResource"
+      }
+    }
+  },
+  "$defs": {
+    "searchResource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "url",
+        "category",
+        "source",
+        "status",
+        "review_state",
+        "summary",
+        "primary_use",
+        "tasks",
+        "tags",
+        "evidence_text",
+        "evidence_url",
+        "markers",
+        "signal_origin",
+        "direct_pashto_signal",
+        "quality_flags"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "dataset",
+            "model",
+            "benchmark",
+            "tool",
+            "paper",
+            "project",
+            "code"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "huggingface",
+            "mozilla",
+            "kaggle",
+            "github",
+            "gitlab",
+            "arxiv",
+            "openalex",
+            "crossref",
+            "zenodo",
+            "dataverse",
+            "datacite",
+            "meta",
+            "other"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "candidate"
+          ]
+        },
+        "review_state": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "automated_verified",
+            "candidate"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 10
+        },
+        "primary_use": {
+          "type": "string",
+          "minLength": 3
+        },
+        "tasks": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evidence_text": {
+          "type": "string",
+          "minLength": 3
+        },
+        "evidence_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "markers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "signal_origin": {
+          "type": "string",
+          "enum": [
+            "direct",
+            "metadata",
+            "none"
+          ]
+        },
+        "direct_pashto_signal": {
+          "type": "boolean"
+        },
+        "quality_flags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

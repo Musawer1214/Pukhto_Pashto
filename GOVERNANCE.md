@@ -15,6 +15,8 @@ Lightweight maintainer model with transparent decision-making.
 
 ## 📦 Release ownership
 - Each release has one responsible maintainer and one backup reviewer.
+- Record those handles in the release task before publishing.
+- Record a review owner on automated sync PRs before merge when they feed a tagged release.
 
 ## ⚖️ Conflict resolution
 - Follow [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).

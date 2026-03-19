@@ -10,6 +10,21 @@ import json
 from pathlib import Path
 from typing import Any
 
+try:
+    from scripts.resource_quality import (
+        resource_has_direct_pashto_signal,
+        resource_quality_flags,
+        resource_review_state,
+        resource_signal_origin,
+    )
+except ModuleNotFoundError:
+    from resource_quality import (
+        resource_has_direct_pashto_signal,
+        resource_quality_flags,
+        resource_review_state,
+        resource_signal_origin,
+    )
+
 
 CATEGORY_CONFIG = {
     "dataset": ("resources/datasets/README.md", "Datasets"),
@@ -29,8 +44,11 @@ def _load_catalog(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def _write_text_file(path: Path, content: str) -> None:
+def _write_text_file(path: Path, content: str) -> bool:
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return False
     path.write_text(content, encoding="utf-8", newline="\n")
+    return True
 
 
 def _escape_cell(value: str) -> str:
@@ -117,27 +135,33 @@ def _write_resources_home(path: Path, counts: dict[str, int], total_verified: in
     _write_text_file(path, "\n".join(lines))
 
 
+def _search_record(resource: dict[str, Any]) -> dict[str, Any]:
+    evidence = resource["pashto_evidence"]
+    return {
+        "id": resource["id"],
+        "title": resource["title"],
+        "url": resource["url"],
+        "category": resource["category"],
+        "source": resource["source"],
+        "status": resource["status"],
+        "review_state": resource_review_state(resource),
+        "summary": resource["summary"],
+        "primary_use": resource["primary_use"],
+        "tasks": resource.get("tasks", []),
+        "tags": resource["tags"],
+        "evidence_text": evidence["evidence_text"],
+        "evidence_url": evidence["evidence_url"],
+        "markers": evidence["markers"],
+        "signal_origin": resource_signal_origin(resource),
+        "direct_pashto_signal": resource_has_direct_pashto_signal(resource),
+        "quality_flags": resource_quality_flags(resource),
+    }
+
+
 def _build_search_payload(resources: list[dict[str, Any]], updated_on: str) -> dict[str, Any]:
     search_items: list[dict[str, Any]] = []
     for resource in resources:
-        evidence = resource["pashto_evidence"]
-        search_items.append(
-            {
-                "id": resource["id"],
-                "title": resource["title"],
-                "url": resource["url"],
-                "category": resource["category"],
-                "source": resource["source"],
-                "status": resource["status"],
-                "summary": resource["summary"],
-                "primary_use": resource["primary_use"],
-                "tasks": resource.get("tasks", []),
-                "tags": resource["tags"],
-                "evidence_text": evidence["evidence_text"],
-                "evidence_url": evidence["evidence_url"],
-                "markers": evidence["markers"],
-            }
-        )
+        search_items.append(_search_record(resource))
 
     return {
         "generated_on": f"{updated_on}T00:00:00Z",

@@ -36,11 +36,11 @@ def _candidate(*, rid: str, title: str, url: str, category: str = "dataset") -> 
         "title": title,
         "url": url,
         "category": category,
-        "source": "other",
+        "source": "huggingface",
         "status": "candidate",
         "summary": "Candidate entry for automated promotion tests.",
         "primary_use": PLACEHOLDER_PRIMARY_USE,
-        "tasks": [],
+        "tasks": ["asr"],
         "pashto_evidence": {
             "evidence_text": "Contains explicit Pashto marker in evidence text.",
             "evidence_url": url,
@@ -69,19 +69,19 @@ def test_promote_candidates_promotes_valid_non_duplicate_entries() -> None:
     assert stats["promoted"] == 1
     assert catalog["updated_on"] == date.today().isoformat()
     assert catalog["resources"][-1]["status"] == "verified"
-    assert catalog["resources"][-1]["primary_use"] == "Automated discovery entry for Pashto resource tracking."
+    assert catalog["resources"][-1]["primary_use"] == "Cataloged Pashto resource discovered through the automated intake pipeline."
+    assert "candidate" not in catalog["resources"][-1]["tags"]
 
 
 def test_promote_candidates_skips_duplicates_and_invalid_entries() -> None:
     catalog = _catalog()
     invalid = _candidate(
         rid="model-invalid",
-        title="Generic Multilingual Model",
-        url="https://example.org/model-invalid",
+        title="Pashto Invalid Model",
+        url="https://example.org/pashto-model-invalid",
         category="model",
     )
-    invalid["pashto_evidence"]["markers"] = ["multilingual"]
-    invalid["pashto_evidence"]["evidence_text"] = "Language support listed in docs."
+    invalid["pashto_evidence"]["markers"] = []
 
     pending = {
         "candidate_count": 3,
@@ -106,6 +106,7 @@ def test_promote_candidates_skips_duplicates_and_invalid_entries() -> None:
     assert stats["promoted"] == 0
     assert stats["duplicate"] == 2
     assert stats["invalid"] == 1
+    assert stats["needs_review"] == 0
     assert catalog["updated_on"] == "2026-02-18"
     assert len(catalog["resources"]) == 1
 
@@ -159,3 +160,41 @@ def test_promote_candidates_skips_unavailable_when_url_check_enabled(monkeypatch
     assert promoted == []
     assert stats["promoted"] == 0
     assert stats["unavailable"] == 1
+
+
+def test_promote_candidates_leaves_review_confidence_entries_pending_by_default() -> None:
+    catalog = _catalog()
+    review_candidate = _candidate(
+        rid="paper-review",
+        title="Pashto Review Paper",
+        url="https://example.org/pashto-review-paper",
+        category="paper",
+    )
+    review_candidate["source"] = "other"
+    review_candidate["summary"] = "Candidate paper returned from Semantic Scholar search for Pashto."
+    review_candidate["tasks"] = []
+    pending = {"candidate_count": 1, "candidates": [review_candidate]}
+
+    promoted, stats = promote_candidates(catalog, pending)
+
+    assert promoted == []
+    assert stats["needs_review"] == 1
+
+
+def test_promote_candidates_can_allow_review_confidence_entries() -> None:
+    catalog = _catalog()
+    review_candidate = _candidate(
+        rid="paper-review",
+        title="Pashto Review Paper",
+        url="https://example.org/pashto-review-paper",
+        category="paper",
+    )
+    review_candidate["source"] = "other"
+    review_candidate["summary"] = "Candidate paper returned from Semantic Scholar search for Pashto."
+    review_candidate["tasks"] = []
+    pending = {"candidate_count": 1, "candidates": [review_candidate]}
+
+    promoted, stats = promote_candidates(catalog, pending, allow_review_confidence=True)
+
+    assert len(promoted) == 1
+    assert stats["needs_review"] == 0

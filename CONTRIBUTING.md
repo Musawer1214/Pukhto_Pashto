@@ -2,6 +2,26 @@
 
 Thanks for helping build open Pashto AI resources.
 
+## Local Setup
+
+Set up one local environment from repo root before editing or running checks:
+
+```bash
+python -m venv .venv
+. .venv/bin/activate
+pip install --upgrade pip
+pip install -e ".[dev]"
+```
+
+Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -e ".[dev]"
+```
+
 ## 🧩 Ways to Contribute
 - Data recording and validation
 - Text normalization and terminology fixes
@@ -26,7 +46,9 @@ Then contribute here by opening an issue/PR with:
 ## 🔍 External Resource Contribution Rules
 - Add or update entries in [resources/catalog/resources.json](resources/catalog/resources.json) using [resources/catalog/resource.template.json](resources/catalog/resource.template.json).
 - Validate catalog changes with `python scripts/validate_resource_catalog.py`.
+- Validate catalog-adjacent contracts with `python scripts/validate_repo_contracts.py --require-jsonschema`.
 - Regenerate resource docs and search data with `python scripts/generate_resource_views.py`.
+- Run `python scripts/audit_resource_pipeline.py` when touching review, promotion, or dedupe logic.
 - Use [docs/resource_catalog.md](docs/resource_catalog.md) and [docs/resource_automation.md](docs/resource_automation.md) for full rules.
 - Prefer official pages and model/dataset cards over third-party reposts.
 

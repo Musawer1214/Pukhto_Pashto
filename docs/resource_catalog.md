@@ -1,6 +1,6 @@
 # 📦 Verified Pashto Resource Catalog
 
-Catalog freshness is tracked in [../resources/catalog/resources.json](../resources/catalog/resources.json)
+Catalog freshness is tracked in [resources/catalog/resources.json on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/catalog/resources.json)
 via the `updated_on` field.
 
 This page explains how Pashto resources are stored, validated, and published.
@@ -14,9 +14,10 @@ This page explains how Pashto resources are stored, validated, and published.
 
 ## 🧱 Structured Data Files
 
-- Canonical JSON: [../resources/catalog/resources.json](../resources/catalog/resources.json)
-- Candidate feed: [../resources/catalog/pending_candidates.json](../resources/catalog/pending_candidates.json)
-- JSON schema: [../resources/schema/resource.schema.json](../resources/schema/resource.schema.json)
+- Canonical JSON: [resources/catalog/resources.json on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/catalog/resources.json)
+- Candidate feed: [resources/catalog/pending_candidates.json on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/catalog/pending_candidates.json)
+- JSON schema: [resources/schema/resource.schema.json on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/resources/schema/resource.schema.json)
+- Contract schemas: [resources/schema/ on GitHub](https://github.com/Musawer1214/pashto-language-resources/tree/main/resources/schema)
 
 ## 📚 Generated Resource Views
 
@@ -38,11 +39,11 @@ This page explains how Pashto resources are stored, validated, and published.
 
 ## 🗂️ Workspace Mapping
 
-- Data workspace: [../data/README.md](../data/README.md)
-- ASR workspace: [../asr/README.md](../asr/README.md)
-- TTS workspace: [../tts/README.md](../tts/README.md)
-- Benchmarks workspace: [../benchmarks/README.md](../benchmarks/README.md)
-- Applications workspace: [../apps/desktop/README.md](../apps/desktop/README.md)
+- Data workspace: [data/README.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/data/README.md)
+- ASR workspace: [asr/README.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/asr/README.md)
+- TTS workspace: [tts/README.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/tts/README.md)
+- Benchmarks workspace: [benchmarks/README.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/benchmarks/README.md)
+- Applications workspace: [apps/desktop/README.md on GitHub](https://github.com/Musawer1214/pashto-language-resources/blob/main/apps/desktop/README.md)
 
 ## 🛠️ Maintenance Checklist
 
@@ -53,4 +54,5 @@ Before each release:
 - Confirm license/usage terms remain compatible.
 - Run:
   - `python scripts/validate_resource_catalog.py`
+  - `python scripts/validate_repo_contracts.py --require-jsonschema`
   - `python scripts/generate_resource_views.py`

@@ -9,6 +9,7 @@
       "category": "dataset",
       "source": "mozilla",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Large open Pashto speech dataset for ASR training and evaluation.",
       "primary_use": "ASR training and evaluation",
       "tasks": [
@@ -23,7 +24,10 @@
       "evidence_url": "https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14",
       "markers": [
         "Pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-google-fleurs",
@@ -32,6 +36,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Standard multilingual speech benchmark dataset with Pashto subset.",
       "primary_use": "Speech benchmark and external evaluation",
       "tasks": [
@@ -47,7 +52,10 @@
       "evidence_url": "https://huggingface.co/datasets/google/fleurs/blob/main/fleurs.py",
       "markers": [
         "ps_af"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-oscar-ps",
@@ -56,6 +64,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Large web text corpus that includes Pashto text split.",
       "primary_use": "Language modeling and lexicon expansion",
       "tasks": [
@@ -70,6 +79,11 @@
       "evidence_url": "https://huggingface.co/datasets/oscar-corpus/oscar",
       "markers": [
         "unshuffled_deduplicated_ps"
+      ],
+      "signal_origin": "metadata",
+      "direct_pashto_signal": false,
+      "quality_flags": [
+        "metadata_only_pashto_signal"
       ]
     },
     {
@@ -79,6 +93,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Wikipedia corpus with Pashto edition for cleaner text resources.",
       "primary_use": "Terminology and balanced text corpus",
       "tasks": [
@@ -93,7 +108,10 @@
       "evidence_url": "https://huggingface.co/datasets/wikimedia/wikipedia",
       "markers": [
         "20231101.ps"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-belebele-pbt-arab",
@@ -102,6 +120,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Reading comprehension dataset with Pashto script subset.",
       "primary_use": "Comprehension and multilingual NLP benchmark",
       "tasks": [
@@ -117,7 +136,10 @@
       "evidence_url": "https://huggingface.co/datasets/facebook/belebele",
       "markers": [
         "pbt_Arab"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-opus100-en-ps",
@@ -126,6 +148,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Parallel corpus with English to Pashto split for MT tasks.",
       "primary_use": "Machine translation training and evaluation",
       "tasks": [
@@ -141,7 +164,10 @@
       "evidence_url": "https://huggingface.co/datasets/Helsinki-NLP/opus-100/viewer/en-ps",
       "markers": [
         "en-ps"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-pashto-bert",
@@ -150,6 +176,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-specific encoder model for NLP transfer tasks.",
       "primary_use": "Pashto NLP baseline encoder",
       "tasks": [
@@ -164,7 +191,10 @@
       "evidence_url": "https://huggingface.co/mdarhri/pashto-bert",
       "markers": [
         "Pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "benchmark-fleurs-ps-af",
@@ -173,6 +203,7 @@
       "category": "benchmark",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Fixed multilingual speech benchmark with Pashto subset for WER and CER.",
       "primary_use": "ASR benchmark reporting",
       "tasks": [
@@ -188,7 +219,10 @@
       "evidence_url": "https://huggingface.co/datasets/google/fleurs/blob/main/fleurs.py",
       "markers": [
         "ps_af"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "benchmark-common-voice-ps-v24",
@@ -197,6 +231,7 @@
       "category": "benchmark",
       "source": "mozilla",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Core benchmark reference for project-level Pashto ASR tracking.",
       "primary_use": "ASR baseline tracking",
       "tasks": [
@@ -212,7 +247,10 @@
       "evidence_url": "https://datacollective.mozillafoundation.org/datasets/cmj8u3pnb00llnxxbfvxo3b14",
       "markers": [
         "Pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "benchmark-belebele-pbt-arab",
@@ -221,6 +259,7 @@
       "category": "benchmark",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Comprehension benchmark for multilingual NLP with Pashto variant.",
       "primary_use": "NLP benchmark reporting",
       "tasks": [
@@ -236,7 +275,10 @@
       "evidence_url": "https://huggingface.co/datasets/facebook/belebele",
       "markers": [
         "pbt_Arab"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "benchmark-flores-200-pbt-arab",
@@ -245,6 +287,7 @@
       "category": "benchmark",
       "source": "github",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Translation benchmark language inventory including Pashto script variant.",
       "primary_use": "MT benchmark with BLEU and chrF",
       "tasks": [
@@ -260,7 +303,10 @@
       "evidence_url": "https://raw.githubusercontent.com/facebookresearch/flores/main/flores200/README.md",
       "markers": [
         "pbt_Arab"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-nexdata-99h-pashto-dialogue",
@@ -269,6 +315,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Large spontaneous Pashto smartphone speech dataset for robust ASR experimentation.",
       "primary_use": "Spontaneous speech ASR training and robustness evaluation",
       "tasks": [
@@ -284,7 +331,10 @@
       "evidence_url": "https://huggingface.co/datasets/Nexdata/99_Hours_Pashto_Spontaneous_Dialogue_Smartphone_speech_dataset",
       "markers": [
         "Pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-zirak-ai-pashto-ocr",
@@ -293,6 +343,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused OCR dataset with image-text pairs for document understanding tasks.",
       "primary_use": "OCR and text extraction benchmarking",
       "tasks": [
@@ -310,7 +361,10 @@
       "markers": [
         "ps",
         "PashtoOCR"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-ihanif-pashto-wikipedia-corpus",
@@ -319,6 +373,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto text corpus prepared from Wikipedia data for NLP and language modeling.",
       "primary_use": "Pashto text corpus for NLP baselines",
       "tasks": [
@@ -335,7 +390,10 @@
       "markers": [
         "ps",
         "Pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-ihanif-wav2vec2-xls-r-300m-pashto",
@@ -344,6 +402,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Fine-tuned wav2vec2 XLS-R model for Pashto ASR with published FLEURS evaluation tags.",
       "primary_use": "Pashto ASR baseline and comparative experiments",
       "tasks": [
@@ -361,7 +420,10 @@
         "pashto",
         "ps",
         "ps_af"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-ihanif-whisper-medium-pashto",
@@ -370,6 +432,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Fine-tuned Whisper Medium checkpoint for Pashto ASR with benchmark metadata.",
       "primary_use": "Pashto ASR baseline and transcription quality comparisons",
       "tasks": [
@@ -387,7 +450,10 @@
         "pashto",
         "ps",
         "ps_af"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-ihanif-pashto-asr-v3",
@@ -396,6 +462,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Interactive Hugging Face Space for Pashto automatic speech recognition demos.",
       "primary_use": "Project demo for Pashto ASR user testing",
       "tasks": [
@@ -413,7 +480,10 @@
       "markers": [
         "Pashto",
         "ASR"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-pashto2english-dictionary",
@@ -422,6 +492,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Streamlit project for Pashto to English dictionary lookups.",
       "primary_use": "Interactive bilingual lookup project",
       "tasks": [
@@ -439,7 +510,10 @@
       "evidence_url": "https://huggingface.co/api/spaces/EngrAamirBangash/Pashto2English-Dictionary",
       "markers": [
         "Pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-umar4321-pashto-translator",
@@ -448,6 +522,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Streamlit translator project for Pashto to English and Urdu conversion.",
       "primary_use": "Interactive translation project demo",
       "tasks": [
@@ -464,7 +539,10 @@
       "evidence_url": "https://huggingface.co/api/spaces/Umar4321/Pashto-Translator",
       "markers": [
         "Pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "code-github-ijazul-haq-nlpashto",
@@ -473,6 +551,7 @@
       "category": "code",
       "source": "github",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto NLP toolkit codebase for tokenization, embeddings, and downstream NLP workflows.",
       "primary_use": "Pashto NLP code integration and experimentation",
       "tasks": [
@@ -490,7 +569,10 @@
       "markers": [
         "Pashto",
         "NLP"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-zirak-ai-pashto-bert-v1",
@@ -499,6 +581,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto BERT model checkpoint for low-resource Pashto NLP experiments.",
       "primary_use": "Pashto encoder baseline for NLP tasks",
       "tasks": [
@@ -514,7 +597,10 @@
       "evidence_url": "https://huggingface.co/zirak-ai/pashto-bert-v1",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-ihanif-pashto-asr",
@@ -523,6 +609,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Interactive Hugging Face Space for Pashto ASR inference demos.",
       "primary_use": "Live Pashto speech-to-text demo project",
       "tasks": [
@@ -540,7 +627,10 @@
       "markers": [
         "pashto",
         "asr"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-adnankhan769-english-to-pashto",
@@ -549,6 +639,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Parallel English-Pashto sentence dataset for bilingual NLP and translation experiments.",
       "primary_use": "MT and bilingual sentence alignment baseline",
       "tasks": [
@@ -565,7 +656,10 @@
       "evidence_url": "https://huggingface.co/api/datasets/adnankhan769/english_to_pashto_sentences_dataset",
       "markers": [
         "Pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-saillab-alpaca-pashto-cleaned",
@@ -574,6 +668,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Instruction-style Pashto text dataset suitable for LLM tuning and instruction-following research.",
       "primary_use": "Pashto instruction tuning and conversational NLP experiments",
       "tasks": [
@@ -591,7 +686,10 @@
       "markers": [
         "ps",
         "Pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-ihanif-whisper-base-pashto",
@@ -600,6 +698,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Fine-tuned Whisper Base checkpoint for Pashto ASR with FLEURS ps_af evaluation metadata.",
       "primary_use": "Pashto ASR baseline and speed-accuracy comparison",
       "tasks": [
@@ -616,7 +715,10 @@
       "markers": [
         "Pashto",
         "ps_af"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-zamai-mistral-7b-pashto",
@@ -625,6 +727,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Gradio project space demonstrating a Pashto-adapted Mistral 7B interface.",
       "primary_use": "Interactive Pashto LLM project demo",
       "tasks": [
@@ -641,7 +744,10 @@
       "evidence_url": "https://huggingface.co/api/spaces/tasal9/ZamAI-Mistral-7B-Pashto-space",
       "markers": [
         "Pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-adnankhan769-proper-dataset-english-2-pashto",
@@ -650,6 +756,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto bilingual/translation dataset discovered from huggingface for MT experimentation.",
       "primary_use": "Machine translation and bilingual corpus development",
       "tasks": [
@@ -665,7 +772,10 @@
       "evidence_url": "https://huggingface.co/datasets/adnankhan769/proper_dataset_english_2_pashto",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-ihanif-pashto-asr-wer",
@@ -674,6 +784,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto speech dataset discovered from huggingface for ASR training and evaluation.",
       "primary_use": "ASR training and evaluation data source",
       "tasks": [
@@ -689,7 +800,10 @@
       "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_asr_wer",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-ihanif-pashto-speech-ds",
@@ -698,6 +812,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto speech dataset discovered from huggingface for ASR training and evaluation.",
       "primary_use": "ASR training and evaluation data source",
       "tasks": [
@@ -713,7 +828,10 @@
       "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_ds",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-ihanif-pashto-speech-parquet-10k",
@@ -722,6 +840,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto speech dataset discovered from huggingface for ASR training and evaluation.",
       "primary_use": "ASR training and evaluation data source",
       "tasks": [
@@ -737,7 +856,10 @@
       "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_parquet_10k",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-saillab-alpaca-pashto-taco",
@@ -746,6 +868,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused dataset discovered from huggingface candidate sync.",
       "primary_use": "Instruction tuning and LLM adaptation data source",
       "tasks": [
@@ -761,7 +884,10 @@
       "evidence_url": "https://huggingface.co/datasets/saillab/alpaca_pashto_taco",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-sherwindesouza-pashto-common-voice-20",
@@ -770,6 +896,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused dataset discovered from huggingface candidate sync.",
       "primary_use": "Pashto data source for NLP experimentation",
       "tasks": [
@@ -785,7 +912,10 @@
       "evidence_url": "https://huggingface.co/datasets/SherwinDesouza/pashto-common-voice-20",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-tasal9-zamai-pashto-dataset",
@@ -794,6 +924,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused dataset discovered from huggingface candidate sync.",
       "primary_use": "Pashto data source for NLP experimentation",
       "tasks": [
@@ -809,7 +940,10 @@
       "evidence_url": "https://huggingface.co/datasets/tasal9/ZamAI_Pashto_Dataset",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-ihanif-pashto-asr-base",
@@ -818,6 +952,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto ASR model checkpoint discovered from huggingface candidate sync.",
       "primary_use": "Pashto ASR baseline and model comparison",
       "tasks": [
@@ -833,7 +968,10 @@
       "evidence_url": "https://huggingface.co/ihanif/pashto-asr-base",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-ihanif-wav2vec2-xls-r-300m-pashto-lm",
@@ -842,6 +980,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto ASR model checkpoint discovered from huggingface candidate sync.",
       "primary_use": "Pashto ASR baseline and model comparison",
       "tasks": [
@@ -857,7 +996,10 @@
       "evidence_url": "https://huggingface.co/ihanif/wav2vec2-xls-r-300m-pashto-lm",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-ihanif-whisper-large-pashto",
@@ -866,6 +1008,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto ASR model checkpoint discovered from huggingface candidate sync.",
       "primary_use": "Pashto ASR baseline and model comparison",
       "tasks": [
@@ -881,7 +1024,10 @@
       "evidence_url": "https://huggingface.co/ihanif/whisper-large-pashto",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-ihanif-whisper-medium-pashto-3e-7",
@@ -890,6 +1036,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto ASR model checkpoint discovered from huggingface candidate sync.",
       "primary_use": "Pashto ASR baseline and model comparison",
       "tasks": [
@@ -905,7 +1052,10 @@
       "evidence_url": "https://huggingface.co/ihanif/whisper-medium-pashto-3e-7",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-ihanif-whisper-small-pashto",
@@ -914,6 +1064,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto ASR model checkpoint discovered from huggingface candidate sync.",
       "primary_use": "Pashto ASR baseline and model comparison",
       "tasks": [
@@ -929,7 +1080,10 @@
       "evidence_url": "https://huggingface.co/ihanif/whisper-small-pashto",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-ihanif-xls-r-1b-pashto",
@@ -938,6 +1092,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto ASR model checkpoint discovered from huggingface candidate sync.",
       "primary_use": "Pashto ASR baseline and model comparison",
       "tasks": [
@@ -953,7 +1108,10 @@
       "evidence_url": "https://huggingface.co/ihanif/xls-r-1b-pashto",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-ijazulhaq-bert-base-pashto-v1",
@@ -962,6 +1120,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto NLP model checkpoint discovered from huggingface candidate sync.",
       "primary_use": "Pashto model baseline for downstream NLP tasks",
       "tasks": [
@@ -977,7 +1136,10 @@
       "evidence_url": "https://huggingface.co/ijazulhaq/bert-base-pashto-v1",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-ihanif-wav2vec2-bert-pashto-asr",
@@ -986,6 +1148,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused interactive project discovered from huggingface for demonstration and quick evaluation.",
       "primary_use": "Interactive Pashto demo and quick qualitative validation",
       "tasks": [
@@ -1005,7 +1168,10 @@
       "evidence_url": "https://huggingface.co/spaces/ihanif/wav2vec2-bert-pashto-asr",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-nasirkhansayyad-pashto-whisper-demo",
@@ -1014,6 +1180,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused interactive project discovered from huggingface for demonstration and quick evaluation.",
       "primary_use": "Interactive Pashto demo and quick qualitative validation",
       "tasks": [
@@ -1031,7 +1198,10 @@
       "evidence_url": "https://huggingface.co/spaces/nasirkhansayyad/pashto-whisper-demo",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-tasal9-zamai-phi3-mini-pashto-demo",
@@ -1040,6 +1210,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused interactive project discovered from huggingface for demonstration and quick evaluation.",
       "primary_use": "Interactive Pashto demo and quick qualitative validation",
       "tasks": [
@@ -1057,7 +1228,10 @@
       "evidence_url": "https://huggingface.co/spaces/tasal9/ZamAI-Phi3-Mini-Pashto-Demo",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-umar4321-pashto-to-english-urdu",
@@ -1066,6 +1240,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused interactive project discovered from huggingface for demonstration and quick evaluation.",
       "primary_use": "Interactive Pashto demo and quick qualitative validation",
       "tasks": [
@@ -1083,7 +1258,10 @@
       "evidence_url": "https://huggingface.co/spaces/Umar4321/Pashto-To-English-Urdu",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-github-fazlullahmamond-pashto-typing",
@@ -1092,6 +1270,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused interactive project discovered from github for demonstration and quick evaluation.",
       "primary_use": "Interactive Pashto demo and quick qualitative validation",
       "tasks": [
@@ -1107,7 +1286,10 @@
       "evidence_url": "https://github.com/Fazlullahmamond/Pashto-Typing",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-oowais-pushto-text-to-speech-dataset",
@@ -1116,6 +1298,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto speech dataset discovered from huggingface candidate sync for ASR training and evaluation.",
       "primary_use": "ASR training and evaluation data source",
       "tasks": [
@@ -1133,7 +1316,10 @@
       "evidence_url": "https://huggingface.co/datasets/oowais/pushto-text-to-speech-dataset",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-ihanif-pashto-speech-20k",
@@ -1142,6 +1328,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto speech dataset discovered from huggingface candidate sync for ASR training and evaluation.",
       "primary_use": "ASR training and evaluation data source",
       "tasks": [
@@ -1157,7 +1344,10 @@
       "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_20k",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-ihanif-pashto-speech-5k",
@@ -1166,6 +1356,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto speech dataset discovered from huggingface candidate sync for ASR training and evaluation.",
       "primary_use": "ASR training and evaluation data source",
       "tasks": [
@@ -1181,7 +1372,10 @@
       "evidence_url": "https://huggingface.co/datasets/ihanif/pashto_speech_5k",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-tasal9-pashto-dataset",
@@ -1190,6 +1384,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused dataset discovered from huggingface candidate sync.",
       "primary_use": "Pashto data source for NLP experimentation",
       "tasks": [
@@ -1205,7 +1400,10 @@
       "evidence_url": "https://huggingface.co/datasets/tasal9/Pashto_Dataset",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-ijazulhaq-bert-base-pashto",
@@ -1214,6 +1412,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto NLP model checkpoint discovered from huggingface candidate sync.",
       "primary_use": "Pashto model baseline for downstream NLP tasks",
       "tasks": [
@@ -1229,7 +1428,10 @@
       "evidence_url": "https://huggingface.co/ijazulhaq/bert-base-pashto",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-ihanif-whisper-small-pashto-dropout",
@@ -1238,6 +1440,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto ASR model checkpoint discovered from huggingface candidate sync.",
       "primary_use": "Pashto ASR baseline and model comparison",
       "tasks": [
@@ -1253,7 +1456,10 @@
       "evidence_url": "https://huggingface.co/ihanif/whisper-small-pashto-dropout",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-koochikoo25-pashto-whisper-large",
@@ -1262,6 +1468,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto ASR model checkpoint discovered from huggingface candidate sync.",
       "primary_use": "Pashto ASR baseline and model comparison",
       "tasks": [
@@ -1277,7 +1484,10 @@
       "evidence_url": "https://huggingface.co/koochikoo25/pashto-whisper-large",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-ihanif-wav2vec-pashto-asr",
@@ -1286,6 +1496,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused interactive project discovered from huggingface for demonstration and evaluation.",
       "primary_use": "Interactive Pashto demo and quick qualitative validation",
       "tasks": [
@@ -1303,7 +1514,10 @@
       "evidence_url": "https://huggingface.co/spaces/ihanif/wav2vec-pashto-asr",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-afaqalinagra-pashto-asr-model",
@@ -1312,6 +1526,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused interactive project discovered from huggingface for demonstration and evaluation.",
       "primary_use": "Interactive Pashto demo and quick qualitative validation",
       "tasks": [
@@ -1329,7 +1544,10 @@
       "evidence_url": "https://huggingface.co/spaces/afaqalinagra/PASHTO-ASR-MODEL",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-ilyas02828-pashto-sign-language",
@@ -1338,6 +1556,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused interactive project discovered from huggingface for demonstration and evaluation.",
       "primary_use": "Interactive Pashto demo and quick qualitative validation",
       "tasks": [
@@ -1353,7 +1572,10 @@
       "evidence_url": "https://huggingface.co/spaces/ilyas02828/Pashto_Sign_Language",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-mahmudaq-pashtoasrnmt1",
@@ -1362,6 +1584,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto-focused interactive project discovered from huggingface for demonstration and evaluation.",
       "primary_use": "Interactive Pashto demo and quick qualitative validation",
       "tasks": [
@@ -1381,7 +1604,10 @@
       "evidence_url": "https://huggingface.co/spaces/mahmudaq/PashtoASRNMT1",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-aamirhs-pashto-audio-wav2vec",
@@ -1390,6 +1616,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto speech dataset surfaced from Hugging Face candidate sync for ASR experiments.",
       "primary_use": "Pashto ASR data exploration and baseline training",
       "tasks": [
@@ -1406,7 +1633,10 @@
       "evidence_url": "https://huggingface.co/datasets/aamirhs/pashto-audio-wav2vec",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-alimuhammad73-pashto-poetry",
@@ -1415,6 +1645,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto poetry text dataset surfaced from Hugging Face candidate sync for NLP experiments.",
       "primary_use": "Pashto poetry corpus for language modeling and text analysis",
       "tasks": [
@@ -1432,7 +1663,10 @@
       "evidence_url": "https://huggingface.co/datasets/AliMuhammad73/Pashto-Poetry",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-aamirhs-wav2vec2-large-xls-r-300m-pashto-colab",
@@ -1441,6 +1675,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto ASR model checkpoint surfaced from Hugging Face candidate sync.",
       "primary_use": "Pashto ASR baseline and transfer-learning comparison",
       "tasks": [
@@ -1456,7 +1691,10 @@
       "evidence_url": "https://huggingface.co/aamirhs/wav2vec2-large-xls-r-300m-pashto-colab",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-aizazayyubi-pashto-asr",
@@ -1465,6 +1703,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto ASR interactive demo surfaced from Hugging Face Spaces candidate sync.",
       "primary_use": "Interactive Pashto ASR demo for qualitative evaluation",
       "tasks": [
@@ -1482,7 +1721,10 @@
       "evidence_url": "https://huggingface.co/spaces/Aizazayyubi/pashto_asr",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-dataverse-iarpa-babel-pashto-language-pack-v0-4by",
@@ -1491,6 +1733,7 @@
       "category": "dataset",
       "source": "dataverse",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto Babel language pack dataset for speech and language processing evaluation.",
       "primary_use": "Pashto speech dataset for ASR and language identification experiments",
       "tasks": [
@@ -1509,7 +1752,10 @@
       "evidence_url": "https://hdl.handle.net/11272.1/AB2/GLFN3X",
       "markers": [
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-ihanif-pashto-speech-2k",
@@ -1518,6 +1764,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto synthetic speech dataset with paired audio-text samples for low-resource ASR baselines.",
       "primary_use": "ASR training and controlled synthetic-speech evaluation",
       "tasks": [
@@ -1536,7 +1783,10 @@
         "language:ps",
         "pashto",
         "speech"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-ihanif-pashto-speech-3k",
@@ -1545,6 +1795,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto synthetic speech parquet dataset with audio-text pairs and language metadata.",
       "primary_use": "ASR training and reproducible speech-data experimentation",
       "tasks": [
@@ -1564,7 +1815,10 @@
         "language:ps",
         "automatic-speech-recognition",
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "dataset-hf-koochikoo25-pashto-concatenated",
@@ -1573,6 +1827,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto concatenated audio-text dataset with predefined train-validation-test splits.",
       "primary_use": "ASR dataset preparation and split-based benchmark experiments",
       "tasks": [
@@ -1591,7 +1846,10 @@
         "Pashto",
         "audio",
         "transcription"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "model-hf-koochikoo25-whisper-medium-pashto",
@@ -1600,6 +1858,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Whisper medium fine-tuned checkpoint for Pashto automatic speech recognition.",
       "primary_use": "Pashto ASR baseline modeling and transcription comparison",
       "tasks": [
@@ -1618,7 +1877,10 @@
         "ps",
         "automatic-speech-recognition",
         "pashto"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-afaaaak-urdu-pashto-translator",
@@ -1627,6 +1889,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Interactive Urdu-to-Pashto translation Space with a runnable web demo.",
       "primary_use": "Translation demo and bilingual usability testing",
       "tasks": [
@@ -1646,7 +1909,10 @@
       "markers": [
         "Pashto",
         "translator"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "project-hf-space-drsaqlainhassan-pashto-tokenixer",
@@ -1655,6 +1921,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "verified",
       "summary": "Pashto parts-of-speech identification Space for interactive NLP exploration.",
       "primary_use": "Pashto NLP demo for token and part-of-speech analysis",
       "tasks": [
@@ -1674,7 +1941,10 @@
       "markers": [
         "Pashto",
         "parts-of-speech"
-      ]
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": []
     },
     {
       "id": "candidate-hf-dataset-aamirhs-pashto",
@@ -1683,6 +1953,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1695,6 +1966,14 @@
       "evidence_url": "https://huggingface.co/datasets/aamirhs/pashto",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "generic_summary",
+        "missing_tasks"
       ]
     },
     {
@@ -1704,6 +1983,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1716,6 +1996,14 @@
       "evidence_url": "https://huggingface.co/datasets/arsalagrey/pashto",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "generic_summary",
+        "missing_tasks"
       ]
     },
     {
@@ -1725,6 +2013,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1737,6 +2026,14 @@
       "evidence_url": "https://huggingface.co/datasets/arsalagrey/pashto-books",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "generic_summary",
+        "missing_tasks"
       ]
     },
     {
@@ -1746,6 +2043,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1758,6 +2056,14 @@
       "evidence_url": "https://huggingface.co/datasets/arsalagrey/pashto-books-json",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "generic_summary",
+        "missing_tasks"
       ]
     },
     {
@@ -1767,6 +2073,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate model returned from Hugging Face search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1779,6 +2086,14 @@
       "evidence_url": "https://huggingface.co/Jawaria/wav2vec2-large-xls-r-300m-pashto-colab-final-1",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "generic_summary",
+        "missing_tasks"
       ]
     },
     {
@@ -1788,6 +2103,7 @@
       "category": "dataset",
       "source": "zenodo",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate resource returned from Zenodo search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1801,6 +2117,13 @@
       "evidence_url": "https://zenodo.org/records/17487678",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -1810,6 +2133,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate project app returned from Hugging Face Spaces Pashto search.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1823,6 +2147,13 @@
       "evidence_url": "https://huggingface.co/spaces/adnankarim/ihanif-whisper-base-pashto",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -1832,6 +2163,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate project app returned from Hugging Face Spaces Pashto search.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1845,6 +2177,13 @@
       "evidence_url": "https://huggingface.co/spaces/adnankarim/ihanif-whisper-medium-pashto-3e-7",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -1854,6 +2193,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "This is an extension to set dir=\"auto\" in content wrappers to make them right-aligned when the language is an RTL language (like Persian, Arabic, ...)",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1870,6 +2210,13 @@
       "evidence_url": "https://github.com/amirajorloo/jira-auto-direction-chrome-extension",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -1879,6 +2226,7 @@
       "category": "dataset",
       "source": "zenodo",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "This paper was prepared after the Particle Workshop (Cambridge, 30-31 October 2008) for the prospective conference volume. I am grateful to the audience of the Particle Workshop in Cambrigde, October 30-31, 2008 and personally to Anders Hol",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1892,6 +2240,13 @@
       "evidence_url": "https://zenodo.org/records/15010591",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -1901,6 +2256,7 @@
       "category": "project",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate record returned from DataCite DOI search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1914,6 +2270,13 @@
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18325729",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -1923,6 +2286,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Hadith collection in Pashto language, developed by flutter.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1939,6 +2303,13 @@
       "evidence_url": "https://github.com/Fazlullahmamond/hadith-collection-pashto",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -1948,6 +2319,7 @@
       "category": "project",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate record returned from DataCite DOI search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1961,6 +2333,13 @@
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18325040",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -1970,6 +2349,7 @@
       "category": "project",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate record returned from DataCite DOI search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -1983,6 +2363,13 @@
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18325401",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -1992,6 +2379,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Asslama o alaikom guys",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2005,6 +2393,13 @@
       "evidence_url": "https://github.com/Haroon-blip/khan-pukhtoon",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2014,6 +2409,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "This repo contains Pashto fonts hosted by pashtology.com",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2030,6 +2426,13 @@
       "evidence_url": "https://github.com/haseebjanhamraz/PashtoFonts",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2039,6 +2442,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate project app returned from Hugging Face Spaces Pashto search.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2052,6 +2456,13 @@
       "evidence_url": "https://huggingface.co/spaces/Hassaankabir/Pashto_Malgaray",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2061,6 +2472,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate project app returned from Hugging Face Spaces Pashto search.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2074,6 +2486,13 @@
       "evidence_url": "https://huggingface.co/spaces/ihanif/whisper-medium-pashto",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2083,6 +2502,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Beautifies Arabic, Persian, Urdu, Pashto and other right-to-left (RTL) languages",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2099,6 +2519,13 @@
       "evidence_url": "https://github.com/IhyaCommunity/Khushkhat-Extension",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2108,6 +2535,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "X Series 2 Webfont for Arabic Script",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2124,6 +2552,13 @@
       "evidence_url": "https://github.com/lecramyajiv/ttf-x2",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2133,6 +2568,7 @@
       "category": "code",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "A lightweight Rust library for removing Arabic diacritics",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2149,6 +2585,13 @@
       "evidence_url": "https://github.com/LGUG2Z/tashkil",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2158,6 +2601,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Website for reading Quran with Pashto translation",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2173,6 +2617,13 @@
       "evidence_url": "https://github.com/mastermoo/pashto-quran",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2182,6 +2633,7 @@
       "category": "code",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Text-to-image conversion (OCR) for Pashto and Chinese, with a view towards comprehensive, multi-lingual OCR",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2198,6 +2650,13 @@
       "evidence_url": "https://github.com/mrychlik/worldly-ocr",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2207,6 +2666,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate Pashto-related GitHub repository.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2220,6 +2680,13 @@
       "evidence_url": "https://github.com/MuhammadUllah7/PAKHTOONN",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2229,6 +2696,7 @@
       "category": "dataset",
       "source": "dataverse",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Introduction Multi-Language Conversational Telephone Speech 2011 – Central Asian was developed by the Linguistic Data Consortium (LDC) and is comprised of approximately 37 hours of telephone speech in three distinct language varieties of Ce",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2242,6 +2710,13 @@
       "evidence_url": "https://hdl.handle.net/11272.1/AB2/YW9PX3",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2251,6 +2726,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate Pashto-related GitHub repository.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2264,6 +2740,13 @@
       "evidence_url": "https://github.com/nabeelest/pakhtoodle",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2273,6 +2756,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "ایجاد متن های ساختگی دری و پشتو",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2289,6 +2773,13 @@
       "evidence_url": "https://github.com/NanoNulla/lorem",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2298,6 +2789,7 @@
       "category": "dataset",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "NAVOIY-TERRA v1.0 is the first open-access computational corpus of Alisher Navoi's (1441-1501) literary works, featuring fractal semantic annotations and a nine-language Plural-Lingual Translation (PLT) layer. Contents: 26 authentic texts i",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2311,6 +2803,13 @@
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18602634",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2320,6 +2819,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Config files for my GitHub profile.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2335,6 +2835,13 @@
       "evidence_url": "https://github.com/nisarmasid/NisAr-PakhtoOn",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2344,6 +2851,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Persian Log2Vis / Arabic Log2Vis / A PHP project to convert logical UTF8 Persian and Arabic characters to visual.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2360,6 +2868,13 @@
       "evidence_url": "https://github.com/omid/Persian-Log2Vis",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2369,6 +2884,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate Pashto-related GitHub repository.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2382,6 +2898,13 @@
       "evidence_url": "https://github.com/Pakhtoon9900/Pakhtoon-",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2391,6 +2914,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Installation : 😈 apt update  😈 apt upgrade  😈 apt install git  😈 pkg install python  😈 pkg install python2 -y  😈 pip2 install requests  😈 pip2 install mechanize  😈 git clone https://github.com/pikhtoon203/",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2404,6 +2928,13 @@
       "evidence_url": "https://github.com/Pukhtoon203/PUKHTOON",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2413,6 +2944,7 @@
       "category": "dataset",
       "source": "dataverse",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "RATS Language Identification was developed by the Linguistic Data Consortium (LDC) and is comprised of approximately 5,400 hours of Levantine Arabic, Farsi, Dari, Pashto and Urdu conversational telephone speech with annotation of speech seg",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2426,6 +2958,13 @@
       "evidence_url": "https://hdl.handle.net/11272.1/AB2/UP3WJC",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2435,6 +2974,7 @@
       "category": "dataset",
       "source": "dataverse",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Abstract Introduction RATS Low Speech Density was developed by the Linguistic Data Consortium (LDC) and is comprised of approximately 87 hours of English, Levantine Arabic, Farsi, Pashto and Urdu speech and non-speech samples. The recording",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2448,6 +2988,13 @@
       "evidence_url": "https://doi.org/10.35111/4ENA-FG30",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2457,6 +3004,7 @@
       "category": "dataset",
       "source": "dataverse",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Abstract Introduction RATS Speaker Identification was developed by the Linguistic Data Consortium (LDC) and is comprised of approximately 1,900 hours of Levantine Arabic, Farsi, Dari, Pashto and Urdu conversational telephone speech with ann",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2470,6 +3018,13 @@
       "evidence_url": "https://doi.org/10.35111/ZQET-2102",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2479,6 +3034,7 @@
       "category": "dataset",
       "source": "dataverse",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Introduction RATS Speech Activity Detection was developed by the Linguistic Data Consortium (LDC) and is comprised of approximately 3,000 hours of Levantine Arabic, English, Farsi, Pashto, and Urdu conversational telephone speech with autom",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2492,6 +3048,13 @@
       "evidence_url": "https://hdl.handle.net/11272.1/AB2/1UISJ7",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2501,6 +3064,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate Pashto-related GitHub repository.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2514,6 +3078,13 @@
       "evidence_url": "https://github.com/ShawAnonymouse/Pakhtoon",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2523,6 +3094,7 @@
       "category": "code",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "PALI: Language identification for Perso-Arabic Scripts",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2539,6 +3111,13 @@
       "evidence_url": "https://github.com/sinaahmadi/PersoArabicLID",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2548,6 +3127,7 @@
       "category": "dataset",
       "source": "zenodo",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "This dataset is designed for the development, training, and evaluation of Optical Character Recognition (OCR) systems for the Shahmukhi (Perso-Arabic) script, with emphasis on character-level recognition, dataset scalability, and comparativ",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2561,6 +3141,13 @@
       "evidence_url": "https://zenodo.org/records/15868719",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2570,6 +3157,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate project app returned from Hugging Face Spaces Pashto search.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2583,6 +3171,13 @@
       "evidence_url": "https://huggingface.co/spaces/tasal9/pashto-base-bloom-space",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2592,6 +3187,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate project app returned from Hugging Face Spaces Pashto search.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2605,6 +3201,13 @@
       "evidence_url": "https://huggingface.co/spaces/tasal9/ZamAI-mt5-Pashto-Demo",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2614,6 +3217,7 @@
       "category": "dataset",
       "source": "zenodo",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "This is a draft of my conference talk prepared for the 'Typology of Morphosyntactic Parameters 2016' conference (Moscow, 12-14 October 2016). I discuss the perspectives of developing a parametric theory of endoclitics and offer empiric gene",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2627,6 +3231,13 @@
       "evidence_url": "https://zenodo.org/records/15041544",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2636,6 +3247,7 @@
       "category": "dataset",
       "source": "dataverse",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Introduction TRAD Arabic-French Parallel Text – Newsgroup was developed by ELDA as part of the PEA-TRAD project. It contains French translations of a subset of approximately 10,000 Arabic words from GALE Phase 1 Arabic Newsgroup Parallel Te",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2649,6 +3261,13 @@
       "evidence_url": "https://hdl.handle.net/11272.1/AB2/0DET8M",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2658,6 +3277,7 @@
       "category": "dataset",
       "source": "dataverse",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Abstract Introduction TRAD Arabic-French Parallel Text -- Newswire was developed by ELDA as part of the PEA-TRAD project. It contains French translations of a subset of approximately 20,000 Arabic words from NIST 2008 Open Machine Translati",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2671,6 +3291,13 @@
       "evidence_url": "https://doi.org/10.35111/Z1WG-9X78",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2680,6 +3307,7 @@
       "category": "dataset",
       "source": "dataverse",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Introduction TRAD Chinese-French Parallel Text – Blog was developed by ELDA as part of the PEA-TRAD project. It contains French translations of a subset of approximately 10,000 Chinese words from GALE Phase 1 Chinese Blog Parallel Text (LDC",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2693,6 +3321,13 @@
       "evidence_url": "https://hdl.handle.net/11272.1/AB2/ATYE6I",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2702,6 +3337,7 @@
       "category": "dataset",
       "source": "dataverse",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Abstract Introduction TRAD Chinese-French Parallel Text -- Broadcast News was developed by ELDA as part of the PEA-TRAD project. It contains French translations of a subset of approximately 30,000 Chinese characters from GALE Phase 1 Chines",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2715,6 +3351,13 @@
       "evidence_url": "https://doi.org/10.35111/7FW4-EV85",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2724,6 +3367,7 @@
       "category": "project",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate project app returned from Hugging Face Spaces Pashto search.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2737,6 +3381,13 @@
       "evidence_url": "https://huggingface.co/spaces/Haseeb-007/Pashto-sekho",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2746,6 +3397,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate model returned from Hugging Face search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2758,6 +3410,14 @@
       "evidence_url": "https://huggingface.co/ijazulhaq/bert-base-pashto-c",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "generic_summary",
+        "missing_tasks"
       ]
     },
     {
@@ -2767,6 +3427,7 @@
       "category": "project",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate record returned from DataCite DOI search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2780,6 +3441,13 @@
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18324878",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2789,6 +3457,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Extra Arabic fonts for Slackware Linux",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2805,6 +3474,13 @@
       "evidence_url": "https://github.com/lecramyajiv/fonts-arabic-extra",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2814,6 +3490,7 @@
       "category": "project",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "In this paper, we explore negation in Pashto – an Eastern Iranian language spoken mainly in Pakistan and Afghanistan. Based on the Yousafzai dialect of Pashto,with the questionnaire provided by the editors as our main instrument, we investi",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2827,6 +3504,13 @@
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18233956",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2836,6 +3520,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Config files for my GitHub profile.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2851,6 +3536,13 @@
       "evidence_url": "https://github.com/Pukhtoonmafia009/Pukhtoonmafia009",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2860,6 +3552,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Config files for my GitHub profile.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2875,6 +3568,13 @@
       "evidence_url": "https://github.com/pukhtoonyar406/pukhtoonyar406",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2884,6 +3584,7 @@
       "category": "project",
       "source": "github",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "پښتو باران يوه پښتو ليکبڼه ده چې په ځانګړې توګه د پښتو ژبې وېبپاڼو لپاره د نازنين او اېکس بي کيهان ليکبڼو تر اغېز لاندې ډيزاين شوې ده تاسو کولی شئ ياده ليکبڼه هرځای کې له وړيا سوداګريزې کارونې جواز سره د پښتو، اردو، عربي، فارسي، کهوار، سرائ",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2900,6 +3601,13 @@
       "evidence_url": "https://github.com/ShahZamanPatan/Pashto-Baran",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2909,6 +3617,7 @@
       "category": "project",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Abstract German and Pashto are members of the Indo-European language family, yet they belong to different branches—Germanic and Indo-Iranian, respectively. Despite their geographical separation and independent development, both languages re",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2922,6 +3631,13 @@
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18752070",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2931,6 +3647,7 @@
       "category": "project",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Similarities Between Pashtun and German Populations: A genetic Perspective A Comparative Population Study Abstract The Pashtun people of Afghanistan and Pakistan and the German population of Central Europe belong to geographically distant a",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2944,6 +3661,13 @@
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18751992",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2953,6 +3677,7 @@
       "category": "project",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Abstract Hindko is a northwestern Indo-Aryan language spoken primarily in Pakistan, especially in Khyber Pakhtunkhwa, northern Punjab, and Azad Jammu and Kashmir. It belongs to the Lahnda subgroup and shares linguistic similarities with Pun",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2966,6 +3691,13 @@
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18765319",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2975,6 +3707,7 @@
       "category": "project",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Abstract Hindko is an important Indo-Aryan language spoken in northern Pakistan. Its relationship with neighboring languages such as Punjabi, Saraiki, Pahari, and Potohari has led to debate about whether Hindko should be considered a “mothe",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -2988,6 +3721,13 @@
       "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.18795440",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -2997,6 +3737,7 @@
       "category": "dataset",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "We introduce the Bilingual Pashtu Speech and Text Dataset (BPSTD) for low-resource language research. BPSTD is a bilingual speech-text dataset created to facilitate research in Pashto voice processing, speech recognition, and text-to-speech",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -3010,6 +3751,13 @@
       "evidence_url": "https://data.mendeley.com/datasets/x64drybfw4/1",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -3019,6 +3767,7 @@
       "category": "model",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate model returned from Hugging Face search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -3031,6 +3780,14 @@
       "evidence_url": "https://huggingface.co/junaid008/qehwa-pashto-llm",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "generic_summary",
+        "missing_tasks"
       ]
     },
     {
@@ -3040,6 +3797,7 @@
       "category": "project",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "In this paper, we show that the combination of Phrase Pair Injection and Corpus Filtering boosts the performance of Neural Machine Translation (NMT) systems. We extract parallel phrases and sentences from the pseudo-parallel corpus and augm",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -3053,6 +3811,13 @@
       "evidence_url": "https://underline.io/lecture/65314-improving-machine-translation-with-phrase-pair-injection-and-corpus-filtering",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     },
     {
@@ -3062,6 +3827,7 @@
       "category": "dataset",
       "source": "huggingface",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Candidate dataset returned from Hugging Face search for Pashto.",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -3074,6 +3840,14 @@
       "evidence_url": "https://huggingface.co/datasets/junaid008/PashtoEval-150",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "generic_summary",
+        "missing_tasks"
       ]
     },
     {
@@ -3083,6 +3857,7 @@
       "category": "project",
       "source": "datacite",
       "status": "verified",
+      "review_state": "automated_verified",
       "summary": "Recent advances in Large Language Models (LLMs) have shown remarkable capability and now sit at the center of this revolution, delivering strong performance across diverse Natural Language Processing (NLP) and multilingualism tasks. LLMs sh",
       "primary_use": "Automated discovery entry for Pashto resource tracking.",
       "tasks": [],
@@ -3096,6 +3871,13 @@
       "evidence_url": "https://figshare.mq.edu.au/articles/thesis/Fairness_Evaluation_and_Inference_Level_Mitigation_in_LLMs/31093552",
       "markers": [
         "pashto"
+      ],
+      "signal_origin": "direct",
+      "direct_pashto_signal": true,
+      "quality_flags": [
+        "automated_discovery",
+        "placeholder_primary_use",
+        "missing_tasks"
       ]
     }
   ]

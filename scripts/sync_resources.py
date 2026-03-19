@@ -31,6 +31,7 @@ from urllib.error import HTTPError, URLError
 USER_AGENT = "pashto-resource-sync/1.0"
 MAX_FETCH_RETRIES = 4
 RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
+HARD_REMOVE_HTTP_CODES = {404, 410, 451}
 PASHTO_QUERY_TERMS = ["pashto", "pukhto", "pushto", "pakhto"]
 PASHTO_TEXT_MARKERS = ("pashto", "pukhto", "pushto", "pakhto")
 PASHTO_SCRIPT_MARKERS = ("پښتو", "پشتو")
@@ -51,6 +52,10 @@ def _slug(value: str) -> str:
     value = re.sub(r"[^a-z0-9]+", "-", value)
     value = re.sub(r"-+", "-", value).strip("-")
     return value[:80] if value else "resource"
+
+
+def _canonical_url(value: str) -> str:
+    return value.rstrip("/")
 
 
 def _contains_pashto_marker(value: str) -> bool:
@@ -1053,7 +1058,7 @@ def _dedupe_candidates(
 
     for item in candidates:
         rid = item["id"]
-        url = item["url"].rstrip("/")
+        url = _canonical_url(item["url"])
         if rid in seen_ids or url in seen_urls:
             continue
         seen_ids.add(rid)
@@ -1062,24 +1067,102 @@ def _dedupe_candidates(
     return unique
 
 
+def _load_prior_hard_removals(path: Path) -> tuple[set[str], set[str], dict[str, dict[str, Any]]]:
+    if not path.exists():
+        return set(), set(), {}
+
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return set(), set(), {}
+
+    entries = payload.get("entries", [])
+    if not isinstance(entries, list):
+        return set(), set(), {}
+
+    blocked_ids: set[str] = set()
+    blocked_urls: set[str] = set()
+    lookup: dict[str, dict[str, Any]] = {}
+
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        reasons = entry.get("reasons", [])
+        evidence = entry.get("evidence", {})
+        status_code = evidence.get("status_code") if isinstance(evidence, dict) else None
+        hard_missing = status_code in HARD_REMOVE_HTTP_CODES
+        if not hard_missing and isinstance(reasons, list):
+            hard_missing = any("hard-missing http status" in str(reason).casefold() for reason in reasons)
+        if not hard_missing:
+            continue
+
+        blocked_entry = {
+            "id": entry.get("id", ""),
+            "title": entry.get("title", ""),
+            "url": entry.get("url", ""),
+            "removed_on": entry.get("removed_on", ""),
+            "reason": reasons[0] if isinstance(reasons, list) and reasons else "Previously removed after hard-missing probe.",
+        }
+        entry_id = blocked_entry["id"]
+        entry_url = _canonical_url(str(blocked_entry["url"]))
+        if entry_id:
+            blocked_ids.add(entry_id)
+            lookup[entry_id] = blocked_entry
+        if entry_url:
+            blocked_urls.add(entry_url)
+            lookup[entry_url] = blocked_entry
+
+    return blocked_ids, blocked_urls, lookup
+
+
+def _filter_prior_hard_removals(
+    candidates: list[dict[str, Any]],
+    blocked_ids: set[str],
+    blocked_urls: set[str],
+    lookup: dict[str, dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    kept: list[dict[str, Any]] = []
+    skipped: list[dict[str, Any]] = []
+    for item in candidates:
+        rid = str(item.get("id", ""))
+        url = _canonical_url(str(item.get("url", "")))
+        if rid in blocked_ids or url in blocked_urls:
+            previous = lookup.get(url) or lookup.get(rid) or {}
+            skipped.append(
+                {
+                    "id": rid,
+                    "title": item.get("title", ""),
+                    "url": item.get("url", ""),
+                    "reason": previous.get("reason", "Matched a prior hard-missing removal log entry."),
+                    "previous_removed_on": previous.get("removed_on", ""),
+                }
+            )
+            continue
+        kept.append(item)
+    return kept, skipped
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--catalog", default="resources/catalog/resources.json")
     parser.add_argument("--output", default="resources/catalog/pending_candidates.json")
+    parser.add_argument("--removal-log", default="resources/catalog/removal_log.json")
     parser.add_argument("--limit", type=int, default=15)
     args = parser.parse_args()
 
     catalog_path = Path(args.catalog)
     output_path = Path(args.output)
+    removal_log_path = Path(args.removal_log)
 
     catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
     resources = catalog.get("resources", [])
     existing_ids = {resource.get("id", "") for resource in resources if isinstance(resource, dict)}
     existing_urls = {
-        resource.get("url", "").rstrip("/")
+        _canonical_url(resource.get("url", ""))
         for resource in resources
         if isinstance(resource, dict) and isinstance(resource.get("url"), str)
     }
+    blocked_ids, blocked_urls, blocked_lookup = _load_prior_hard_removals(removal_log_path)
 
     all_candidates: list[dict[str, Any]] = []
     source_errors: list[str] = []
@@ -1110,6 +1193,12 @@ def main() -> int:
             source_errors.append(f"{source_name}: {exc}")
 
     unique_candidates = _dedupe_candidates(all_candidates, existing_ids, existing_urls)
+    unique_candidates, skipped_prior_removals = _filter_prior_hard_removals(
+        unique_candidates,
+        blocked_ids,
+        blocked_urls,
+        blocked_lookup,
+    )
     unique_candidates = sorted(unique_candidates, key=lambda item: item["title"].lower())
 
     payload: dict[str, Any] = {
@@ -1120,6 +1209,11 @@ def main() -> int:
     }
     if source_errors:
         payload["errors"] = source_errors
+    if skipped_prior_removals:
+        payload["skipped_prior_removals"] = skipped_prior_removals
+        payload["warnings"] = [
+            f"Skipped {len(skipped_prior_removals)} candidate(s) that matched prior hard-missing removal log entries."
+        ]
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     if output_path.exists():
@@ -1133,7 +1227,8 @@ def main() -> int:
             if old_compare == new_compare:
                 print(
                     f"Candidate sync complete: {len(unique_candidates)} new candidates, "
-                    f"{len(source_errors)} source errors, no file changes"
+                    f"{len(source_errors)} source errors, "
+                    f"{len(skipped_prior_removals)} skipped from prior hard removals, no file changes"
                 )
                 return 0
 
@@ -1141,7 +1236,8 @@ def main() -> int:
 
     print(
         f"Candidate sync complete: {len(unique_candidates)} new candidates, "
-        f"{len(source_errors)} source errors"
+        f"{len(source_errors)} source errors, "
+        f"{len(skipped_prior_removals)} skipped from prior hard removals"
     )
     return 0
 

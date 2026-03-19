@@ -1,6 +1,6 @@
 import json
 
-from scripts.generate_resource_views import main
+from scripts.generate_resource_views import _write_text_file, main
 
 
 def _catalog() -> dict:
@@ -97,8 +97,18 @@ def test_generate_resource_views_uses_verified_resources_and_lf_line_endings(
 
     assert technical_payload["count"] == 1
     assert [item["id"] for item in technical_payload["resources"]] == ["dataset-verified"]
+    assert technical_payload["resources"][0]["review_state"] == "verified"
+    assert technical_payload["resources"][0]["signal_origin"] == "direct"
+    assert technical_payload["resources"][0]["direct_pashto_signal"] is True
+    assert technical_payload["resources"][0]["quality_flags"] == []
     assert papers_payload["count"] == 1
     assert [item["id"] for item in papers_payload["resources"]] == ["paper-verified"]
 
     assert b"\r\n" not in (tmp_path / "resources" / "README.md").read_bytes()
     assert b"\r\n" not in (tmp_path / "resources" / "papers" / "README.md").read_bytes()
+
+
+def test_write_text_file_skips_unchanged_content(tmp_path) -> None:
+    path = tmp_path / "sample.txt"
+    assert _write_text_file(path, "same\n") is True
+    assert _write_text_file(path, "same\n") is False

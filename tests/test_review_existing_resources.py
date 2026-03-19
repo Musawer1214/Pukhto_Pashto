@@ -36,6 +36,7 @@ def test_review_resources_removes_hard_missing_urls() -> None:
     assert report["removed"] == 1
     assert updated["resources"] == []
     assert any("hard-missing HTTP status 404" in reason for reason in report["removals"][0]["reasons"])
+    assert report["removals"][0]["evidence"]["signal_origin"] == "direct"
 
 
 def test_review_resources_keeps_resource_when_probe_is_inconclusive() -> None:

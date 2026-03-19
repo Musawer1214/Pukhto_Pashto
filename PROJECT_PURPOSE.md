@@ -10,10 +10,14 @@ Create high-quality open resources that enable Pashto to work reliably in:
 - Translation and NLP tooling
 
 ## ✅ What success looks like
-- Public Pashto datasets with clear quality standards
-- Reproducible baseline models and training pipelines
-- Public benchmark/leaderboard for fair model comparison
-- Open desktop/API demos that real users can run
+- Public Pashto datasets and resource references with clear quality standards
+- A verified, searchable catalog with transparent automation and review
+- Reproducible baseline models and benchmark artifacts once they are actually checked in
+- Demo links and app integrations only after benchmark and run-card evidence exists
+
+## 📍 Current foundation status
+- Shipped now: catalog validation, generated resource views, GitHub Pages search, release notes, sync automation, normalization seed validation
+- Not shipped yet: committed benchmark result snapshots, local desktop app code, reproducible ASR/TTS baseline runs
 
 ## 🕊️ Non-commercial commitment
 This initiative is community-first and public-benefit oriented. The project is not being built for proprietary lock-in or short-term commercialization.
@@ -28,8 +32,8 @@ This initiative is community-first and public-benefit oriented. The project is n
 ## 📦 Scope (v1 foundation)
 - Build core repository and contributor workflows
 - Launch Pashto data collection and validation pipeline
-- Publish ASR and TTS baselines
-- Publish first benchmark set and metrics
+- Prepare the benchmark/result contract and run-card structure for future baselines
+- Publish ASR/TTS baselines only when commands, configs, and result artifacts are committed
 
 ## 🚫 Out of scope (for now)
 - Closed paid APIs as the only path

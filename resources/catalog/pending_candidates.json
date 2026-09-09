@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-09-07T08:45:51.887713+00:00",
+  "generated_on": "2026-09-09T08:32:49.587653+00:00",
   "sources": [
     "kaggle-datasets",
     "huggingface-datasets",
@@ -12,9 +12,10 @@
     "zenodo",
     "dataverse",
     "datacite",
-    "arxiv"
+    "arxiv",
+    "semantic-scholar"
   ],
-  "candidate_count": 26,
+  "candidate_count": 28,
   "candidates": [
     {
       "id": "candidate-datacite-dataset-album-6-the-final-trumpet-sounds-multilingual-christian-worship-pashto-bengali-u",
@@ -191,18 +192,18 @@
       ]
     },
     {
-      "id": "candidate-zenodo-paper-openlogic-in-pashto-pakistan-proof-systems-reference-repair-work-in-progress",
-      "title": "OpenLogic in Pashto — Pakistan: proof-systems reference repair (work in progress)",
-      "url": "https://zenodo.org/records/22442605",
+      "id": "candidate-zenodo-paper-openlogic-in-pashto-pakistan-proof-systems-and-completeness-work-in-progress",
+      "title": "OpenLogic in Pashto — Pakistan: proof systems and completeness (work in progress)",
+      "url": "https://zenodo.org/records/22646118",
       "category": "paper",
       "source": "zenodo",
       "status": "candidate",
-      "summary": "This bounded patch repairs the existing 108-page proof-systems reader. It replaces all 37 raw external-reference fallbacks on pages 41, 42, 44, 64, 65, 68, 91, 94 and 107 with eight human-readable Pashto result titles and adjacent blue `[OL",
+      "summary": "A work-in-progress machine translation for Pakistani Pashto. This release adds the complete twelve-unit first-order completeness chapter to the reader: Henkin saturation, Lindenbaum extension, ordinary and factored term models, both complet",
       "primary_use": "Needs maintainer review before promotion to verified catalog.",
       "tasks": [],
       "pashto_evidence": {
         "evidence_text": "Zenodo metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://zenodo.org/records/22442605",
+        "evidence_url": "https://zenodo.org/records/22646118",
         "markers": [
           "pashto"
         ]
@@ -215,9 +216,33 @@
       ]
     },
     {
+      "id": "candidate-datacite-project-openlogic-in-pashto-pakistan-proof-systems-and-completeness-work-in-progress",
+      "title": "OpenLogic in Pashto — Pakistan: proof systems and completeness (work in progress)",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.22646118",
+      "category": "project",
+      "source": "datacite",
+      "status": "candidate",
+      "summary": "A work-in-progress machine translation for Pakistani Pashto. This release adds the complete twelve-unit first-order completeness chapter to the reader: Henkin saturation, Lindenbaum extension, ordinary and factored term models, both complet",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.22646118",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "project",
+        "datacite"
+      ]
+    },
+    {
       "id": "candidate-datacite-project-openlogic-in-pashto-pakistan-proof-systems-reference-repair-work-in-progress",
       "title": "OpenLogic in Pashto — Pakistan: proof-systems reference repair (work in progress)",
-      "url": "https://zenodo.org/doi/10.5281/zenodo.22307197",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.22442605",
       "category": "project",
       "source": "datacite",
       "status": "candidate",
@@ -226,7 +251,7 @@
       "tasks": [],
       "pashto_evidence": {
         "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
-        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.22307197",
+        "evidence_url": "https://zenodo.org/doi/10.5281/zenodo.22442605",
         "markers": [
           "pashto"
         ]
@@ -530,6 +555,30 @@
       ]
     },
     {
+      "id": "candidate-datacite-dataset-research-materials-for-navigating-cultural-and-economic-barriers-to-girls-educat",
+      "title": "Research Materials for “Navigating Cultural and Economic Barriers to Girls’ Education in Rural Khyber Pakhtunkhwa: A Qualitative Study of Female Agency”",
+      "url": "https://www.icpsr.umich.edu/sites/aera/view/studies/307724",
+      "category": "dataset",
+      "source": "datacite",
+      "status": "candidate",
+      "summary": "This deposit contains research materials and documentation for a qualitative phenomenological study of girls’ education in rural Mardan, Khyber Pakhtunkhwa, Pakistan. The study examines how girls aged 13–18 and their female relatives naviga",
+      "primary_use": "Needs maintainer review before promotion to verified catalog.",
+      "tasks": [],
+      "pashto_evidence": {
+        "evidence_text": "DataCite metadata includes Pashto markers in title or description.",
+        "evidence_url": "https://www.icpsr.umich.edu/sites/aera/view/studies/307724",
+        "markers": [
+          "pashto"
+        ]
+      },
+      "tags": [
+        "pashto",
+        "candidate",
+        "dataset",
+        "datacite"
+      ]
+    },
+    {
       "id": "candidate-datacite-paper-resistance-identity-and-postcolonial-consciousness-in-ghani-khan-s-the-pathan-a-",
       "title": "RESISTANCE, IDENTITY, AND POSTCOLONIAL CONSCIOUSNESS IN GHANI KHAN'S THE PATHAN: A THEMATIC STUDY OF PASHTUN SOCIOCULTURAL AND POLITICAL DEFIANCE IN KHYBER PAKHTUNKHWA",
       "url": "https://zenodo.org/doi/10.5281/zenodo.21874548",
@@ -652,9 +701,6 @@
         "datacite"
       ]
     }
-  ],
-  "errors": [
-    "semantic-scholar: pashto: HTTP Error 429: ; pukhto: HTTP Error 429: ; pushto: HTTP Error 429: ; pakhto: HTTP Error 429: "
   ],
   "skipped_prior_removals": [
     {
